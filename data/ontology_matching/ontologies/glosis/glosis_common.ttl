@@ -1,0 +1,279 @@
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix ssn:   <http://www.w3.org/ns/ssn/> .
+@prefix sosa:  <http://www.w3.org/ns/sosa/> .
+@prefix glosis_cm: <http://w3id.org/glosis/model/common/> .
+@prefix glosis_res: <http://w3id.org/glosis/model/codelists/results/> .
+@prefix glosis_prop: <http://w3id.org/glosis/model/codelists/properties/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix schema: <http://schema.org/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+### ISO FEATURES
+@prefix iso28258: <http://w3id.org/glosis/model/iso28258/2013/> .
+@prefix qudt: <http://qudt.org/schema/qudt/> .
+@prefix quantitykind: <http://qudt.org/vocab/quantitykind/> .
+@prefix unit: <http://qudt.org/vocab/unit/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<http://w3id.org/glosis/model/common>
+        a                owl:Ontology ;
+        owl:imports      ssn: , sosa: ;
+        owl:versionIRI   <http://w3id.org/glosis/model/common/1.9.9> ;
+        owl:versionInfo  "1.9.9" ;
+        dct:creator [ schema:affiliation [ foaf:name "PSNC" ] ;
+                      rdfs:seeAlso <http://orcid.org/0000-0003-4289-4922> ;
+                      foaf:name "Raul Palma"
+                    ] ,
+                    [ schema:affiliation [ foaf:name "PSNC" ] ;
+                      foaf:name "Bogusz Janiak"
+                    ] ;
+        dct:title "GlOSIS Ontology: Common module"@en ;
+        dct:description "This ontology represents GLOSIS code lists extracted from the data model for the Global Soil Information System (GloSIS) v1.0, edited by Tomas Reznik and Katharina Schleidt"@en ;
+        rdfs:comment "This module contains all classes and properties that are used among multiple modules."@en ;
+        dct:source "Data model for the Global Soil Information System (GloSIS) v1.0, edited by Tomas Reznik and Katharina Schleidt"@en ;
+        dct:rights "This ontology is distributed under Creative Commons Attribution-NonCommercial-ShareAlike 3.0 IGO License - https://creativecommons.org/licenses/by-nc-sa/3.0/igo/"@en .
+
+glosis_cm:SoilDepthBedrock  a	owl:Class ;
+        rdfs:label "SoilDepthBedrock"@en ;
+        rdfs:comment "Soil depth to bedrock is the measurement from the soil surface to the top of the bedrock layer. This depth can vary significantly depending on the landscape and is crucial for understanding rootable soil depth and drainage potential. Source: FAO (2006). Guidelines for Soil Description (4th ed.). Food and Agriculture Organization of the United Nations." ;
+        skos:definition "ISRIC Report 2019/01: Tier 1 and Tier 2 data in the context of the federated Global Soil Information System. Appendix 1"@en ;
+        rdfs:subClassOf  sosa:Observation ;
+  			rdfs:subClassOf [ a owl:Restriction ; owl:onProperty sosa:hasResult ; owl:allValuesFrom glosis_cm:SoilDepthBedrockValue ] ;
+  			rdfs:subClassOf [ a owl:Restriction ; owl:onProperty sosa:observedProperty ; owl:hasValue glosis_prop:descriptivePropertyCode-soilDepthBedrockProperty ] .
+
+glosis_cm:SoilDepthBedrockValue a owl:Class ;
+        rdfs:label "SoilDepthBedrockValue"@en ;
+        skos:definition "ISRIC Report 2019/01: Tier 1 and Tier 2 data in the context of the federated Global Soil Information System. Appendix 1"@en ;
+        rdfs:subClassOf  qudt:QuantityValue ;
+        rdfs:subClassOf [ a owl:Restriction ; owl:onProperty qudt:numericValue ; owl:allValuesFrom xsd:integer ] ;
+        rdfs:subClassOf [ a owl:Restriction ; owl:onProperty qudt:unit ; owl:hasValue unit:CentiM] .
+
+glosis_cm:SoilDepth  a	owl:Class ;
+        rdfs:label "SoilDepth"@en ;
+        rdfs:comment "Soil depth is the vertical measurement from the soil surface to the underlying bedrock or impenetrable layer. Soil depth directly impacts plant growth, as deeper soils allow for more extensive root systems and greater water retention. Source: Brady, N. C., & Weil, R. R. (2008). The Nature and Properties of Soils (14th ed.). Pearson Prentice Hall." ;
+        skos:definition "ISRIC Report 2019/01: Tier 1 and Tier 2 data in the context of the federated Global Soil Information System. Appendix 1"@en ;
+        rdfs:subClassOf  sosa:Observation ;
+  			rdfs:subClassOf [ a owl:Restriction ; owl:onProperty sosa:hasResult ; owl:allValuesFrom glosis_cm:SoilDepthValue ] ;
+  			rdfs:subClassOf [ a owl:Restriction ; owl:onProperty sosa:observedProperty ; owl:hasValue glosis_prop:descriptivePropertyCode-soilDepthProperty ] .
+
+glosis_cm:SoilDepthValue a owl:Class ;
+        rdfs:label "SoilDepthValue"@en ;
+        skos:definition "ISRIC Report 2019/01: Tier 1 and Tier 2 data in the context of the federated Global Soil Information System. Appendix 1"@en ;
+        rdfs:subClassOf  qudt:QuantityValue ;
+        rdfs:subClassOf [ a owl:Restriction ; owl:onProperty qudt:numericValue ; owl:allValuesFrom xsd:integer ] ;
+        rdfs:subClassOf [ a owl:Restriction ; owl:onProperty qudt:unit ; owl:hasValue unit:CentiM] .
+
+glosis_cm:SoilDepthRootable  a owl:Class ;
+        rdfs:label "SoilDepthRootable"@en ;
+        rdfs:comment "Soil depth rootable refers to the depth of soil that is capable of supporting plant roots, excluding impenetrable layers such as bedrock or compacted zones. This is an important factor for determining agricultural suitability. Source: Soil Science Society of America. (2008). Soil Science Glossary. Soil Science Society of America." ;
+        skos:definition "ISRIC Report 2019/01: Tier 1 and Tier 2 data in the context of the federated Global Soil Information System. Appendix 1"@en ;
+        rdfs:subClassOf  sosa:Observation ;
+  			rdfs:subClassOf [ a owl:Restriction ; owl:onProperty sosa:hasResult ; owl:allValuesFrom glosis_cm:SoilDepthRootableValue ] ;
+  			rdfs:subClassOf [ a owl:Restriction ; owl:onProperty sosa:observedProperty ; owl:hasValue glosis_prop:descriptivePropertyCode-soilDepthRootableProperty ] .
+
+glosis_cm:SoilDepthRootableValue a owl:Class ;
+        rdfs:label "SoilDepthRootableValue"@en ;
+        skos:definition "ISRIC Report 2019/01: Tier 1 and Tier 2 data in the context of the federated Global Soil Information System. Appendix 1"@en ;
+        rdfs:subClassOf  qudt:QuantityValue ;
+        rdfs:subClassOf [ a owl:Restriction ; owl:onProperty qudt:numericValue ; owl:allValuesFrom xsd:integer ] ;
+        rdfs:subClassOf [ a owl:Restriction ; owl:onProperty qudt:unit ; owl:hasValue unit:CentiM] . 
+
+glosis_cm:SoilDepthRootableClass  a	owl:Class ;
+        rdfs:label "SoilDepthRootableClass"@en ;
+        rdfs:comment "Soil depth rootable class categorizes the soil based on the depth of the rootable zone, usually classifying soils as shallow, moderate, or deep. These classifications help determine land use suitability, particularly for agriculture. Source: FAO (2006). Guidelines for Soil Description (4th ed.). Food and Agriculture Organization of the United Nations." ;
+        skos:definition "ISRIC Report 2019/01: Tier 1 and Tier 2 data in the context of the federated Global Soil Information System. Appendix 1"@en ;
+        rdfs:subClassOf  sosa:Observation ;
+  			rdfs:subClassOf [ a owl:Restriction ; owl:onProperty sosa:hasSimpleResult  ; owl:allValuesFrom xsd:string ] ;
+  			rdfs:subClassOf [ a owl:Restriction ; owl:onProperty sosa:observedProperty ; owl:hasValue glosis_prop:descriptivePropertyCode-soilDepthRootableClassProperty ] .
+
+glosis_cm:SoilDepthSampled  a owl:Class ;
+        rdfs:label "SoilDepthSampled"@en ;
+        rdfs:comment "Soil depth sampled refers to the specific depth of soil that was taken for analysis, often dictated by research or agricultural requirements. Sampling depth can affect the representativeness of the analysis. Source: Soil Science Society of America. (2008). Soil Science Glossary. Soil Science Society of America." ;
+        skos:definition "ISRIC Report 2019/01: Tier 1 and Tier 2 data in the context of the federated Global Soil Information System. Appendix 1"@en ;
+        rdfs:subClassOf  sosa:Observation ;
+  			rdfs:subClassOf [ a owl:Restriction ; owl:onProperty sosa:hasResult ; owl:allValuesFrom glosis_cm:SoilDepthSampledValue ] ;
+  			rdfs:subClassOf [ a owl:Restriction ; owl:onProperty sosa:observedProperty ; owl:hasValue glosis_prop:descriptivePropertyCode-soilDepthSampledProperty ] .
+
+glosis_cm:SoilDepthSampledValue a owl:Class ;
+        rdfs:label "SoilDepthSampledValue"@en ;
+        skos:definition "ISRIC Report 2019/01: Tier 1 and Tier 2 data in the context of the federated Global Soil Information System. Appendix 1"@en ;
+        rdfs:subClassOf  qudt:QuantityValue ;
+        rdfs:subClassOf [ a owl:Restriction ; owl:onProperty qudt:numericValue ; owl:allValuesFrom xsd:integer ] ;
+        rdfs:subClassOf [ a owl:Restriction ; owl:onProperty qudt:unit ; owl:hasValue unit:CentiM] .
+
+glosis_cm:InfiltrationRateClass  a	owl:Class ;
+        rdfs:label "InfiltrationRateClass"@en ;
+        rdfs:comment "Infiltration rate class refers to a qualitative classification of the soil's ability to absorb water, based on observed rates of water penetration. This is usually divided into categories such as slow, moderate, or rapid infiltration, which are important for managing irrigation and drainage systems. Source: Hillel, D. (2004). Introduction to Soil Physics. Academic Press." ;
+        skos:definition "ISRIC Report 2019/01: Tier 1 and Tier 2 data in the context of the federated Global Soil Information System. Appendix 1"@en ;
+        rdfs:subClassOf  sosa:Observation ;
+  			rdfs:subClassOf [ a owl:Restriction ; owl:onProperty sosa:hasSimpleResult ; owl:allValuesFrom xsd:string ] ;
+  			rdfs:subClassOf [ a owl:Restriction ; owl:onProperty sosa:observedProperty ; owl:hasValue glosis_prop:descriptivePropertyCode-infiltrationRateClassProperty] .
+
+glosis_cm:Texture  a	owl:Class ;
+        rdfs:label "Texture"@en ;
+        rdfs:comment "Soil texture refers to the relative proportions of sand, silt, and clay in the soil. It determines a wide range of soil properties, such as permeability, water retention, and nutrient-holding capacity. Common textures include sandy, loamy, and clayey soils. Source: Soil Science Society of America. (2008). Soil Science Glossary. Soil Science Society of America." ;
+        skos:definition "ISRIC Report 2019/01: Tier 1 and Tier 2 data in the context of the federated Global Soil Information System. Appendix 1"@en ;
+        rdfs:subClassOf  sosa:Observation ;
+  			rdfs:subClassOf [ a owl:Restriction ; owl:onProperty sosa:hasSimpleResult ; owl:allValuesFrom xsd:string ] ;
+  			rdfs:subClassOf [ a owl:Restriction ; owl:onProperty sosa:observedProperty ; owl:hasValue glosis_prop:descriptivePropertyCode-textureProperty ] .
+
+glosis_cm:MunsellColorValue  a        owl:Class ;
+        rdfs:label "MunsellColorValue"@en ;
+        rdfs:comment "Munsell color value refers to the lightness or darkness of a soil's color, based on the Munsell color system. This system quantifies soil color using three dimensions: hue (the type of color), value (lightness or darkness), and chroma (intensity or purity of the color). The value component of Munsell color is a scale from 0 (black) to 10 (white), with higher numbers indicating lighter colors. Soil color can provide insights into drainage conditions, organic matter content, and mineral composition. Source: Munsell Color, 2009. Munsell Soil Color Charts." ;
+        skos:definition "ISRIC Report 2019/01: Tier 1 and Tier 2 data in the context of the federated Global Soil Information System. Appendix 3"@en ;
+        rdfs:subClassOf  sosa:Result ;
+        rdfs:subClassOf  [ a                owl:Restriction ;
+                           owl:cardinality  "1"^^xsd:nonNegativeInteger ;
+                           owl:onProperty   glosis_cm:munsellCompounded
+                         ] ;
+        rdfs:subClassOf  [ a                owl:Restriction ;
+                           owl:cardinality  "1"^^xsd:nonNegativeInteger ;
+                           owl:onProperty   glosis_cm:chroma
+                         ] ;
+        rdfs:subClassOf  [ a                owl:Restriction ;
+                           owl:cardinality  "1"^^xsd:nonNegativeInteger ;
+                           owl:onProperty   glosis_cm:value
+                         ] ;
+        rdfs:subClassOf  [ a                owl:Restriction ;
+                           owl:cardinality  "1"^^xsd:nonNegativeInteger ;
+                           owl:onProperty   glosis_cm:hue
+                         ] .
+
+glosis_cm:munsellCompounded
+        a            owl:DatatypeProperty ;
+        rdfs:label "munsellCompounded"@en ;
+        rdfs:comment "In the context of soil color, Munsell Compounded refers to a combination of multiple Munsell color attributes (hue, value, and chroma) to describe a specific soil color. When a soil sample is described using the 'compounded' method, it involves detailing the hue (the actual color), value (lightness or darkness), and chroma (color intensity) in a compound format, such as '10YR 5/6' (which would indicate a yellow-red hue with a value of 5 and a chroma of 6). This system allows for precise identification of soil colors and is widely used in soil surveys to ensure consistency in color description. Source: Munsell Color, 2009. Munsell Soil Color Charts." ;
+        skos:definition "ISRIC Report 2019/01: Tier 1 and Tier 2 data in the context of the federated Global Soil Information System. Appendix 3"@en ;
+        rdfs:range   xsd:string .
+
+glosis_cm:chroma
+        a            owl:DatatypeProperty ;
+        rdfs:label "chroma"@en ;
+        rdfs:comment "Chroma in the Munsell color system refers to the intensity or purity of a color. It measures how 'strong' or 'weak' a color appears, ranging from 0 (a neutral gray) to higher values that indicate more vivid or intense colors. In soils, chroma can provide insight into soil conditions such as aeration, organic matter content, and drainage. For instance, soils with high chroma (intense color) typically have better drainage and higher iron content, while low chroma can indicate waterlogged or poorly drained conditions. Source: Munsell Color, 2009. Munsell Soil Color Charts. " ;
+        skos:definition "ISRIC Report 2019/01: Tier 1 and Tier 2 data in the context of the federated Global Soil Information System. Appendix 3"@en ;
+        rdfs:range   xsd:decimal .
+
+glosis_cm:value
+        a            owl:DatatypeProperty ;
+        rdfs:label "value"@en ;
+        rdfs:comment "Value in the Munsell color system refers to the lightness or darkness of a color, with 0 representing black (no light reflection) and 10 representing white (maximum light reflection). In soil, a higher value indicates a lighter soil color, typically found in well-drained or less organic soils, while a lower value (darker color) suggests more organic material or poorer drainage. The value is an important indicator of soil properties like moisture content and aeration. Source: Munsell Color, 2009. Munsell Soil Color Charts." ;
+        skos:definition "ISRIC Report 2019/01: Tier 1 and Tier 2 data in the context of the federated Global Soil Information System. Appendix 3"@en ;
+        rdfs:range   xsd:decimal .
+
+glosis_cm:hue
+        a      	      owl:DatatypeProperty ;
+        rdfs:label "hue"@en ;
+        rdfs:comment "Hue is the aspect of color that refers to the dominant color family (such as red, yellow, or blue) in the Munsell color system. It is the first component of a Munsell color description and is denoted by a letter-number code (e.g., 10YR, which means yellow-red). In soil analysis, the hue gives an indication of the soil’s mineral composition and its drainage properties. For example, reddish hues often indicate the presence of iron oxide, while yellow hues may suggest a more neutral, well-drained soil environment. Source: Munsell Color, 2009. Munsell Soil Color Charts." ;
+        skos:definition "ISRIC Report 2019/01: Tier 1 and Tier 2 data in the context of the federated Global Soil Information System. Appendix 3"@en ;
+        rdfs:range    xsd:string .
+
+glosis_cm:InfiltrationRateNumeric  a owl:Class ;
+        rdfs:label "InfiltrationRateNumeric"@en ;
+        rdfs:comment "The numeric infiltration rate is the quantitative measurement of the rate at which water infiltrates the soil, typically expressed in millimeters per hour (mm/h). It is a critical factor in soil water management, affecting irrigation practices, runoff, and drainage efficiency. Source: Bouwer, H. (2000). Integrated Water Management for the 21st Century. Water Resources Research." ;
+        rdfs:subClassOf  sosa:Observation ;
+  			rdfs:subClassOf [ a owl:Restriction ; owl:onProperty sosa:hasResult ; owl:allValuesFrom glosis_cm:InfiltrationRateNumericValue ] ;
+  			rdfs:subClassOf [ a owl:Restriction ; owl:onProperty sosa:observedProperty ; owl:hasValue glosis_prop:descriptivePropertyCode-infiltrationRateNumericProperty ] .
+
+glosis_cm:InfiltrationRateNumericValue a owl:Class ;
+        rdfs:label "InfiltrationRateNumericValue"@en ;
+        skos:definition "ISRIC Report 2019/01: Tier 1 and Tier 2 data in the context of the federated Global Soil Information System. Appendix 1"@en ;
+        rdfs:subClassOf  qudt:QuantityValue ;
+        rdfs:subClassOf [ a owl:Restriction ; owl:onProperty qudt:numericValue ; owl:allValuesFrom xsd:float ] ;
+        rdfs:subClassOf [ a owl:Restriction ; owl:onProperty qudt:unit ; owl:hasValue unit:CentiM-PER-HR] .
+
+glosis_cm:BleachedSand  a	owl:Class ;
+        rdfs:label "BleachedSand"@en ;
+        rdfs:comment "Bleached sand refers to sandy soils where the color has been significantly lightened due to the removal of iron and other minerals, usually through leaching processes in wet climates. This often results in a pale or white color, which is an indicator of a soil's history of leaching, typically in areas with high rainfall or poor drainage. These soils may have low fertility and poor nutrient-holding capacity. Source: Brady, N. C., & Weil, R. R. (2008). The Nature and Properties of Soils (14th ed.). Pearson Prentice Hall." ;
+        skos:definition "Guidelines for Soil Description issued by the FAO: table 23"@en ;
+        rdfs:subClassOf  sosa:Observation ;
+  			rdfs:subClassOf [ a owl:Restriction ; owl:onProperty sosa:hasResult ; owl:someValuesFrom glosis_res:BleachedSandValueCode] ;
+  			rdfs:subClassOf [ a owl:Restriction ; owl:onProperty sosa:observedProperty ; owl:hasValue glosis_prop:descriptivePropertyCode-bleachedSandProperty ] .
+
+glosis_cm:FragmentsSize  a	owl:Class ;
+        rdfs:label "FragmentsSize "@en ;
+        rdfs:comment "The size of soil fragments is categorized by their dimensions, often from small gravel-sized particles to large boulders. Fragment size influences soil aeration, drainage, and root penetration, with larger fragments typically decreasing soil fertility and water retention. Source: Brady, N. C., & Weil, R. R. (2008). The Nature and Properties of Soils (14th ed.). Pearson Prentice Hall." ;
+        skos:definition "Guidelines for Soil Description issued by the FAO: table 15,2"@en ;
+        rdfs:subClassOf  sosa:Observation ;
+  			rdfs:subClassOf [ a owl:Restriction ; owl:onProperty sosa:hasResult ; owl:someValuesFrom glosis_res:FragmentsSizeValueCode ] ;
+  			rdfs:subClassOf [ a owl:Restriction ; owl:onProperty sosa:observedProperty ; owl:hasValue glosis_prop:descriptivePropertyCode-fragmentsSizeProperty ] .
+
+glosis_cm:CracksDepth  a	owl:Class ;
+        rdfs:label "CracksDepth"@en ;
+        rdfs:comment "Cracks depth refers to the vertical measurement of cracks that appear in the soil surface, often occurring during dry conditions when soil moisture decreases. The depth of cracks can indicate soil shrinkage, particularly in clayey soils, and is used to assess the soil's structural integrity and potential for erosion. Source: McSweeney, K. (2009). Soil and Water Conservation Handbook. CRC Press." ;
+        skos:definition "Guidelines for Soil Description issued by the FAO: table 21,2"@en ;
+        rdfs:subClassOf  sosa:Observation ;
+  			rdfs:subClassOf [ a owl:Restriction ; owl:onProperty sosa:hasResult ; owl:someValuesFrom glosis_res:CracksDepthValueCode ] ;
+  			rdfs:subClassOf [ a owl:Restriction ; owl:onProperty sosa:observedProperty ; owl:hasValue glosis_prop:descriptivePropertyCode-cracksDepthProperty ] .
+
+glosis_cm:OrganicMatterClass  a	owl:Class ;
+        rdfs:label "OrganicMatterClass"@en ;
+        rdfs:comment "Organic matter class refers to the classification of soil based on the quantity and type of organic material it contains, such as decomposed plant and animal residues. High organic matter content is generally beneficial for soil fertility, structure, and microbial activity. Source: Brady, N. C., & Weil, R. R. (2008). The Nature and Properties of Soils (14th ed.). Pearson Prentice Hall." ;        
+        rdfs:subClassOf  sosa:Observation ;
+  			rdfs:subClassOf [ a owl:Restriction ; owl:onProperty sosa:hasResult ; owl:someValuesFrom glosis_res:OrganicMatterClassValueCode ] ;
+  			rdfs:subClassOf [ a owl:Restriction ; owl:onProperty sosa:observedProperty ; owl:hasValue glosis_prop:descriptivePropertyCode-organicMatterClassProperty ] .
+
+glosis_cm:CracksDistance  a	owl:Class ;
+        rdfs:label "CracksDistance"@en ;
+        rdfs:comment "The horizontal spacing between cracks in the soil, which can vary depending on soil type and moisture levels. Cracks generally occur due to soil shrinkage in dry conditions and can affect root penetration and water infiltration. Source: McSweeney, K. (2009). Soil and Water Conservation Handbook. CRC Press." ;
+        skos:definition "Guidelines for Soil Description issued by the FAO: table 21,3"@en ;
+        rdfs:subClassOf  sosa:Observation ;
+  			rdfs:subClassOf [ a owl:Restriction ; owl:onProperty sosa:hasResult ; owl:someValuesFrom glosis_res:CracksDistanceValueCode ] ;
+  			rdfs:subClassOf [ a owl:Restriction ; owl:onProperty sosa:observedProperty ; owl:hasValue glosis_prop:descriptivePropertyCode-cracksDistanceProperty ] .
+
+glosis_cm:CracksWidth  a	owl:Class ;
+        rdfs:label "CracksWidth"@en;
+        rdfs:comment "Cracks width refers to the measurement of the gap or space between the sides of soil cracks. Wider cracks can form in drier soils, particularly those with high clay content. They provide insights into soil structure, water retention, and the degree of shrinkage that has occurred due to moisture loss. Source: McSweeney, K. (2009). Soil and Water Conservation Handbook. CRC Press." ;
+        skos:definition "Guidelines for Soil Description issued by the FAO: table 21,1"@en ;
+        rdfs:subClassOf  sosa:Observation ;
+  			rdfs:subClassOf [ a owl:Restriction ; owl:onProperty sosa:hasResult ; owl:someValuesFrom glosis_res:CracksWidthValueCode ] ;
+  			rdfs:subClassOf [ a owl:Restriction ; owl:onProperty sosa:observedProperty ; owl:hasValue glosis_prop:descriptivePropertyCode-cracksWidthProperty ] .
+
+glosis_cm:RockAbundance  a	owl:Class ;
+        rdfs:label "RockAbundance"@en;
+        rdfs:comment "Rock abundance refers to the relative quantity of rocks or rock fragments within the soil profile, often expressed as a percentage of the total soil volume. High rock abundance can significantly affect soil tillage, root penetration, and water movement. Source: Soil Science Society of America. (2008). Soil Science Glossary. Soil Science Society of America." ;
+        skos:definition "Guidelines for Soil Description issued by the FAO: table 26"@en ;
+        rdfs:subClassOf  sosa:Observation ;
+  			rdfs:subClassOf [ a owl:Restriction ; owl:onProperty sosa:hasResult ; owl:someValuesFrom glosis_res:RockAbundanceValueCode ] ;
+  			rdfs:subClassOf [ a owl:Restriction ; owl:onProperty sosa:observedProperty ; owl:hasValue glosis_prop:descriptivePropertyCode-rockAbundanceProperty ] .
+
+glosis_cm:ColourDry  a	owl:Class ;
+        rdfs:label "ColourDry"@en ;
+        rdfs:comment "The color of soil when it is in a dry state. Soil color, when dry, can indicate the mineral composition and moisture retention of the soil. Dry soils often appear darker if they contain organic matter, while lighter colors may indicate the presence of sand or salts. Source: Soil Science Society of America. (2008). Soil Science Glossary. Soil Science Society of America." ;
+        skos:definition "ISRIC Report 2019/01: Tier 1 and Tier 2 data in the context of the federated Global Soil Information System. Appendix 3"@en ;
+        rdfs:subClassOf  sosa:Observation ;
+                        rdfs:subClassOf [ a owl:Restriction ; owl:onProperty sosa:hasResult ; owl:allValuesFrom glosis_cm:MunsellColorValue] ;
+  			rdfs:subClassOf [ a owl:Restriction ; owl:onProperty sosa:observedProperty ; owl:hasValue glosis_prop:descriptivePropertyCode-colourDryProperty ] .
+
+glosis_cm:ColourMoist  a owl:Class ;
+        rdfs:label "ColourMoist"@en ;
+        rdfs:comment "The color of soil when it is moist, which can reveal more about the soil’s content and moisture status. Moist soils tend to be darker because water enhances the color intensity, revealing organic matter content and the presence of minerals such as iron. For example, dark brown or black soils often indicate high organic matter content. Source: Soil Science Society of America. (2008). Soil Science Glossary. Soil Science Society of America." ;
+        skos:definition "ISRIC Report 2019/01: Tier 1 and Tier 2 data in the context of the federated Global Soil Information System. Appendix 3"@en ; 
+        rdfs:subClassOf  sosa:Observation ;
+  			rdfs:subClassOf [ a owl:Restriction ; owl:onProperty sosa:hasResult ; owl:allValuesFrom  glosis_cm:MunsellColorValue ] ;
+  			rdfs:subClassOf [ a owl:Restriction ; owl:onProperty sosa:observedProperty ; owl:hasValue glosis_prop:descriptivePropertyCode-colourMoistProperty ] .
+
+glosis_cm:RockShape  a	owl:Class ;
+        rdfs:label "RockShape"@en;
+        rdfs:comment "Rock shape describes the physical form of rock fragments in the soil, ranging from angular to rounded shapes. The shape of rocks affects soil aeration, water movement, and the difficulty of soil tillage and root penetration. Source: FAO (2006). Guidelines for Soil Description (4th ed.). Food and Agriculture Organization of the United Nations." ;
+        skos:definition "Guidelines for Soil Description issued by the FAO: table 28"@en ;
+        rdfs:subClassOf  sosa:Observation ;
+  			rdfs:subClassOf [ a owl:Restriction ; owl:onProperty sosa:hasResult ; owl:someValuesFrom glosis_res:RockShapeValueCode ] ;
+  			rdfs:subClassOf [ a owl:Restriction ; owl:onProperty sosa:observedProperty ; owl:hasValue glosis_prop:descriptivePropertyCode-rockShapeProperty ] .
+
+glosis_cm:RockSize  a owl:Class ;
+        rdfs:label "RockSize"@en;
+        rdfs:comment "Rock size refers to the dimensions of rock fragments in the soil. The classification of rock size can range from small gravel-sized particles to large boulders. Larger rocks hinder root growth, water infiltration, and tillage. Source: Soil Science Society of America. (2008). Soil Science Glossary. Soil Science Society of America." ;
+        skos:definition "Guidelines for Soil Description issued by the FAO: table 27"@en ;
+        rdfs:subClassOf  sosa:Observation ;
+  			rdfs:subClassOf [ a owl:Restriction ; owl:onProperty sosa:hasResult ; owl:someValuesFrom glosis_res:RockSizeValueCode ] ;
+  			rdfs:subClassOf [ a owl:Restriction ; owl:onProperty sosa:observedProperty ; owl:hasValue glosis_prop:descriptivePropertyCode-rockSizeProperty ] .
+
+glosis_cm:WeatheringFragments  a	owl:Class ;
+        rdfs:label "WeatheringFragments"@en;
+        rdfs:comment "Weathering fragments are pieces of rock or mineral material that have been broken down into smaller particles due to physical, chemical, or biological weathering processes. The size and composition of these fragments influence soil texture, structure, and nutrient availability. Source: Brady, N. C., & Weil, R. R. (2008). The Nature and Properties of Soils (14th ed.). Pearson Prentice Hall." ;
+        skos:definition "Guidelines for Soil Description issued by the FAO: table 29"@en ;
+        rdfs:subClassOf  sosa:Observation ;
+  			rdfs:subClassOf [ a owl:Restriction ; owl:onProperty sosa:hasResult ; owl:someValuesFrom glosis_res:WeatheringValueCode ] ;
+  			rdfs:subClassOf [ a owl:Restriction ; owl:onProperty sosa:observedProperty ; owl:hasValue glosis_prop:descriptivePropertyCode-weatheringFragmentsProperty ] .

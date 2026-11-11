@@ -1,0 +1,1123 @@
+entity,rank,id,ontology,label,matched_name,score,source
+Soil Pollutants: Lead,1,MESH:D007854,MESH,Lead,Lead,1.00,bioportal
+Soil Pollutants: Lead,2,SNOMEDCT:88488004,SNOMEDCT,Lead,Lead,1.00,bioportal
+Soil Pollutants: Lead,3,NCIT:C25552,NCIT,Lead,Lead,1.00,bioportal
+3-Hydroxypropionate Cycle,1,GO:0043427,GO,carbon fixation by 3-hydroxypropionate cycle,3-hydroxypropionate cycle,1.00,bioportal
+Acetaldehyde,1,MESH:D000079,MESH,Acetaldehyde,Acetaldehyde,1.00,bioportal
+Acetaldehyde,2,SNOMEDCT:38705000,SNOMEDCT,Acetaldehyde,Acetaldehyde,1.00,bioportal
+Acetaldehyde,3,NCIT:C44328,NCIT,Acetaldehyde,Acetaldehyde,1.00,bioportal
+Acetaldehyde,4,CHEBI:15343,CHEBI,acetaldehyde,acetaldehyde,1.00,bioportal
+Acetaldehyde,5,NCIT:C204642,NCIT,Acetaldehyde Measurement,Acetaldehyde,1.00,bioportal
+Acetate,1,SNOMEDCT:54526002,SNOMEDCT,Acetate,Acetate,1.00,bioportal
+Acetate,2,NCIT:C94719,NCIT,Acetate,Acetate,1.00,bioportal
+Acetate,3,CHEBI:30089,CHEBI,acetate,acetate,1.00,bioportal
+Acetate,4,MESH:D000085,MESH,Acetates,Acetates,1.00,bioportal
+Acetate,5,NCIT:C210261,NCIT,Acetate Measurement,ACETATE,1.00,bioportal
+Acetic Acid,1,MESH:D019342,MESH,Acetic Acid,Acetic Acid,1.00,bioportal
+Acetic Acid,2,SNOMEDCT:2869004,SNOMEDCT,Acetic acid,Acetic acid,1.00,bioportal
+Acetic Acid,3,NCIT:C61623,NCIT,Acetic Acid,Acetic Acid,1.00,bioportal
+Acetic Acid,4,SNOMEDCT:252689003,SNOMEDCT,Acetic acid test,Acetic acid test,0.81,bioportal
+Acetic Acid,5,MESH:C424913,MESH,(2-(aminoiminomethyl)hydrazino)acetic acid,AIMH-acetic acid,0.81,bioportal
+Acidobacteria,1,MESH:D061271,MESH,Acidobacteria,Acidobacteria,1.00,bioportal
+Acidobacteria,2,NCBITaxon:57723,NCBITAXON,Acidobacteria,Acidobacteria,1.00,bioportal
+Acidobacteria,3,NCBITaxon:204432,NCBITAXON,Acidobacteriia,Acidobacteria,1.00,bioportal
+Acidophile,1,OMP:0005009,OMP,acidophile,acidophile,1.00,bioportal+local
+Acrab-Tolc Efflux Pump,1,ARO:3007322,ARO,inhibitors of AcrAB-TolC efflux pump,inhibitors of AcrAB-TolC efflux pump,0.85,bioportal
+Actinobacteria,1,MESH:D039903,MESH,Actinobacteria,Actinobacteria,1.00,bioportal
+Actinobacteria,2,NCIT:C76195,NCIT,Actinobacteria,Actinobacteria,1.00,bioportal
+Actinobacteria,3,NCBITaxon:201174,NCBITAXON,Actinobacteria,Actinobacteria,1.00,bioportal
+Age,1,SNOMEDCT:397669002,SNOMEDCT,Age,Age,1.00,bioportal
+Age,2,NCIT:C25150,NCIT,Age,Age,1.00,bioportal
+Age,3,CHEAR:Age,CHEAR,Age,Age,1.00,bioportal
+Age,4,EFO:EFO_0000246,EFO,age,age,1.00,bioportal
+Age,5,PATO:0000011,PATO,age,age,1.00,bioportal
+Age,6,SIO:SIO_001013,SIO,age,age,1.00,bioportal
+Age,7,ExO:0000102,EXO,age,age,1.00,bioportal
+Age,8,NCIT:C69260,NCIT,Subject Age,Age,1.00,bioportal
+Age,9,SNOMEDCT:424144002,SNOMEDCT,Current chronological age,Age,1.00,bioportal
+Agricultural Environment,1,SNOMEDCT:272504001,SNOMEDCT,Agricultural site,Agricultural site (environment),0.85,bioportal
+Agricultural Environment,2,SNOMEDCT:285070001,SNOMEDCT,Agricultural field,Agricultural field (environment),0.84,bioportal
+Akkermansia Muciniphila,1,MESH:C000647304,MESH,Akkermansia muciniphila,Akkermansia muciniphila,1.00,bioportal
+Akkermansia Muciniphila,2,SNOMEDCT:426278004,SNOMEDCT,Akkermansia muciniphila,Akkermansia muciniphila,1.00,bioportal
+Akkermansia Muciniphila,3,NCBITAXON:239935,NCBITAXON,Akkermansia muciniphila,Akkermansia muciniphila,1.00,bioportal
+Akkermansia Muciniphila,4,NCBITaxon:349741,NCBITAXON,Akkermansia muciniphila ATCC BAA-835,Akkermansia muciniphila Muc,0.86,bioportal
+Akkermansia Muciniphila,5,ECTO:3000016,ECTO,exposure to Akkermansia muciniphila,exposure to Akkermansia muciniphila,0.82,bioportal
+Akkermansia Muciniphila,6,NCIT:C200541,NCIT,Akkermansia muciniphila Probiotic,Akkermansia muciniphila Probiotic,0.81,bioportal
+Aldehydes,1,CHEBI:17478,CHEBI,aldehyde,aldehyde,1.00,bioportal
+Aldehydes,2,MESH:D000447,MESH,Aldehydes,Aldehydes,1.00,bioportal
+Alpha Diversity,1,PCO:0000074,PCO,alpha diversity,alpha diversity,1.00,bioportal
+Altitude,1,glosis_sp:altitude,GLOSIS,altitude,altitude,1.00,local
+Altitude,2,MESH:D000531,MESH,Altitude,Altitude,1.00,bioportal
+Altitude,3,SNOMEDCT:76661004,SNOMEDCT,Altitude,Altitude,1.00,bioportal
+Altitude,4,SIO:SIO_000438,SIO,altitude,altitude,1.00,bioportal
+Altitude,5,CHEAR:SIO_000438,CHEAR,altitude,altitude,1.00,bioportal
+Altitude,6,SWEET:Altitude,SWEET,altitude,altitude,1.00,bioportal
+Aminoglycoside-Modifying Enzyme,1,ARO:3007380,ARO,aminoglycoside modifying enzyme,aminoglycoside modifying enzyme,1.00,bioportal
+Anaerostipes Hadrus,1,MESH:C000653133,MESH,Anaerostipes hadrus,Anaerostipes hadrus,1.00,bioportal
+Anaerostipes Hadrus,2,SNOMEDCT:4696003,SNOMEDCT,Anaerostipes hadrus,Anaerostipes hadrus,1.00,bioportal
+Anaerostipes Hadrus,3,NCBITAXON:649756,NCBITAXON,Anaerostipes hadrus,Anaerostipes hadrus,1.00,bioportal
+Analytical Method,1,CHEAR:AnalyticalMethod,CHEAR,Analytical Method,Analytical Method,1.00,bioportal
+Analytical Method,2,HHEAR:AnalyticalMethod,HHEAR,Analytical Method,Analytical Method,1.00,bioportal
+Analytical Method,3,NCIT:C172330,NCIT,CDISC SDTM PK Analytical Method Terminology,PK Analytical Method,0.86,bioportal
+Animal Model,1,NCIT:C71164,NCIT,Animal Model,Animal Model,1.00,bioportal
+Animal Model,2,EFO:EFO_0022953,EFO,animal model,animal model,1.00,bioportal
+Animal Model,3,MESH:D023421,MESH,"Models, Animal","Models, Animal",1.00,bioportal
+Animal Model,4,NCIT:C16504,NCIT,Animal Model of Disease,animal model,1.00,bioportal
+Anti-Pd-1 Therapy,1,NCIT:C217372,NCIT,Anti-PDL1 Therapy,Anti-PD(L)1 Therapy,0.92,bioportal
+Antibiotic,1,NCIT:C258,NCIT,Antibiotic,Antibiotic,1.00,bioportal
+Antibiotic,2,SNOMEDCT:T195,SNOMEDCT,Antibiotic,Antibiotic,1.00,bioportal
+Antibiotic,3,MESH:T195,MESH,Antibiotic,Antibiotic,1.00,bioportal
+Antibiotic,4,NCBITAXON:T195,NCBITAXON,Antibiotic,Antibiotic,1.00,bioportal
+Antioxidant Activity,1,GO:0016209,GO,antioxidant activity,antioxidant activity,1.00,bioportal
+Antioxidant Activity,2,MESH:D000975,MESH,Antioxidants,Antioxidant Activity,1.00,bioportal
+Antioxidant Activity,3,TO:0001143,TO,antioxidant activity trait,antioxidant activity trait,0.83,local
+Application Method,1,AGRO:00000036,AGRO,application method,application method,1.00,bioportal
+Arg,1,NCIT:C62008,NCIT,Arginine,Arg,1.00,bioportal
+Arg,2,NCIT:C16305,NCIT,Argentina,ARG,1.00,bioportal
+Arg,3,CHEBI:73811,CHEBI,Arg-Arg,Arg-Arg,0.80,bioportal
+Arsenic,1,MESH:D001151,MESH,Arsenic,Arsenic,1.00,bioportal
+Arsenic,2,SNOMEDCT:47809000,SNOMEDCT,Arsenic,Arsenic,1.00,bioportal
+Arsenic,3,NCIT:C28131,NCIT,Arsenic,Arsenic,1.00,bioportal
+Arsenic,4,CHEBI:749655,CHEBI,arsenic,arsenic,1.00,bioportal
+Arsenic,5,NCIT:C68234,NCIT,Dietary Arsenic,Arsenic,1.00,bioportal
+Ascorbate,1,CHEBI:22651,CHEBI,ascorbate,ascorbate,1.00,bioportal
+Ascorbate,2,NCIT:C74903,NCIT,Vitamin C Measurement,Ascorbate,1.00,bioportal
+Ascorbate,3,MESH:D001204,MESH,Ascorbate Oxidase,Ascorbase,0.94,bioportal
+Ascorbate,4,SNOMEDCT:84547006,SNOMEDCT,L-Ascorbate oxidase,Ascorbase,0.94,bioportal
+Azospirillum,1,MESH:D016949,MESH,Azospirillum,Azospirillum,1.00,bioportal
+Azospirillum,2,SNOMEDCT:413607005,SNOMEDCT,Azospirillum,Azospirillum,1.00,bioportal
+Azospirillum,3,NCBITAXON:191,NCBITAXON,Azospirillum,Azospirillum,1.00,bioportal
+Azotobacter,1,MESH:D001395,MESH,Azotobacter,Azotobacter,1.00,bioportal
+Azotobacter,2,SNOMEDCT:396938009,SNOMEDCT,Azotobacter,Azotobacter,1.00,bioportal
+Azotobacter,3,NCBITAXON:352,NCBITAXON,Azotobacter,Azotobacter,1.00,bioportal
+Bacillota,1,MESH:D000068536,MESH,Bacillota,Bacillota,1.00,bioportal
+Bacillota,2,SNOMEDCT:115195009,SNOMEDCT,Bacillota,Bacillota,1.00,bioportal
+Bacillota,3,NCIT:C209444,NCIT,Bacillota,Bacillota,1.00,bioportal
+Bacillota,4,NCBITAXON:1239,NCBITAXON,Bacillota,Bacillota,1.00,bioportal
+Bacillota,5,NCIT:C209634,NCIT,Bacillota Measurement,Bacillota,1.00,bioportal
+Bacteroides Fragilis,1,MESH:D001441,MESH,Bacteroides fragilis,Bacteroides fragilis,1.00,bioportal
+Bacteroides Fragilis,2,SNOMEDCT:55247009,SNOMEDCT,Bacteroides fragilis,Bacteroides fragilis,1.00,bioportal
+Bacteroides Fragilis,3,NCIT:C86172,NCIT,Bacteroides fragilis,Bacteroides fragilis,1.00,bioportal
+Bacteroides Fragilis,4,NCBITAXON:817,NCBITAXON,Bacteroides fragilis,Bacteroides fragilis,1.00,bioportal
+Bacteroides Fragilis,5,SNOMEDCT:121001000,SNOMEDCT,Bacteroides fragilis antigen,Bacteroides fragilis Ag,0.86,bioportal
+Bacteroides Fragilis,6,MESH:C405031,MESH,Bacteroides fragilis toxin,Bacteroides fragilis toxin,0.83,bioportal
+Bacteroides Fragilis,7,NCIT:C86173,NCIT,Bacteroides fragilis Group,Bacteroides fragilis Group,0.83,bioportal
+Bacteroides Fragilis,8,NCBITaxon:295405,NCBITAXON,Bacteroides fragilis YCH46,Bacteroides fragilis YCH46,0.83,bioportal
+Bacteroides Fragilis,9,ECTO:3000068,ECTO,exposure to Bacteroides fragilis,exposure to Bacteroides fragilis,0.80,bioportal
+Bacteroides Thetaiotaomicron,1,MESH:D000070077,MESH,Bacteroides thetaiotaomicron,Bacteroides thetaiotaomicron,1.00,bioportal
+Bacteroides Thetaiotaomicron,2,SNOMEDCT:34236001,SNOMEDCT,Bacteroides thetaiotaomicron,Bacteroides thetaiotaomicron,1.00,bioportal
+Bacteroides Thetaiotaomicron,3,NCIT:C86179,NCIT,Bacteroides thetaiotaomicron,Bacteroides thetaiotaomicron,1.00,bioportal
+Bacteroides Thetaiotaomicron,4,NCBITAXON:818,NCBITAXON,Bacteroides thetaiotaomicron,Bacteroides thetaiotaomicron,1.00,bioportal
+Bacteroides Thetaiotaomicron,5,ECTO:3000033,ECTO,exposure to Bacteroides thetaiotaomicron,exposure to Bacteroides thetaiotaomicron,0.83,bioportal
+Bacteroidota,1,NCBITAXON:976,NCBITAXON,Bacteroidota,Bacteroidota,1.00,bioportal
+Beta Diversity,1,PCO:0000075,PCO,beta diversity,beta diversity,1.00,bioportal
+Beta Diversity,2,OHMI:0000472,OHMI,obsolete beta diversity,true beta diversity,0.82,bioportal
+Beta-Glucan,1,SNOMEDCT:440561000124100,SNOMEDCT,Beta glucan,Beta glucan,1.00,bioportal
+Beta-Glucan,2,NCIT:C2678,NCIT,Beta-Glucan,Beta-Glucan,1.00,bioportal
+Beta-Glucan,3,MESH:D047071,MESH,beta-Glucans,beta-Glucans,1.00,bioportal
+Beta-Glucan,4,CHEBI:28793,CHEBI,beta-D-glucan,beta-Glucan,0.90,local
+Beta-Glucan,5,MESH:C569927,MESH,IS2 beta-glucan,IS2 beta-glucan,0.82,bioportal
+Beta-Lactam/Beta-Lactamase Inhibitor,1,ARO:3007130,ARO,beta-lactam derived beta-lactamase inhibitor,beta-lactam derived beta-lactamase inhibitor,0.90,bioportal
+Bevavioural Observation,1,SNOMEDCT:273315001,SNOMEDCT,Behavioral observation schedule,Behavioural observation schedule,0.80,bioportal
+Bifidobacterium,1,MESH:D001644,MESH,Bifidobacterium,Bifidobacterium,1.00,bioportal
+Bifidobacterium,2,SNOMEDCT:5912005,SNOMEDCT,Bifidobacterium,Bifidobacterium,1.00,bioportal
+Bifidobacterium,3,NCIT:C86194,NCIT,Bifidobacterium,Bifidobacterium,1.00,bioportal
+Bifidobacterium,4,NCBITAXON:1678,NCBITAXON,Bifidobacterium,Bifidobacterium,1.00,bioportal
+Bifidobacterium Adolescentis,1,MESH:D000070005,MESH,Bifidobacterium adolescentis,Bifidobacterium adolescentis,1.00,bioportal
+Bifidobacterium Adolescentis,2,SNOMEDCT:34446001,SNOMEDCT,Bifidobacterium adolescentis,Bifidobacterium adolescentis,1.00,bioportal
+Bifidobacterium Adolescentis,3,NCIT:C86195,NCIT,Bifidobacterium adolescentis,Bifidobacterium adolescentis,1.00,bioportal
+Bifidobacterium Adolescentis,4,NCBITAXON:1680,NCBITAXON,Bifidobacterium adolescentis,Bifidobacterium adolescentis,1.00,bioportal
+Biomarker,1,NCIT:C16342,NCIT,Biomarker,Biomarker,1.00,bioportal
+Biomarker,2,CHEBI:59163,CHEBI,biomarker,biomarker,1.00,bioportal
+Biomarker,3,MESH:D015415,MESH,Biomarkers,Biomarkers,1.00,bioportal
+Biome,1,ENVO:00000428,ENVO,biome,biome,1.00,bioportal
+Biome,2,SWEET:Biome,SWEET,biome,biome,1.00,bioportal
+Biome,3,MESH:D017753,MESH,Ecosystem,Biomes,1.00,bioportal
+Black Carbon,1,SNOMEDCT:3849002,SNOMEDCT,Carbon black,Carbon black,1.00,bioportal
+Black Carbon,2,CHEBI:82297,CHEBI,carbon black,carbon black,1.00,bioportal
+Black Carbon,3,SWEET:BlackCarbon,SWEET,black carbon,black carbon,1.00,bioportal
+Bloodstream Infection,1,SNOMEDCT:431193003,SNOMEDCT,Infection of bloodstream,Infection of bloodstream,1.00,bioportal
+Bloodstream Infection,2,MESH:D018805,MESH,Sepsis,Bloodstream Infection,1.00,bioportal
+Buffalo,1,FOODON:03411476,FOODON,buffalo,buffalo,1.00,bioportal
+Buffalo,2,MESH:D002020,MESH,Buffaloes,Buffalo,1.00,bioportal
+Buffalo,3,SNOMEDCT:424878006,SNOMEDCT,Bison bison,Buffalo,1.00,bioportal
+Buffalo,4,NCIT:C14396,NCIT,"BUF, Rat Strain",BUFFALO,1.00,bioportal
+Bulk Soil,1,ENVO:00005802,ENVO,bulk soil,bulk soil,1.00,bioportal
+Butyrate,1,CHEBI:17968,CHEBI,butyrate,butyrate,1.00,bioportal
+Butyrate,2,MESH:D002087,MESH,Butyrates,Butyrates,1.00,bioportal
+Butyrate,3,NCIT:C68327,NCIT,Butyric Acid,Butyrate,1.00,bioportal
+Butyrate,4,NCIT:C2337,NCIT,Sodium Butyrate,Butyrate,1.00,bioportal
+Butyricicoccus,1,NCBITAXON:580596,NCBITAXON,Butyricicoccus,Butyricicoccus,1.00,bioportal
+Cadmium,1,MESH:D002104,MESH,Cadmium,Cadmium,1.00,bioportal
+Cadmium,2,SNOMEDCT:66586000,SNOMEDCT,Cadmium,Cadmium,1.00,bioportal
+Cadmium,3,NCIT:C44348,NCIT,Cadmium,Cadmium,1.00,bioportal
+Calvin-Benson-Bassham Cycle,1,MESH:D010788,MESH,Photosynthesis,Calvin Benson Bassham Cycle,1.00,bioportal
+Carbapenem,1,SNOMEDCT:396345004,SNOMEDCT,Carbapenem,Carbapenem,1.00,bioportal
+Carbapenem,2,CHEBI:46765,CHEBI,carbapenem,carbapenem,1.00,bioportal
+Carbapenem,3,ARO:0000020,ARO,carbapenem,carbapenem,1.00,bioportal
+Carbapenem,4,MESH:D015780,MESH,Carbapenems,Carbapenems,1.00,bioportal
+Carbapenemase,1,MESH:C063912,MESH,carbapenemase,carbapenemase,1.00,bioportal
+Carbon Cycling,1,ENVO:02500010,ENVO,carbon cycling,carbon cycling,1.00,bioportal
+Carbonic Anhydrase,1,MESH:D024401,MESH,Carbonic Anhydrase I,Carbonic Anhydrase I,0.87,bioportal
+Carbonic Anhydrase,2,MESH:D024404,MESH,Carbonic Anhydrase V,Carbonic Anhydrase V,0.87,bioportal
+Carbonic Anhydrase,3,NCIT:C104052,NCIT,Carbonic Anhydrase 9,Carbonic Anhydrase 9,0.87,bioportal
+Carbonic Anhydrase,4,NCIT:C183174,NCIT,Carbonic Anhydrase 2,Carbonic Anhydrase 2,0.87,bioportal
+Carbonic Anhydrase,5,EFO:EFO_0010161,EFO,carbonic anhydrase 2,carbonic anhydrase 2,0.87,bioportal
+Carbonyl Compounds,1,MESH:D054354,MESH,Iron Carbonyl Compounds,Iron Carbonyl Compounds,0.84,bioportal
+Carboxysome,1,GO:0031470,GO,carboxysome,carboxysome,1.00,bioportal
+Cardiovascular Disease,1,SWEET:CardiovascularDisease,SWEET,cardiovascular disease,cardiovascular disease,1.00,bioportal
+Cardiovascular Disease,2,MESH:D002318,MESH,Cardiovascular Diseases,Cardiovascular Diseases,1.00,bioportal
+Cardiovascular Disease,3,SNOMEDCT:49601007,SNOMEDCT,Disorder of cardiovascular system,Cardiovascular disease,1.00,bioportal
+Cardiovascular Disease,4,SNOMEDCT:266894000,SNOMEDCT,FH: Cardiovascular disease,FH: Cardiovascular disease,0.87,bioportal
+Cardiovascular Disease,5,DOID:1287,DOID,cardiovascular system disease,cardiovascular system disease,0.83,bioportal
+Carotenoids,1,NCIT:C351,NCIT,Carotenoid,Carotenoid,1.00,bioportal
+Carotenoids,2,CHEBI:23044,CHEBI,carotenoid,carotenoid,1.00,bioportal
+Carotenoids,3,MESH:D002338,MESH,Carotenoids,Carotenoids,1.00,bioportal
+Cat Gene,1,NCIT:C19450,NCIT,cat Gene,cat Gene,1.00,bioportal
+Cat Gene,2,NCIT:C61060,NCIT,CAT Gene,CAT Gene,1.00,bioportal
+Cattle,1,MESH:D002417,MESH,Cattle,Cattle,1.00,bioportal
+Cattle,2,NCIT:C14192,NCIT,Cow,Cattle,1.00,bioportal
+Cattle,3,NCBITaxon:9903,NCBITAXON,Bos,cattle,1.00,bioportal
+Cattle,4,NCBITaxon:9913,NCBITAXON,Bos taurus,cattle,1.00,bioportal
+Cell Count,1,MESH:D002452,MESH,Cell Count,Cell Count,1.00,bioportal
+Cell Count,2,SNOMEDCT:118218001,SNOMEDCT,Cell count,Cell count,1.00,bioportal
+Cell Count,3,NCIT:C48938,NCIT,Cell Count,Cell Count,1.00,bioportal
+Cell Count,4,NCIT:C74700,NCIT,Bite Cell Count,Bite Cell Count,0.80,bioportal
+Cell-Free Dna,1,SNOMEDCT:726740008,SNOMEDCT,Cell free DNA,Cell free DNA,1.00,bioportal
+Cell-Free Dna,2,MESH:D000073888,MESH,Cell-Free Nucleic Acids,Cell-Free DNA,1.00,bioportal
+Cell-Free Dna,3,NCIT:C128274,NCIT,Circulating Cell-Free DNA,Cell Free DNA,1.00,bioportal
+Cell-Free Dna,4,NCIT:C156117,NCIT,Cell-Free DNA Blood Collection Tube,Cell-Free DNA BCT,0.86,bioportal
+Cell-Free Dna,5,SNOMEDCT:726741007,SNOMEDCT,Maternal cell free DNA,Maternal cell free DNA,0.80,bioportal
+Cephalosporin,1,SNOMEDCT:764147003,SNOMEDCT,Cephalosporin,Cephalosporin,1.00,bioportal
+Cephalosporin,2,CHEBI:23066,CHEBI,cephalosporin,cephalosporin,1.00,bioportal
+Cephalosporin,3,ARO:0000032,ARO,cephalosporin,cephalosporin,1.00,bioportal
+Cephalosporin,4,MESH:D002511,MESH,Cephalosporins,Cephalosporins,1.00,bioportal
+Cephalosporin,5,NCIT:C357,NCIT,Cephalosporin Antibiotic,cephalosporin,1.00,bioportal
+Cfu,1,SNOMEDCT:258883008,SNOMEDCT,cfu/g,cfu/g,1.00,bioportal
+Cfu,2,NCIT:C68742,NCIT,Colony Forming Unit,CFU,1.00,bioportal
+Cfu,3,NCIT:C68898,NCIT,Colony Forming Unit per Gram,CFU/g,1.00,bioportal
+Cfu,4,SNOMEDCT:445399000,SNOMEDCT,Colony-forming unit of erythroid lineage,CFU-E,1.00,bioportal
+Chemotherapy-Induced Mucositis,1,EFO:EFO_1001880,EFO,chemotherapy-induced gastrointestinal mucositis,chemotherapy-induced mucositis (CIM),0.90,bioportal
+Chemotherapy-Induced Mucositis,2,MONDO:0005588,MONDO,chemotherapy-induced oral mucositis,chemotherapy-induced oral mucositis,0.89,bioportal
+Chemotroph,1,SFWO:0000000,SFWO,chemotroph,chemotroph,1.00,local
+Chemotroph,2,MIXS:chemotroph,MIXS,chemotroph,chemotroph,1.00,bioportal
+Chlorella,1,MESH:D002708,MESH,Chlorella,Chlorella,1.00,bioportal
+Chlorella,2,SNOMEDCT:785857004,SNOMEDCT,Chlorella,Chlorella,1.00,bioportal
+Chlorella,3,NCBITAXON:3071,NCBITAXON,Chlorella,Chlorella,1.00,bioportal
+Chloroflexi,1,MESH:D041862,MESH,Chloroflexi,Chloroflexi,1.00,bioportal
+Chloroflexi,2,NCBITaxon:200795,NCBITAXON,Chloroflexi,Chloroflexi,1.00,bioportal
+Chloroflexi,3,NCBITaxon:32061,NCBITAXON,Chloroflexia,Chloroflexi,1.00,bioportal
+Chloroflexi,4,SNOMEDCT:426414005,SNOMEDCT,Phylum Chloroflexi,Chloroflexi,1.00,bioportal
+Chlorophyll A,1,MESH:D000077194,MESH,Chlorophyll A,Chlorophyll A,1.00,bioportal
+Chlorophyll A,2,CHEBI:18230,CHEBI,chlorophyll a,chlorophyll a,1.00,bioportal
+Chlorophyll A,3,MESH:C085815,MESH,chlorophyll a',chlorophyll a',1.00,bioportal
+Chlorophyll A,4,CHEBI:189419,CHEBI,chlorophyll a',chlorophyll a',1.00,bioportal
+Chromium,1,MESH:D002857,MESH,Chromium,Chromium,1.00,bioportal
+Chromium,2,SNOMEDCT:111070004,SNOMEDCT,Chromium,Chromium,1.00,bioportal
+Chromium,3,NCIT:C370,NCIT,Chromium,Chromium,1.00,bioportal
+Chromium,4,CHEBI:749398,CHEBI,chromium,chromium,1.00,bioportal
+Chromium,5,NCIT:C68245,NCIT,Dietary Chromium,Chromium,1.00,bioportal
+Clay,1,glosis_lh:Clay,GLOSIS,Clay,Clay,1.00,local
+Clay,2,glosis_res:coatingNatureValueCode-C,GLOSIS,Clay,Clay,1.00,local
+Clay,3,MESH:D000077215,MESH,Clay,Clay,1.00,bioportal
+Clay,4,MIXS:clay,MIXS,clay,clay,1.00,bioportal
+Clay,5,ENVO:00002982,ENVO,clay,clay,1.00,bioportal
+Clay,6,SWEET:Clay,SWEET,clay,clay,1.00,bioportal
+Clostridium,1,MESH:D003013,MESH,Clostridium,Clostridium,1.00,bioportal
+Clostridium,2,SNOMEDCT:8191000,SNOMEDCT,Clostridium,Clostridium,1.00,bioportal
+Clostridium,3,NCIT:C76275,NCIT,Clostridium,Clostridium,1.00,bioportal
+Clostridium,4,NCBITAXON:1485,NCBITAXON,Clostridium,Clostridium,1.00,bioportal
+Clostridium Scindens,1,SNOMEDCT:56316008,SNOMEDCT,Clostridium scindens,Clostridium scindens,1.00,bioportal
+Clostridium Scindens,2,MESH:C000649264,MESH,Clostridium scindens,Clostridium scindens,1.00,bioportal
+Clostridium Scindens,3,NCBITAXON:29347,NCBITAXON,[Clostridium] scindens,[Clostridium] scindens,1.00,bioportal
+Cloud Droplets,1,ENVO:01000835,ENVO,cloud droplet,cloud droplet,1.00,bioportal
+Cloud Formation,1,ENVO:01001083,ENVO,cloud formation process,cloud formation,1.00,bioportal
+Cloud Water,1,ENVO:03600081,ENVO,cloud water,cloud water,1.00,bioportal
+Coastal Water,1,SNOMEDCT:257589004,SNOMEDCT,Coastal water,Coastal water,1.00,bioportal
+Coastal Water,2,ENVO:00002150,ENVO,coastal sea water,coastal water,1.00,bioportal
+Coastal Water,3,ENVO:02000049,ENVO,coastal water body,coastal water body,0.82,bioportal
+Cog,1,NCIT:C16467,NCIT,Congo,COG,1.00,bioportal
+Cog,2,NCIT:C39353,NCIT,Children's Oncology Group,COG,1.00,bioportal
+Cohort,1,NCIT:C61512,NCIT,Cohort,Cohort,1.00,bioportal
+Cohort,2,BIOLINK:cohort,BIOLINK,cohort,cohort,1.00,bioportal
+Cohort,3,EFO:EFO_0004445,EFO,cohort,cohort,1.00,bioportal
+Cohort,4,CHEAR:Cohort,CHEAR,cohort,cohort,1.00,bioportal
+Cohort,5,ExO:0000120,EXO,cohort,cohort,1.00,bioportal
+Cohort,6,HHEAR:Cohort,HHEAR,cohort,cohort,1.00,bioportal
+Cohort,7,NCIT:C218489,NCIT,By Cohort,By Cohort,1.00,bioportal
+Cohort,8,CHEBI:34935,CHEBI,propyzamide,Cohort,1.00,bioportal
+Collection Method,1,GENEPIO:0001241,GENEPIO,collection method,collection method,1.00,bioportal
+Collection Method,2,SNOMEDCT:246380002,SNOMEDCT,Method of collection,Method of collection,1.00,bioportal
+Collection Method,3,MESH:D003625,MESH,Data Collection,Data Collection Methods,0.84,bioportal
+Colon,1,MESH:D003106,MESH,Colon,Colon,1.00,bioportal
+Colon,2,NCIT:C12382,NCIT,Colon,Colon,1.00,bioportal
+Colon,3,NCBITAXON:1542223,NCBITAXON,Colon,Colon,1.00,bioportal
+Colon,4,UBERON:0001155,UBERON,colon,colon,1.00,bioportal
+Colon,5,SNOMEDCT:71854001,SNOMEDCT,Colon structure,Colon,1.00,bioportal
+Colorectal Cancer,1,DOID:9256,DOID,colorectal cancer,colorectal cancer,1.00,bioportal
+Colorectal Cancer,2,MONDO:0005575,MONDO,colorectal cancer,colorectal cancer,1.00,bioportal
+Colorectal Cancer,3,NCIT:C91466,NCIT,Colorectal Cancer Pathway,Colorectal cancer,1.00,bioportal
+Colorectal Cancer,4,NCIT:C60855,NCIT,Colorectal Cancer pM0 TNM Finding,pM0 Colorectal Cancer,0.85,bioportal
+Colorectal Cancer,5,SNOMEDCT:737058005,SNOMEDCT,Microsatellite instability-high colorectal cancer,dMMR colorectal cancer,0.84,bioportal
+Competition,1,CHEAR:CAO_00204,CHEAR,Competition,Competition,1.00,bioportal
+Competition,2,SWEET:Competition,SWEET,competition,competition,1.00,bioportal
+Conjugative Plasmid,1,SNOMEDCT:65783004,SNOMEDCT,Conjugative plasmid,Conjugative plasmid,1.00,bioportal
+Consortium,1,NCIT:C61538,NCIT,Consortium,Consortium,1.00,bioportal
+Consortium,2,SCHEMA:Consortium,SCHEMA,Consortium,Consortium,1.00,bioportal
+Consortium,3,NCIT:C19975,NCIT,Consortium or Network,Consortium,1.00,bioportal
+Copper,1,MESH:D003300,MESH,Copper,Copper,1.00,bioportal
+Copper,2,SNOMEDCT:66925006,SNOMEDCT,Copper,Copper,1.00,bioportal
+Copper,3,NCIT:C391,NCIT,Copper,Copper,1.00,bioportal
+Copper,4,CHEBI:748257,CHEBI,copper,copper,1.00,bioportal
+Cumulus,1,SWEET:Cumulus,SWEET,cumulus,cumulus,1.00,bioportal
+Cyanobacteria,1,ECOCORE:00000077,ECOCORE,cyanobacteria,cyanobacteria,1.00,bioportal+local
+Cyanobacteria,2,MESH:D000458,MESH,Cyanobacteria,Cyanobacteria,1.00,bioportal
+Cyanobacteria,3,NCIT:C209656,NCIT,Cyanobacteria,Cyanobacteria,1.00,bioportal
+Cyanobacteria,4,NCBITaxon:1117,NCBITAXON,Cyanobacteria,Cyanobacteria,1.00,bioportal
+Cyanobacteria,5,SNOMEDCT:415101005,SNOMEDCT,Cyanobacteriota,Cyanobacteria,1.00,bioportal
+Cyanobacteria,6,NCIT:C209639,NCIT,Cyanobacteria Measurement,Cyanobacteria,1.00,bioportal
+Database,1,MESH:D019991,MESH,Database,Database,1.00,bioportal
+Database,2,NCIT:C15426,NCIT,Database,Database,1.00,bioportal
+Database,3,SIO:SIO_000750,SIO,database,database,1.00,bioportal
+Database,4,CHEAR:SIO_000750,CHEAR,database,database,1.00,bioportal
+Database,5,NCIT:C115688,NCIT,TMF-RM Database Section,Database,1.00,bioportal
+Day,1,SNOMEDCT:258703001,SNOMEDCT,day,day,1.00,bioportal
+Day,2,NCIT:C25301,NCIT,Day,Day,1.00,bioportal
+Day,3,OBOE:Day,OBOE,Day,Day,1.00,bioportal
+Day,4,ENVO:01003005,ENVO,day,day,1.00,bioportal
+Day,5,SIO:SIO_000430,SIO,day,day,1.00,bioportal
+Day,6,SNOMEDCT:259032004,SNOMEDCT,/day,/day,1.00,bioportal
+Day,7,NCIT:C210882,NCIT,Land Dayak Languages,DAY,1.00,bioportal
+Deoxycholate,1,SNOMEDCT:434444004,SNOMEDCT,Deoxycholate,Deoxycholate,1.00,bioportal
+Deoxycholate,2,CHEBI:23614,CHEBI,deoxycholate,deoxycholate,1.00,bioportal
+Deoxycholate,3,MESH:D003840,MESH,Deoxycholic Acid,Deoxycholate,1.00,bioportal
+Deoxycholate,4,NCIT:C172500,NCIT,Deoxycholate Measurement,Deoxycholate,1.00,bioportal
+Desiccation Tolerance,1,GO:0009269,GO,response to desiccation,desiccation tolerance,1.00,bioportal
+Desiccation Tolerance,2,GO:0071465,GO,cellular response to desiccation,desiccation tolerance,1.00,bioportal
+Diatoms,1,MESH:D017377,MESH,Diatoms,Diatoms,1.00,bioportal
+Diatoms,2,NCBITaxon:2836,NCBITAXON,Bacillariophyta,diatoms,1.00,bioportal
+Diet,1,SFWO:0000475,SFWO,diet,diet,1.00,local
+Diet,2,MESH:D004032,MESH,Diet,Diet,1.00,bioportal
+Diet,3,NCIT:C15222,NCIT,Diet,Diet,1.00,bioportal
+Diet,4,EFO:EFO_0002755,EFO,diet,diet,1.00,bioportal
+Diet,5,NCIT:C90364,NCIT,Basal Diet,DIET,1.00,bioportal
+Diet,6,SNOMEDCT:41829006,SNOMEDCT,Dietary finding,Diet,1.00,bioportal
+Dimethyl Sulfide,1,MESH:C004784,MESH,dimethyl sulfide,dimethyl sulfide,1.00,bioportal
+Dimethyl Sulfide,2,CHEBI:17437,CHEBI,dimethyl sulfide,dimethyl sulfide,1.00,bioportal
+Dimethyl Sulfide,3,MESH:C051751,MESH,diethyl sulfide,diethyl sulfide,0.98,bioportal
+Disease Relapse,1,NCIT:C38155,NCIT,Recurrent Disease,DISEASE RELAPSE,1.00,bioportal
+Dissolved Oxygen,1,SWEET:DissolvedOxygen,SWEET,dissolved oxygen,dissolved oxygen,1.00,bioportal
+Dissolved Oxygen,2,SNOMEDCT:250560003,SNOMEDCT,Measurement of oxygen dissolved in blood,Oxygen dissolved in blood,0.82,bioportal
+Dividing Cell,1,SNOMEDCT:35853008,SNOMEDCT,Dividing cell,Dividing cell,1.00,bioportal
+Dominance,1,SWEET:Dominance,SWEET,dominance,dominance,1.00,bioportal
+Dosage,1,SNOMEDCT:260911001,SNOMEDCT,Dosage,Dosage,1.00,bioportal
+Dosage,2,SWEET:Dosage,SWEET,dosage,dosage,1.00,bioportal
+Dosage,3,NCIT:C25488,NCIT,Dose,Dosage,1.00,bioportal
+Dosage,4,NCIT:C94394,NCIT,Cumulative Dose,dosage,1.00,bioportal
+Drought,1,SNOMEDCT:1287815006,SNOMEDCT,Drought,Drought,1.00,bioportal
+Drought,2,MIXS:drought,MIXS,drought,drought,1.00,bioportal
+Drought,3,ENVO:1000745,ENVO,drought,drought,1.00,bioportal
+Drought,4,SWEET:Drought,SWEET,drought,drought,1.00,bioportal
+Drought,5,MESH:D055864,MESH,Droughts,Droughts,1.00,bioportal
+Effect Size,1,NCIT:C209463,NCIT,Effect Size Measurement,effect size,1.00,bioportal
+Eggerthella Lenta,1,MESH:C000650378,MESH,Eggerthella lenta,Eggerthella lenta,1.00,bioportal
+Eggerthella Lenta,2,SNOMEDCT:414077004,SNOMEDCT,Eggerthella lenta,Eggerthella lenta,1.00,bioportal
+Eggerthella Lenta,3,NCIT:C86349,NCIT,Eggerthella lenta,Eggerthella lenta,1.00,bioportal
+Eggerthella Lenta,4,NCBITAXON:84112,NCBITAXON,Eggerthella lenta,Eggerthella lenta,1.00,bioportal
+Electric Conductivity,1,MESH:D004553,MESH,Electric Conductivity,Electric Conductivity,1.00,bioportal
+Electric Conductivity,2,glosis_prop:physioChemicalPropertyCode-Eleccond,GLOSIS,Electrical conductivity,Electrical conductivity,0.98,local
+Electric Conductivity,3,SNOMEDCT:468605001,SNOMEDCT,Electrical conductivity meter,Electrical conductivity meter,0.82,bioportal
+Enterocloster,1,SNOMEDCT:1162475009,SNOMEDCT,Enterocloster,Enterocloster,1.00,bioportal
+Enterocloster,2,NCBITAXON:2719313,NCBITAXON,Enterocloster,Enterocloster,1.00,bioportal
+Environment,1,MESH:D004777,MESH,Environment,Environment,1.00,bioportal
+Environment,2,SNOMEDCT:276339004,SNOMEDCT,Environment,Environment,1.00,bioportal
+Environment,3,NCIT:C16551,NCIT,Environment,Environment,1.00,bioportal
+Environment,4,SIO:SIO_000955,SIO,environment,environment,1.00,bioportal
+Environment,5,ENVO:01000254,ENVO,environmental system,environment,1.00,local
+Environment,6,NCIT:C212606,NCIT,Environment Service Type,Environment,1.00,bioportal
+Enzyme,1,SNOMEDCT:734543001,SNOMEDCT,Enzyme,Enzyme,1.00,bioportal
+Enzyme,2,SNOMEDCT:90668006,SNOMEDCT,Enzyme,Enzyme,1.00,bioportal
+Enzyme,3,NCIT:C16554,NCIT,Enzyme,Enzyme,1.00,bioportal
+Enzyme,4,MESH:T126,MESH,Enzyme,Enzyme,1.00,bioportal
+Enzyme,5,NCBITAXON:T126,NCBITAXON,Enzyme,Enzyme,1.00,bioportal
+Enzyme,6,OBI:0000427,OBI,enzyme,enzyme,1.00,bioportal
+Enzyme,7,MESH:D004798,MESH,Enzymes,Enzymes,1.00,bioportal
+Enzymes,1,NCIT:C16554,NCIT,Enzyme,Enzyme,1.00,bioportal
+Enzymes,2,MESH:D004798,MESH,Enzymes,Enzymes,1.00,bioportal
+Enzymes,3,BERO:topic_0821,BERO,Enzymes,Enzymes,1.00,bioportal
+Enzymes,4,MESH:Q000201,MESH,enzymology,enzymes,1.00,bioportal
+Equol,1,MESH:D060754,MESH,Equol,Equol,1.00,bioportal
+Equol,2,CHEBI:34741,CHEBI,equol,equol,1.00,bioportal
+Equol,3,NCIT:C120313,NCIT,S-equol,(-)-Equol,1.00,bioportal
+Ergosterol,1,MESH:D004875,MESH,Ergosterol,Ergosterol,1.00,bioportal
+Ergosterol,2,SNOMEDCT:116934003,SNOMEDCT,Ergosterol,Ergosterol,1.00,bioportal
+Ergosterol,3,NCIT:C83810,NCIT,Ergosterol,Ergosterol,1.00,bioportal
+Ergosterol,4,CHEBI:16933,CHEBI,ergosterol,ergosterol,1.00,bioportal
+Escherichia Coli,1,MESH:D004926,MESH,Escherichia coli,Escherichia coli,1.00,bioportal
+Escherichia Coli,2,SNOMEDCT:112283007,SNOMEDCT,Escherichia coli,Escherichia coli,1.00,bioportal
+Escherichia Coli,3,NCIT:C14206,NCIT,Escherichia coli,Escherichia coli,1.00,bioportal
+Escherichia Coli,4,NCBITAXON:562,NCBITAXON,Escherichia coli,Escherichia coli,1.00,bioportal
+Escherichia Coli,5,NCIT:C34594,NCIT,Escherichia coli Infection,Escherichia coli,1.00,bioportal
+Escherichia Coli,6,SNOMEDCT:25671000087101,SNOMEDCT,Escherichia coli antigen,Escherichia coli Ag,0.86,bioportal
+Escherichia Coli,7,MESH:D048168,MESH,Escherichia coli K12,Escherichia coli K12,0.84,bioportal
+Ethnicity,1,MESH:D005006,MESH,Ethnicity,Ethnicity,1.00,bioportal
+Ethnicity,2,CHEAR:Ethnicity,CHEAR,Ethnicity,Ethnicity,1.00,bioportal
+Ethnicity,3,SIO:SIO_001014,SIO,ethnicity,ethnicity,1.00,bioportal
+Ethnicity,4,CHEAR:SIO_001014,CHEAR,ethnicity,ethnicity,1.00,bioportal
+Ethnicity,5,HHEAR:SIO_001014,HHEAR,ethnicity,ethnicity,1.00,bioportal
+Ethnicity,6,MESH:Q000208,MESH,ethnology,ethnicity,1.00,bioportal
+Ethnicity,7,NCIT:C16564,NCIT,Ethnic Group,ETHNICITY,1.00,bioportal
+Ethnicity,8,EFO:EFO_0001799,EFO,ethnic group,Ethnicity,1.00,bioportal
+Ethnicity,9,SNOMEDCT:397731000,SNOMEDCT,Ethnic group finding,Ethnicity,1.00,bioportal
+Eubacterium Rectale,1,NCIT:C86388,NCIT,Eubacterium rectale,Eubacterium rectale,1.00,bioportal
+Eubacterium Rectale,2,NCBITaxon:39491,NCBITAXON,[Eubacterium] rectale,[Eubacterium] rectale,1.00,bioportal
+Exopolysaccharides,1,CHEBI:72813,CHEBI,exopolysaccharide,exopolysaccharide,1.00,bioportal
+Exposure Duration,1,NCIT:C83280,NCIT,Exposure Duration,Exposure Duration,1.00,bioportal
+Exposure Duration,2,NCIT:C185254,NCIT,Exposure Duration Years,Exposure Duration Years,0.84,bioportal
+Exposure Source,1,NCIT:C188372,NCIT,Exposure Source Indicator,exposure source,1.00,bioportal
+Exposure Source,2,GENEPIO:0001276,GENEPIO,water exposure by source,water exposure by source,0.82,bioportal
+Extreme Weather,1,MESH:D000080165,MESH,Extreme Weather,Extreme Weather,1.00,bioportal
+Extreme Weather,2,MESH:D055874,MESH,Extreme Heat,Extreme Hot Weather,0.84,bioportal
+Faecalibacterium Prausnitzii,1,MESH:D000070037,MESH,Faecalibacterium prausnitzii,Faecalibacterium prausnitzii,1.00,bioportal
+Faecalibacterium Prausnitzii,2,SNOMEDCT:433993006,SNOMEDCT,Faecalibacterium prausnitzii,Faecalibacterium prausnitzii,1.00,bioportal
+Faecalibacterium Prausnitzii,3,NCIT:C86394,NCIT,Faecalibacterium prausnitzii,Faecalibacterium prausnitzii,1.00,bioportal
+Faecalibacterium Prausnitzii,4,NCBITAXON:853,NCBITAXON,Faecalibacterium prausnitzii,Faecalibacterium prausnitzii,1.00,bioportal
+Fermented Vegetables,1,NCIT:C192847,NCIT,Salt Fermented Vegetable,Salt Fermented Vegetable,0.84,bioportal
+Filtering,1,CHEAR:CAO_00293,CHEAR,Filtering,Filtering,1.00,bioportal
+Fluoroquinolone,1,SNOMEDCT:838284008,SNOMEDCT,Fluoroquinolone,Fluoroquinolone,1.00,bioportal
+Fluoroquinolone,2,MESH:D024841,MESH,Fluoroquinolones,Fluoroquinolones,1.00,bioportal
+Fluoroquinolone,3,NCIT:C126712,NCIT,Fluoroquinolone Antibiotic,Fluoroquinolone,1.00,bioportal
+Fluoroquinolone,4,ARO:0000001,ARO,fluoroquinolone antibiotic,fluoroquinolone,1.00,bioportal
+Fold Change,1,NCIT:C60693,NCIT,Fold Change,Fold Change,1.00,bioportal
+Fold Change,2,NCIT:C228996,NCIT,Circulating Tumor DNA Fold Change,Fold change,1.00,bioportal
+Formaldehyde,1,MESH:D005557,MESH,Formaldehyde,Formaldehyde,1.00,bioportal
+Formaldehyde,2,SNOMEDCT:111095003,SNOMEDCT,Formaldehyde,Formaldehyde,1.00,bioportal
+Formaldehyde,3,NCIT:C29744,NCIT,Formaldehyde,Formaldehyde,1.00,bioportal
+Formaldehyde,4,CHEBI:16842,CHEBI,formaldehyde,formaldehyde,1.00,bioportal
+Formaldehyde,5,NCIT:C198938,NCIT,Formaldehyde Exposure,Formaldehyde,1.00,bioportal
+Formic Acid,1,MESH:C030544,MESH,formic acid,formic acid,1.00,bioportal
+Formic Acid,2,SNOMEDCT:64086005,SNOMEDCT,Formic acid,Formic acid,1.00,bioportal
+Formic Acid,3,NCIT:C83719,NCIT,Formic Acid,Formic Acid,1.00,bioportal
+Formic Acid,4,CHEBI:30751,CHEBI,formic acid,formic acid,1.00,bioportal
+Formic Acid,5,CHEBI:193132,CHEBI,formic acid-d2,formic acid-d2,0.84,bioportal
+Freshwater,1,MIXS:freshwater,MIXS,freshwater,freshwater,1.00,bioportal
+Freshwater,2,MESH:D005618,MESH,Fresh Water,Freshwater,1.00,bioportal
+Functional Potential,1,SNOMEDCT:251635003,SNOMEDCT,Motor-potential,"Motor-potential, function",0.81,bioportal
+Functional Potential,2,SNOMEDCT:102978000,SNOMEDCT,Nerve potential,"Nerve potential, function",0.81,bioportal
+Fungi,1,MESH:D005658,MESH,Fungi,Fungi,1.00,bioportal
+Fungi,2,SNOMEDCT:414561005,SNOMEDCT,Fungi,Fungi,1.00,bioportal
+Fungi,3,NCBITAXON:4751,NCBITAXON,Fungi,Fungi,1.00,bioportal
+Fungi,4,SWEET:Fungi,SWEET,fungi,fungi,1.00,bioportal
+Fungi,5,NCIT:C14209,NCIT,Fungus,FUNGI,1.00,bioportal
+Fungi,6,MESH:Q000382,MESH,microbiology,fungi,1.00,bioportal
+Fungi,7,NCIT:C120883,NCIT,Fungus Present,Fungi,1.00,bioportal
+Fusobacterium Nucleatum,1,MESH:D016967,MESH,Fusobacterium nucleatum,Fusobacterium nucleatum,1.00,bioportal
+Fusobacterium Nucleatum,2,SNOMEDCT:32763000,SNOMEDCT,Fusobacterium nucleatum,Fusobacterium nucleatum,1.00,bioportal
+Fusobacterium Nucleatum,3,NCIT:C86404,NCIT,Fusobacterium nucleatum,Fusobacterium nucleatum,1.00,bioportal
+Fusobacterium Nucleatum,4,NCBITAXON:851,NCBITAXON,Fusobacterium nucleatum,Fusobacterium nucleatum,1.00,bioportal
+Fusobacterium Nucleatum,5,NCIT:C189539,NCIT,Fusobacterium nucleatum Measurement,Fusobacterium nucleatum,1.00,bioportal
+Fusobacterium Nucleatum,6,SNOMEDCT:113761002,SNOMEDCT,Fusobacterium nucleatum ss nucleatum,Fusobacterium nucleatum nucleatum,0.91,bioportal
+Fusobacterium Nucleatum,7,ECTO:3000050,ECTO,exposure to Fusobacterium nucleatum,exposure to Fusobacterium nucleatum,0.82,bioportal
+Gamma Diversity,1,PCO:0000076,PCO,gamma diversity,gamma diversity,1.00,bioportal
+Gene,1,SNOMEDCT:67271001,SNOMEDCT,Gene,Gene,1.00,bioportal
+Gene,2,NCIT:C16612,NCIT,Gene,Gene,1.00,bioportal
+Gene,3,SO:0000704,SO,gene,gene,1.00,bioportal
+Gene,4,SIO:SIO_010035,SIO,gene,gene,1.00,bioportal
+Gene,5,BIOLINK:Gene,BIOLINK,gene,gene,1.00,bioportal
+Gene,6,VariO:0272,VARIO,gene,gene,1.00,bioportal
+Gene,7,SCHEMA:Gene,SCHEMA,Gene,Gene,1.00,bioportal
+Gene,8,CHEAR:SIO_010035,CHEAR,gene,gene,1.00,bioportal
+Gene,9,JERM:Gene,JERM,Gene,Gene,1.00,bioportal
+Gene,10,MESH:D005796,MESH,Genes,Genes,1.00,bioportal
+Gene Amplification,1,MESH:D005784,MESH,Gene Amplification,Gene Amplification,1.00,bioportal
+Gene Amplification,2,SNOMEDCT:12645001,SNOMEDCT,Gene amplification,Gene amplification,1.00,bioportal
+Gene Amplification,3,NCIT:C16605,NCIT,Gene Amplification,Gene Amplification,1.00,bioportal
+Gene Amplification,4,NCIT:C221409,NCIT,TYMS Gene Amplification,TS Gene Amplification,0.86,bioportal
+Gene Expression,1,GO:0010467,GO,gene expression,gene expression,1.00,bioportal+local
+Gene Expression,2,MESH:D015870,MESH,Gene Expression,Gene Expression,1.00,bioportal
+Gene Expression,3,SNOMEDCT:89551006,SNOMEDCT,Gene expression,Gene expression,1.00,bioportal
+Gene Expression,4,NCIT:C16608,NCIT,Gene Expression,Gene Expression,1.00,bioportal
+Gene Expression,5,NCIT:C21049,NCIT,Gene Expression Process,Gene expression,1.00,bioportal
+Gene Expression,6,GO:0019080,GO,viral gene expression,viral gene expression,0.82,bioportal
+Genes,1,NCIT:C16612,NCIT,Gene,Gene,1.00,bioportal
+Genes,2,MESH:D005796,MESH,Genes,Genes,1.00,bioportal
+Geographical Coordinates,1,AGRO:00000572,AGRO,GPS coordinates,geographic coordinate system,0.81,bioportal
+Glutathione,1,MESH:D005978,MESH,Glutathione,Glutathione,1.00,bioportal
+Glutathione,2,SNOMEDCT:55477000,SNOMEDCT,Glutathione,Glutathione,1.00,bioportal
+Glutathione,3,NCIT:C523,NCIT,Glutathione,Glutathione,1.00,bioportal
+Glutathione,4,CHEBI:16856,CHEBI,glutathione,glutathione,1.00,bioportal
+Glycerol,1,MESH:D005990,MESH,Glycerol,Glycerol,1.00,bioportal
+Glycerol,2,CHEBI:17754,CHEBI,glycerol,glycerol,1.00,bioportal
+Glycerol,3,SNOMEDCT:80582002,SNOMEDCT,Glycerin,Glycerol,1.00,bioportal
+Glycerol,4,NCIT:C29077,NCIT,Glycerin,Glycerol,1.00,bioportal
+Glycerol,5,NCIT:C132371,NCIT,Glycerol Measurement,Glycerol,1.00,bioportal
+Glycogen,1,MESH:D006003,MESH,Glycogen,Glycogen,1.00,bioportal
+Glycogen,2,SNOMEDCT:36998008,SNOMEDCT,Glycogen,Glycogen,1.00,bioportal
+Glycogen,3,NCIT:C96523,NCIT,Glycogen,Glycogen,1.00,bioportal
+Glycogen,4,CHEBI:28087,CHEBI,glycogen,glycogen,1.00,bioportal
+Glycogen,5,NCIT:C221431,NCIT,Glycogen Measurement,Glycogen,1.00,bioportal
+Glycolysis,1,MESH:D006019,MESH,Glycolysis,Glycolysis,1.00,bioportal
+Glycolysis,2,NCIT:C28152,NCIT,Glycolysis,Glycolysis,1.00,bioportal
+Glycolysis,3,GO:0006096,GO,glycolytic process,glycolysis,1.00,bioportal
+Goat,1,NCIT:C14210,NCIT,Goat,Goat,1.00,bioportal
+Goat,2,FOODON:03411328,FOODON,goat,goat,1.00,bioportal
+Goat,3,MESH:D006041,MESH,Goats,Goats,1.00,bioportal
+Greenhouse,1,ENVO:03600087,ENVO,greenhouse,greenhouse,1.00,bioportal
+Greenhouse,2,AGRO:00000363,AGRO,greenhouse,greenhouse,1.00,bioportal
+Growth Chamber,1,GO:0007295,GO,growth of a germarium-derived egg chamber,egg chamber growth,0.84,bioportal
+Growth Chamber,2,PECO:0007269,PECO,growth chamber study,growth chamber study,0.81,bioportal+local
+Health Status,1,MESH:D006304,MESH,Health Status,Health Status,1.00,bioportal
+Health Status,2,SNOMEDCT:406221003,SNOMEDCT,Health status,Health status,1.00,bioportal
+Health Status,3,NCIT:C16669,NCIT,Health Status,Health Status,1.00,bioportal
+Health Status,4,HP:0032319,HP,Health status,Health status,1.00,bioportal
+Health Status,5,ExO:0000038,EXO,health status,health status,1.00,bioportal
+Health Status,6,NCIT:C205784,NCIT,Health Status Assessment,Health Status,1.00,bioportal
+Health Status,7,GENEPIO:0001840,GENEPIO,good health status,good health status,0.82,bioportal
+Health Status,8,GENEPIO:0001841,GENEPIO,fair health status,fair health status,0.82,bioportal
+Health Status,9,SNOMEDCT:273514003,SNOMEDCT,Health status index,Health status index,0.81,bioportal
+Health Status,10,MESH:D006305,MESH,Health Status Indicators,Health Status Index,0.81,bioportal
+Heavy Metal Resistance,1,GO:0009634,GO,obsolete heavy metal sensitivity/resistance,heavy metal sensitivity/resistance,0.82,bioportal
+Heavy Metals,1,SNOMEDCT:22907001,SNOMEDCT,Heavy metal,Heavy metal,1.00,bioportal
+Heavy Metals,2,MESH:D019216,MESH,"Metals, Heavy","Metals, Heavy",1.00,bioportal
+Hen,1,FOODON:00003282,FOODON,hen,hen,1.00,bioportal
+Hen,2,FOODON:03411713,FOODON,chicken hen,hen,1.00,bioportal
+Heterotroph,1,ECOCORE:00000010,ECOCORE,heterotroph,heterotroph,1.00,bioportal+local
+Heterotroph,2,MIXS:heterotroph,MIXS,heterotroph,heterotroph,1.00,bioportal
+Heterotroph,3,SWEET:Heterotroph,SWEET,heterotroph,heterotroph,1.00,bioportal
+High-Fat Diet,1,SNOMEDCT:226097005,SNOMEDCT,High fat diet,High fat diet,1.00,bioportal
+High-Fat Diet,2,EFO:EFO_0002757,EFO,high fat diet,high fat diet,1.00,bioportal
+High-Fat Diet,3,MESH:D059305,MESH,"Diet, High-Fat","Diet, High-Fat",1.00,bioportal
+Hippurate,1,CHEBI:132966,CHEBI,hippurate,hippurate,1.00,bioportal
+Hippurate,2,MESH:C030514,MESH,hippuric acid,hippurate,1.00,bioportal
+Hippurate,3,CHEBI:18089,CHEBI,N-benzoylglycine,Hippurate,1.00,bioportal
+Histological Grade,1,SNOMEDCT:370114008,SNOMEDCT,Histological grades,Histological grades,1.00,bioportal
+Histological Grade,2,NCIT:C18000,NCIT,Histologic Grade,histological_grade,1.00,bioportal
+Histological Grade,3,SNOMEDCT:373372005,SNOMEDCT,Histological grade finding,Histological grade finding,0.81,bioportal
+Host,1,NCIT:C66819,NCIT,Host,Host,1.00,bioportal
+Host,2,EFO:EFO_0000532,EFO,host,host,1.00,bioportal
+Host,3,SIO:SIO_010415,SIO,host,host,1.00,bioportal
+Host,4,OHMI:0000485,OHMI,host,host,1.00,bioportal
+Host,5,CHEAR:SIO_010415,CHEAR,host,host,1.00,bioportal
+Host Organism,1,GO:0018995,GO,host cellular component,host organism,1.00,bioportal
+Human,1,NCIT:C14225,NCIT,Human,Human,1.00,bioportal
+Human,2,SNOMEDCT:T016,SNOMEDCT,Human,Human,1.00,bioportal
+Human,3,MESH:T016,MESH,Human,Human,1.00,bioportal
+Human,4,NCBITAXON:T016,NCBITAXON,Human,Human,1.00,bioportal
+Human,5,CHEAR:Human,CHEAR,Human,Human,1.00,bioportal
+Human,6,SIO:SIO_000485,SIO,human,human,1.00,bioportal
+Human,7,BIOLINK:Human,BIOLINK,human,human,1.00,bioportal
+Human,8,CHEAR:SIO_000485,CHEAR,human,human,1.00,bioportal
+Human,9,SWEET:Human,SWEET,human,human,1.00,bioportal
+Human,10,MESH:D006801,MESH,Humans,Humans,1.00,bioportal
+Humidity,1,MESH:D006813,MESH,Humidity,Humidity,1.00,bioportal
+Humidity,2,SNOMEDCT:3525006,SNOMEDCT,Humidity,Humidity,1.00,bioportal
+Humidity,3,NCIT:C88206,NCIT,Humidity,Humidity,1.00,bioportal
+Humidity,4,PATO:0015009,PATO,humidity,humidity,1.00,bioportal
+Humidity,5,SWEET:Humidity,SWEET,humidity,humidity,1.00,bioportal
+Hungatella Hathewayi,1,MESH:C000649429,MESH,Hungatella hathewayi,Hungatella hathewayi,1.00,bioportal
+Hungatella Hathewayi,2,SNOMEDCT:416526002,SNOMEDCT,Hungatella hathewayi,Hungatella hathewayi,1.00,bioportal
+Hungatella Hathewayi,3,NCBITAXON:154046,NCBITAXON,Hungatella hathewayi,Hungatella hathewayi,1.00,bioportal
+Hydrogen Peroxide,1,MESH:D006861,MESH,Hydrogen Peroxide,Hydrogen Peroxide,1.00,bioportal
+Hydrogen Peroxide,2,SNOMEDCT:387171003,SNOMEDCT,Hydrogen peroxide,Hydrogen peroxide,1.00,bioportal
+Hydrogen Peroxide,3,NCIT:C28156,NCIT,Hydrogen Peroxide,Hydrogen Peroxide,1.00,bioportal
+Hydrogen Peroxide,4,CHEBI:16240,CHEBI,hydrogen peroxide,hydrogen peroxide,1.00,bioportal
+Hydrogen Peroxide,5,NCIT:C101689,NCIT,Hydrogen Peroxide Sterilization,Hydrogen Peroxide,1.00,bioportal
+Hydrogen Peroxide,6,CHEBI:75178,CHEBI,urea hydrogen peroxide,urea hydrogen peroxide,0.84,bioportal
+Hydrogen Peroxide,7,TO:0000605,TO,hydrogen peroxide content,hydrogen peroxide content,0.80,local
+Hydrogen Peroxide,8,SNOMEDCT:294449008,SNOMEDCT,Allergy to hydrogen peroxide,Allergy to hydrogen peroxide,0.80,bioportal
+Hydrogen Peroxide,9,GO:0042744,GO,hydrogen peroxide catabolic process,hydrogen peroxide removal,0.80,bioportal
+Hydroxyl Radicals,1,MESH:D017665,MESH,Hydroxyl Radical,Hydroxyl Radical,1.00,bioportal
+Hydroxyl Radicals,2,NCIT:C1130,NCIT,Hydroxyl Radical,Hydroxyl Radical,1.00,bioportal
+Hydroxyl Radicals,3,CHEBI:29191,CHEBI,hydroxyl,hydroxyl radical,1.00,bioportal
+Imidazole Propionate,1,MESH:C018976,MESH,5-imidazolepropionic acid,imidazole propionate,1.00,bioportal
+Indoxyl Sulfate,1,CHEBI:43355,CHEBI,indoxyl sulfate,indoxyl sulfate,1.00,bioportal
+Indoxyl Sulfate,2,MESH:D007200,MESH,Indican,Indoxyl Sulfate,1.00,bioportal
+Indoxyl Sulfate,3,NCIT:C152073,NCIT,Indican,Indoxyl Sulfate,1.00,bioportal
+Indoxyl Sulfate,4,CHEBI:144643,CHEBI,indoxyl sulfate(1-),indoxyl sulfate,1.00,bioportal
+Industrial Environment,1,SNOMEDCT:224815004,SNOMEDCT,Industrial environment,Industrial environment,1.00,bioportal
+Industrial Environment,2,SNOMEDCT:272505000,SNOMEDCT,Industrial site,Industrial site (environment),0.85,bioportal
+Inflammatory Bowel Disease,1,SNOMEDCT:24526004,SNOMEDCT,Inflammatory bowel disease,Inflammatory bowel disease,1.00,bioportal
+Inflammatory Bowel Disease,2,NCIT:C3138,NCIT,Inflammatory Bowel Disease,Inflammatory Bowel Disease,1.00,bioportal
+Inflammatory Bowel Disease,3,DOID:0050589,DOID,inflammatory bowel disease,inflammatory bowel disease,1.00,bioportal
+Inflammatory Bowel Disease,4,MESH:D015212,MESH,Inflammatory Bowel Diseases,Inflammatory Bowel Diseases,1.00,bioportal
+Inflammatory Bowel Disease,5,MESH:C564680,MESH,Inflammatory Bowel Disease 4,Inflammatory Bowel Disease 4,0.91,bioportal
+Inflammatory Bowel Disease,6,NCIT:C164676,NCIT,Inflammatory Bowel Disease 28,Inflammatory Bowel Disease 28,0.90,bioportal
+Inflammatory Bowel Disease,7,SNOMEDCT:608844008,SNOMEDCT,History of inflammatory bowel disease,History of inflammatory bowel disease,0.86,bioportal
+Inulin,1,MESH:D007444,MESH,Inulin,Inulin,1.00,bioportal
+Inulin,2,SNOMEDCT:32154009,SNOMEDCT,Inulin,Inulin,1.00,bioportal
+Inulin,3,NCIT:C61506,NCIT,Inulin,Inulin,1.00,bioportal
+Inulin,4,CHEBI:15443,CHEBI,inulin,inulin,1.00,bioportal
+Inulin,5,NCIT:C125945,NCIT,Inulin Measurement,INULIN,1.00,bioportal
+Iron,1,glosis_res:cementationNatureValueCode-F,GLOSIS,Iron,Iron,1.00,local
+Iron,2,MESH:D007501,MESH,Iron,Iron,1.00,bioportal
+Iron,3,SNOMEDCT:3829006,SNOMEDCT,Iron,Iron,1.00,bioportal
+Iron,4,NCIT:C598,NCIT,Iron,Iron,1.00,bioportal
+Iron,5,SWEET:Iron,SWEET,Iron,Iron,1.00,bioportal
+Iron,6,NCIT:C68256,NCIT,Dietary Iron,Iron,1.00,bioportal
+Isoprene,1,MESH:C005059,MESH,isoprene,isoprene,1.00,bioportal
+Isoprene,2,SNOMEDCT:259214006,SNOMEDCT,Isoprene,Isoprene,1.00,bioportal
+Isoprene,3,NCIT:C29824,NCIT,Isoprene,Isoprene,1.00,bioportal
+Isoprene,4,CHEBI:35194,CHEBI,isoprene,isoprene,1.00,bioportal
+Isoprene,5,NCIT:C204650,NCIT,Isoprene Measurement,ISOPRENE,1.00,bioportal
+Kefir,1,MESH:D000070716,MESH,Kefir,Kefir,1.00,bioportal
+Kefir,2,NCIT:C173982,NCIT,Kefir,Kefir,1.00,bioportal
+Kefir,3,FOODON:03310290,FOODON,kefir,kefir,1.00,bioportal
+Kimchi,1,NCIT:C192849,NCIT,Kimchi,Kimchi,1.00,bioportal
+Kimchi,2,FOODON:00002946,FOODON,kimchi,kimchi,1.00,bioportal
+Klebsiella,1,MESH:D007709,MESH,Klebsiella,Klebsiella,1.00,bioportal
+Klebsiella,2,SNOMEDCT:75032006,SNOMEDCT,Klebsiella,Klebsiella,1.00,bioportal
+Klebsiella,3,NCIT:C28165,NCIT,Klebsiella,Klebsiella,1.00,bioportal
+Klebsiella,4,NCBITAXON:570,NCBITAXON,Klebsiella,Klebsiella,1.00,bioportal
+Klebsiella,5,NCIT:C172539,NCIT,Klebsiella Measurement,Klebsiella,1.00,bioportal
+Klebsiella Pneumoniae,1,SNOMEDCT:56415008,SNOMEDCT,Klebsiella pneumoniae,Klebsiella pneumoniae,1.00,bioportal
+Klebsiella Pneumoniae,2,MESH:D007711,MESH,Klebsiella pneumoniae,Klebsiella pneumoniae,1.00,bioportal
+Klebsiella Pneumoniae,3,NCIT:C86457,NCIT,Klebsiella pneumoniae,Klebsiella pneumoniae,1.00,bioportal
+Klebsiella Pneumoniae,4,NCBITAXON:573,NCBITAXON,Klebsiella pneumoniae,Klebsiella pneumoniae,1.00,bioportal
+Klebsiella Pneumoniae,5,NCIT:C187860,NCIT,Klebsiella pneumoniae Measurement,Klebsiella pneumoniae,1.00,bioportal
+Klebsiella Pneumoniae,6,SNOMEDCT:708337009,SNOMEDCT,Klebsiella pneumoniae DNA,Klebsiella pneumoniae DNA,0.86,bioportal
+Klebsiella Pneumoniae,7,MESH:C508888,MESH,"rHSP60, Klebsiella pneumoniae","rHSP60, Klebsiella pneumoniae",0.83,bioportal
+Klebsiella Pneumoniae,8,NCBITAXON:3390273,NCBITAXON,Klebsiella pneumoniae complex,Klebsiella pneumoniae complex,0.82,bioportal
+Ko,1,CHEBI:59348,CHEBI,alpha-D-Ko,Ko,1.00,bioportal
+Ko,2,NCIT:C126963,NCIT,KRT8 wt Allele,KO,1.00,bioportal
+Ko,3,NCIT:C190552,NCIT,Key Object Selection,KO,1.00,bioportal
+Lactate,1,SNOMEDCT:83036002,SNOMEDCT,Lactate,Lactate,1.00,bioportal
+Lactate,2,CHEBI:24996,CHEBI,lactate,lactate,1.00,bioportal
+Lactate,3,MESH:D019344,MESH,Lactic Acid,Lactate,1.00,bioportal
+Lactate,4,NCIT:C76926,NCIT,Lactic Acid,Lactate,1.00,bioportal
+Lactate,5,NCIT:C79450,NCIT,Lactic Acid Measurement,Lactate,1.00,bioportal
+Library Preparation,1,OBI:0000711,OBI,library preparation,library preparation,1.00,bioportal
+Library Preparation,2,GENEPIO:0001450,GENEPIO,library preparation kit,library preparation kit,0.85,bioportal
+Library Preparation,3,GENEPIO:0000085,GENEPIO,library preparation kit,library preparation kit,0.85,bioportal
+Light,1,MESH:D008027,MESH,Light,Light,1.00,bioportal
+Light,2,SNOMEDCT:56242006,SNOMEDCT,Light,Light,1.00,bioportal
+Light,3,NCIT:C64650,NCIT,Light,Light,1.00,bioportal
+Light,4,EFO:EFO_0000568,EFO,light,light,1.00,bioportal
+Light,5,SNOMEDCT:371268001,SNOMEDCT,Light color,Light,1.00,bioportal
+Light,6,NCIT:C90419,NCIT,Light Cycle,LIGHT,1.00,bioportal
+Light,7,CHEBI:30212,CHEBI,photon,Light,0.90,local
+Light Intensity,1,SNOMEDCT:450501000124104,SNOMEDCT,Light intensity,Light intensity,1.00,bioportal
+Lipid Metabolism,1,MESH:D050356,MESH,Lipid Metabolism,Lipid Metabolism,1.00,bioportal
+Lipid Metabolism,2,NCIT:C19405,NCIT,Lipid Metabolic Process,Lipid Metabolism,1.00,bioportal
+Lipid Metabolism,3,GO:0006629,GO,lipid metabolic process,lipid metabolism,1.00,bioportal
+Lipid Metabolism,4,NCIT:C39728,NCIT,Lipid Metabolism Pathway,Lipid Metabolism,1.00,bioportal
+Lithocholate,1,CHEBI:29744,CHEBI,lithocholate,lithocholate,1.00,bioportal
+Lithocholate,2,MESH:D008095,MESH,Lithocholic Acid,Lithocholate,1.00,bioportal
+Lithocholate,3,SNOMEDCT:54245005,SNOMEDCT,Lithocholic acid,Lithocholate,1.00,bioportal
+Lithocholate,4,NCIT:C176307,NCIT,Lithocholate Measurement,Lithocholate,1.00,bioportal
+Lithocholate,5,CHEBI:87728,CHEBI,isolithocholate,isolithocholate,0.94,bioportal
+Lung,1,MESH:D008168,MESH,Lung,Lung,1.00,bioportal
+Lung,2,NCIT:C12468,NCIT,Lung,Lung,1.00,bioportal
+Lung,3,UBERON:0002048,UBERON,lung,lung,1.00,bioportal
+Lung,4,SNOMEDCT:39607008,SNOMEDCT,Lung structure,Lung,1.00,bioportal
+Lung,5,NCIT:C212659,NCIT,Lung Service Type,Lung,1.00,bioportal
+Macrolide,1,SNOMEDCT:428787002,SNOMEDCT,Macrolide,Macrolide,1.00,bioportal
+Macrolide,2,NCIT:C67445,NCIT,Macrolide,Macrolide,1.00,bioportal
+Macrolide,3,CHEBI:25106,CHEBI,macrolide,macrolide,1.00,bioportal
+Macrolide,4,MESH:D018942,MESH,Macrolides,Macrolides,1.00,bioportal
+Macrolide,5,NCIT:C261,NCIT,Macrolide Antibiotic,Macrolides,1.00,bioportal
+Madcam-1,1,NCIT:C122914,NCIT,Mucosal Addressin Cell Adhesion Molecule 1,MAdCAM-1,1.00,bioportal
+Mag,1,NCIT:C142150,NCIT,MAG Gene,MAG,1.00,bioportal
+Mag,2,NCIT:C50981,NCIT,ERCC2 wt Allele,MAG,1.00,bioportal
+Mag,3,SNOMEDCT:115490007,SNOMEDCT,Myelin associate glycoprotein,MAG,1.00,bioportal
+Maize,1,glosis_res:cropClassValueCode-Ce_Ma,GLOSIS,Maize,Maize,1.00,local
+Maize,2,glosis_res:cropClassValueCode-Fo_Ma,GLOSIS,Maize,Maize,1.00,local
+Maize,3,NCIT:C72066,NCIT,Corn,Maize,1.00,bioportal
+Maize,4,MESH:D003313,MESH,Zea mays,Maize,1.00,bioportal
+Maize,5,SNOMEDCT:2911006,SNOMEDCT,Zea mays - corn,Maize,1.00,bioportal
+Malonic Acid,1,MESH:C030290,MESH,malonic acid,malonic acid,1.00,bioportal
+Malonic Acid,2,SNOMEDCT:102648007,SNOMEDCT,Malonic acid,Malonic acid,1.00,bioportal
+Malonic Acid,3,CHEBI:30794,CHEBI,malonic acid,malonic acid,1.00,bioportal
+Malonic Acid,4,SNOMEDCT:102647002,SNOMEDCT,Ethyl malonic acid,Ethyl malonic acid,0.80,bioportal
+Mediterranean Diet,1,SNOMEDCT:1255163004,SNOMEDCT,Mediterranean diet,Mediterranean diet,1.00,bioportal
+Mediterranean Diet,2,MESH:D038441,MESH,"Diet, Mediterranean","Diet, Mediterranean",1.00,bioportal
+Mediterranean Diet,3,ECTO:0050001,ECTO,exposure to mediterranean diet,exposure to mediterranean diet,0.80,bioportal
+Membrane Integrity,1,SNOMEDCT:1217333002,SNOMEDCT,Integrity of mucous membrane,Integrity of mucous membrane,0.82,bioportal
+Mercury,1,MESH:D008628,MESH,Mercury,Mercury,1.00,bioportal
+Mercury,2,SNOMEDCT:45262002,SNOMEDCT,Mercury,Mercury,1.00,bioportal
+Mercury,3,NCIT:C66842,NCIT,Mercury,Mercury,1.00,bioportal
+Mercury,4,NCIT:C68269,NCIT,Dietary Mercury,Mercury,1.00,bioportal
+Metabolic Pathway,1,SNOMEDCT:129457002,SNOMEDCT,Metabolic pathway,Metabolic pathway,1.00,bioportal
+Metabolic Pathway,2,NCIT:C18611,NCIT,Metabolic Pathway,Metabolic Pathway,1.00,bioportal
+Metabolic Pathway,3,SIO:SIO_010532,SIO,metabolic pathway,metabolic pathway,1.00,bioportal
+Metabolic Pathway,4,CHEAR:SIO_010532,CHEAR,metabolic pathway,metabolic pathway,1.00,bioportal
+Metabolic Pathway,5,SWEET:MetabolicPathway,SWEET,metabolic pathway,metabolic pathway,1.00,bioportal
+Metabolic Pathway,6,MESH:D053858,MESH,Metabolic Networks and Pathways,Metabolic Pathway,1.00,bioportal
+Metastasis,1,NCIT:C19151,NCIT,Metastasis,Metastasis,1.00,bioportal
+Metastasis,2,EFO:EFO_0009708,EFO,metastasis,metastasis,1.00,bioportal
+Metastasis,3,NCIT:C40557,NCIT,Metastatic Disease,Metastasis,1.00,bioportal
+Metastasis,4,MESH:D009362,MESH,Neoplasm Metastasis,Metastasis,1.00,bioportal
+Metastatic Site,1,NCIT:C172233,NCIT,Site of Metastasis,metastatic_site,1.00,bioportal
+Metastatic Site,2,NCIT:C172389,NCIT,Metastatic Site Code,Metastatic Site Code,0.83,bioportal
+Mexab-Oprm Efflux Pump,1,ARO:3007327,ARO,inhibitors of MexAB-OprM efflux pump,inhibitors of MexAB-OprM efflux pump,0.85,bioportal
+Microalgae,1,SFWO:0000464,SFWO,microalgae,microalgae,1.00,local
+Microalgae,2,MESH:D058086,MESH,Microalgae,Microalgae,1.00,bioportal
+Microalgae,3,SWEET:Microalgae,SWEET,microalgae,microalgae,1.00,bioportal
+Microbial Community,1,PCO:1000004,PCO,microbial community,microbial community,1.00,bioportal
+Microbial Community,2,MESH:D064307,MESH,Microbiota,Microbial Community,1.00,bioportal
+Microplastic,1,SNOMEDCT:1290102004,SNOMEDCT,Microplastic,Microplastic,1.00,bioportal
+Microplastic,2,MESH:D000080545,MESH,Microplastics,Microplastics,1.00,bioportal
+Microplastic,3,ENVO:01000944,ENVO,microplastic particle,microplastic,1.00,bioportal
+Microplastic,4,ENVO:01000945,ENVO,primary microplastic particle,microplastic,1.00,bioportal
+Mouse,1,SNOMEDCT:82968002,SNOMEDCT,Mouse,Mouse,1.00,bioportal
+Mouse,2,NCIT:C14238,NCIT,Mouse,Mouse,1.00,bioportal
+Mouse,3,SIO:SIO_000486,SIO,mouse,mouse,1.00,bioportal
+Mouse,4,CHEAR:SIO_000486,CHEAR,mouse,mouse,1.00,bioportal
+Mouse,5,MESH:D051379,MESH,Mice,Mouse,1.00,bioportal
+Mouse,6,NCBITaxon:10088,NCBITAXON,Mus <genus>,mouse,1.00,bioportal
+Mouse,7,NCBITaxon:10090,NCBITAXON,Mus musculus,mouse,1.00,bioportal
+Mutualism,1,ECOCORE:00000193,ECOCORE,mutualism,mutualism,1.00,bioportal+local
+Mutualism,2,SFWO:0000059,SFWO,mutualism,mutualism,1.00,local
+Mutualism,3,MIXS:mutualism,MIXS,mutualism,mutualism,1.00,bioportal
+Mutualism,4,SWEET:Mutualism,SWEET,mutualism,mutualism,1.00,bioportal
+Mutualism,5,MESH:D013559,MESH,Symbiosis,Mutualism,1.00,bioportal
+Mutualism,6,GO:0085030,GO,symbiotic process benefiting host,mutualism,1.00,bioportal
+Natural Environment,1,SNOMEDCT:224803003,SNOMEDCT,Natural environment,Natural environment,1.00,bioportal
+Natural Environment,2,ENVO:01000951,ENVO,natural environment,natural environment,1.00,bioportal
+Natural Environment,3,ENVO:01001227,ENVO,aquatic natural environment,aquatic natural environment,0.81,bioportal
+Natural Environment,4,GENEPIO:0001250,GENEPIO,natural environment specimen,natural environment specimen,0.80,bioportal
+Net Primary Production,1,ECOCORE:00000184,ECOCORE,marine primary production,marine net primary production,0.86,bioportal+local
+Net Primary Production,2,ECOCORE:00000185,ECOCORE,marine benthic primary production,benthic net primary production,0.85,bioportal+local
+Neutropenia,1,MESH:D009503,MESH,Neutropenia,Neutropenia,1.00,bioportal
+Neutropenia,2,SNOMEDCT:165517008,SNOMEDCT,Neutropenia,Neutropenia,1.00,bioportal
+Neutropenia,3,NCIT:C80520,NCIT,Neutropenia,Neutropenia,1.00,bioportal
+Neutropenia,4,MONDO:0001475,MONDO,neutropenia,neutropenia,1.00,bioportal
+Neutropenia,5,DOID:1227,DOID,neutropenia,neutropenia,1.00,bioportal
+Night,1,NCIT:C65001,NCIT,Night Time,Night,1.00,bioportal
+Night,2,SNOMEDCT:2546009,SNOMEDCT,Night time,At night,1.00,bioportal
+Night,3,NCIT:C168166,NCIT,Chief Complaint Present at Night,Night,1.00,bioportal
+Nitrogen,1,MESH:D009584,MESH,Nitrogen,Nitrogen,1.00,bioportal
+Nitrogen,2,SNOMEDCT:36012007,SNOMEDCT,Nitrogen,Nitrogen,1.00,bioportal
+Nitrogen,3,NCIT:C61863,NCIT,Nitrogen,Nitrogen,1.00,bioportal
+Nitrogen Content,1,TO:0020093,TO,nitrogen content,nitrogen content,1.00,local
+Nitrogen Content,2,TO:0003071,TO,cob nitrogen content,cob nitrogen content,0.84,local
+Nitrogen Fixation,1,MESH:D009586,MESH,Nitrogen Fixation,Nitrogen Fixation,1.00,bioportal
+Nitrogen Fixation,2,GO:0009399,GO,nitrogen fixation,nitrogen fixation,1.00,bioportal
+Nitrogen Fixation,3,SNOMEDCT:66199009,SNOMEDCT,Nitrogen fixation gene,Nitrogen fixation gene,0.84,bioportal
+Non-Alcoholic Fatty Liver Disease,1,MESH:D065626,MESH,Non-alcoholic Fatty Liver Disease,Non-alcoholic Fatty Liver Disease,1.00,bioportal
+Non-Alcoholic Fatty Liver Disease,2,DOID:0080208,DOID,non-alcoholic fatty liver disease,non-alcoholic fatty liver disease,1.00,bioportal
+Non-Alcoholic Fatty Liver Disease,3,EFO:EFO_0003095,EFO,obsolete_non-alcoholic fatty liver disease,obsolete_non-alcoholic fatty liver disease,0.89,bioportal
+Non-Alcoholic Fatty Liver Disease,4,MONDO:0021104,MONDO,alcoholic fatty liver disease,alcoholic fatty liver disease,0.82,bioportal
+Non-Alcoholic Fatty Liver Disease,5,NCIT:C181472,NCIT,Non-Alcoholic Fatty Liver Disease Activity Score,Non-Alcoholic Fatty Liver Disease Activity Score,0.82,bioportal
+Non-Alcoholic Fatty Liver Disease,6,SNOMEDCT:50325005,SNOMEDCT,Alcoholic fatty liver,Alcoholic fatty liver disease,0.82,bioportal
+Non-Alcoholic Fatty Liver Disease,7,SNOMEDCT:772814007,SNOMEDCT,NAFLD (Non-Alcoholic Fatty Liver Disease) fibrosis score,Non-Alcoholic Fatty Liver Disease fibrosis score,0.82,bioportal
+Non-Alcoholic Fatty Liver Disease,8,NCIT:C171090,NCIT,Non-Alcoholic Fatty Liver Disease Fibrosis Scoring System,Non-Alcoholic Fatty Liver Disease Fibrosis Score,0.82,bioportal
+Nostoc,1,MESH:D046937,MESH,Nostoc,Nostoc,1.00,bioportal
+Nostoc,2,NCBITAXON:1177,NCBITAXON,Nostoc,Nostoc,1.00,bioportal
+Npk,1,NCIT:C52389,NCIT,TAC1 wt Allele,NPK,1.00,bioportal
+Nutrients,1,CHEBI:33284,CHEBI,nutrient,nutrient,1.00,bioportal
+Nutrients,2,MESH:D000078622,MESH,Nutrients,Nutrients,1.00,bioportal
+Nutrients,3,SNOMEDCT:226355009,SNOMEDCT,Nutrients,Nutrients,1.00,bioportal
+Nutrients,4,MIXS:nutrients,MIXS,nutrients,nutrients,1.00,bioportal
+Obesity,1,MESH:D009765,MESH,Obesity,Obesity,1.00,bioportal
+Obesity,2,SNOMEDCT:414916001,SNOMEDCT,Obesity,Obesity,1.00,bioportal
+Obesity,3,NCIT:C3283,NCIT,Obesity,Obesity,1.00,bioportal
+Obesity,4,NCIT:C55334,NCIT,"Obesity, CTCAE",Obesity,1.00,bioportal
+Oil),1,SNOMEDCT:421890007,SNOMEDCT,Oil,Oil,1.00,bioportal
+Oil),2,SNOMEDCT:21847005,SNOMEDCT,Oil,Oil,1.00,bioportal
+Oil),3,NCIT:C66934,NCIT,Oil,Oil,1.00,bioportal
+Organic Carbon,1,glosis_prop:physioChemicalPropertyCode-Carorg,GLOSIS,Carbon (C) - organic,Carbon (C) - organic,0.87,local
+Organic Carbon,2,NCIT:C134114,NCIT,Total Organic Carbon Measurement,Total Organic Carbon,0.81,bioportal
+Organic Hydrocarbons (E.G. Petrol,1,SNOMEDCT:31086004,SNOMEDCT,Gasoline,Petrol,1.00,bioportal
+Organic Hydrocarbons (E.G. Petrol,2,ENVO:03510007,ENVO,gasoline,petrol,1.00,bioportal
+Organic Hydrocarbons (E.G. Petrol,3,NCIT:C219677,NCIT,Gasoline Fuel,Petrol,1.00,bioportal
+Organic Matter,1,glosis_prop:physioChemicalPropertyCode-Orgmat,GLOSIS,Organic matter,Organic matter,1.00,local
+Organic Matter,2,SWEET:OrganicMatter,SWEET,organic matter,organic matter,1.00,bioportal
+Organic Matter,3,MIXS:organic%20matter,MIXS,organic matter,organic matter,1.00,bioportal
+Organic Matter,4,ENVO:01000155,ENVO,organic material,organic matter,1.00,local
+Organic Matter,5,ENVO:04000008,ENVO,soil organic matter,soil organic matter,0.82,bioportal+local
+Organic Matter,6,glosis_res:cementationNatureValueCode-FO,GLOSIS,Iron–organic matter,Iron–organic matter,0.82,local
+Orit,1,SO:0000724,SO,oriT,oriT,1.00,bioportal
+Oxalic Acid,1,MESH:D019815,MESH,Oxalic Acid,Oxalic Acid,1.00,bioportal
+Oxalic Acid,2,SNOMEDCT:89506006,SNOMEDCT,Oxalic acid,Oxalic acid,1.00,bioportal
+Oxalic Acid,3,NCIT:C84036,NCIT,Oxalic Acid,Oxalic Acid,1.00,bioportal
+Oxalic Acid,4,CHEBI:16995,CHEBI,oxalic acid,oxalic acid,1.00,bioportal
+Oxidative Stress,1,MESH:D018384,MESH,Oxidative Stress,Oxidative Stress,1.00,bioportal
+Oxidative Stress,2,NCIT:C17741,NCIT,Oxidative Stress,Oxidative Stress,1.00,bioportal
+Oxidative Stress,3,EFO:EFO_1001905,EFO,oxidative stress,oxidative stress,1.00,bioportal
+Oxidative Stress,4,HHEAR:HHEAR_01373,HHEAR,Oxidative Stress Marker,Oxidative Stress Marker,0.81,bioportal
+Oxidative Stress,5,NCIT:C38990,NCIT,Oxidative Stress Pathway,Oxidative Stress Pathway,0.80,bioportal
+P-Cresol Sulfate,1,CHEBI:82914,CHEBI,p-cresol sulfate,p-cresol sulfate,1.00,bioportal
+P-Cresol Sulfate,2,MESH:C408690,MESH,4-cresol sulfate,p-cresol sulfate,1.00,bioportal
+P-Cresol Sulfate,3,CHEBI:133670,CHEBI,p-cresol sulfate(1-),p-cresol sulfate,1.00,bioportal
+P-Value,1,NCIT:C44185,NCIT,P-Value,P-Value,1.00,bioportal
+P-Value,2,OBI:0000175,OBI,p-value,p-value,1.00,bioportal
+P-Value,3,OBI:0001442,OBI,p-value,p-value,1.00,bioportal
+P-Value,4,SWEET:pValue,SWEET,p value,p value,1.00,bioportal
+Pancreas,1,MESH:D010179,MESH,Pancreas,Pancreas,1.00,bioportal
+Pancreas,2,NCIT:C12393,NCIT,Pancreas,Pancreas,1.00,bioportal
+Pancreas,3,UBERON:0001264,UBERON,pancreas,pancreas,1.00,bioportal
+Pancreas,4,SNOMEDCT:15776009,SNOMEDCT,Pancreatic structure,Pancreas,1.00,bioportal
+Parasite,1,ECOCORE:00000146,ECOCORE,parasite,parasite,1.00,bioportal+local
+Parasite,2,SNOMEDCT:37763007,SNOMEDCT,Parasite,Parasite,1.00,bioportal
+Parasite,3,NCIT:C28176,NCIT,Parasite,Parasite,1.00,bioportal
+Parasite,4,MESH:D010271,MESH,Parasites,Parasites,1.00,bioportal
+Parasite,5,NCIT:C120903,NCIT,Parasite Present,PARASITE,1.00,bioportal
+Parasitism,1,ECOCORE:00000047,ECOCORE,parasitism,parasitism,1.00,bioportal+local
+Parasitism,2,MIXS:parasitism,MIXS,parasitism,parasitism,1.00,bioportal
+Parasitism,3,SWEET:Parasitism,SWEET,parasitism,parasitism,1.00,bioportal
+Parasitism,4,SNOMEDCT:17322007,SNOMEDCT,Parasitic disease,Parasitism,1.00,bioportal
+Parasitism,5,EFO:EFO_0001067,EFO,obsolete_parasitic infection,Parasitism,1.00,bioportal
+Parasitism,6,GO:0044403,GO,biological process involved in symbiotic interaction,parasitism,1.00,bioportal
+Particulate Matter,1,MESH:D052638,MESH,Particulate Matter,Particulate Matter,1.00,bioportal
+Particulate Matter,2,ENVO:01000060,ENVO,particulate matter,particulate matter,1.00,bioportal
+Particulate Matter,3,MIXS:particulate%20matter,MIXS,particulate matter,particulate matter,1.00,bioportal
+Particulate Matter,4,ENVO:04000012,ENVO,particulate organic matter,particulate organic matter,0.81,bioportal
+Particulate Matter,5,NCIT:C193381,NCIT,Particulate Testing,Foreign and Particulate Matter,0.81,bioportal
+Particulate Matter,6,NCIT:C29886,NCIT,Airborne Particulate Matter,Airborne Particulate Matter,0.80,bioportal
+Particulate Matter,7,ECTO:7000068,ECTO,exposure to particulate matter,exposure to particulate matter,0.80,bioportal
+Pathogen,1,SFWO:0000157,SFWO,pathogen,pathogen,1.00,local
+Pathogen,2,NCIT:C80324,NCIT,Pathogen,Pathogen,1.00,bioportal
+Pathogen,3,EFO:EFO_0000643,EFO,pathogen,pathogen,1.00,bioportal
+Pathogen,4,SIO:SIO_010414,SIO,pathogen,pathogen,1.00,bioportal
+Pathogen,5,CHEAR:SIO_010414,CHEAR,pathogen,pathogen,1.00,bioportal
+Pathogen,6,SNOMEDCT:264418008,SNOMEDCT,Pathogenic organism,Pathogen,1.00,bioportal
+Pathogen,7,OMP:0000068,OMP,virulence phenotype,pathogen,1.00,bioportal
+Pathway,1,NCIT:C54214,NCIT,Pathway,Pathway,1.00,bioportal
+Pathway,2,SIO:SIO_001107,SIO,pathway,pathway,1.00,bioportal
+Pathway,3,BIOLINK:Pathway,BIOLINK,pathway,pathway,1.00,bioportal
+Pathway,4,CHEAR:SIO_001107,CHEAR,pathway,pathway,1.00,bioportal
+Pathway,5,JERM:Pathway,JERM,Pathway,Pathway,1.00,bioportal
+Pathway,6,CHEBI:34922,CHEBI,picloram,Pathway,1.00,bioportal
+Pathway,7,NCIT:C20633,NCIT,Biochemical Pathway,Pathway,1.00,bioportal
+Pentanoate,1,CHEBI:31011,CHEBI,valerate,pentanoate,1.00,bioportal
+Pentanoate,2,MESH:D014631,MESH,Valerates,Pentanoate,1.00,bioportal
+Pentanoate,3,CHEBI:17418,CHEBI,valeric acid,Pentanoate,1.00,bioportal
+Pentose Phosphate Pathway,1,MESH:D010427,MESH,Pentose Phosphate Pathway,Pentose Phosphate Pathway,1.00,bioportal
+Pentose Phosphate Pathway,2,GO:0006098,GO,pentose-phosphate shunt,pentose phosphate pathway,1.00,bioportal
+Pentose Phosphate Pathway,3,NCIT:C38847,NCIT,Pentose Phosphate Cycle Pathway,Pentose Phosphate Cycle Pathway,0.88,bioportal
+Pentose Phosphate Pathway,4,GO:0009051,GO,"pentose-phosphate shunt, oxidative branch",oxidative pentose phosphate pathway,0.85,bioportal
+Pesticide,1,CHEBI:25944,CHEBI,pesticide,pesticide,1.00,bioportal+local
+Pesticide,2,SNOMEDCT:59545008,SNOMEDCT,Pesticide,Pesticide,1.00,bioportal
+Pesticide,3,NCIT:C737,NCIT,Pesticide,Pesticide,1.00,bioportal
+Pesticide,4,MESH:D010575,MESH,Pesticides,Pesticides,1.00,bioportal
+Pesticide,5,NCIT:C198941,NCIT,Pesticide Exposure,Pesticide,1.00,bioportal
+Ph,1,glosis_lh:PH,GLOSIS,PH,PH,1.00,local
+Ph,2,NCIT:C45997,NCIT,pH,pH,1.00,bioportal
+Ph,3,SIO:SIO_001089,SIO,pH,pH,1.00,bioportal
+Ph,4,CHEAR:SIO_001089,CHEAR,pH,pH,1.00,bioportal
+Ph,5,JERM:pH,JERM,pH,pH,1.00,bioportal
+Ph,6,SWEET:pH,SWEET,ph,ph,1.00,bioportal
+Ph,7,SNOMEDCT:365723003,SNOMEDCT,pH - finding,pH,1.00,bioportal
+Ph,8,NCIT:C205029,NCIT,pH Measurement,pH,1.00,bioportal
+Ph,9,MESH:D006863,MESH,Hydrogen-Ion Concentration,pH,1.00,bioportal
+Ph,10,SNOMEDCT:27327002,SNOMEDCT,Hydrogen ion concentration,pH,1.00,bioportal
+Phosphorus,1,MESH:D010758,MESH,Phosphorus,Phosphorus,1.00,bioportal
+Phosphorus,2,SNOMEDCT:30820000,SNOMEDCT,Phosphorus,Phosphorus,1.00,bioportal
+Phosphorus,3,NCIT:C47934,NCIT,Phosphorus,Phosphorus,1.00,bioportal
+Phosphorus,4,NCIT:C68277,NCIT,Dietary Phosphorus,PHOSPHORUS,1.00,bioportal
+Phosphorus Content,1,TO:0001024,TO,phosphorus content,phosphorus content,1.00,local
+Phosphorus Content,2,TO:0003085,TO,cob phosphorus content,cob phosphorus content,0.85,local
+Phycobiliproteins,1,MESH:D052979,MESH,Phycobiliproteins,Phycobiliproteins,1.00,bioportal
+Pigments,1,NCIT:C38005,NCIT,Pigmentation,PIGMENT,1.00,bioportal
+Pigments,2,CHEBI:26130,CHEBI,biological pigment,pigments,1.00,bioportal
+Piperacillin-Tazobactam,1,NCIT:C1530,NCIT,Piperacillin-Tazobactam,Piperacillin-Tazobactam,1.00,bioportal
+Piperacillin-Tazobactam,2,ARO:3004021,ARO,piperacillin-tazobactam,piperacillin-tazobactam,1.00,bioportal
+Piperacillin-Tazobactam,3,MESH:D000077725,MESH,"Piperacillin, Tazobactam Drug Combination","Tazobactam, Piperacillin -",1.00,bioportal
+Piperacillin-Tazobactam,4,SNOMEDCT:870712009,SNOMEDCT,Allergy to piperacillin and/or tazobactam,Allergy to piperacillin and/or tazobactam,0.83,bioportal
+Piperacillin-Tazobactam,5,NCIT:C11543,NCIT,Piperacillin/Tazobactam/Vancomycin,Piperacillin/Tazobactam/Vancomycin,0.80,bioportal
+Planctomycetes,1,MESH:D000090643,MESH,Planctomycetes,Planctomycetes,1.00,bioportal
+Planctomycetes,2,SNOMEDCT:431128004,SNOMEDCT,Planctomycetes,Planctomycetes,1.00,bioportal
+Planctomycetes,3,NCBITaxon:203683,NCBITAXON,Planctomycetia,Planctomycetes,1.00,bioportal
+Planctomycetes,4,NCBITAXON:203682,NCBITAXON,Planctomycetota,Planctomycetes,1.00,bioportal
+Plasma,1,MESH:D010949,MESH,Plasma,Plasma,1.00,bioportal
+Plasma,2,SNOMEDCT:50863008,SNOMEDCT,Plasma,Plasma,1.00,bioportal
+Plasma,3,NCIT:C13356,NCIT,Plasma,Plasma,1.00,bioportal
+Plasma,4,ENVO:01000798,ENVO,plasma,plasma,1.00,bioportal
+Plasma,5,UBERON:0001969,UBERON,Plasma,Plasma,1.00,bioportal
+Plasma,6,SWEET:Plasma,SWEET,Plasma,Plasma,1.00,bioportal
+Plasma,7,NCIT:C185204,NCIT,Plasma Sample,Plasma,1.00,bioportal
+Plasmid,1,SNOMEDCT:373944006,SNOMEDCT,Plasmid,Plasmid,1.00,bioportal
+Plasmid,2,NCIT:C754,NCIT,Plasmid,Plasmid,1.00,bioportal
+Plasmid,3,OBI:0000430,OBI,plasmid,plasmid,1.00,bioportal
+Plasmid,4,SO:0000155,SO,plasmid,plasmid,1.00,bioportal
+Plasmid,5,MESH:D010957,MESH,Plasmids,Plasmids,1.00,bioportal
+Polycyclic Aromatic Hydrocarbons (Pahs),1,MESH:D011084,MESH,Polycyclic Aromatic Hydrocarbons,Polycyclic Aromatic Hydrocarbons,1.00,bioportal
+Polycyclic Aromatic Hydrocarbons (Pahs),2,NCIT:C761,NCIT,Polycyclic Aromatic Hydrocarbons,Polycyclic Aromatic Hydrocarbons,1.00,bioportal
+Polycyclic Aromatic Hydrocarbons (Pahs),3,CHEBI:33848,CHEBI,polycyclic arene,PAH,1.00,bioportal
+Polycyclic Aromatic Hydrocarbons (Pahs),4,NCIT:C45188,NCIT,Carcinogenic Polycyclic Aromatic Hydrocarbon,Carcinogenic Polycyclic Aromatic Hydrocarbon,0.84,bioportal
+Polyfluoroalkyl Substances (Pfas) Humidity,1,CHEBI:172397,CHEBI,perfluoroalkyl substance,PFAS,1.00,bioportal
+Polyfluoroalkyl Substances (Pfas) Humidity,2,CHEBI:172406,CHEBI,polyfluoroalkyl substance,PFAS,1.00,bioportal
+Potatoes,1,glosis_res:cropClassValueCode-Ro_Po,GLOSIS,Potatoes,Potatoes,1.00,local
+Potatoes,2,MESH:D011198,MESH,Solanum tuberosum,Potatoes,1.00,bioportal
+Potatoes,3,NCBITAXON:4113,NCBITAXON,Solanum tuberosum,potatoes,1.00,bioportal
+Precipitation,1,SNOMEDCT:21738005,SNOMEDCT,Precipitation,Precipitation,1.00,bioportal
+Precipitation,2,OBI:0600034,OBI,precipitation,precipitation,1.00,bioportal
+Precipitation,3,GENEPIO:0001737,GENEPIO,precipitation,precipitation,1.00,bioportal
+Precipitation,4,SWEET:Precipitation,SWEET,precipitation,precipitation,1.00,bioportal
+Precipitation,5,NCIT:C113065,NCIT,Protein Precipitation,Precipitation,1.00,bioportal
+Precipitation,6,SNOMEDCT:418684003,SNOMEDCT,Percentage precipitation,% precipitation,1.00,bioportal
+Precipitation,7,ENVO:01000703,ENVO,hydrological precipitation process,precipitation,1.00,bioportal
+Precipitation,8,ENVO:01001363,ENVO,volume of hydrological precipitation,precipitation,1.00,bioportal
+Predator,1,ECOCORE:00000089,ECOCORE,predator,predator,1.00,bioportal+local
+Processing,1,NCIT:C48177,NCIT,Processing,Processing,1.00,bioportal
+Processing,2,SWEET:Processing,SWEET,processing,processing,1.00,bioportal
+Prochlorococcus,1,MESH:D048929,MESH,Prochlorococcus,Prochlorococcus,1.00,bioportal
+Prochlorococcus,2,SNOMEDCT:434134005,SNOMEDCT,Prochlorococcus,Prochlorococcus,1.00,bioportal
+Prochlorococcus,3,NCBITAXON:1218,NCBITAXON,Prochlorococcus,Prochlorococcus,1.00,bioportal
+Propionate,1,SNOMEDCT:102712000,SNOMEDCT,Propionate,Propionate,1.00,bioportal
+Propionate,2,CHEBI:17272,CHEBI,propionate,propionate,1.00,bioportal
+Propionate,3,MESH:D011422,MESH,Propionates,Propionates,1.00,bioportal
+Propionate,4,NCIT:C210386,NCIT,Propionate Measurement,Propionate,1.00,bioportal
+Proteobacteria,1,MESH:D020560,MESH,Proteobacteria,Proteobacteria,1.00,bioportal
+Proteobacteria,2,SNOMEDCT:409852006,SNOMEDCT,Proteobacteria,Proteobacteria,1.00,bioportal
+Proteobacteria,3,NCIT:C76196,NCIT,Proteobacteria,Proteobacteria,1.00,bioportal
+Proteobacteria,4,NCBITaxon:1224,NCBITAXON,Proteobacteria,Proteobacteria,1.00,bioportal
+Reaction,1,SNOMEDCT:263851003,SNOMEDCT,Reaction,Reaction,1.00,bioportal
+Reaction,2,NCIT:C25637,NCIT,Reaction,Reaction,1.00,bioportal
+Reaction,3,SWEET:Reaction,SWEET,reaction,reaction,1.00,bioportal
+Reactive Oxygen Species,1,MESH:D017382,MESH,Reactive Oxygen Species,Reactive Oxygen Species,1.00,bioportal
+Reactive Oxygen Species,2,CHEBI:26523,CHEBI,reactive oxygen species,reactive oxygen species,1.00,bioportal
+Reactive Oxygen Species,3,GO:0000302,GO,response to reactive oxygen species,response to reactive oxygen species,0.84,bioportal
+Reactive Oxygen Species,4,ECTO:9000150,ECTO,exposure to reactive oxygen species,exposure to reactive oxygen species,0.84,bioportal
+Reactive Oxygen Species,5,CHEBI:70982,CHEBI,reactive oxygen species generator,reactive oxygen species generator,0.83,bioportal
+Reactive Oxygen Species,6,GO:0072593,GO,reactive oxygen species metabolic process,reactive oxygen species metabolism,0.82,bioportal
+Redox Potential,1,NCIT:C45998,NCIT,Oxidation-Reduction Potential,Redox Potential,1.00,bioportal
+Relative Abundance,1,OHMI:0000468,OHMI,relative species abundance,relative species abundance,0.83,bioportal
+Remission,1,NCIT:C18246,NCIT,Remission,Remission,1.00,bioportal
+Remission,2,EFO:EFO_0009785,EFO,remission,remission,1.00,bioportal
+Remission,3,SNOMEDCT:277022003,SNOMEDCT,Remission phase,Remission,1.00,bioportal
+Remission,4,NCIT:C213766,NCIT,Condition in Remission,REMISSION,1.00,bioportal
+Resistant Starch,1,MESH:D000084922,MESH,Resistant Starch,Resistant Starch,1.00,bioportal
+Resistant Starch,2,NCIT:C94233,NCIT,Resistant Starch,Resistant Starch,1.00,bioportal
+Resistant Starch,3,NCIT:C226260,NCIT,Resistant Potato Starch,Resistant Potato Starch,0.81,bioportal
+Rhizobium,1,MESH:D012231,MESH,Rhizobium,Rhizobium,1.00,bioportal
+Rhizobium,2,SNOMEDCT:415303003,SNOMEDCT,Rhizobium,Rhizobium,1.00,bioportal
+Rhizobium,3,NCIT:C86718,NCIT,Rhizobium,Rhizobium,1.00,bioportal
+Rhizobium,4,NCBITAXON:379,NCBITAXON,Rhizobium,Rhizobium,1.00,bioportal
+Rhodobacter,1,MESH:D016992,MESH,Rhodobacter,Rhodobacter,1.00,bioportal
+Rhodobacter,2,SNOMEDCT:415331007,SNOMEDCT,Rhodobacter,Rhodobacter,1.00,bioportal
+Rhodobacter,3,NCBITAXON:1060,NCBITAXON,Rhodobacter,Rhodobacter,1.00,bioportal
+Rice,1,SNOMEDCT:67324005,SNOMEDCT,Rice,Rice,1.00,bioportal
+Rice,2,FOODON:00004327,FOODON,rice,rice,1.00,bioportal
+Rice,3,MESH:D012275,MESH,Oryza,Rice,1.00,bioportal
+Rice,4,NCIT:C178198,NCIT,White Rice,Rice,1.00,bioportal
+Rice,5,NCBITAXON:4530,NCBITAXON,Oryza sativa,rice,1.00,bioportal
+Rice,6,NCIT:C63465,NCIT,R-ICE Regimen,RICE,1.00,bioportal
+Ros,1,NCIT:C52218,NCIT,ROS1 wt Allele,ROS,1.00,bioportal
+Ros,2,NCIT:C1421,NCIT,Oxygen Radical,ROS,1.00,bioportal
+Ros,3,CHEBI:26523,CHEBI,reactive oxygen species,ROS,1.00,bioportal
+Roseburia,1,SNOMEDCT:438129001,SNOMEDCT,Roseburia,Roseburia,1.00,bioportal
+Roseburia,2,NCBITAXON:841,NCBITAXON,Roseburia,Roseburia,1.00,bioportal
+Roseburia Intestinalis,1,MESH:C000638789,MESH,Roseburia intestinalis,Roseburia intestinalis,1.00,bioportal
+Roseburia Intestinalis,2,SNOMEDCT:440890005,SNOMEDCT,Roseburia intestinalis,Roseburia intestinalis,1.00,bioportal
+Roseburia Intestinalis,3,NCBITAXON:166486,NCBITAXON,Roseburia intestinalis,Roseburia intestinalis,1.00,bioportal
+Roseburia Intestinalis,4,NCBITaxon:718255,NCBITAXON,Roseburia intestinalis XB6B4,Roseburia intestinalis XB6B4,0.84,bioportal
+Ruminococcus Bromii,1,MESH:C000638001,MESH,Ruminococcus bromii,Ruminococcus bromii,1.00,bioportal
+Ruminococcus Bromii,2,SNOMEDCT:90439003,SNOMEDCT,Ruminococcus bromii,Ruminococcus bromii,1.00,bioportal
+Ruminococcus Bromii,3,NCBITAXON:40518,NCBITAXON,Ruminococcus bromii,Ruminococcus bromii,1.00,bioportal
+Salinity,1,MESH:D054712,MESH,Salinity,Salinity,1.00,bioportal
+Salinity,2,PATO:0085001,PATO,salinity,salinity,1.00,bioportal
+Salinity,3,SWEET:Salinity,SWEET,salinity,salinity,1.00,bioportal
+Salmonella Enterica,1,MESH:D019779,MESH,Salmonella enterica,Salmonella enterica,1.00,bioportal
+Salmonella Enterica,2,SNOMEDCT:110378009,SNOMEDCT,Salmonella enterica,Salmonella enterica,1.00,bioportal
+Salmonella Enterica,3,NCIT:C86731,NCIT,Salmonella enterica,Salmonella enterica,1.00,bioportal
+Salmonella Enterica,4,NCBITAXON:28901,NCBITAXON,Salmonella enterica,Salmonella enterica,1.00,bioportal
+Salmonella Enterica,5,NCIT:C199964,NCIT,Salmonella enterica Measurement,Salmonella enterica,1.00,bioportal
+Salmonella Enterica,6,NCBITAXON:59201,NCBITAXON,Salmonella enterica subsp. enterica,Salmonella enterica I,0.88,bioportal
+Salmonella Enterica,7,SNOMEDCT:708422009,SNOMEDCT,Salmonella enterica DNA,Salmonella enterica DNA,0.85,bioportal
+Sample Id,1,EFO:EFO_0920100,EFO,sample ID,sample ID,1.00,bioportal
+Sample Id,2,NCIT:C166393,NCIT,Specimen Identifier,Sample ID,1.00,bioportal
+Sample Name,1,NCIT:C180316,NCIT,Nucleotide Sequence Sample Name,Sample Name,1.00,bioportal
+Sample Name,2,GENEPIO:0100285,GENEPIO,sample plan name,sample plan name,0.81,bioportal
+Sample Size,1,MESH:D018401,MESH,Sample Size,Sample Size,1.00,bioportal
+Sample Size,2,NCIT:C53190,NCIT,Sample Size,Sample Size,1.00,bioportal
+Sample Type,1,NCIT:C210102,NCIT,Sample Type,Sample Type,1.00,bioportal
+Sample Type,2,NCIT:C70713,NCIT,Biospecimen Type,Sample Type,1.00,bioportal
+Sampling Date,1,AGRO:00000700,AGRO,soil sampling date,sampling date,1.00,bioportal
+Sampling Depth,1,AGRO:00000701,AGRO,soil sampling depth,sampling depth,1.00,bioportal
+Sampling Method,1,NCIT:C71492,NCIT,Sampling Method,Sampling Method,1.00,bioportal
+Sampling Method,2,SNOMEDCT:246416002,SNOMEDCT,Method of sampling,Method of sampling,1.00,bioportal
+Sampling Method,3,NCIT:C93668,NCIT,Sampling Method Code,Sampling Method Code,0.83,bioportal
+Sand,1,glosis_lh:Sand,GLOSIS,Sand,Sand,1.00,local
+Sand,2,glosis_res:lithologyValueCode-UL1,GLOSIS,sand,sand,1.00,local
+Sand,3,MESH:D000080463,MESH,Sand,Sand,1.00,bioportal
+Sand,4,SNOMEDCT:128489003,SNOMEDCT,Sand,Sand,1.00,bioportal
+Sand,5,MIXS:sand,MIXS,sand,sand,1.00,bioportal
+Sand,6,ENVO:01000017,ENVO,sand,sand,1.00,bioportal
+Sand,7,SWEET:Sand,SWEET,sand,sand,1.00,bioportal
+Sauerkraut,1,SNOMEDCT:442751000124107,SNOMEDCT,Sauerkraut,Sauerkraut,1.00,bioportal
+Sauerkraut,2,NCIT:C192848,NCIT,Sauerkraut,Sauerkraut,1.00,bioportal
+Sauerkraut,3,FOODON:03301397,FOODON,sauerkraut,sauerkraut,1.00,bioportal
+Season,1,NCIT:C94729,NCIT,Season,Season,1.00,bioportal
+Season,2,ENVO:03000096,ENVO,season,season,1.00,bioportal
+Season,3,SCHEMA:Season,SCHEMA,Season,Season,1.00,bioportal
+Season,4,SWEET:Season,SWEET,season,season,1.00,bioportal
+Season,5,MESH:D012621,MESH,Seasons,Seasons,1.00,bioportal
+Sequencing Technology,1,NCIT:C146809,NCIT,454 Sequencing,454 Sequencing Technology,0.86,bioportal
+Sequencing Technology,2,NCIT:C146819,NCIT,SMRT Sequencing,SMRT Sequencing Technology,0.85,bioportal
+Sex,1,MESH:D012723,MESH,Sex,Sex,1.00,bioportal
+Sex,2,NCIT:C28421,NCIT,Sex,Sex,1.00,bioportal
+Sex,3,ExO:0000110,EXO,sex,sex,1.00,bioportal
+Sex,4,NCIT:C17127,NCIT,Sex Behavior,Sex,1.00,bioportal
+Sex,5,SNOMEDCT:734000001,SNOMEDCT,Biological sex,Sex,1.00,bioportal
+Sex,6,SNOMEDCT:70256003,SNOMEDCT,Sexual intercourse - finding,Sex,1.00,bioportal
+Shannon Diversity,1,PCO:0000062,PCO,Shannon diversity index,Shannon diversity index,0.82,bioportal
+Shannon Diversity Index,1,PCO:0000062,PCO,Shannon diversity index,Shannon diversity index,1.00,bioportal
+Sheep,1,MESH:D012756,MESH,Sheep,Sheep,1.00,bioportal
+Sheep,2,NCIT:C14273,NCIT,Sheep,Sheep,1.00,bioportal
+Sheep,3,FOODON:03411183,FOODON,sheep,sheep,1.00,bioportal
+Sheep,4,SNOMEDCT:125099002,SNOMEDCT,Ovis aries,Sheep,1.00,bioportal
+Silt,1,glosis_lh:Silt,GLOSIS,Silt,Silt,1.00,local
+Silt,2,MIXS:silt,MIXS,silt,silt,1.00,bioportal
+Silt,3,ENVO:01000016,ENVO,silt,silt,1.00,bioportal
+Silt,4,SWEET:Silt,SWEET,silt,silt,1.00,bioportal
+Simpson Diversity,1,PCO:0000063,PCO,Simpson diversity index,Simpson diversity index,0.82,bioportal
+Simpson Diversity Index,1,PCO:0000063,PCO,Simpson diversity index,Simpson diversity index,1.00,bioportal
+Simpson Diversity Index,2,PCO:0000064,PCO,inverse Simpson diversity index,inverse Simpson diversity index,0.85,bioportal
+Simpson Index,1,PCO:0000063,PCO,Simpson diversity index,Simpson index,1.00,bioportal
+Sos Response,1,GO:0009432,GO,SOS response,SOS response,1.00,bioportal
+Sos Response,2,MESH:D013014,MESH,"SOS Response, Genetics","Responses, SOS",1.00,bioportal
+Soybean,1,SNOMEDCT:76068006,SNOMEDCT,Soybean,Soybean,1.00,bioportal
+Soybean,2,NCIT:C72010,NCIT,Soybean,Soybean,1.00,bioportal
+Soybean,3,FOODON:03301415,FOODON,soybean,soybean,1.00,bioportal
+Soybean,4,glosis_res:cropClassValueCode-Oi_So,GLOSIS,Soybeans,Soybeans,1.00,local
+Soybean,5,MESH:D013025,MESH,Glycine max,Soybean,1.00,bioportal
+Starch,1,MESH:D013213,MESH,Starch,Starch,1.00,bioportal
+Starch,2,SNOMEDCT:39360003,SNOMEDCT,Starch,Starch,1.00,bioportal
+Starch,3,NCIT:C68488,NCIT,Starch,Starch,1.00,bioportal
+Starch,4,CHEBI:28017,CHEBI,starch,starch,1.00,bioportal
+Stool,1,SNOMEDCT:706697005,SNOMEDCT,Stool,Stool,1.00,bioportal
+Stool,2,UBERON:0001988,UBERON,feces,stool,1.00,local
+Stool,3,SNOMEDCT:39477002,SNOMEDCT,Feces,Stool,1.00,bioportal
+Stool,4,NCIT:C13234,NCIT,Feces,STOOL,1.00,bioportal
+Stool,5,NCIT:C189125,NCIT,Stool Sample,Stool,1.00,bioportal
+Stool Sample,1,NCIT:C189125,NCIT,Stool Sample,Stool Sample,1.00,bioportal
+Stool Sample,2,SNOMEDCT:119339001,SNOMEDCT,Stool specimen,Stool sample,1.00,bioportal
+Storage,1,SNOMEDCT:440276004,SNOMEDCT,Storage,Storage,1.00,bioportal
+Storage,2,NCIT:C60824,NCIT,Storage,Storage,1.00,bioportal
+Storage,3,MIXS:storage,MIXS,storage,storage,1.00,bioportal
+Storage,4,OBI:0302893,OBI,storage,storage,1.00,bioportal
+Storage,5,SWEET:Storage,SWEET,storage,storage,1.00,bioportal
+Storage,6,GO:0051235,GO,maintenance of location,storage,1.00,bioportal
+Storage,7,NCIT:C115677,NCIT,TMF-RM IP Storage Section,Storage,1.00,bioportal
+Stratocumulus,1,SWEET:Stratocumulus,SWEET,stratocumulus,stratocumulus,1.00,bioportal
+Study,1,SNOMEDCT:224699009,SNOMEDCT,Study,Study,1.00,bioportal
+Study,2,NCIT:C63536,NCIT,Study,Study,1.00,bioportal
+Study,3,SIO:SIO_001066,SIO,study,study,1.00,bioportal
+Study,4,BIOLINK:Study,BIOLINK,study,study,1.00,bioportal
+Study,5,CHEAR:Study,CHEAR,study,study,1.00,bioportal
+Study,6,CHEAR:SIO_001066,CHEAR,study,study,1.00,bioportal
+Study,7,JERM:Study,JERM,Study,Study,1.00,bioportal
+Study,8,HHEAR:Study,HHEAR,Study,Study,1.00,bioportal
+Study,9,HHEAR:SIO_001066,HHEAR,study,study,1.00,bioportal
+Study,10,NCIT:C29851,NCIT,Off Study,Study,1.00,bioportal
+Study Design,1,NCIT:C15320,NCIT,Study Design,Study Design,1.00,bioportal
+Study Design,2,OBI:0500000,OBI,study design,study design,1.00,bioportal
+Study Design,3,SIO:SIO_001041,SIO,study design,study design,1.00,bioportal
+Study Design,4,EFO:EFO_0001426,EFO,study design,study design,1.00,bioportal
+Study Design,5,NCIT:C95082,NCIT,Nonclinical Study Design,Study Design,1.00,bioportal
+Substrate,1,SNOMEDCT:1119456000,SNOMEDCT,Substrate,Substrate,1.00,bioportal
+Substrate,2,NCIT:C120264,NCIT,Substrate,Substrate,1.00,bioportal
+Substrate,3,EFO:EFO_0005061,EFO,substrate,substrate,1.00,bioportal
+Substrate,4,SIO:SIO_010362,SIO,substrate,substrate,1.00,bioportal
+Substrate,5,CHEAR:SIO_010362,CHEAR,substrate,substrate,1.00,bioportal
+Substrate,6,MESH:C029152,MESH,G-substrate,G-substrate,1.00,bioportal
+Substrate,7,NCIT:C50196,NCIT,Substrate Device,Substrate,1.00,bioportal
+Sugarcane,1,MESH:D031786,MESH,Saccharum,Sugarcane,1.00,bioportal
+Sugarcane,2,NCBITaxon:4547,NCBITAXON,Saccharum officinarum,sugarcane,1.00,bioportal
+Sulfur Cycling,1,ENVO:01001331,ENVO,sulfur cycling,sulfur cycling,1.00,bioportal
+Sunrise,1,SWEET:Sunrise,SWEET,sunrise,sunrise,1.00,bioportal
+Sunset,1,SWEET:Sunset,SWEET,sunset,sunset,1.00,bioportal
+Superoxide,1,NCIT:C852,NCIT,Superoxide,Superoxide,1.00,bioportal
+Superoxide,2,CHEBI:18421,CHEBI,superoxide,superoxide,1.00,bioportal
+Superoxide,3,MESH:D013481,MESH,Superoxides,Superoxides,1.00,bioportal
+Superoxide Dismutase,1,MESH:D013482,MESH,Superoxide Dismutase,Superoxide Dismutase,1.00,bioportal
+Superoxide Dismutase,2,SNOMEDCT:27562008,SNOMEDCT,Superoxide dismutase,Superoxide dismutase,1.00,bioportal
+Superoxide Dismutase,3,NCIT:C17172,NCIT,Superoxide Dismutase,Superoxide Dismutase,1.00,bioportal
+Superoxide Dismutase,4,MESH:D000072105,MESH,Superoxide Dismutase-1,Superoxide Dismutase-1,0.88,bioportal
+Superoxide Dismutase,5,NCIT:C55287,NCIT,Superoxide Dismutase [Cu-Zn],Superoxide Dismutase 1,0.88,bioportal
+Superoxide Dismutase,6,GO:0004784,GO,superoxide dismutase activity,superoxide dismutase I,0.88,bioportal
+Superoxide Dismutase,7,GO:1902693,GO,superoxide dismutase complex,superoxide dismutase complex,0.82,bioportal
+Swine,1,MESH:D013552,MESH,Swine,Swine,1.00,bioportal
+Swine,2,FOODON:03411136,FOODON,swine,swine,1.00,bioportal
+Swine,3,NCIT:C160991,NCIT,Sus scrofa,Swine,1.00,bioportal
+Swine,4,NCBITAXON:9823,NCBITAXON,Sus scrofa,swine,1.00,bioportal
+Synechococcus,1,MESH:D046940,MESH,Synechococcus,Synechococcus,1.00,bioportal
+Synechococcus,2,NCBITAXON:1129,NCBITAXON,Synechococcus,Synechococcus,1.00,bioportal
+Taxon,1,NCIT:C40098,NCIT,Taxon,Taxon,1.00,bioportal
+Taxon,2,SCHEMA:Taxon,SCHEMA,Taxon,Taxon,1.00,bioportal
+Taxon,3,TYPON:Taxon,TYPON,Taxon,Taxon,1.00,bioportal
+Taxon,4,NCIT:C14250,NCIT,Organism,Taxon,1.00,bioportal
+Taxon,5,BIOLINK:OrganismTaxon,BIOLINK,organism taxon,taxon,1.00,bioportal
+Tca Cycle,1,NCIT:C91329,NCIT,The Citric Acid Cycle,TCA Cycle,1.00,bioportal
+Tca Cycle,2,GO:0006099,GO,tricarboxylic acid cycle,TCA cycle,1.00,bioportal
+Temperature,1,PATO:0000146,PATO,temperature,temperature,1.00,bioportal+local
+Temperature,2,MESH:D013696,MESH,Temperature,Temperature,1.00,bioportal
+Temperature,3,SNOMEDCT:722490005,SNOMEDCT,Temperature,Temperature,1.00,bioportal
+Temperature,4,SNOMEDCT:703421000,SNOMEDCT,Temperature,Temperature,1.00,bioportal
+Temperature,5,NCIT:C25206,NCIT,Temperature,Temperature,1.00,bioportal
+Temperature,6,OBOE:Temperature,OBOE,Temperature,Temperature,1.00,bioportal
+Temperature,7,EFO:EFO_0001702,EFO,temperature,temperature,1.00,bioportal
+Temperature,8,NCIT:C174446,NCIT,Body Temperature,Temperature,1.00,bioportal
+Tmao,1,MESH:C005855,MESH,trimethyloxamine,TMAO,1.00,bioportal
+Tmao,2,CHEBI:15724,CHEBI,trimethylamine N-oxide,TMAO,1.00,bioportal
+Tomato,1,SNOMEDCT:734881000,SNOMEDCT,Tomato,Tomato,1.00,bioportal
+Tomato,2,NCIT:C72019,NCIT,Tomato,Tomato,1.00,bioportal
+Tomato,3,FOODON:03301453,FOODON,tomato,tomato,1.00,bioportal
+Tomato,4,MESH:D018551,MESH,Solanum lycopersicum,Tomato,1.00,bioportal
+Tomato,5,SNOMEDCT:55242003,SNOMEDCT,Lycopersicon esculentum,Tomato,1.00,bioportal
+Transcriptomic Data,1,EFO:EFO_0004601,EFO,transcriptomic data,transcriptomic data,1.00,bioportal
+Trebouxia,1,NCBITAXON:13786,NCBITAXON,Trebouxia,Trebouxia,1.00,bioportal
+Trehalose,1,MESH:D014199,MESH,Trehalose,Trehalose,1.00,bioportal
+Trehalose,2,NCIT:C87705,NCIT,Trehalose,Trehalose,1.00,bioportal
+Trehalose,3,CHEBI:27082,CHEBI,trehalose,trehalose,1.00,bioportal
+Trimethylamine,1,MESH:C023336,MESH,trimethylamine,trimethylamine,1.00,bioportal
+Trimethylamine,2,SNOMEDCT:48181003,SNOMEDCT,Trimethylamine,Trimethylamine,1.00,bioportal
+Trimethylamine,3,CHEBI:18139,CHEBI,trimethylamine,trimethylamine,1.00,bioportal
+Trimethylamine,4,CHEBI:58389,CHEBI,trimethylammonium,trimethylamine,1.00,bioportal
+Turbulence,1,SWEET:Turbulence,SWEET,turbulence,turbulence,1.00,bioportal
+Type 2 Diabetes,1,NCIT:C26747,NCIT,Type 2 Diabetes Mellitus,"Diabetes, Type 2",1.00,bioportal
+Type 2 Diabetes,2,MESH:D003924,MESH,"Diabetes Mellitus, Type 2",Type 2 Diabetes,1.00,bioportal
+Type 2 Diabetes,3,SNOMEDCT:237599002,SNOMEDCT,Insulin treated type 2 diabetes mellitus,Diabetes type 2 on insulin,0.82,bioportal
+Type 2 Diabetes,4,SNOMEDCT:44054006,SNOMEDCT,Type 2 diabetes mellitus,Type 2 diabetes mellitus,0.81,bioportal
+Type Iv Secretion System,1,MESH:D000069319,MESH,Type IV Secretion Systems,Type IV Secretion Systems,1.00,bioportal
+Type Iv Secretion System,2,NCIT:C38877,NCIT,Bacterial Secretion System Pathway,Type IV Secretion System,1.00,bioportal
+Type Iv Secretion System,3,GO:0044097,GO,secretion by the type IV secretion system,secretion by the type IV secretion system,0.91,bioportal
+Type Iv Secretion System,4,GO:0043684,GO,type IV secretion system complex,type IV secretion system complex,0.87,bioportal
+Urban Environment,1,SNOMEDCT:224807002,SNOMEDCT,Urban environment,Urban environment,1.00,bioportal
+Urban Environment,2,SNOMEDCT:257723002,SNOMEDCT,Urban,Urban (environment),1.00,bioportal
+Urine,1,MESH:D014556,MESH,Urine,Urine,1.00,bioportal
+Urine,2,MESH:Q000652,MESH,urine,urine,1.00,bioportal
+Urine,3,SNOMEDCT:78014005,SNOMEDCT,Urine,Urine,1.00,bioportal
+Urine,4,NCIT:C13283,NCIT,Urine,Urine,1.00,bioportal
+Urine,5,UBERON:0001088,UBERON,urine,urine,1.00,bioportal
+Urine,6,NCIT:C189126,NCIT,Urine Sample,Urine,1.00,bioportal
+Urolithins,1,NCIT:C112042,NCIT,Urolithin,Urolithin,1.00,bioportal
+Urolithins,2,CHEBI:234554,CHEBI,urolithin,urolithin,1.00,bioportal
+Uv Radiation,1,MESH:D014466,MESH,Ultraviolet Rays,UV Radiation,1.00,bioportal
+Uv Radiation,2,NCIT:C17231,NCIT,Ultraviolet Radiation,UV radiation,1.00,bioportal
+Uv Resistance,1,GO:0009650,GO,UV protection,UV resistance,1.00,bioportal
+Vana Cluster,1,ARO:3000236,ARO,glycopeptide resistance gene cluster VanA,vanA_cluster,1.00,bioportal
+Vanb Cluster,1,ARO:3000238,ARO,glycopeptide resistance gene cluster VanB,vanB_cluster,1.00,bioportal
+Vancomycin,1,SNOMEDCT:372735009,SNOMEDCT,Vancomycin,Vancomycin,1.00,bioportal
+Vancomycin,2,MESH:D014640,MESH,Vancomycin,Vancomycin,1.00,bioportal
+Vancomycin,3,NCIT:C925,NCIT,Vancomycin,Vancomycin,1.00,bioportal
+Vancomycin,4,CHEBI:28001,CHEBI,vancomycin,vancomycin,1.00,bioportal
+Vancomycin,5,ARO:0000028,ARO,vancomycin,vancomycin,1.00,bioportal
+Volatile Organic Compounds,1,CHEBI:134179,CHEBI,volatile organic compound,volatile organic compound,1.00,bioportal
+Volatile Organic Compounds,2,SWEET:VolatileOrganicCompound,SWEET,volatile organic compound,volatile organic compound,1.00,bioportal
+Volatile Organic Compounds,3,MESH:D055549,MESH,Volatile Organic Compounds,Volatile Organic Compounds,1.00,bioportal
+Volatile Organic Compounds,4,MIXS:volatile%20organic%20compounds,MIXS,volatile organic compounds,volatile organic compounds,1.00,bioportal
+Volatile Organic Compounds,5,ECTO:9001621,ECTO,exposure to volatile organic compound,exposure to volatile organic compound,0.85,bioportal
+Volatile Organic Compounds,6,HP:6000180,HP,Triggered by volatile organic compounds,Triggered by volatile organic compounds,0.85,bioportal
+Weather,1,MESH:D014887,MESH,Weather,Weather,1.00,bioportal
+Weather,2,NCIT:C170964,NCIT,Weather,Weather,1.00,bioportal
+Weather,3,ENVO:01001078,ENVO,weather,weather,1.00,bioportal
+Weather,4,SWEET:Weather,SWEET,weather,weather,1.00,bioportal
+Wheat,1,glosis_res:cropClassValueCode-Ce_Wh,GLOSIS,Wheat,Wheat,1.00,local
+Wheat,2,SNOMEDCT:412071004,SNOMEDCT,Wheat,Wheat,1.00,bioportal
+Wheat,3,NCIT:C74546,NCIT,Wheat,Wheat,1.00,bioportal
+Wheat,4,MESH:D014908,MESH,Triticum,Wheat,1.00,bioportal
+Wheat,5,NCBITAXON:4565,NCBITAXON,Triticum aestivum,wheat,1.00,bioportal
+Wind Speed,1,SWEET:WindSpeed,SWEET,wind speed,wind speed,1.00,bioportal
+Wind Speed,2,ENVO:01001362,ENVO,atmospheric wind speed,speed of wind,1.00,bioportal
+Yoghurt,1,MESH:D015014,MESH,Yogurt,Yoghurt,1.00,bioportal
+Yoghurt,2,SNOMEDCT:226863004,SNOMEDCT,Yogurt,Yoghurt,1.00,bioportal
+Yoghurt,3,ENVO:00002190,ENVO,obsolete yogurt,yoghurt,1.00,bioportal
+Yoghurt,4,FOODON:00001014,FOODON,yogurt food product,yoghourt,0.97,bioportal
+Zinc,1,MESH:D015032,MESH,Zinc,Zinc,1.00,bioportal
+Zinc,2,SNOMEDCT:86739005,SNOMEDCT,Zinc,Zinc,1.00,bioportal
+Zinc,3,NCIT:C948,NCIT,Zinc,Zinc,1.00,bioportal
+Zinc,4,CHEBI:27363,CHEBI,Zinc,Zinc,1.00,bioportal
+Zinc,5,SWEET:Zinc,SWEET,Zinc,Zinc,1.00,bioportal
+Zinc,6,NCIT:C68295,NCIT,Dietary Zinc,Zinc,1.00,bioportal
