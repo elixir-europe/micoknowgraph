@@ -33,9 +33,9 @@ class FakeBioPortal:
         return self.results.get(query, [])
 
 
-def bp(iri, label, acronym, synonyms=(), notation="", obsolete=False):
+def bp(iri, label, acronym, synonyms=(), notation="", obsolete=False, definition=""):
     """One BioPortal search result in the shape bioportal.BioPortal.search returns."""
-    return {"iri": iri, "label": label, "synonyms": list(synonyms), "acronym": acronym,
+    return {"iri": iri, "label": label, "definition": definition, "synonyms": list(synonyms), "acronym": acronym,
             "notation": notation, "obsolete": obsolete}
 
 
@@ -164,17 +164,56 @@ class TestCombine(unittest.TestCase):
         self.assertEqual(sum(m["ontology"] == "ONT" for m in matches), 2)
 
 
+class TestDefinitionsAndUnmatched(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        cls.terms, cls.namespaces = load_local_ontologies(REPO / "data" / "ontology_matching" / "ontologies")
+
+    def test_local_terms_have_definitions(self):
+        by_id = {t["curie"]: t for t in self.terms}
+        self.assertTrue(by_id["GO:0010467"]["definition"] or by_id["TO:0020093"]["definition"])
+        self.assertGreater(sum(1 for t in self.terms if t["definition"]), 1000)
+
+    def test_definition_kept_when_sources_merge(self):
+        local = {"iri": OBO + "TO_1", "curie": "TO:1", "ontology": "TO", "label": "zinc", "definition": "",
+                 "matched": "zinc", "score": 1.0, "source": "local"}
+        online = {**local, "definition": "A <b>metal</b>.\n", "source": "bioportal"}
+        out = me.combine([local, {**online, "definition": "A metal."}], 0.8, 10, 2)
+        self.assertEqual(out[0]["definition"], "A metal.")
+
+    def test_bioportal_definition_is_cleaned(self):
+        fake = FakeBioPortal({"Zinc": [bp(OBO + "CHEBI_27363", "zinc", "CHEBI", definition="A <em>metal</em>\n atom.")]})
+        hits = me.bioportal_hits(fake, ["Zinc"], self.namespaces, None)
+        self.assertEqual(hits[0]["definition"], "A metal atom.")
+
+    def test_closest_hint_for_unmatched(self):
+        hits = [{"score": 0.5, "curie": "A:1"}, {"score": 0.7, "curie": "B:2"}]
+        self.assertEqual(me.closest(hits)["curie"], "B:2")
+        self.assertIsNone(me.closest([]))
+
+
 class TestCommandLine(unittest.TestCase):
     def test_local_only_run(self):
         with tempfile.TemporaryDirectory() as d:
             src, out = Path(d) / "entities.csv", Path(d) / "out.csv"
-            src.write_text("Nitrogen Content\nSoil Pollutants: Lead\n\nNitrogen Content\n", encoding="utf-8")
+            det, unm = Path(d) / "details.csv", Path(d) / "unmatched.csv"
+            src.write_text("Nitrogen Content\nzzqx unmatchable entity\n\nNitrogen Content\n", encoding="utf-8")
             subprocess.run([sys.executable, "-I", str(REPO / "scripts" / "ontology_matching" / "match_entities.py"), "--no-bioportal",
-                            "--entities", str(src), "--output", str(out)], check=True, capture_output=True)
+                            "--entities", str(src), "--output", str(out), "--details", str(det), "--unmatched", str(unm)],
+                           check=True, capture_output=True)
+            with det.open(encoding="utf-8") as f:
+                details = list(csv.DictReader(f))
+            with unm.open(encoding="utf-8") as f:
+                unmatched = list(csv.DictReader(f))
             with out.open(encoding="utf-8") as f:
                 rows = list(csv.reader(f))
         self.assertEqual(rows[0][:2], ["entity", "match_1"])
-        self.assertEqual([r[0] for r in rows[1:]], ["Nitrogen Content", "Soil Pollutants: Lead"])   # blanks/repeats dropped
+        self.assertEqual([r[0] for r in rows[1:]], ["Nitrogen Content", "zzqx unmatchable entity"])   # blanks/repeats dropped
+        top = details[0]
+        self.assertEqual((top["entity"], top["id"], top["ontology"], top["name"], top["rating"]),
+                         ("Nitrogen Content", "TO:0020093", "TO", "nitrogen content", "1.00"))
+        self.assertIn("definition", top)
+        self.assertEqual([u["entity"] for u in unmatched], ["zzqx unmatchable entity"])
         self.assertEqual(rows[1][1], "TO:0020093, nitrogen content, TO")
 
 

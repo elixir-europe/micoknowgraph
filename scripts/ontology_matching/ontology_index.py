@@ -4,8 +4,8 @@ Adapted from search_terms.py in the microKG term-finder repository (github.com/s
 Standard library only.
 
 Each term is a dict:
-    {"iri", "curie", "ontology", "label", "synonyms": [exact synonyms], "related": [related synonyms],
-     "obsolete": bool, "source": "local"}
+    {"iri", "curie", "ontology", "label", "definition", "synonyms": [exact synonyms],
+     "related": [related synonyms], "obsolete": bool, "source": "local"}
 Narrow and broad synonyms are left out on purpose: they name a different concept
 (OMP lists "acetate" as a narrow synonym of "carbon source utilization phenotype").
 """
@@ -43,6 +43,11 @@ def normalise(text):
             w = w[:-1]
         words.append(w)
     return " ".join(words)
+
+
+def clean(text):
+    """One line of plain text: HTML tags and entities removed, whitespace collapsed."""
+    return re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]+>", "", text or ""))).strip()
 
 
 # --------------------------------------------------------------------------- IDs
@@ -87,6 +92,7 @@ def parse_rdfxml(path):
         yield {
             "iri": m.group(1),
             "label": html.unescape(lab.group(1)).strip(),
+            "definition": clean(next(iter(re.findall(r"<obo:IAO_0000115[^>]*>(.*?)</obo:IAO_0000115>", chunk, re.S)), "")),
             "synonyms": syn("Exact"),
             "related": syn("Related"),
             "obsolete": bool(re.search(r"<owl:deprecated[^>]*>true<", chunk)),
@@ -105,6 +111,7 @@ def parse_obo(path):
         yield {
             "iri": OBO + i.group(1).replace(":", "_", 1),
             "label": n.group(1).strip(),
+            "definition": clean((re.search(r'^def: "(.*?)"(?: \[|$)', block, re.M) or [None, ""])[1]),
             "synonyms": re.findall(r'^synonym: "(.*?)" EXACT', block, re.M),
             "related": re.findall(r'^synonym: "(.*?)" RELATED', block, re.M),
             "obsolete": "is_obsolete: true" in block,
@@ -123,6 +130,7 @@ def parse_ttl(path):
         yield {
             "iri": m.group(1) or prefixes.get(m.group(2), "?:") + m.group(3),
             "label": lab.group(1),
+            "definition": clean((re.search(r'(?:skos:definition|rdfs:comment)\s+"([^"]+)"', block) or [None, ""])[1]),
             "synonyms": re.findall(r'skos:altLabel\s+"([^"]+)"', block),
             "related": [],
             "obsolete": False,

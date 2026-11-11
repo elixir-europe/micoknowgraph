@@ -67,11 +67,11 @@ class BioPortal:
     def search(self, query, ontologies=None, pagesize=50):
         """Search class labels and synonyms across BioPortal (or only the listed ontology acronyms).
 
-        Returns [{"iri", "label", "synonyms", "acronym", "notation", "obsolete"}], in BioPortal's rank order.
+        Returns [{"iri", "label", "definition", "synonyms", "acronym", "notation", "obsolete"}], in BioPortal's rank order.
         """
         # Obsolete classes are excluded by BioPortal's default (also_search_obsolete=false);
         # `include` cannot ask for the obsolete flag, so it is only checked if BioPortal sends it.
-        params = {"q": query, "pagesize": pagesize, "include": "prefLabel,synonym,notation",
+        params = {"q": query, "pagesize": pagesize, "include": "prefLabel,synonym,definition,notation",
                   "display_context": "false"}
         if ontologies:
             params["ontologies"] = ",".join(ontologies)
@@ -83,6 +83,7 @@ class BioPortal:
             out.append({
                 "iri": r.get("@id", ""),
                 "label": r.get("prefLabel") or "",
+                "definition": (r.get("definition") or [""])[0],
                 "synonyms": r.get("synonym") or [],
                 "acronym": acronym,
                 "notation": r.get("notation") or "",

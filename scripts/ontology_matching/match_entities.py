@@ -11,6 +11,8 @@ Step 3  Write one row per entity:  entity, match_1, ..., match_10
         e.g. "TO:0020093, nitrogen content, TO".
         A class found by both sources appears once. Only matches at or above --min-score are kept,
         so many entities get fewer than 10 matches, and some get none.
+        Also written: ontology_matches_details.csv (one row per match: ID, ontology, name, definition, rating)
+        and unmatched_entities.csv (entities with no match, with the closest candidate, for manual checking).
         BioPortal is searched only in the ontologies listed in BIOPORTAL_ONTOLOGIES (from the project sheet).
 
 Usage (from the repository root):
@@ -19,7 +21,7 @@ Usage (from the repository root):
     python3 scripts/ontology_matching/match_entities.py
     python3 scripts/ontology_matching/match_entities.py --entities my_entities.csv --output my_matches.csv
     python3 scripts/ontology_matching/match_entities.py --no-bioportal   # local ontology files only
-    python3 scripts/ontology_matching/match_entities.py --details data/ontology_matching/matches/ontology_matches_details.csv   # labels and scores, for review
+    python3 scripts/ontology_matching/match_entities.py --details my_details.csv --unmatched my_unmatched.csv
 
 Standard library only (Python 3.9+).
 """
@@ -34,12 +36,14 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))   # sibling modules, also under `python3 -I`
 from bioportal import BioPortal                             # noqa: E402
-from ontology_index import load_local_ontologies, normalise, ontology_of, to_curie  # noqa: E402
+from ontology_index import clean, load_local_ontologies, normalise, ontology_of, to_curie  # noqa: E402
 
 REPO = Path(__file__).resolve().parents[2]
 DATA = REPO / "data" / "ontology_matching"                   # all data for this step lives here
 DEFAULT_ENTITIES = DATA / "entities" / "test_entities.csv"
 DEFAULT_OUTPUT = DATA / "matches" / "ontology_matches.csv"
+DEFAULT_DETAILS = DATA / "matches" / "ontology_matches_details.csv"      # one row per match, with definition and rating
+DEFAULT_UNMATCHED = DATA / "matches" / "unmatched_entities.csv"          # entities with no match, for manual checking
 DEFAULT_ONTOLOGY_DIR = DATA / "ontologies"
 DEFAULT_CACHE = DATA / "cache" / "bioportal"
 
@@ -209,6 +213,7 @@ def bioportal_hits(client, variants, namespaces, ontologies):
                 ontology, from_acronym = r["acronym"], True
             score, matched = best_name_score(variants_n, r["label"], r["synonyms"])
             hits.append({"iri": r["iri"], "curie": curie, "ontology": ontology, "label": r["label"],
+                         "definition": clean(r["definition"]),
                          "source": "bioportal", "score": score, "matched": matched,
                          "from_acronym": from_acronym})
     return hits
@@ -230,6 +235,8 @@ def combine(hits, min_score, max_matches, max_per_ontology):
             m["sources"].add(h["source"])
             if h["score"] > m["score"]:
                 m.update(score=h["score"], matched=h["matched"])
+            if not m.get("definition") and h.get("definition"):         # keep whichever source has a definition
+                m["definition"] = h["definition"]
             if h["source"] == "local":                        # local files give the most reliable ID/ontology
                 m.update(curie=h["curie"], ontology=h["ontology"], from_acronym=False)
 
@@ -253,6 +260,11 @@ def shown(path):
         return str(Path(path).resolve().relative_to(REPO))
     except ValueError:
         return str(path)
+
+
+def closest(hits):
+    """Best-scoring hit regardless of the cut-off (or None): a hint for entities that end up with no match."""
+    return max(hits, key=lambda h: h["score"], default=None)
 
 
 def read_env_key(path, name="BIOPORTAL_API_KEY"):
@@ -283,7 +295,10 @@ def main():
     ap.add_argument("--workers", type=int, default=4, help="parallel BioPortal requests (default: 4)")
     ap.add_argument("--no-bioportal", action="store_true", help="search the local ontology files only")
     ap.add_argument("--cache-dir", default=str(DEFAULT_CACHE), help="where BioPortal responses are cached (default: %(default)s)")
-    ap.add_argument("--details", help="also write a long-format CSV with label, score and source of every match")
+    ap.add_argument("--details", default=str(DEFAULT_DETAILS),
+                    help="CSV with one row per match: id, ontology, name, definition, rating (default: %(default)s)")
+    ap.add_argument("--unmatched", default=str(DEFAULT_UNMATCHED),
+                    help="CSV of entities with no match, for manual checking (default: %(default)s)")
     args = ap.parse_args()
 
     # Step 1: entities
@@ -324,24 +339,29 @@ def main():
         hits = local.search(variants)
         if client:
             hits += bioportal_hits(client, variants, namespaces, bp_ontologies)
-        return combine(hits, args.min_score, args.max_matches, args.max_per_ontology)
+        return combine(hits, args.min_score, args.max_matches, args.max_per_ontology), closest(hits)
 
     # BioPortal requests are slow (~1 s each), so entities are searched in parallel; map() keeps input order
     with ThreadPoolExecutor(max_workers=args.workers if client else 1) as pool:
-        results = []
-        for n, matches in enumerate(pool.map(match_one, entities), 1):
-            results.append(matches)
+        results = []                                         # (matches, closest hit) per entity
+        for n, result in enumerate(pool.map(match_one, entities), 1):
+            results.append(result)
             if n % 50 == 0:
                 print(f"        {n}/{len(entities)} entities searched", file=sys.stderr)
 
     # Step 3: one row per entity; "ID, name, ontology" per match
-    rows, details, n_none = [], [], 0
-    for entity, matches in zip(entities, results):
-        n_none += not matches
+    # Also: one detailed row per match (id, ontology, name, definition, rating) and a list of unmatched entities
+    rows, details, unmatched = [], [], []
+    for entity, (matches, nearest) in zip(entities, results):
         rows.append([entity] + [f"{m['curie']}, {m['label']}, {m['ontology']}" for m in matches])
         for rank, m in enumerate(matches, 1):
-            details.append([entity, rank, m["curie"], m["ontology"], m["label"],
-                            m["matched"], f"{m['score']:.2f}", "+".join(sorted(m["sources"]))])
+            details.append([entity, rank, m["curie"], m["ontology"], m["label"], m.get("definition", ""),
+                            f"{m['score']:.2f}", m["matched"], "+".join(sorted(m["sources"]))])
+        if not matches:
+            hint = ([nearest["curie"], nearest["ontology"], nearest["label"], f"{nearest['score']:.2f}"]
+                    if nearest else ["", "", "", ""])
+            unmatched.append([entity] + hint)
+    n_none = len(unmatched)
 
     Path(args.output).parent.mkdir(parents=True, exist_ok=True)
     with open(args.output, "w", newline="", encoding="utf-8") as f:
@@ -351,12 +371,15 @@ def main():
     print(f"Step 3: wrote {shown(args.output)} ({len(rows) - n_none} entities with matches, {n_none} without)",
           file=sys.stderr)
 
-    if args.details:
-        with open(args.details, "w", newline="", encoding="utf-8") as f:
+    for path, header, data in (
+            (args.details, ["entity", "rank", "id", "ontology", "name", "definition", "rating", "matched_text", "source"], details),
+            (args.unmatched, ["entity", "closest_id", "closest_ontology", "closest_name", "closest_rating"], unmatched)):
+        Path(path).parent.mkdir(parents=True, exist_ok=True)
+        with open(path, "w", newline="", encoding="utf-8") as f:
             w = csv.writer(f)
-            w.writerow(["entity", "rank", "id", "ontology", "label", "matched_name", "score", "source"])
-            w.writerows(details)
-        print(f"        wrote {shown(args.details)}", file=sys.stderr)
+            w.writerow(header)
+            w.writerows(data)
+        print(f"        wrote {shown(path)} ({len(data)} rows)", file=sys.stderr)
 
 
 if __name__ == "__main__":

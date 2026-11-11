@@ -335,7 +335,7 @@ Night,"NCIT:C65001, Night Time, NCIT","SNOMEDCT:2546009, Night time, SNOMEDCT","
 Nitrate Availability
 Nitrogen,"MESH:D009584, Nitrogen, MESH","SNOMEDCT:36012007, Nitrogen, SNOMEDCT","NCIT:C61863, Nitrogen, NCIT"
 Nitrogen Availability
-Nitrogen Content,"TO:0020093, nitrogen content, TO","TO:0003071, cob nitrogen content, TO"
+Nitrogen Content,"TO:0020093, nitrogen content, TO","TO:0003070, ear nitrogen content, TO"
 Nitrogen Fixation,"MESH:D009586, Nitrogen Fixation, MESH","GO:0009399, nitrogen fixation, GO","SNOMEDCT:66199009, Nitrogen fixation gene, SNOMEDCT"
 Non-Alcoholic Fatty Liver Disease,"MESH:D065626, Non-alcoholic Fatty Liver Disease, MESH","DOID:0080208, non-alcoholic fatty liver disease, DOID","EFO:EFO_0003095, obsolete_non-alcoholic fatty liver disease, EFO","MONDO:0021104, alcoholic fatty liver disease, MONDO","NCIT:C181472, Non-Alcoholic Fatty Liver Disease Activity Score, NCIT","SNOMEDCT:50325005, Alcoholic fatty liver, SNOMEDCT","SNOMEDCT:772814007, NAFLD (Non-Alcoholic Fatty Liver Disease) fibrosis score, SNOMEDCT","NCIT:C171090, Non-Alcoholic Fatty Liver Disease Fibrosis Scoring System, NCIT"
 Non-Human Gut Environment
