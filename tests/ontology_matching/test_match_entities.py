@@ -62,6 +62,26 @@ class TestText(unittest.TestCase):
         self.assertLess(s("Carbonyl Compounds", "one-carbon compound"), 0.8)           # shared stem only
 
 
+class TestEnvFile(unittest.TestCase):
+    def test_read_env_key(self):
+        cases = {"BIOPORTAL_API_KEY=abc\n": "abc", "BIOPORTAL_API_KEY = 'abc'\n": "abc",
+                 "# comment\nexport BIOPORTAL_API_KEY=\"abc\"\n": "abc", "OTHER=1\n": None, "BIOPORTAL_API_KEY=\n": None}
+        with tempfile.TemporaryDirectory() as d:
+            for text, expected in cases.items():
+                path = Path(d) / ".env"
+                path.write_text(text, encoding="utf-8")
+                self.assertEqual(me.read_env_key(path), expected, text)
+            self.assertIsNone(me.read_env_key(Path(d) / "missing.env"))
+
+    def test_paths_shown_relative_to_repo(self):
+        self.assertEqual(me.shown(REPO / "data" / "x.csv"), str(Path("data") / "x.csv"))
+
+    def test_example_env_file_exists_and_is_not_ignored(self):
+        text = (REPO / ".env.example").read_text(encoding="utf-8")
+        self.assertIn("BIOPORTAL_API_KEY=", text)
+        self.assertNotIn("=" + "abc", text)
+
+
 class TestIds(unittest.TestCase):
     def test_curies(self):
         self.assertEqual(to_curie(OBO + "ENVO_00001998"), "ENVO:00001998")

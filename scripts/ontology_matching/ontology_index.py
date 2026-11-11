@@ -1,6 +1,6 @@
 """Read local ontology files (OWL RDF/XML, OBO, Turtle) into a searchable list of terms.
 
-Adapted from scripts/search_terms.py in the parent microKG term-finder repository.
+Adapted from search_terms.py in the microKG term-finder repository (github.com/scicrow/2026_biohackathon_p16_microKG).
 Standard library only.
 
 Each term is a dict:

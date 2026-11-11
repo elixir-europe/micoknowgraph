@@ -37,6 +37,21 @@ Activate it with `source .venv/bin/activate` on macOS or Linux, or
 project dependencies to install. Script-specific usage and dependencies
 should be documented as scripts are added.
 
+## BioPortal API key
+
+`scripts/ontology_matching/match_entities.py` searches BioPortal, which needs a
+free API key ([create an account](https://bioportal.bioontology.org/account) and
+copy the key from the account page). From the repository root:
+
+```sh
+cp .env.example .env     # then open .env and replace the placeholder with your key
+```
+
+`.env` must be in the repository root (next to this README). It is git-ignored,
+so the key is never committed. Alternatively, `export BIOPORTAL_API_KEY=...` in
+your shell, or pass `--api-key`. Without a key the script still runs, searching
+only the local ontology files.
+
 ## Contributing
 
 Add scripts under [scripts/](scripts/), corresponding tests under

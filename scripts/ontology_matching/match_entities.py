@@ -3,7 +3,7 @@
 
 Step 1  Read the entities (first column of a CSV, one entity per row, no header).
 Step 2  Fuzzy-search each entity in
-          - BioPortal (online; needs a free API key in the BIOPORTAL_API_KEY environment variable), and
+          - BioPortal (online; needs a free API key: BIOPORTAL_API_KEY in the environment or in <repo>/.env), and
           - the ontology files stored in data/ontology_matching/ontologies/ (offline).
         Both sources are scored with the same similarity measure (0-1), so their results can be ranked together.
 Step 3  Write one row per entity:  entity, match_1, ..., match_10
@@ -14,8 +14,8 @@ Step 3  Write one row per entity:  entity, match_1, ..., match_10
         BioPortal is searched only in the ontologies listed in BIOPORTAL_ONTOLOGIES (from the project sheet).
 
 Usage (from the repository root):
-    echo "BIOPORTAL_API_KEY=..." > .env                # key from https://bioportal.bioontology.org/account
-                                                       # (.env is git-ignored; an exported variable also works)
+    cp .env.example .env                               # then put your key in .env (repository root, git-ignored)
+                                                       # key: https://bioportal.bioontology.org/account
     python3 scripts/ontology_matching/match_entities.py
     python3 scripts/ontology_matching/match_entities.py --entities my_entities.csv --output my_matches.csv
     python3 scripts/ontology_matching/match_entities.py --no-bioportal   # local ontology files only
@@ -247,6 +247,14 @@ def combine(hits, min_score, max_matches, max_per_ontology):
     return out
 
 
+def shown(path):
+    """Path as shown in messages: relative to the repository when inside it, so output does not depend on where it is cloned."""
+    try:
+        return str(Path(path).resolve().relative_to(REPO))
+    except ValueError:
+        return str(path)
+
+
 def read_env_key(path, name="BIOPORTAL_API_KEY"):
     """Value of NAME from a .env file (lines like NAME=value; spaces and quotes allowed). None if absent."""
     p = Path(path)
@@ -268,8 +276,8 @@ def main():
     ap.add_argument("--max-matches", type=int, default=10, help="most matches per entity (default: 10)")
     ap.add_argument("--max-per-ontology", type=int, default=2, help="most matches per entity from one ontology (default: 2)")
     ap.add_argument("--min-score", type=float, default=0.8, help="similarity cut-off, 0-1 (default: 0.8)")
-    ap.add_argument("--api-key", help="BioPortal API key (default: $BIOPORTAL_API_KEY, then the --env-file)")
-    ap.add_argument("--env-file", help="file holding BIOPORTAL_API_KEY=... (default: .env in the repo, then in its parent folder)")
+    ap.add_argument("--api-key", help="BioPortal API key (default: $BIOPORTAL_API_KEY, then the .env file)")
+    ap.add_argument("--env-file", help="file holding BIOPORTAL_API_KEY=... (default: .env in the repository root)")
     ap.add_argument("--bioportal-ontologies", default=",".join(BIOPORTAL_ONTOLOGIES),
                     help="BioPortal acronyms to search, comma-separated (default: BIOPORTAL_ONTOLOGIES in this script)")
     ap.add_argument("--workers", type=int, default=4, help="parallel BioPortal requests (default: 4)")
@@ -280,25 +288,26 @@ def main():
 
     # Step 1: entities
     entities = read_entities(args.entities)
-    print(f"Step 1: {len(entities)} entities from {args.entities}", file=sys.stderr)
+    print(f"Step 1: {len(entities)} entities from {shown(args.entities)}", file=sys.stderr)
 
     # Local ontology files
     terms, namespaces = load_local_ontologies(args.ontology_dir)
     local = LocalSearch(terms)
     bioportal_names = {}
-    print(f"        {len(terms)} terms loaded from {args.ontology_dir}", file=sys.stderr)
+    print(f"        {len(terms)} terms loaded from {shown(args.ontology_dir)}", file=sys.stderr)
 
     # BioPortal (optional)
     client = None
     if not args.no_bioportal:
-        env_files = [args.env_file] if args.env_file else [REPO / ".env", REPO.parent / ".env"]
-        api_key = args.api_key or os.environ.get("BIOPORTAL_API_KEY") or next(filter(None, (read_env_key(f) for f in env_files)), None)
+        env_file = Path(args.env_file) if args.env_file else REPO / ".env"
+        api_key = args.api_key or os.environ.get("BIOPORTAL_API_KEY") or read_env_key(env_file)
         if api_key:
             client = BioPortal(api_key, cache_dir=args.cache_dir)
             bioportal_names = client.ontology_names()          # only used to check which acronyms BioPortal has
         else:
-            print("warning: no BioPortal API key (set BIOPORTAL_API_KEY, add it to .env, or use --api-key); "
-                  "searching local files only", file=sys.stderr)
+            print(f"warning: no BioPortal API key found. Add BIOPORTAL_API_KEY=... to {shown(env_file)} "
+                  "(see .env.example), set it as an environment variable, or use --api-key. "
+                  "Searching local files only.", file=sys.stderr)
     # BioPortal rejects a whole search if one acronym is unknown, so only send acronyms it has
     bp_ontologies = [x.strip() for x in args.bioportal_ontologies.split(",") if x.strip()]
     if client:
@@ -339,7 +348,7 @@ def main():
         w = csv.writer(f)
         w.writerow(["entity"] + [f"match_{i}" for i in range(1, args.max_matches + 1)])
         w.writerows(rows)
-    print(f"Step 3: wrote {args.output} ({len(rows) - n_none} entities with matches, {n_none} without)",
+    print(f"Step 3: wrote {shown(args.output)} ({len(rows) - n_none} entities with matches, {n_none} without)",
           file=sys.stderr)
 
     if args.details:
@@ -347,7 +356,7 @@ def main():
             w = csv.writer(f)
             w.writerow(["entity", "rank", "id", "ontology", "label", "matched_name", "score", "source"])
             w.writerows(details)
-        print(f"        wrote {args.details}", file=sys.stderr)
+        print(f"        wrote {shown(args.details)}", file=sys.stderr)
 
 
 if __name__ == "__main__":

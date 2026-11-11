@@ -1,11 +1,11 @@
-# Ontology matching: match CQ entities to ontology classes
+# ontology_matching: match CQ entities to ontology classes
 
 Fuzzy-matches each entity in a CSV against BioPortal and the ontology files in
 [data/ontology_matching/ontologies/](../../data/ontology_matching/ontologies/), and writes the best matches per entity.
 
 ```sh
-# one-off: put your BioPortal API key (https://bioportal.bioontology.org/account) in .env
-echo "BIOPORTAL_API_KEY=your-key" > .env        # .env is git-ignored
+# one-off, from the repository root: create .env from the template and put your key in it
+cp .env.example .env        # then edit .env; it is git-ignored (key: https://bioportal.bioontology.org/account)
 
 python3 scripts/ontology_matching/match_entities.py                                  # data/ontology_matching/entities/test_entities.csv -> data/ontology_matching/matches/ontology_matches.csv
 python3 scripts/ontology_matching/match_entities.py --entities other.csv --output other_matches.csv
@@ -13,7 +13,7 @@ python3 scripts/ontology_matching/match_entities.py --no-bioportal              
 python3 scripts/ontology_matching/match_entities.py --details data/ontology_matching/matches/ontology_matches_details.csv   # label, score and source per match
 ```
 
-- **Input:** a CSV with one entity per row in the first column and no header. Example: data/ontology_matching/entities/test_entities.csv
+- **Input:** a CSV with one entity per row in the first column and no header. Example: `data/ontology_matching/entities/test_entities.csv`
 - **Output:** one row per entity: `entity, match_1 … match_10`. Each match reads
   `ID, name, ontology`: the class ID, its label and the ontology abbreviation,
   e.g. `TO:0020093, nitrogen content, TO`.
