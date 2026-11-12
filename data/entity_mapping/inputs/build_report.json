@@ -1,0 +1,1636 @@
+{
+ "stats": {
+  "entities_map_yes": 363,
+  "entities_with_thomas_match": 247,
+  "ols_filled": 174,
+  "top1_is_ols_fill": 85,
+  "rows_map_no": 190,
+  "top1_changed_by_rerank": 114,
+  "duplicate_rows_merged": 20,
+  "generic_unmapped": 4,
+  "curated_assigned": 27,
+  "no_class": 2,
+  "entities": 553,
+  "rows_concepts": 1193,
+  "thomas_entities_not_in_sheet": 0,
+  "ols_live_calls": 0
+ },
+ "per_kind": {
+  "measurement": 115,
+  "chemical": 69,
+  "taxon": 44,
+  "pathway-or-process": 41,
+  "gene": 29,
+  "meta": 24,
+  "environment": 23,
+  "ecological-role": 19,
+  "host": 18,
+  "method-or-procedure": 16,
+  "disease-or-phenotype": 16,
+  "statistic": 13,
+  "drug-or-therapy": 13,
+  "gene-product": 12,
+  "data-artifact": 11,
+  "mobile-element": 11,
+  "taxon-group": 11,
+  "cell-state": 10,
+  "event-or-exposure": 10,
+  "identifier-scheme": 9,
+  "food-or-diet": 9,
+  "sample-material": 8,
+  "study-design": 8,
+  "time-or-period": 7,
+  "anatomy-or-body-site": 5,
+  "junk-fragment": 2
+ },
+ "rerank_top1_changes": [
+  [
+   "Acetaldehyde",
+   "MESH:D000079",
+   "CHEBI:15343"
+  ],
+  [
+   "Acetate",
+   "SNOMEDCT:54526002",
+   "CHEBI:30089"
+  ],
+  [
+   "Acidobacteria",
+   "MESH:D061271",
+   "NCBITaxon:57723"
+  ],
+  [
+   "Actinobacteria",
+   "MESH:D039903",
+   "NCBITaxon:201174"
+  ],
+  [
+   "Akkermansia Muciniphila",
+   "MESH:C000647304",
+   "NCBITaxon:239935"
+  ],
+  [
+   "Anaerostipes Hadrus",
+   "MESH:C000653133",
+   "NCBITaxon:649756"
+  ],
+  [
+   "Arsenic",
+   "MESH:D001151",
+   "CHEBI:749655"
+  ],
+  [
+   "Azospirillum",
+   "MESH:D016949",
+   "NCBITaxon:191"
+  ],
+  [
+   "Azotobacter",
+   "MESH:D001395",
+   "NCBITaxon:352"
+  ],
+  [
+   "Bacillota",
+   "MESH:D000068536",
+   "NCBITaxon:1239"
+  ],
+  [
+   "Bacteroides Fragilis",
+   "MESH:D001441",
+   "NCBITaxon:817"
+  ],
+  [
+   "Bacteroides Thetaiotaomicron",
+   "MESH:D000070077",
+   "NCBITaxon:818"
+  ],
+  [
+   "Beta-Glucan",
+   "SNOMEDCT:440561000124100",
+   "CHEBI:28793"
+  ],
+  [
+   "Bifidobacterium",
+   "MESH:D001644",
+   "NCBITaxon:1678"
+  ],
+  [
+   "Bifidobacterium Adolescentis",
+   "MESH:D000070005",
+   "NCBITaxon:1680"
+  ],
+  [
+   "Black Carbon",
+   "SNOMEDCT:3849002",
+   "CHEBI:82297"
+  ],
+  [
+   "Carbapenem",
+   "SNOMEDCT:396345004",
+   "CHEBI:46765"
+  ],
+  [
+   "Carotenoids",
+   "NCIT:C351",
+   "CHEBI:23044"
+  ],
+  [
+   "Cephalosporin",
+   "SNOMEDCT:764147003",
+   "CHEBI:23066"
+  ],
+  [
+   "Chemotherapy-Induced Mucositis",
+   "EFO:1001880",
+   "MONDO:0005588"
+  ],
+  [
+   "Chlorella",
+   "MESH:D002708",
+   "NCBITaxon:3071"
+  ],
+  [
+   "Chloroflexi",
+   "MESH:D041862",
+   "NCBITaxon:200795"
+  ],
+  [
+   "Chlorophyll A",
+   "MESH:D000077194",
+   "CHEBI:18230"
+  ],
+  [
+   "Chromium",
+   "MESH:D002857",
+   "CHEBI:749398"
+  ],
+  [
+   "Clay",
+   "glosis_lh:Clay",
+   "ENVO:00002982"
+  ],
+  [
+   "Clostridium",
+   "MESH:D003013",
+   "NCBITaxon:1485"
+  ],
+  [
+   "Clostridium Scindens",
+   "SNOMEDCT:56316008",
+   "NCBITaxon:29347"
+  ],
+  [
+   "Coastal Water",
+   "SNOMEDCT:257589004",
+   "ENVO:00002150"
+  ],
+  [
+   "Colon",
+   "MESH:D003106",
+   "UBERON:0001155"
+  ],
+  [
+   "Colorectal Cancer",
+   "DOID:9256",
+   "MONDO:0005575"
+  ],
+  [
+   "Copper",
+   "MESH:D003300",
+   "CHEBI:748257"
+  ],
+  [
+   "Cyanobacteria",
+   "ECOCORE:00000077",
+   "NCBITaxon:1117"
+  ],
+  [
+   "Day",
+   "SNOMEDCT:258703001",
+   "ENVO:01003005"
+  ],
+  [
+   "Deoxycholate",
+   "SNOMEDCT:434444004",
+   "CHEBI:23614"
+  ],
+  [
+   "Dimethyl Sulfide",
+   "MESH:C004784",
+   "CHEBI:17437"
+  ],
+  [
+   "Drought",
+   "SNOMEDCT:1287815006",
+   "ENVO:1000745"
+  ],
+  [
+   "Eggerthella Lenta",
+   "MESH:C000650378",
+   "NCBITaxon:84112"
+  ],
+  [
+   "Enterocloster",
+   "SNOMEDCT:1162475009",
+   "NCBITaxon:2719313"
+  ],
+  [
+   "Environment",
+   "MESH:D004777",
+   "ENVO:01000254"
+  ],
+  [
+   "Equol",
+   "MESH:D060754",
+   "CHEBI:34741"
+  ],
+  [
+   "Ergosterol",
+   "MESH:D004875",
+   "CHEBI:16933"
+  ],
+  [
+   "Escherichia Coli",
+   "MESH:D004926",
+   "NCBITaxon:562"
+  ],
+  [
+   "Eubacterium Rectale",
+   "NCIT:C86388",
+   "NCBITaxon:39491"
+  ],
+  [
+   "Faecalibacterium Prausnitzii",
+   "MESH:D000070037",
+   "NCBITaxon:853"
+  ],
+  [
+   "Fluoroquinolone",
+   "SNOMEDCT:838284008",
+   "ARO:0000001"
+  ],
+  [
+   "Formaldehyde",
+   "MESH:D005557",
+   "CHEBI:16842"
+  ],
+  [
+   "Formic Acid",
+   "MESH:C030544",
+   "CHEBI:30751"
+  ],
+  [
+   "Fungi",
+   "MESH:D005658",
+   "NCBITaxon:4751"
+  ],
+  [
+   "Fusobacterium Nucleatum",
+   "MESH:D016967",
+   "NCBITaxon:851"
+  ],
+  [
+   "Gene",
+   "SNOMEDCT:67271001",
+   "SO:0000704"
+  ],
+  [
+   "Glutathione",
+   "MESH:D005978",
+   "CHEBI:16856"
+  ],
+  [
+   "Glycerol",
+   "MESH:D005990",
+   "CHEBI:17754"
+  ],
+  [
+   "Glycogen",
+   "MESH:D006003",
+   "CHEBI:28087"
+  ],
+  [
+   "Greenhouse",
+   "ENVO:03600087",
+   "AGRO:00000363"
+  ],
+  [
+   "Growth Chamber",
+   "GO:0007295",
+   "PECO:0007269"
+  ],
+  [
+   "Host",
+   "NCIT:C66819",
+   "OHMI:0000485"
+  ],
+  [
+   "Hungatella Hathewayi",
+   "MESH:C000649429",
+   "NCBITaxon:154046"
+  ],
+  [
+   "Hydrogen Peroxide",
+   "MESH:D006861",
+   "CHEBI:16240"
+  ],
+  [
+   "Hydroxyl Radicals",
+   "MESH:D017665",
+   "CHEBI:29191"
+  ],
+  [
+   "Inulin",
+   "MESH:D007444",
+   "CHEBI:15443"
+  ],
+  [
+   "Isoprene",
+   "MESH:C005059",
+   "CHEBI:35194"
+  ],
+  [
+   "Kefir",
+   "MESH:D000070716",
+   "FOODON:03310290"
+  ],
+  [
+   "Kimchi",
+   "NCIT:C192849",
+   "FOODON:00002946"
+  ],
+  [
+   "Klebsiella",
+   "MESH:D007709",
+   "NCBITaxon:570"
+  ],
+  [
+   "Klebsiella Pneumoniae",
+   "SNOMEDCT:56415008",
+   "NCBITaxon:573"
+  ],
+  [
+   "Lactate",
+   "SNOMEDCT:83036002",
+   "CHEBI:24996"
+  ],
+  [
+   "Lipid Metabolism",
+   "MESH:D050356",
+   "GO:0006629"
+  ],
+  [
+   "Lung",
+   "MESH:D008168",
+   "UBERON:0002048"
+  ],
+  [
+   "Macrolide",
+   "SNOMEDCT:428787002",
+   "CHEBI:25106"
+  ],
+  [
+   "Malonic Acid",
+   "MESH:C030290",
+   "CHEBI:30794"
+  ],
+  [
+   "Microplastic",
+   "SNOMEDCT:1290102004",
+   "ENVO:01000944"
+  ],
+  [
+   "Natural Environment",
+   "SNOMEDCT:224803003",
+   "ENVO:01000951"
+  ],
+  [
+   "Neutropenia",
+   "MESH:D009503",
+   "MONDO:0001475"
+  ],
+  [
+   "Nitrogen Fixation",
+   "MESH:D009586",
+   "GO:0009399"
+  ],
+  [
+   "Nostoc",
+   "MESH:D046937",
+   "NCBITaxon:1177"
+  ],
+  [
+   "Organic Matter",
+   "glosis_prop:physioChemicalPropertyCode-Orgmat",
+   "ENVO:01000155"
+  ],
+  [
+   "Oxalic Acid",
+   "MESH:D019815",
+   "CHEBI:16995"
+  ],
+  [
+   "Pancreas",
+   "MESH:D010179",
+   "UBERON:0001264"
+  ],
+  [
+   "Particulate Matter",
+   "MESH:D052638",
+   "ENVO:01000060"
+  ],
+  [
+   "Pentose Phosphate Pathway",
+   "MESH:D010427",
+   "GO:0006098"
+  ],
+  [
+   "Pigments",
+   "NCIT:C38005",
+   "CHEBI:26130"
+  ],
+  [
+   "Piperacillin-Tazobactam",
+   "NCIT:C1530",
+   "ARO:3004021"
+  ],
+  [
+   "Plasma",
+   "MESH:D010949",
+   "UBERON:0001969"
+  ],
+  [
+   "Plasmid",
+   "SNOMEDCT:373944006",
+   "SO:0000155"
+  ],
+  [
+   "Polycyclic Aromatic Hydrocarbons (Pahs)",
+   "MESH:D011084",
+   "CHEBI:33848"
+  ],
+  [
+   "Prochlorococcus",
+   "MESH:D048929",
+   "NCBITaxon:1218"
+  ],
+  [
+   "Propionate",
+   "SNOMEDCT:102712000",
+   "CHEBI:17272"
+  ],
+  [
+   "Proteobacteria",
+   "MESH:D020560",
+   "NCBITaxon:1224"
+  ],
+  [
+   "Reactive Oxygen Species",
+   "MESH:D017382",
+   "CHEBI:26523"
+  ],
+  [
+   "Rhizobium",
+   "MESH:D012231",
+   "NCBITaxon:379"
+  ],
+  [
+   "Rhodobacter",
+   "MESH:D016992",
+   "NCBITaxon:1060"
+  ],
+  [
+   "Ros",
+   "NCIT:C52218",
+   "CHEBI:26523"
+  ],
+  [
+   "Roseburia",
+   "SNOMEDCT:438129001",
+   "NCBITaxon:841"
+  ],
+  [
+   "Roseburia Intestinalis",
+   "MESH:C000638789",
+   "NCBITaxon:166486"
+  ],
+  [
+   "Ruminococcus Bromii",
+   "MESH:C000638001",
+   "NCBITaxon:40518"
+  ],
+  [
+   "Salmonella Enterica",
+   "MESH:D019779",
+   "NCBITaxon:28901"
+  ],
+  [
+   "Sand",
+   "glosis_lh:Sand",
+   "ENVO:01000017"
+  ],
+  [
+   "Sauerkraut",
+   "SNOMEDCT:442751000124107",
+   "FOODON:03301397"
+  ],
+  [
+   "Season",
+   "NCIT:C94729",
+   "ENVO:03000096"
+  ],
+  [
+   "Silt",
+   "glosis_lh:Silt",
+   "ENVO:01000016"
+  ],
+  [
+   "Starch",
+   "MESH:D013213",
+   "CHEBI:28017"
+  ],
+  [
+   "Study Design",
+   "NCIT:C15320",
+   "OBI:0500000"
+  ],
+  [
+   "Superoxide",
+   "NCIT:C852",
+   "CHEBI:18421"
+  ],
+  [
+   "Superoxide Dismutase",
+   "MESH:D013482",
+   "GO:0004784"
+  ],
+  [
+   "Synechococcus",
+   "MESH:D046940",
+   "NCBITaxon:1129"
+  ],
+  [
+   "Tca Cycle",
+   "NCIT:C91329",
+   "GO:0006099"
+  ],
+  [
+   "Tmao",
+   "MESH:C005855",
+   "CHEBI:15724"
+  ],
+  [
+   "Trehalose",
+   "MESH:D014199",
+   "CHEBI:27082"
+  ],
+  [
+   "Trimethylamine",
+   "MESH:C023336",
+   "CHEBI:18139"
+  ],
+  [
+   "Type Iv Secretion System",
+   "MESH:D000069319",
+   "GO:0043684"
+  ],
+  [
+   "Urine",
+   "MESH:D014556",
+   "UBERON:0001088"
+  ],
+  [
+   "Urolithins",
+   "NCIT:C112042",
+   "CHEBI:234554"
+  ],
+  [
+   "Vancomycin",
+   "SNOMEDCT:372735009",
+   "CHEBI:28001"
+  ],
+  [
+   "Zinc",
+   "MESH:D015032",
+   "CHEBI:27363"
+  ]
+ ],
+ "ols_filled": [
+  [
+   "Soil Pollutants: Lead",
+   "CHEBI:25016",
+   "lead atom"
+  ],
+  [
+   "14C",
+   "CHEBI:36927",
+   "carbon-14 atom"
+  ],
+  [
+   "Acetic Acid",
+   "CHEBI:15366",
+   "acetic acid"
+  ],
+  [
+   "Acrab-Tolc Efflux Pump",
+   "ARO:3000384",
+   "AcrAB-TolC"
+  ],
+  [
+   "Adjacent Normal Mucosa",
+   "UBERON:0000344",
+   "mucosa"
+  ],
+  [
+   "Agricultural Environment",
+   "ENVO:00000077",
+   "agricultural ecosystem"
+  ],
+  [
+   "Alpha-Beta Treg",
+   "CL:0000792",
+   "CD4-positive, CD25-positive, alpha-beta regulatory T cell"
+  ],
+  [
+   "Anaplerotic Pathway",
+   "GO:0006107",
+   "oxaloacetate metabolic process"
+  ],
+  [
+   "Animal Model",
+   "EFO:0022953",
+   "animal model"
+  ],
+  [
+   "Anti-Ctla-4 Therapy",
+   "NCIT:C128036",
+   "Anti-CTLA-4 Monoclonal Antibody"
+  ],
+  [
+   "Anti-Pd-1 Therapy",
+   "NCIT:C128037",
+   "Anti-PD1 Monoclonal Antibody"
+  ],
+  [
+   "Anti-Pd-L1 Therapy",
+   "NCIT:C217372",
+   "Anti-PDL1 Therapy"
+  ],
+  [
+   "Antibiotic",
+   "CHEBI:36047",
+   "antibacterial drug"
+  ],
+  [
+   "Arg",
+   "ARO:3000000",
+   "determinant of antibiotic resistance"
+  ],
+  [
+   "Asian Dust Input",
+   "ENVO:00002008",
+   "dust"
+  ],
+  [
+   "Atmospheric Trace Gases",
+   "CHEBI:138675",
+   "gas molecular entity"
+  ],
+  [
+   "Bicarbonate Ions Active Transport",
+   "GO:0015701",
+   "bicarbonate transport"
+  ],
+  [
+   "Bioaerosols",
+   "ENVO:00010505",
+   "aerosol"
+  ],
+  [
+   "Biocide Resistance",
+   "ARO:3005386",
+   "disinfecting agents and antiseptics"
+  ],
+  [
+   "Bla Gene",
+   "ARO:3000001",
+   "beta-lactamase"
+  ],
+  [
+   "Blactx-M-15",
+   "ARO:3001878",
+   "CTX-M-15"
+  ],
+  [
+   "Blakpc",
+   "ARO:3000059",
+   "KPC beta-lactamase"
+  ],
+  [
+   "Blandm",
+   "ARO:3000057",
+   "NDM beta-lactamase"
+  ],
+  [
+   "Blaoxa-48",
+   "ARO:3001782",
+   "OXA-48"
+  ],
+  [
+   "Blashv",
+   "ARO:3000015",
+   "SHV beta-lactamase"
+  ],
+  [
+   "Blatem",
+   "ARO:3000014",
+   "TEM beta-lactamase"
+  ],
+  [
+   "Bloodstream Infection",
+   "HP:0031864",
+   "Bacteremia"
+  ],
+  [
+   "Broad-Spectrum Antibiotic Exposure Window",
+   "ECTO:9001694",
+   "exposure to antibacterial agent"
+  ],
+  [
+   "Buffalo",
+   "NCBITaxon:89462",
+   "Bubalus bubalis"
+  ],
+  [
+   "C4 Pathway",
+   "GO:0009760",
+   "C4 photosynthesis"
+  ],
+  [
+   "Cadmium",
+   "CHEBI:22977",
+   "cadmium atom"
+  ],
+  [
+   "Calvin-Benson-Bassham Cycle",
+   "GO:0019253",
+   "reductive pentose-phosphate cycle"
+  ],
+  [
+   "Cam Pathway",
+   "GO:0009761",
+   "CAM photosynthesis"
+  ],
+  [
+   "Carbapenemase",
+   "GO:0008800",
+   "beta-lactamase activity"
+  ],
+  [
+   "Carbon Fixation Pathway",
+   "GO:0015977",
+   "carbon fixation"
+  ],
+  [
+   "Carbonic Anhydrase",
+   "GO:0004089",
+   "carbonate dehydratase activity"
+  ],
+  [
+   "Carbonyl Compounds",
+   "CHEBI:36586",
+   "carbonyl compound"
+  ],
+  [
+   "Cardiovascular Disease",
+   "MONDO:0004995",
+   "cardiovascular disorder"
+  ],
+  [
+   "Cattle",
+   "NCBITaxon:9913",
+   "Bos taurus"
+  ],
+  [
+   "Cd19 Car-T Therapy",
+   "NCIT:C126102",
+   "Chimeric Antigen Receptor T-Cell Therapy"
+  ],
+  [
+   "Cd8+ Effector Memory T-Cell Exhaustion",
+   "CL:0000909",
+   "CD8-positive, alpha-beta memory T cell"
+  ],
+  [
+   "Cell-Free Dna",
+   "NCIT:C128274",
+   "Circulating Cell-Free DNA"
+  ],
+  [
+   "Cfxa Gene",
+   "ARO:3003001",
+   "CfxA"
+  ],
+  [
+   "Co-Integrate Formation",
+   "GO:0006310",
+   "DNA recombination"
+  ],
+  [
+   "Co\u2082 Active Transport",
+   "GO:0015670",
+   "carbon dioxide transport"
+  ],
+  [
+   "Co\u2082 Fixation Pathway",
+   "GO:0015977",
+   "carbon fixation"
+  ],
+  [
+   "Cohort",
+   "EFO:0004445",
+   "cohort"
+  ],
+  [
+   "Colrnai Replicon",
+   "SO:0001235",
+   "replicon"
+  ],
+  [
+   "Compensatory Mutation",
+   "SO:0001060",
+   "sequence_variant"
+  ],
+  [
+   "Conjugative Plasmid",
+   "SO:0000155",
+   "plasmid"
+  ],
+  [
+   "Consortium",
+   "PCO:1000004",
+   "microbial community"
+  ],
+  [
+   "Cumulus",
+   "ENVO:01001414",
+   "cumulus cloud"
+  ],
+  [
+   "Damaged Cell",
+   "PATO:0001167",
+   "damaged"
+  ],
+  [
+   "Diatoms",
+   "NCBITaxon:2836",
+   "Bacillariophyta"
+  ],
+  [
+   "Diet",
+   "ONS:1000001",
+   "diet"
+  ],
+  [
+   "Disease Relapse",
+   "NCIT:C38155",
+   "Recurrent Disease"
+  ],
+  [
+   "Dividing Cell",
+   "GO:0051301",
+   "cell division"
+  ],
+  [
+   "Dormant Cell",
+   "GO:0022611",
+   "dormancy process"
+  ],
+  [
+   "Environmental Stressors",
+   "ExO:0000002",
+   "exposure event"
+  ],
+  [
+   "Enzyme",
+   "GO:0003824",
+   "catalytic activity"
+  ],
+  [
+   "Enzymes",
+   "GO:0003824",
+   "catalytic activity"
+  ],
+  [
+   "Ermb Gene",
+   "ARO:3000375",
+   "ErmB"
+  ],
+  [
+   "Escherichia Coli Pks+",
+   "NCBITaxon:562",
+   "Escherichia coli"
+  ],
+  [
+   "Exopolysaccharide Production",
+   "GO:0000271",
+   "polysaccharide biosynthetic process"
+  ],
+  [
+   "Extreme Weather",
+   "ENVO:01001078",
+   "weather"
+  ],
+  [
+   "Fermented Dairy",
+   "FOODON:03310418",
+   "dairy product (fermented)"
+  ],
+  [
+   "Fermented Vegetables",
+   "FOODON:03310784",
+   "fermented vegetable food product"
+  ],
+  [
+   "Fertilizer Microbial Community",
+   "PCO:1000004",
+   "microbial community"
+  ],
+  [
+   "Ffpe Tissue",
+   "OBI:1200000",
+   "FFPE specimen"
+  ],
+  [
+   "Field Trial",
+   "PECO:0007256",
+   "field study"
+  ],
+  [
+   "Fluoroquinolone Resistance",
+   "ARO:0000001",
+   "fluoroquinolone antibiotic"
+  ],
+  [
+   "Fresh-Frozen Biopsy",
+   "OBI:0000922",
+   "frozen specimen"
+  ],
+  [
+   "Freshwater",
+   "ENVO:00002011",
+   "fresh water"
+  ],
+  [
+   "Gene Amplification",
+   "SO:0001742",
+   "copy_number_gain"
+  ],
+  [
+   "Gene Expression",
+   "GO:0010467",
+   "gene expression"
+  ],
+  [
+   "Genes",
+   "SO:0000704",
+   "gene"
+  ],
+  [
+   "Glycolysis",
+   "GO:0006096",
+   "glycolytic process"
+  ],
+  [
+   "Goat",
+   "NCBITaxon:9925",
+   "Capra hircus"
+  ],
+  [
+   "Grooming Giver",
+   "NBO:0000450",
+   "social grooming"
+  ],
+  [
+   "Grooming Interaction",
+   "NBO:0000450",
+   "social grooming"
+  ],
+  [
+   "Grooming Receiver",
+   "NBO:0000450",
+   "social grooming"
+  ],
+  [
+   "Heavy Metal Resistance",
+   "GO:0010038",
+   "response to metal ion"
+  ],
+  [
+   "Heavy Metals",
+   "CHEBI:5631",
+   "heavy metal"
+  ],
+  [
+   "Hen",
+   "NCBITaxon:9031",
+   "Gallus gallus"
+  ],
+  [
+   "Heterotrophic Bacteria",
+   "ECOCORE:00000010",
+   "heterotroph"
+  ],
+  [
+   "High-Fat Diet",
+   "ONS:1000041",
+   "high fat diet"
+  ],
+  [
+   "Human",
+   "NCBITaxon:9606",
+   "Homo sapiens"
+  ],
+  [
+   "Human Pathogen",
+   "IDO:0000528",
+   "pathogen"
+  ],
+  [
+   "Imidazole Propionate",
+   "CHEBI:72991",
+   "dihydrourocanate"
+  ],
+  [
+   "Incf Replicon",
+   "SO:0001235",
+   "replicon"
+  ],
+  [
+   "Inci1 Replicon",
+   "SO:0001235",
+   "replicon"
+  ],
+  [
+   "Incp Replicon",
+   "SO:0001235",
+   "replicon"
+  ],
+  [
+   "Incx Replicon",
+   "SO:0001235",
+   "replicon"
+  ],
+  [
+   "Indole Derivatives",
+   "CHEBI:24828",
+   "indoles"
+  ],
+  [
+   "Industrial Environment",
+   "ENVO:03600080",
+   "industrial park"
+  ],
+  [
+   "Inflammatory Bowel Disease",
+   "MONDO:0005265",
+   "inflammatory bowel disease"
+  ],
+  [
+   "Inorganic Aerosol",
+   "ENVO:00010505",
+   "aerosol"
+  ],
+  [
+   "Iron",
+   "CHEBI:18248",
+   "iron atom"
+  ],
+  [
+   "Known Pathogen",
+   "IDO:0000528",
+   "pathogen"
+  ],
+  [
+   "Light",
+   "ENVO:21001215",
+   "visible spectrum radiation"
+  ],
+  [
+   "Madcam-1",
+   "PR:000010041",
+   "mucosal addressin cell adhesion molecule 1"
+  ],
+  [
+   "Maize",
+   "NCBITaxon:4577",
+   "Zea mays"
+  ],
+  [
+   "Mediterranean Diet",
+   "ONS:1000038",
+   "mediterranean diet"
+  ],
+  [
+   "Membrane Compromise Cell",
+   "PATO:0001167",
+   "damaged"
+  ],
+  [
+   "Mercury",
+   "CHEBI:25195",
+   "mercury atom"
+  ],
+  [
+   "Metabolic Behaviour",
+   "GO:0008152",
+   "metabolic process"
+  ],
+  [
+   "Metabolic Pathway",
+   "GO:0008152",
+   "metabolic process"
+  ],
+  [
+   "Metabolically Active Cell",
+   "GO:0008152",
+   "metabolic process"
+  ],
+  [
+   "Metastasis",
+   "MONDO:0024883",
+   "metastatic neoplasm"
+  ],
+  [
+   "Mexab-Oprm Efflux Pump",
+   "ARO:3000386",
+   "MexAB-OprM"
+  ],
+  [
+   "Mid-Chemotherapy Cycle",
+   "NCIT:C223182",
+   "Treatment Cycle"
+  ],
+  [
+   "Mobilisable Plasmid",
+   "SO:0000155",
+   "plasmid"
+  ],
+  [
+   "Mouse",
+   "NCBITaxon:10090",
+   "Mus musculus"
+  ],
+  [
+   "N\u2082 Fixation Pathway",
+   "GO:0009399",
+   "nitrogen fixation"
+  ],
+  [
+   "Neutropenic Fever Episode",
+   "NCIT:C35665",
+   "Febrile Neutropenia"
+  ],
+  [
+   "Night",
+   "NCIT:C65001",
+   "Night Time"
+  ],
+  [
+   "Nitrogen",
+   "CHEBI:25555",
+   "nitrogen atom"
+  ],
+  [
+   "Non-Alcoholic Fatty Liver Disease",
+   "MONDO:0013209",
+   "metabolic dysfunction-associated steatotic liver disease"
+  ],
+  [
+   "Non-Human Gut Environment",
+   "ENVO:01001033",
+   "digestive tract environment"
+  ],
+  [
+   "Non-Mobilisable Plasmid",
+   "SO:0000155",
+   "plasmid"
+  ],
+  [
+   "Non-Photosynthetic Microorganisms",
+   "ECOCORE:00000010",
+   "heterotroph"
+  ],
+  [
+   "Npk",
+   "AGRO:00002046",
+   "NPK fertilizer"
+  ],
+  [
+   "Obesity",
+   "MONDO:0011122",
+   "obesity disorder"
+  ],
+  [
+   "Organic Aerosol",
+   "ENVO:00010505",
+   "aerosol"
+  ],
+  [
+   "Organic Hydrocarbons (E.G. Petrol",
+   "CHEBI:24632",
+   "hydrocarbon"
+  ],
+  [
+   "Oxidative Stress",
+   "GO:0006979",
+   "response to oxidative stress"
+  ],
+  [
+   "Pathogen",
+   "IDO:0000528",
+   "pathogen"
+  ],
+  [
+   "Pathway",
+   "GO:0008150",
+   "biological_process"
+  ],
+  [
+   "Pentanoate",
+   "CHEBI:31011",
+   "valerate"
+  ],
+  [
+   "Peri-Operative Antibiotic Prophylaxis",
+   "NCIT:C51993",
+   "Antibiotic Prophylaxis"
+  ],
+  [
+   "Phage-Plasmid Hybrid",
+   "SO:0000155",
+   "plasmid"
+  ],
+  [
+   "Phosphorus",
+   "CHEBI:28659",
+   "phosphorus atom"
+  ],
+  [
+   "Photosynthetic Bacteria",
+   "ECOCORE:00000130",
+   "photoautotroph"
+  ],
+  [
+   "Photosynthetic Microorganisms",
+   "ECOCORE:00000130",
+   "photoautotroph"
+  ],
+  [
+   "Phycobiliproteins",
+   "CHEBI:48863",
+   "phycocyanobilin"
+  ],
+  [
+   "Pigment Bleaching Cell",
+   "PATO:0002251",
+   "decreased pigmentation"
+  ],
+  [
+   "Planctomycetes",
+   "NCBITaxon:203682",
+   "Planctomycetota"
+  ],
+  [
+   "Plasmid Rearrangement",
+   "GO:0006310",
+   "DNA recombination"
+  ],
+  [
+   "Post-Surgical Recovery",
+   "NCIT:C28006",
+   "Postoperative"
+  ],
+  [
+   "Potatoes",
+   "NCBITaxon:4113",
+   "Solanum tuberosum"
+  ],
+  [
+   "Quiescent Cell",
+   "GO:0044838",
+   "cell quiescence"
+  ],
+  [
+   "Rct",
+   "NCIT:C46079",
+   "Randomized Controlled Clinical Trial"
+  ],
+  [
+   "Reductive Acetyl-Coa Pathway",
+   "GO:0030634",
+   "carbon fixation by acetyl-CoA pathway"
+  ],
+  [
+   "Remission",
+   "NCIT:C18246",
+   "Remission"
+  ],
+  [
+   "Resistant Starch",
+   "CDNO:0000007",
+   "resistant starch"
+  ],
+  [
+   "Rhizosphere Soil",
+   "ENVO:00005801",
+   "rhizosphere"
+  ],
+  [
+   "Rice",
+   "NCBITaxon:4530",
+   "Oryza sativa"
+  ],
+  [
+   "Ros Detoxification Pathway",
+   "GO:0072593",
+   "reactive oxygen species metabolic process"
+  ],
+  [
+   "Ros Pathway",
+   "GO:0072593",
+   "reactive oxygen species metabolic process"
+  ],
+  [
+   "Ros Production",
+   "GO:1903409",
+   "reactive oxygen species biosynthetic process"
+  ],
+  [
+   "Rubisco Activity",
+   "GO:0016984",
+   "ribulose-bisphosphate carboxylase activity"
+  ],
+  [
+   "Saharan Dust Input",
+   "ENVO:00002008",
+   "dust"
+  ],
+  [
+   "Secondary Bile Acid",
+   "CHEBI:3098",
+   "bile acid"
+  ],
+  [
+   "Sheep",
+   "NCBITaxon:9940",
+   "Ovis aries"
+  ],
+  [
+   "Social Contact",
+   "NBO:0000011",
+   "social behavior"
+  ],
+  [
+   "Soil Amendment Microbial Community",
+   "PCO:1000004",
+   "microbial community"
+  ],
+  [
+   "Soil Microbial Community",
+   "PCO:1000004",
+   "microbial community"
+  ],
+  [
+   "Soybean",
+   "NCBITaxon:3847",
+   "Glycine max"
+  ],
+  [
+   "Spores Cell",
+   "GO:0043934",
+   "sporulation"
+  ],
+  [
+   "Stool",
+   "UBERON:0001988",
+   "feces"
+  ],
+  [
+   "Stool Sample",
+   "UBERON:0001988",
+   "feces"
+  ],
+  [
+   "Stratocumulus",
+   "ENVO:01001412",
+   "stratocumulus cloud"
+  ],
+  [
+   "Sugarcane",
+   "NCBITaxon:4546",
+   "Saccharum"
+  ],
+  [
+   "Swine",
+   "NCBITaxon:9823",
+   "Sus scrofa"
+  ],
+  [
+   "Tetm Gene",
+   "ARO:3000186",
+   "tet(M)"
+  ],
+  [
+   "Tetq Gene",
+   "ARO:3000191",
+   "tet(Q)"
+  ],
+  [
+   "Tomato",
+   "NCBITaxon:4081",
+   "Solanum lycopersicum"
+  ],
+  [
+   "Type 2 Diabetes",
+   "MONDO:0005148",
+   "type 2 diabetes mellitus"
+  ],
+  [
+   "Urban Environment",
+   "ENVO:01000249",
+   "urban biome"
+  ],
+  [
+   "Uv Radiation",
+   "ENVO:21001216",
+   "ultraviolet radiation"
+  ],
+  [
+   "Uv Resistance",
+   "GO:0009650",
+   "UV protection"
+  ],
+  [
+   "Uv-Induced Photoinhibition",
+   "GO:0010205",
+   "photoinhibition"
+  ],
+  [
+   "Wheat",
+   "NCBITaxon:4565",
+   "Triticum aestivum"
+  ],
+  [
+   "Yoghurt",
+   "FOODON:00001014",
+   "yogurt food product"
+  ]
+ ],
+ "curated_assigned": [
+  [
+   "Carbon Concentration Mechanism",
+   [
+    "GO:0031470",
+    "GO:0015977"
+   ]
+  ],
+  [
+   "Cbbl Gene",
+   [
+    "GO:0016984"
+   ]
+  ],
+  [
+   "Cbbs Gene",
+   [
+    "GO:0016984"
+   ]
+  ],
+  [
+   "Circadian Rhythm Gene",
+   [
+    "GO:0007623"
+   ]
+  ],
+  [
+   "Cloud Dissipation",
+   [
+    "ENVO:02500003"
+   ]
+  ],
+  [
+   "Esbl",
+   [
+    "ARO:3000001"
+   ]
+  ],
+  [
+   "Gpx Gene",
+   [
+    "GO:0004602"
+   ]
+  ],
+  [
+   "Gut Taxa",
+   [
+    "PCO:1000004",
+    "UBERON:0001555"
+   ]
+  ],
+  [
+   "Halophile",
+   [
+    "MICRO:0001367"
+   ]
+  ],
+  [
+   "Ndh Gene",
+   [
+    "GO:0003955"
+   ]
+  ],
+  [
+   "Non-Pathogen",
+   [
+    "IDO:0000528"
+   ]
+  ],
+  [
+   "Plant Decomposition",
+   [
+    "ECOCORE:00000186"
+   ]
+  ],
+  [
+   "Pot Trial",
+   [
+    "PECO:0007248"
+   ]
+  ],
+  [
+   "Psba Gene",
+   [
+    "GO:0009772"
+   ]
+  ],
+  [
+   "Psbb Gene",
+   [
+    "GO:0016168"
+   ]
+  ],
+  [
+   "Rbcl Gene",
+   [
+    "GO:0016984"
+   ]
+  ],
+  [
+   "Rbcs Gene",
+   [
+    "GO:0016984"
+   ]
+  ],
+  [
+   "Relaxase",
+   [
+    "ICEO:0000036",
+    "GO:0004520"
+   ]
+  ],
+  [
+   "Sod Gene",
+   [
+    "GO:0004784"
+   ]
+  ],
+  [
+   "Stress-Response Gene",
+   [
+    "GO:0006950"
+   ]
+  ],
+  [
+   "Th17/Treg Imbalance",
+   [
+    "HP:0025830",
+    "HP:0020113",
+    "HP:0031392"
+   ]
+  ],
+  [
+   "Virulence Gene",
+   [
+    "MESH:D037521"
+   ]
+  ]
+ ],
+ "no_class": [
+  "Keystone Species",
+  "Resource Partitioning"
+ ],
+ "unresolved": [],
+ "top1_still_flagged": [],
+ "thomas_entities_not_in_sheet": []
+}

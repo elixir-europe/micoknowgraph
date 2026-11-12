@@ -1,0 +1,580 @@
+# Hand-curated kind per sheet entity, read by build_mapping.py.
+#
+# Keys are the sheet's entity names after whitespace normalisation (newlines and
+# runs of spaces collapsed to one space). Values:
+#   kind       one of the kinds in build_mapping.KINDS (required)
+#   canonical  repaired / expanded name when the sheet's spelling is broken or
+#              a Proper-Cased acronym (optional; default = entity)
+#   prefer     per-entity override of the preferred ontology order (optional)
+#   query      OLS search string when the name itself will not hit (optional;
+#              a list tries each in turn)
+#   generic    true = a schema-level class or slot ("Taxon", "Host", "Body Site");
+#              keep Thomas's matches but do not fill from OLS
+#   exact_only true = never accept a non-exact OLS hit for this entity
+#   rationale  one line, only where the call is not obvious
+#   wrong      {concept_id: reason} hand-flagged wrong matches in Thomas's output
+#   assign     list of hand-assigned concepts for entities no matcher finds, each
+#              {id, match, note, secondary}: `id` is a CURIE looked up on OLS (label
+#              and definition come from there); `match` is exact / broader /
+#              function-of-product / component / negation; `secondary` is a
+#              non-ontology identifier worth keeping (KEGG KO, InterPro, VFDB).
+#              Assigned rows come first (source = curated) and switch the OLS fill off.
+#   no_class   reason string: checked by hand, no class exists in any OLS ontology;
+#              the placeholder row proposes a local micokg class instead.
+#
+# Broken fragments that could be repaired carry the kind of the repaired entity
+# and say so in the rationale; only the unrepairable ones are junk-fragment.
+
+"Soil Pollutants: Lead": {kind: chemical, canonical: Lead, query: lead atom, rationale: "broken fragment of a multi-line cell ('Soil pollutants: lead, arsenic...'); repaired to the metal", wrong: {"NCIT:C25552": "NCIT 'Lead' is a position of leadership, not the metal"}}
+14C: {kind: chemical, canonical: Carbon-14, query: carbon-14 atom, rationale: "radiocarbon isotope used as a tracer in CQ 2"}
+3-Hydroxypropionate Cycle: {kind: pathway-or-process}
+Absolute Abundance: {kind: measurement}
+Abundance Explosion: {kind: statistic, rationale: "qualitative direction of change in abundance; lives on Association.direction (PATO increased amount)"}
+Abundance Implosion: {kind: statistic, rationale: "qualitative direction of change in abundance; lives on Association.direction (PATO decreased amount)"}
+Acetaldehyde: {kind: chemical}
+Acetate: {kind: chemical}
+Acetic Acid: {kind: chemical}
+Acidobacteria: {kind: taxon, query: Acidobacteriota, rationale: "NCBI now calls the phylum Acidobacteriota"}
+Acidophile: {kind: ecological-role, prefer: [ECOCORE, OMP, PATO]}
+Acrab-Tolc Efflux Pump: {kind: gene-product, canonical: AcrAB-TolC efflux pump, query: [AcrAB-TolC, acrB], wrong: {"ARO:3007322": "match is the *inhibitor* of the pump, not the pump"}}
+Actinobacteria: {kind: taxon, query: Actinomycetota, rationale: "NCBI now calls the phylum Actinomycetota"}
+Adjacent Normal Mucosa: {kind: sample-material, prefer: [UBERON, OBI, NCIT], query: [mucosa, adjacent normal tissue], rationale: "tumour-adjacent normal tissue specimen; UBERON mucosa for the tissue, NCIT for the specimen role"}
+Aerosol Composition: {kind: measurement}
+Aerosol Loading: {kind: measurement}
+Age: {kind: measurement, rationale: "host attribute; Sample.host_age"}
+Agricultural Environment: {kind: environment, query: [agricultural ecosystem, agricultural environment]}
+Airborne Sampler: {kind: method-or-procedure, rationale: "sampling device"}
+Akkermansia Muciniphila: {kind: taxon}
+Aldehydes: {kind: chemical}
+Alpha Diversity: {kind: measurement}
+Alpha-Beta Treg: {kind: cell-state, canonical: "Alpha-beta regulatory T cell", prefer: [CL, GO, PATO], query: "CD4-positive, CD25-positive, alpha-beta regulatory T cell", rationale: "a host cell type rather than a microbial cell state; CL is the right ontology"}
+Altitude: {kind: measurement}
+Amendment Type: {kind: measurement, rationale: "categorical sample attribute; its values are the AGRO/ENVO materials in Sample.exposed_to"}
+Aminoglycoside-Modifying Enzyme: {kind: gene-product}
+Ammonia Availability: {kind: measurement}
+Amplicon Count: {kind: measurement}
+Anaerostipes Hadrus: {kind: taxon}
+Analytical Method: {kind: method-or-procedure}
+Anaplerotic Pathway: {kind: pathway-or-process, query: [anaplerosis, oxaloacetate metabolic process]}
+Animal Model: {kind: study-design, prefer: [OBI, EFO, NCIT], query: [animal model, organism model]}
+Anti-Ctla-4 Therapy: {kind: drug-or-therapy, canonical: Anti-CTLA-4 therapy, prefer: [NCIT, CHEBI], query: [Anti-CTLA4 Therapy, Anti-CTLA-4 Monoclonal Antibody]}
+Anti-Pd-1 Therapy: {kind: drug-or-therapy, canonical: Anti-PD-1 therapy, prefer: [NCIT, CHEBI], query: [Anti-PD-1 Monoclonal Antibody, Anti-PD-1 Therapy], wrong: {"NCIT:C217372": "Anti-PD-L1 is a different target from anti-PD-1"}}
+Anti-Pd-L1 Therapy: {kind: drug-or-therapy, canonical: Anti-PD-L1 therapy, prefer: [NCIT, CHEBI], query: [Anti-PDL1 Therapy, Anti-PD-L1 Therapy]}
+Antibiotic: {kind: drug-or-therapy, query: [antibacterial drug, antimicrobial agent]}
+Antioxidant Activity: {kind: pathway-or-process, rationale: "GO molecular function; measured as an observed property in CQ 6"}
+Application Method: {kind: method-or-procedure, rationale: "AGRO:00000036 exists but describes the procedure, which lives on Procedure"}
+Arg: {kind: gene, canonical: "Antibiotic resistance gene (ARG)", prefer: [ARO, SO], query: [antibiotic resistance gene, determinant of antibiotic resistance], rationale: "ARG = antibiotic resistance gene, not arginine", wrong: {"NCIT:C62008": "Arginine; ARG here is the AMR acronym", "CHEBI:16467": "arginine"}}
+Aro-Mapped Gene Rpkm: {kind: measurement, canonical: ARO-mapped gene RPKM}
+Arsenic: {kind: chemical, query: arsenic atom}
+Ascorbate: {kind: chemical}
+Asian Dust Input: {kind: event-or-exposure, query: [dust storm, aeolian dust deposition, dust]}
+Atmospheric Trace Gases: {kind: chemical, query: [trace gas, gas molecular entity]}
+Azospirillum: {kind: taxon}
+Azotobacter: {kind: taxon}
+Bacillota: {kind: taxon}
+Bacteroides Fragilis: {kind: taxon}
+Bacteroides Thetaiotaomicron: {kind: taxon}
+Bacteroidota: {kind: taxon}
+Baseline Diagnosis: {kind: measurement, rationale: "clinical variable whose value is a MONDO disease; lives on the host observation"}
+Behavioural Data: {kind: data-artifact}
+Beta Dispersion: {kind: statistic}
+Beta Diversity: {kind: measurement}
+Beta-Glucan: {kind: chemical, query: beta-D-glucan}
+Beta-Lactam/Beta-Lactamase Inhibitor: {kind: drug-or-therapy, prefer: [ARO, CHEBI], query: beta-lactamase inhibitor}
+Bevavioural Observation: {kind: method-or-procedure, canonical: Behavioural observation, rationale: "typo in the sheet"}
+Bicarbonate Ions Active Transport: {kind: pathway-or-process, query: bicarbonate transport}
+Bifidobacterium: {kind: taxon}
+Bifidobacterium Adolescentis: {kind: taxon}
+Bioaerosols: {kind: environment, query: [bioaerosol, aerosol]}
+Biocide Resistance: {kind: disease-or-phenotype, prefer: [ARO, OMP, GO, PATO], query: [biocide resistance, disinfecting agents and antiseptics], rationale: "microbial resistance phenotype; ARO covers biocides as a drug class"}
+Bioinformatics Tool: {kind: method-or-procedure}
+Biomarker: {kind: meta, rationale: "role a chemical or taxon plays in an association, not a concept"}
+Biome: {kind: environment, rationale: "generic ENVO upper class (env_broad_scale)"}
+Bla Gene: {kind: gene, canonical: bla gene (beta-lactamase), query: beta-lactamase}
+Black Carbon: {kind: chemical, query: [carbon black, black carbon]}
+Blactx-M-15: {kind: gene, canonical: blaCTX-M-15, query: CTX-M-15}
+Blakpc: {kind: gene, canonical: blaKPC, query: KPC beta-lactamase}
+Blandm: {kind: gene, canonical: blaNDM, query: NDM beta-lactamase}
+Blaoxa-48: {kind: gene, canonical: blaOXA-48, query: OXA-48}
+Blashv: {kind: gene, canonical: blaSHV, query: SHV beta-lactamase}
+Blatem: {kind: gene, canonical: blaTEM, query: TEM beta-lactamase}
+Bloodstream Infection: {kind: disease-or-phenotype, query: [bloodstream infection, bacteremia]}
+Body Site: {kind: anatomy-or-body-site, generic: true, rationale: "the slot Sample.host_body_site; values are UBERON terms"}
+Bray-Curtis Dissimilarity: {kind: measurement}
+Broad-Spectrum Antibiotic Exposure Window: {kind: event-or-exposure, prefer: [ECTO, ENVO], query: [exposure to antibiotic, exposure to antibacterial agent], exact_only: true, rationale: "ECTO has exposures to specific antibiotic classes but no plain antibiotic exposure; a time window is really a Procedure attribute"}
+Buffalo: {kind: host, query: Bubalus bubalis, wrong: {"FOODON:03411476": "FOODON buffalo is the food-source organism product; the host is the NCBI taxon"}}
+Bulk Soil: {kind: environment}
+Butyrate: {kind: chemical}
+Butyricicoccus: {kind: taxon}
+C4 Pathway: {kind: pathway-or-process, query: C4 photosynthesis}
+Ca²⁺ Concentration: {kind: measurement, canonical: Ca2+ concentration}
+Cadmium: {kind: chemical, query: cadmium atom}
+Calvin-Benson-Bassham Cycle: {kind: pathway-or-process, query: [reductive pentose-phosphate cycle, Calvin cycle], wrong: {"MESH:D010788": "Photosynthesis is the parent process, not the Calvin cycle"}}
+Cam Pathway: {kind: pathway-or-process, canonical: CAM pathway, query: [crassulacean acid metabolism, CAM photosynthesis]}
+Carbapenem: {kind: drug-or-therapy, query: carbapenems}
+Carbapenemase: {kind: gene-product, prefer: [ARO, GO], query: [carbapenemase, beta-lactamase activity], rationale: "ARO has carbapenemase families (KPC, NDM, OXA-48) but no umbrella class; GO beta-lactamase activity is the function"}
+Carbon Concentration Mechanism: {kind: pathway-or-process, canonical: Carbon concentrating mechanism, query: [carbon dioxide concentrating mechanism, carbon concentrating mechanism], assign: [{id: "GO:0031470", match: component, note: "GO has no carbon (dioxide) concentrating mechanism process; the carboxysome is the CCM structure (cellular component), curated 2026-11-12"}, {id: "GO:0015977", match: broader, note: "the process class if one is needed; GO:0019685 photosynthesis, dark reaction is the alternative"}]}
+Carbon Cycling: {kind: pathway-or-process, prefer: [ENVO, GO], rationale: "ecosystem process; ENVO has it as a process, GO does not"}
+Carbon Fixation Pathway: {kind: pathway-or-process, query: carbon fixation}
+Carbonic Anhydrase: {kind: gene-product, query: carbonate dehydratase activity, wrong: {"MESH:D024401": "Carbonic Anhydrase I is one human isozyme, not the enzyme class"}}
+Carbonyl Compounds: {kind: chemical, query: carbonyl compound, wrong: {"MESH:D054354": "Iron Carbonyl Compounds is a lexical artefact"}}
+Carboxysome: {kind: pathway-or-process, rationale: "GO cellular component"}
+Cardiovascular Disease: {kind: disease-or-phenotype}
+Carotenoids: {kind: chemical, query: carotenoid}
+Cat Gene: {kind: gene, canonical: cat gene (catalase), rationale: "cloud-microbe stress gene; GO:0004096 catalase activity is the function, the gene itself has no OBO class"}
+Cattle: {kind: host, query: Bos taurus}
+Cbbl Gene: {kind: gene, canonical: cbbL gene (RuBisCO large subunit), rationale: "no OBO class for the gene; function is GO:0016984 ribulose-bisphosphate carboxylase activity", assign: [{id: "GO:0016984", match: function-of-product, secondary: "KEGG K01601; InterPro IPR000685", note: "gene symbol has no ontology class; the GO term is what the gene product does (type SO:0000704 gene, link with has_function), curated 2026-11-12; GO:0048492 RuBisCO complex is the component-level alternative"}]}
+Cbbs Gene: {kind: gene, canonical: cbbS gene (RuBisCO small subunit), rationale: "no OBO class for the gene; function is GO:0016984 ribulose-bisphosphate carboxylase activity", assign: [{id: "GO:0016984", match: function-of-product, secondary: "KEGG K01602; InterPro IPR000894", note: "gene symbol has no ontology class; the GO term is what the gene product does (type SO:0000704 gene, link with has_function), curated 2026-11-12; small subunit has no catalytic site of its own, GO:0048492 RuBisCO complex is the alternative"}]}
+Cd19 Car-T Therapy: {kind: drug-or-therapy, canonical: CD19 CAR-T therapy, prefer: [NCIT, CHEBI], query: [CD19 CAR T-cell therapy, CD19-targeted CAR T-cell, Chimeric Antigen Receptor T-Cell Therapy]}
+Cd8+ Effector Memory T-Cell Exhaustion: {kind: cell-state, canonical: CD8+ effector memory T-cell exhaustion, prefer: [GO, CL, PATO, HP], query: [T cell exhaustion, "CD8-positive, alpha-beta memory T cell"], rationale: "host immune cell state; CQ column is #N/A in the sheet"}
+Cell Count: {kind: measurement}
+Cell-Free Dna: {kind: sample-material, canonical: Cell-free DNA, prefer: [OBI, UBERON, NCIT], query: [cell-free DNA, cell free DNA]}
+Cephalosporin: {kind: drug-or-therapy}
+Cfu: {kind: measurement, canonical: CFU (colony-forming units)}
+Cfxa Gene: {kind: gene, canonical: cfxA gene, query: CfxA}
+Chao1 Richness: {kind: measurement}
+Chebi Identifier: {kind: identifier-scheme, canonical: ChEBI identifier}
+Chemotherapy-Induced Mucositis: {kind: disease-or-phenotype, query: [chemotherapy-induced mucositis, mucositis]}
+Chemotroph: {kind: ecological-role, query: chemotroph}
+Chlorella: {kind: taxon}
+Chloroflexi: {kind: taxon, query: Chloroflexota, rationale: "NCBI now calls the phylum Chloroflexota"}
+Chlorophyll A: {kind: chemical, query: chlorophyll a}
+Chromium: {kind: chemical, query: chromium atom}
+Circadian Rhythm Gene: {kind: gene, rationale: "gene category; the process is GO:0007623 circadian rhythm", assign: [{id: "GO:0007623", match: broader, note: "a category of genes, not a gene: model as genes annotated to this GO process (cyanobacterial clock genes kaiA/B/C), curated 2026-11-12"}]}
+Cl⁻ Concentration: {kind: measurement, canonical: Cl- concentration}
+Clay: {kind: environment, query: clay}
+Clostridium: {kind: taxon}
+Clostridium Scindens: {kind: taxon, query: "[Clostridium] scindens", rationale: "NCBI keeps the genus in square brackets"}
+Cloud Dissipation: {kind: event-or-exposure, query: [cloud dissipation, cloud dissipation process], rationale: "atmospheric process, ENVO", assign: [{id: "ENVO:02500003", match: broader, note: "ENVO has cloud formation process (ENVO:01001083) but no inverse; atmospheric process is the broader fallback until a cloud dissipation process term is requested from ENVO, curated 2026-11-12"}]}
+Cloud Droplet Size: {kind: measurement}
+Cloud Droplets: {kind: environment, query: cloud droplet}
+Cloud Formation: {kind: event-or-exposure, rationale: "atmospheric process, ENVO"}
+Cloud Maturity: {kind: measurement, rationale: "categorical stage of the cloud at sampling"}
+Cloud Optical Depth: {kind: measurement}
+Cloud Water: {kind: environment}
+Cloud Water Collector: {kind: method-or-procedure, rationale: "sampling device"}
+Cloud Water Content: {kind: measurement}
+Co-Factor: {kind: meta}
+Co-Integrate Formation: {kind: pathway-or-process, canonical: Cointegrate formation, prefer: [GO, SO], query: [cointegrate, DNA recombination]}
+Co₂ Active Transport: {kind: pathway-or-process, canonical: CO2 active transport, query: carbon dioxide transport}
+Co₂ Concentration: {kind: measurement, canonical: CO2 concentration}
+Co₂ Fixation Pathway: {kind: pathway-or-process, canonical: CO2 fixation pathway, query: carbon fixation}
+Co₂ Fixation Rate: {kind: measurement, canonical: CO2 fixation rate}
+Coastal Water: {kind: environment, query: [coastal water, coastal sea water]}
+Cog: {kind: identifier-scheme, canonical: COG (Clusters of Orthologous Genes), wrong: {"NCIT:C16467": "Congo, the country"}}
+Cohort: {kind: study-design, prefer: [OBI, EFO, NCIT], query: [cohort study design, cohort]}
+Collection Method: {kind: method-or-procedure}
+Colon: {kind: anatomy-or-body-site}
+Colorectal Cancer: {kind: disease-or-phenotype}
+Colrnai Replicon: {kind: mobile-element, canonical: ColRNAI replicon, query: [ColRNAI, replicon], rationale: "plasmid incompatibility group; SO has 'plasmid' and 'replicon' but no Inc groups"}
+Compensatory Mutation: {kind: pathway-or-process, prefer: [SO, GO], query: [compensatory mutation, sequence variant], rationale: "evolutionary event in the AMR CQ; SO is the nearest home"}
+Competition: {kind: ecological-role, prefer: [ECOCORE, PCO, GO], query: [competition, interspecies competition], rationale: "interaction type; in the schema it is the predicate micokg:competes_with"}
+Conjugative Plasmid: {kind: mobile-element, query: [conjugative plasmid, plasmid]}
+Consortium: {kind: taxon-group, canonical: Microbial consortium, prefer: [PCO, NCBITAXON], query: [microbial community, collection of organisms], wrong: {"NCIT:C61538": "Consortium as an organisation, not a microbial consortium"}}
+Contradicting Studies: {kind: meta}
+Copper: {kind: chemical, query: copper atom}
+Cross-Environment Taxon: {kind: meta, rationale: "a query result category (taxon seen in more than one environment), not a concept"}
+Cumulus: {kind: environment, query: cumulus cloud}
+Cyanobacteria: {kind: taxon, query: Cyanobacteriota, rationale: "NCBI now calls the phylum Cyanobacteriota"}
+Damaged Cell: {kind: cell-state, query: damaged}
+Database: {kind: data-artifact}
+Day: {kind: time-or-period, query: [daytime, day]}
+Deoxycholate: {kind: chemical}
+Desiccation Tolerance: {kind: pathway-or-process, query: response to desiccation, rationale: "abiotic stress trait; GO 'response to desiccation' is the agreed stand-in until OMP is adopted"}
+Diatoms: {kind: taxon, query: Bacillariophyta}
+Diet: {kind: food-or-diet, query: diet, rationale: "generic; values are FOODON diets"}
+Diet Background: {kind: measurement, rationale: "cohort attribute whose value is a FOODON diet"}
+Dimethyl Sulfide: {kind: chemical}
+Direction Of Change: {kind: statistic}
+Direction Of Link: {kind: statistic}
+Disease Relapse: {kind: disease-or-phenotype, prefer: [MONDO, NCIT, HP], query: [relapse, recurrent disease], rationale: "clinical outcome; MONDO has no relapse class so NCIT stays"}
+Dissolved Oxygen: {kind: measurement}
+Diversity Index: {kind: measurement}
+Dividing Cell: {kind: cell-state, prefer: [GO, PATO, CL], query: cell division}
+Dominance: {kind: measurement, rationale: "ecological dominance (Berger-Parker) in CQ25"}
+Dormant Cell: {kind: cell-state, query: [dormant, dormancy process]}
+Dosage: {kind: measurement}
+Dramatic Population Shift: {kind: statistic}
+Drought: {kind: event-or-exposure}
+Ec Number: {kind: identifier-scheme, canonical: EC number}
+Effect Size: {kind: statistic}
+Eggerthella Lenta: {kind: taxon}
+Electric Conductivity: {kind: measurement}
+Electron Transport Rate: {kind: measurement}
+Enterocloster: {kind: taxon}
+Environment: {kind: environment, query: environmental system, rationale: "generic; the MIxS env_* triad"}
+Environmental Presence: {kind: measurement}
+Environmental Stressors: {kind: event-or-exposure, prefer: [ECTO, ENVO], query: [stressor, exposure event]}
+Enzyme: {kind: gene-product, prefer: [GO, CHEBI], query: catalytic activity, rationale: "generic; GO molecular function 'catalytic activity' is the class the schema points at"}
+Enzymes: {kind: gene-product, prefer: [GO, CHEBI], query: catalytic activity, rationale: "duplicate of Enzyme"}
+Equol: {kind: chemical}
+Ergosterol: {kind: chemical}
+Ermb Gene: {kind: gene, canonical: ermB gene, query: ErmB}
+Esbl: {kind: gene-product, canonical: ESBL (extended-spectrum beta-lactamase), query: [extended-spectrum beta-lactamase, ESBL], assign: [{id: "ARO:3000001", match: broader, note: "ARO has no grouping class for extended-spectrum beta-lactamases; the phrase appears only in the definitions of the gene families (CTX-M ARO:3000016, SHV ARO:3000015, TEM ARO:3000014, class A ARO:3000078), GO:0008800 beta-lactamase activity is the function, curated 2026-11-12"}]}
+Escherichia Coli: {kind: taxon}
+Escherichia Coli Pks+: {kind: taxon, canonical: Escherichia coli (pks+), query: Escherichia coli, rationale: "genotoxic pks-island-positive E. coli; taxon plus a genotype qualifier"}
+Ethnicity: {kind: measurement, rationale: "host attribute"}
+Eubacterium Rectale: {kind: taxon, query: Agathobacter rectalis, rationale: "NCBI now calls it Agathobacter rectalis"}
+Exopolysaccharide Production: {kind: pathway-or-process, query: [exopolysaccharide biosynthetic process, extracellular polysaccharide biosynthetic process, polysaccharide biosynthetic process]}
+Exopolysaccharides: {kind: chemical, query: exopolysaccharide}
+Exposome Data: {kind: data-artifact}
+Exposure Duration: {kind: measurement}
+Exposure Source: {kind: measurement, rationale: "categorical exposure attribute"}
+Extreme Weather: {kind: event-or-exposure, query: [extreme weather event, weather]}
+Faecalibacterium Prausnitzii: {kind: taxon}
+Fermented Dairy: {kind: food-or-diet, query: [fermented dairy product, fermented milk product]}
+Fermented Vegetables: {kind: food-or-diet, query: [fermented vegetable food product, fermented vegetable]}
+Fertilizer Microbial Community: {kind: taxon-group, prefer: [PCO, NCBITAXON], query: microbial community, rationale: "the community in the amendment arm; PCO microbial community"}
+Ffpe Tissue: {kind: sample-material, canonical: FFPE tissue, prefer: [OBI, UBERON, NCIT], query: [formalin-fixed paraffin-embedded specimen, FFPE specimen, paraffin embedded tissue]}
+Field Trial: {kind: study-design, prefer: [AGRO, PECO, OBI], query: [field experiment, field study]}
+Filtering: {kind: method-or-procedure}
+Final Product: {kind: meta, rationale: "role of a chemical in a pathway step"}
+Fluoroquinolone: {kind: drug-or-therapy, query: fluoroquinolone antibiotic}
+Fluoroquinolone Resistance: {kind: disease-or-phenotype, prefer: [ARO, OMP, GO, PATO], query: [fluoroquinolone resistance, fluoroquinolone antibiotic], rationale: "microbial resistance phenotype; ARO"}
+Fold Change: {kind: statistic}
+Formaldehyde: {kind: chemical}
+Formic Acid: {kind: chemical}
+Fresh-Frozen Biopsy: {kind: sample-material, prefer: [OBI, UBERON, NCIT], query: [fresh frozen specimen, frozen specimen, biopsy]}
+Freshwater: {kind: environment, query: fresh water}
+Functional Potential: {kind: measurement, wrong: {"SNOMEDCT:251635003": "Motor-potential is a lexical artefact"}}
+Fungi: {kind: taxon}
+Fusobacterium Nucleatum: {kind: taxon}
+Gamma Diversity: {kind: measurement}
+Gene: {kind: gene, prefer: [SO, ARO], query: gene, rationale: "generic; SO:0000704"}
+Gene Abundance: {kind: measurement}
+Gene Amplification: {kind: pathway-or-process, prefer: [SO, GO], query: [copy_number_gain, gene amplification], rationale: "SO copy_number_gain is the nearest class"}
+Gene Expression: {kind: pathway-or-process}
+Genes: {kind: gene, prefer: [SO, ARO], query: gene, rationale: "duplicate of Gene"}
+Geographical Coordinates: {kind: measurement, rationale: "MIxS lat_lon"}
+Glutathione: {kind: chemical}
+Glycerol: {kind: chemical}
+Glycogen: {kind: chemical}
+Glycolysis: {kind: pathway-or-process, query: glycolytic process}
+Goat: {kind: host, query: Capra hircus}
+Gpx Gene: {kind: gene, canonical: gpx gene (glutathione peroxidase), rationale: "function is GO:0004602 glutathione peroxidase activity", assign: [{id: "GO:0004602", match: function-of-product, secondary: "KEGG K00432; InterPro IPR000889", note: "gene symbol has no ontology class; the GO term is what the gene product does (type SO:0000704 gene, link with has_function), curated 2026-11-12"}]}
+Greengenes Taxon: {kind: identifier-scheme}
+Greenhouse: {kind: study-design, prefer: [PECO, AGRO, ENVO, OBI], query: [greenhouse study, greenhouse]}
+Grooming Giver: {kind: ecological-role, prefer: [NBO, OBA, PATO], query: social grooming, rationale: "role in a grooming interaction; schema local term micokg:grooming_given, NBO for the behaviour"}
+Grooming Interaction: {kind: ecological-role, prefer: [NBO, OBA, PATO], query: social grooming, rationale: "host behaviour interaction; NBO:0000450"}
+Grooming Receiver: {kind: ecological-role, prefer: [NBO, OBA, PATO], query: social grooming, rationale: "role in a grooming interaction; schema local term micokg:grooming_received"}
+Gross Primary Production: {kind: measurement}
+Growth Chamber: {kind: study-design, prefer: [PECO, AGRO, OBI], query: [growth chamber study, growth chamber], wrong: {"GO:0007295": "Drosophila egg chamber growth, lexical artefact"}}
+Gtdb Taxon: {kind: identifier-scheme, canonical: GTDB taxon}
+Gut Domination Threshold: {kind: statistic, rationale: "a cut-off on relative abundance"}
+Gut Taxa: {kind: taxon-group, rationale: "taxa by habitat, not a clade; no ontology class", assign: [{id: "PCO:1000004", match: component, note: "no gut microbiome class in PCO, ECOCORE, ENVO, UBERON, OBI or OMP; decompose into a microbial community located in the digestive tract, member taxa are NCBITaxon instances, curated 2026-11-12"}, {id: "UBERON:0001555", match: component, note: "the location of the community; ENVO:01001033 digestive tract environment if the schema uses habitats rather than anatomy"}]}
+Halophile: {kind: ecological-role, prefer: [ECOCORE, OMP, PATO], assign: [{id: "MICRO:0001367", match: exact, note: "ECOCORE and PATO have no halophile class; MicrO is the only OBO ontology with the organism-level class (no textual definition on OLS); OMP:0005016 halophilic growth is the better-defined phenotype alternative, curated 2026-11-12"}]}
+Health Status: {kind: measurement, rationale: "host attribute"}
+Heavy Metal Resistance: {kind: pathway-or-process, query: response to metal ion, rationale: "abiotic stress trait, outside ARO; GO 'response to metal ion' until OMP is adopted", wrong: {"GO:0009634": "obsolete term"}}
+Heavy Metals: {kind: chemical, query: [heavy metal, metal atom]}
+Hen: {kind: host, canonical: Hen (Gallus gallus), query: Gallus gallus}
+Heterotroph: {kind: ecological-role}
+Heterotrophic Bacteria: {kind: taxon-group, prefer: [ECOCORE, NCBITAXON], query: heterotroph, rationale: "trophic grouping, not a clade"}
+High-Fat Diet: {kind: food-or-diet, query: [high fat diet, high-fat diet]}
+Hippurate: {kind: chemical}
+Histological Grade: {kind: measurement}
+Historical Climate: {kind: data-artifact, rationale: "climate record for the site"}
+Hmdb Identifier: {kind: identifier-scheme, canonical: HMDB identifier}
+Host: {kind: host, generic: true, rationale: "schema class Host; the organism is an NCBITaxon"}
+Host Organism: {kind: host, generic: true, rationale: "duplicate of Host", wrong: {"GO:0018995": "host cellular component is a GO cellular component, not the host organism"}}
+Host Species: {kind: host, generic: true, rationale: "duplicate of Host"}
+Human: {kind: host, query: Homo sapiens, wrong: {"NCBITaxon:T016": "not an NCBI taxon id (BioPortal artefact); Homo sapiens is NCBITaxon:9606"}}
+Human Pathogen: {kind: ecological-role, prefer: [ECOCORE, OMP, PCO, PATO], query: pathogen, wrong: {"OMP:0000068": "virulence phenotype is the phenotype, not the pathogen role"}}
+Humidity: {kind: measurement}
+Hungatella Hathewayi: {kind: taxon}
+Hydrogen Peroxide: {kind: chemical}
+Hydroxyl Radicals: {kind: chemical, query: hydroxyl}
+Imidazole Propionate: {kind: chemical, query: [imidazole propionate, 3-(imidazol-4-yl)propanoate, imidazolepropionic acid]}
+Incf Replicon: {kind: mobile-element, canonical: IncF replicon, query: [IncF, replicon], rationale: "plasmid incompatibility group; no SO class"}
+Inci1 Replicon: {kind: mobile-element, canonical: IncI1 replicon, query: [IncI1, replicon], rationale: "plasmid incompatibility group; no SO class"}
+Incp Replicon: {kind: mobile-element, canonical: IncP replicon, query: [IncP, replicon], rationale: "plasmid incompatibility group; no SO class"}
+Incx Replicon: {kind: mobile-element, canonical: IncX replicon, query: [IncX, replicon], rationale: "plasmid incompatibility group; no SO class"}
+Indole Derivatives: {kind: chemical, query: indoles}
+Indoxyl Sulfate: {kind: chemical}
+Industrial Environment: {kind: environment, query: [industrial area, industrial environment, industrial park], rationale: "ENVO has no generic industrial environment; industrial park is the nearest site class"}
+Inflammatory Bowel Disease: {kind: disease-or-phenotype}
+Inorganic Aerosol: {kind: environment, query: [inorganic aerosol, aerosol], rationale: "ENVO material"}
+Interaction Duration: {kind: measurement}
+Intermediate Product: {kind: meta, rationale: "role of a chemical in a pathway step"}
+Inulin: {kind: chemical}
+Iron: {kind: chemical, query: iron atom, wrong: {"glosis_res:cementationNatureValueCode-F": "GloSiS cementation code, not the element"}}
+Iron Availability: {kind: measurement}
+Isoprene: {kind: chemical}
+Kefir: {kind: food-or-diet}
+Keystone Species: {kind: ecological-role, query: keystone species, no_class: "no keystone class in ECOCORE, PCO, PATO, ENVO or any other OLS ontology; ECOCORE roles are trophic or symbiotic only; keystone-ness is better derived (network centrality) than imported"}
+Kimchi: {kind: food-or-diet}
+Klebsiella: {kind: taxon}
+Klebsiella Pneumoniae: {kind: taxon}
+Known Pathogen: {kind: ecological-role, prefer: [ECOCORE, OMP, PCO, PATO], query: pathogen, wrong: {"OMP:0000068": "virulence phenotype is the phenotype, not the pathogen role"}}
+Ko: {kind: identifier-scheme, canonical: KO (KEGG Orthology), wrong: {"CHEBI:59348": "alpha-D-Ko is a sugar, KO here is KEGG Orthology"}}
+Lactate: {kind: chemical}
+Library Preparation: {kind: method-or-procedure}
+Light: {kind: event-or-exposure, prefer: [ENVO, ECTO, PATO], query: [visible spectrum radiation, light, electromagnetic radiation], rationale: "physical stimulus the cloud microbes are exposed to"}
+Light Intensity: {kind: measurement}
+Lipid Metabolism: {kind: pathway-or-process, query: lipid metabolic process}
+Lithocholate: {kind: chemical}
+Location Elevation: {kind: measurement}
+Location Geocoordinates: {kind: measurement}
+Log Ct: {kind: measurement}
+Log2Fc: {kind: statistic, canonical: log2FC}
+Longitudinal Strain Persistence: {kind: measurement}
+Lung: {kind: anatomy-or-body-site}
+Macrolide: {kind: drug-or-therapy}
+Madcam-1: {kind: gene-product, canonical: MAdCAM-1, prefer: [PR, GO, NCIT], rationale: "host adhesion protein; PR would be the OBO home but is not in the tiers"}
+Mag: {kind: data-artifact, canonical: MAG (metagenome-assembled genome), wrong: {"NCIT:C142150": "MAG Gene (myelin-associated glycoprotein), lexical artefact"}}
+Mag Count: {kind: measurement, canonical: MAG count}
+Maize: {kind: host, query: Zea mays}
+Malonic Acid: {kind: chemical}
+Mediterranean Diet: {kind: food-or-diet, query: Mediterranean diet}
+Membrane Compromise Cell: {kind: cell-state, canonical: Membrane-compromised cell, query: [membrane integrity, damaged]}
+Membrane Integrity: {kind: measurement}
+Mercury: {kind: chemical, query: mercury atom}
+Metabolic Behaviour: {kind: pathway-or-process, query: metabolic process, rationale: "vague; generic GO metabolic process"}
+Metabolic Pathway: {kind: pathway-or-process, query: metabolic process, rationale: "generic"}
+Metabolically Active Cell: {kind: cell-state, query: [metabolically active, metabolic process]}
+Metabolite Consumer: {kind: meta, rationale: "role of a taxon in a taxon-metabolite association (predicate consumes)"}
+Metabolite Producer: {kind: meta, rationale: "role of a taxon in a taxon-metabolite association (predicate produces)"}
+Metastasis: {kind: disease-or-phenotype, query: [metastasis, metastatic neoplasm]}
+Metastatic Site: {kind: anatomy-or-body-site, generic: true, rationale: "slot whose value is an UBERON term"}
+Meteorological Conditions: {kind: measurement}
+Mexab-Oprm Efflux Pump: {kind: gene-product, canonical: MexAB-OprM efflux pump, query: [MexAB-OprM, MexB], wrong: {"ARO:3007327": "match is the *inhibitor* of the pump, not the pump"}}
+Mg²⁺ Concentration: {kind: measurement, canonical: Mg2+ concentration}
+Microalgae: {kind: taxon-group, prefer: [ECOCORE, NCBITAXON], query: [microalgae, alga], rationale: "polyphyletic grouping"}
+Microbial Community: {kind: taxon-group, prefer: [PCO, NCBITAXON]}
+Microbial Taxon: {kind: taxon, generic: true, rationale: "schema class Taxon"}
+Microplastic: {kind: chemical, prefer: [ENVO, CHEBI], query: [microplastic particle, microplastic], rationale: "pollutant with no ChEBI class; ENVO has it as a material"}
+Mid-Chemotherapy Cycle: {kind: time-or-period, prefer: [NCIT, ENVO], query: [chemotherapy cycle, treatment cycle]}
+Mobile Genetic Element Richness: {kind: measurement}
+Mobilisable Plasmid: {kind: mobile-element, query: [mobilizable plasmid, plasmid]}
+Model-Based Prediction: {kind: meta}
+Mouse: {kind: host, query: Mus musculus}
+Mutualism: {kind: ecological-role, rationale: "interaction type; RO:0002442 in the schema"}
+N₂ Fixation Pathway: {kind: pathway-or-process, canonical: N2 fixation pathway, query: nitrogen fixation}
+Natural Environment: {kind: environment, query: natural environment}
+Ncbi Taxon: {kind: identifier-scheme, canonical: NCBI taxon}
+Ndh Gene: {kind: gene, canonical: ndh gene (NAD(P)H dehydrogenase), assign: [{id: "GO:0003955", match: function-of-product, secondary: "KEGG K05572-K05583 (ndhA-K)", note: "gene symbol has no ontology class; the GO term is what the gene product does (type SO:0000704 gene, link with has_function), curated 2026-11-12; ndh is an operon of about 11 subunit genes, GO:0010598 NDH-1 complex is the component alternative"}]}
+Net Primary Production: {kind: measurement, wrong: {"ECOCORE:00000184": "marine primary production is narrower"}}
+Network Modularity: {kind: statistic}
+Neutropenia: {kind: disease-or-phenotype}
+Neutropenic Fever Episode: {kind: disease-or-phenotype, prefer: [MONDO, HP, NCIT], query: [febrile neutropenia, neutropenic fever]}
+Nh₃ Concentration: {kind: measurement, canonical: NH3 concentration}
+Night: {kind: time-or-period, query: [night, nighttime, Night Time], exact_only: true}
+Nitrate Availability: {kind: measurement}
+Nitrogen: {kind: chemical, query: nitrogen atom}
+Nitrogen Availability: {kind: measurement}
+Nitrogen Content: {kind: measurement}
+Nitrogen Fixation: {kind: pathway-or-process}
+Non-Alcoholic Fatty Liver Disease: {kind: disease-or-phenotype, query: non-alcoholic fatty liver disease, wrong: {"MONDO:0021104": "alcoholic fatty liver disease is the opposite condition"}}
+Non-Human Gut Environment: {kind: environment, prefer: [ENVO, UBERON], query: [animal-associated habitat, digestive tract environment, gut], rationale: "host-associated environment of a non-human host"}
+Non-Mobilisable Plasmid: {kind: mobile-element, query: [non-mobilizable plasmid, plasmid]}
+Non-Pathogen: {kind: ecological-role, prefer: [ECOCORE, OMP, PCO, PATO], rationale: "negation of a role; no ontology class expected", assign: [{id: "IDO:0000528", match: negation, note: "no OBO ontology has a non-pathogen class; represent as the absence of the pathogen class or role (IDO:0000405 pathogen role); IDO:0000525 commensal is the nearest positive class but excludes mutualists and free-living taxa; IDO terms are imported by ECOCORE, curated 2026-11-12"}]}
+Non-Photosynthetic Microorganisms: {kind: taxon-group, prefer: [ECOCORE, NCBITAXON], query: [chemotroph, heterotroph], rationale: "trophic grouping by negation"}
+Nostoc: {kind: taxon}
+Noₓ Concentration: {kind: measurement, canonical: NOx concentration}
+Npk: {kind: chemical, canonical: NPK fertilizer, prefer: [AGRO, CHEBI, ENVO], query: NPK fertilizer, rationale: "fertiliser product; AGRO:00002046 as used in the soil toy data", wrong: {"NCIT:C52389": "TAC1 wt Allele, lexical artefact"}}
+Npq: {kind: measurement, canonical: NPQ (non-photochemical quenching)}
+Nutrient Availability: {kind: measurement}
+Nutrient Limitation: {kind: measurement}
+Nutrients: {kind: chemical, query: nutrient}
+Nutrition Data: {kind: data-artifact}
+O₂ Evolution Rate: {kind: measurement, canonical: O2 evolution rate}
+O₃ Concentration: {kind: measurement, canonical: O3 concentration}
+Obesity: {kind: disease-or-phenotype, query: [obesity disorder, obesity]}
+Oil): {kind: junk-fragment, canonical: "", rationale: "tail of 'Organic hydrocarbons (e.g. petrol, oil)' split by a line break; see that row"}
+Organic Acid Concentration: {kind: measurement}
+Organic Aerosol: {kind: environment, query: [organic aerosol, aerosol], rationale: "ENVO material"}
+Organic Carbon: {kind: measurement, rationale: "soil property (GloSiS organic carbon); the amount, not the substance"}
+Organic Carbon Availability. Season: {kind: junk-fragment, canonical: Organic carbon availability, rationale: "two entities merged by a line break; 'Season' exists as its own row, 'organic carbon availability' is a measurement"}
+Organic Hydrocarbons (E.G. Petrol: {kind: chemical, canonical: "Organic hydrocarbons (e.g. petrol, oil)", query: hydrocarbon, rationale: "broken fragment repaired; the 'Oil)' row is its tail"}
+Organic Matter: {kind: environment, query: organic material, rationale: "ENVO organic material"}
+Orit: {kind: mobile-element, canonical: oriT}
+Oxalic Acid: {kind: chemical}
+Oxidative Stress: {kind: pathway-or-process, query: response to oxidative stress, rationale: "the stressor is ROS (chemical); the condition is the GO response"}
+P-Cresol Sulfate: {kind: chemical, query: p-cresol sulfate}
+P-Value: {kind: statistic}
+Pancreas: {kind: anatomy-or-body-site}
+Parasite: {kind: ecological-role}
+Parasitism: {kind: ecological-role, rationale: "interaction type; RO:0002444 in the schema"}
+Particulate Matter: {kind: environment, query: particulate matter, rationale: "ENVO material"}
+Pathogen: {kind: ecological-role, prefer: [ECOCORE, OMP, PCO, PATO], query: pathogen, wrong: {"OMP:0000068": "virulence phenotype is the phenotype, not the pathogen role"}}
+Pathogen-Targeting Qpcr: {kind: method-or-procedure, canonical: Pathogen-targeting qPCR}
+Pathway: {kind: pathway-or-process, query: biological process, rationale: "generic; GO biological process"}
+Pathway Step: {kind: meta}
+Pentanoate: {kind: chemical, query: valerate}
+Pentose Phosphate Pathway: {kind: pathway-or-process, query: pentose-phosphate shunt}
+Peri-Operative Antibiotic Prophylaxis: {kind: drug-or-therapy, prefer: [NCIT, CHEBI], query: [perioperative antibiotic prophylaxis, antibiotic prophylaxis]}
+Pesticide: {kind: chemical}
+Ph: {kind: measurement, canonical: pH}
+Ph Change: {kind: measurement, canonical: pH change}
+Phage-Plasmid Hybrid: {kind: mobile-element, query: [phage-plasmid, plasmid], rationale: "no SO class for phage-plasmids"}
+Phosphate Availability: {kind: measurement}
+Phosphorus: {kind: chemical, query: phosphorus atom}
+Phosphorus Availability: {kind: measurement}
+Phosphorus Content: {kind: measurement}
+Photosynthetic Bacteria: {kind: taxon-group, prefer: [ECOCORE, NCBITAXON], query: [phototroph, photoautotroph], rationale: "trophic grouping, not a clade"}
+Photosynthetic Efficiency: {kind: measurement}
+Photosynthetic Efficiency Metrics: {kind: measurement}
+Photosynthetic Microorganisms: {kind: taxon-group, prefer: [ECOCORE, NCBITAXON], query: [phototroph, photoautotroph], rationale: "trophic grouping, not a clade"}
+Phycobiliproteins: {kind: chemical, query: [phycobiliprotein, phycobilin, phycocyanobilin], rationale: "ChEBI only has the chromophore (phycocyanobilin); the protein class has no ChEBI term"}
+Pigment Bleaching Cell: {kind: cell-state, canonical: Pigment-bleached cell, query: [bleached, decreased pigmentation]}
+Pigments: {kind: chemical, query: pigment, wrong: {"NCIT:C38005": "Pigmentation is a process, the entity is the substance"}}
+Pipeline Parameter: {kind: method-or-procedure}
+Piperacillin-Tazobactam: {kind: drug-or-therapy, query: piperacillin-tazobactam}
+Planctomycetes: {kind: taxon, query: Planctomycetota, rationale: "NCBI now calls the phylum Planctomycetota"}
+Plant Decomposition: {kind: pathway-or-process, prefer: [ENVO, GO], query: [decomposition, plant litter decomposition], rationale: "ecosystem process", assign: [{id: "ECOCORE:00000186", match: exact, note: "ENVO and GO have no decomposition process class; ECOCORE litter decomposition is the plant-material decomposition process (parent ECOCORE:00000058 decomposition; substrate ENVO:01000628 plant litter), curated 2026-11-12"}]}
+Plasma: {kind: sample-material, query: blood plasma, wrong: {"ENVO:01000798": "ENVO plasma is the physical state of matter"}}
+Plasmid: {kind: mobile-element}
+Plasmid Rearrangement: {kind: pathway-or-process, prefer: [GO, SO], query: [DNA rearrangement, DNA recombination]}
+Plasmid-To-Chromosome Ratio: {kind: measurement}
+Pm10 Concentration: {kind: measurement, canonical: PM10 concentration}
+Pm2.5 Concentration: {kind: measurement, canonical: PM2.5 concentration}
+Polycyclic Aromatic Hydrocarbons (Pahs): {kind: chemical, canonical: Polycyclic aromatic hydrocarbons (PAHs), query: [polycyclic aromatic hydrocarbon, polycyclic arene], rationale: "intact first line of a multi-line pollutant cell; CQ column shows #N/A"}
+Polyfluoroalkyl Substances (Pfas) Humidity: {kind: chemical, canonical: Perfluoroalkyl substances (PFAS), query: perfluoroalkyl substance, rationale: "broken fragment 'Polyfluoroalkyl Substances (Pfas)\\n\\nHumidity' repaired; 'Humidity' exists as its own row"}
+Post-Surgical Recovery: {kind: time-or-period, prefer: [NCIT, ENVO], query: [Postoperative, postoperative period]}
+Pot Trial: {kind: study-design, prefer: [PECO, AGRO, OBI], query: [pot experiment, pot study], assign: [{id: "PECO:0007248", match: broader, note: "no pot-trial design class in PECO, AGRO or OBI; pot trials are nearly always greenhouse or growth-chamber (PECO:0007269) studies, parent PECO:0007231 plant study condition; AGRO:00000309 pot can be attached as the growth container, curated 2026-11-12"}]}
+Potatoes: {kind: host, canonical: Potato, query: Solanum tuberosum}
+Precipitation: {kind: measurement}
+Predator: {kind: ecological-role}
+Processed Feature Table: {kind: data-artifact}
+Processing: {kind: method-or-procedure}
+Prochlorococcus: {kind: taxon}
+Propionate: {kind: chemical}
+Proteobacteria: {kind: taxon, query: Pseudomonadota, rationale: "NCBI now calls the phylum Pseudomonadota"}
+Psba Gene: {kind: gene, canonical: psbA gene (photosystem II D1), rationale: "no OBO class for the gene", assign: [{id: "GO:0009772", match: function-of-product, secondary: "KEGG K02703", note: "gene symbol has no ontology class; the GO term is what the gene product does (type SO:0000704 gene, link with has_function), curated 2026-11-12; D1 reaction-centre protein, GO:0009539 photosystem II reaction center is the component alternative"}]}
+Psbb Gene: {kind: gene, canonical: psbB gene (photosystem II CP47), rationale: "no OBO class for the gene", assign: [{id: "GO:0016168", match: function-of-product, secondary: "KEGG K02704; InterPro IPR000932", note: "gene symbol has no ontology class; the GO term is what the gene product does (type SO:0000704 gene, link with has_function), curated 2026-11-12; CP47 chlorophyll-binding antenna protein, GO:0009523 photosystem II is the component alternative"}]}
+Qpcr Data: {kind: data-artifact, canonical: qPCR data, rationale: "the data product; the assay is OBI real-time PCR on the Procedure"}
+Quiescent Cell: {kind: cell-state, query: [quiescent, cellular quiescence]}
+Raw Sequences: {kind: data-artifact}
+Rbcl Gene: {kind: gene, canonical: rbcL gene (RuBisCO large subunit), rationale: "no OBO class for the gene; function GO:0016984", assign: [{id: "GO:0016984", match: function-of-product, secondary: "KEGG K01601 (same KO as cbbL)", note: "gene symbol has no ontology class; the GO term is what the gene product does (type SO:0000704 gene, link with has_function), curated 2026-11-12"}]}
+Rbcs Gene: {kind: gene, canonical: rbcS gene (RuBisCO small subunit), rationale: "no OBO class for the gene; function GO:0016984", assign: [{id: "GO:0016984", match: function-of-product, secondary: "KEGG K01602 (same KO as cbbS)", note: "gene symbol has no ontology class; the GO term is what the gene product does (type SO:0000704 gene, link with has_function), curated 2026-11-12"}]}
+Rct: {kind: study-design, canonical: RCT (randomised controlled trial), prefer: [OBI, NCIT], query: [randomized controlled trial design, Randomized Controlled Clinical Trial]}
+Reaction: {kind: meta, rationale: "pathway step in CQ22; schema-level"}
+Reactive Oxygen Species: {kind: chemical}
+Redox Potential: {kind: measurement}
+Reductive Acetyl-Coa Pathway: {kind: pathway-or-process, canonical: Reductive acetyl-CoA pathway, query: [carbon fixation by acetyl-CoA pathway, reductive acetyl-CoA pathway, Wood-Ljungdahl pathway]}
+Relative Abundance: {kind: measurement}
+Relaxase: {kind: gene-product, prefer: [GO, SO, ARO], query: [relaxase, DNA relaxase activity, nickase], rationale: "conjugation enzyme; no exact class expected", assign: [{id: "ICEO:0000036", match: exact, secondary: "InterPro IPR005094 (MobA/VirD2-like nuclease domain); Pfam PF03432", note: "ICEO (Integrative and Conjugative Element Ontology) is the only ontology with a relaxase class; GO has no relaxase or conjugal-nickase term, SO has no enzyme classes, curated 2026-11-12"}, {id: "GO:0004520", match: broader, note: "nearest GO molecular function (the enzyme nicks DNA at oriT, SO:0000724)"}]}
+Remission: {kind: disease-or-phenotype, prefer: [MONDO, NCIT, HP], query: remission, rationale: "clinical state; NCIT"}
+Resistant Starch: {kind: chemical, prefer: [CHEBI, FOODON], query: resistant starch}
+Resource Partitioning: {kind: ecological-role, prefer: [ECOCORE, PCO, GO], query: [resource partitioning, niche partitioning], no_class: "no resource/niche partitioning, niche or interspecific competition class in any OLS ontology; GO competition terms are cellular; ECOCORE processes are succession, biogeochemical and trophic only"}
+Rhizobium: {kind: taxon}
+Rhizosphere Soil: {kind: environment, query: [rhizosphere soil, rhizosphere]}
+Rhodobacter: {kind: taxon}
+Rice: {kind: host, query: Oryza sativa}
+Richness: {kind: measurement}
+Root Biomass Promotion: {kind: measurement, rationale: "root biomass is the measured trait, promotion the direction"}
+Ros: {kind: chemical, canonical: ROS (reactive oxygen species), query: reactive oxygen species, wrong: {"NCIT:C52218": "ROS1 wt Allele, lexical artefact"}}
+Ros Concentration: {kind: measurement, canonical: ROS concentration}
+Ros Detoxification Pathway: {kind: pathway-or-process, canonical: ROS detoxification pathway, query: [cellular detoxification of reactive oxygen species, reactive oxygen species metabolic process]}
+Ros Pathway: {kind: pathway-or-process, canonical: ROS pathway, query: reactive oxygen species metabolic process}
+Ros Production: {kind: pathway-or-process, canonical: ROS production, query: reactive oxygen species biosynthetic process}
+Roseburia: {kind: taxon}
+Roseburia Intestinalis: {kind: taxon}
+Rubisco Activity: {kind: pathway-or-process, canonical: RuBisCO activity, query: ribulose-bisphosphate carboxylase activity, rationale: "GO molecular function; measured as an observed property"}
+Ruminococcus Bromii: {kind: taxon}
+Saharan Dust Input: {kind: event-or-exposure, query: [dust storm, aeolian dust deposition, dust]}
+Salinity: {kind: measurement}
+Salmonella Enterica: {kind: taxon}
+Sample Group: {kind: meta}
+Sample Id: {kind: meta, canonical: Sample ID}
+Sample Name: {kind: meta}
+Sample Size: {kind: statistic}
+Sample Type: {kind: meta, rationale: "slot whose values are sample-material classes"}
+Sampling Altitude: {kind: measurement}
+Sampling Date: {kind: measurement, rationale: "MIxS collection_date"}
+Sampling Depth: {kind: measurement}
+Sampling Duration: {kind: measurement}
+Sampling Method: {kind: method-or-procedure}
+Sampling Site Type: {kind: measurement, rationale: "slot (env_local_scale) whose values are ENVO terms"}
+Sampling Timepoint: {kind: measurement}
+Sand: {kind: environment, query: sand}
+Sauerkraut: {kind: food-or-diet}
+Season: {kind: time-or-period, query: season}
+Secondary Bile Acid: {kind: chemical, query: [secondary bile acid, bile acid]}
+Sequencing Technology: {kind: method-or-procedure, wrong: {"NCIT:C146809": "454 Sequencing is one technology, not the attribute"}}
+Sex: {kind: measurement, rationale: "host attribute (PATO:0000047 biological sex as the observed property)"}
+Shannon Diversity: {kind: measurement}
+Shannon Diversity Index: {kind: measurement}
+Shannon Index: {kind: measurement}
+Sheep: {kind: host, query: Ovis aries}
+Signature Microbiome Taxon: {kind: meta, rationale: "a query result category, not a concept"}
+Silt: {kind: environment, query: silt}
+Silva Taxon: {kind: identifier-scheme, canonical: SILVA taxon}
+Simpson Diversity: {kind: measurement}
+Simpson Diversity Index: {kind: measurement}
+Simpson Index: {kind: measurement}
+So₂ Concentration: {kind: measurement, canonical: SO2 concentration}
+Social Contact: {kind: ecological-role, prefer: [NBO, OBA, PATO], query: [social contact behavior, social behavior], rationale: "host behaviour interaction"}
+Social Network Data: {kind: data-artifact}
+Sod Gene: {kind: gene, canonical: sod gene (superoxide dismutase), rationale: "function is GO:0004784 superoxide dismutase activity", assign: [{id: "GO:0004784", match: function-of-product, secondary: "KEGG K04564 (Fe/Mn SOD) or K04565 (Cu/Zn SOD)", note: "gene symbol has no ontology class; the GO term is what the gene product does (type SO:0000704 gene, link with has_function), curated 2026-11-12; two unrelated families share the symbol"}]}
+Soil Amendment Microbial Community: {kind: taxon-group, prefer: [PCO, NCBITAXON], query: microbial community}
+Soil Depth: {kind: measurement}
+Soil Microbial Community: {kind: taxon-group, prefer: [PCO, NCBITAXON], query: microbial community}
+Sos Response: {kind: pathway-or-process, canonical: SOS response}
+Soybean: {kind: host, query: Glycine max}
+Spores Cell: {kind: cell-state, canonical: Spore cell, prefer: [GO, PATO, CL], query: [spore, sporulation]}
+Starch: {kind: chemical}
+Starting Substrate: {kind: meta, rationale: "role of a chemical in a pathway step"}
+Stool: {kind: sample-material, query: feces}
+Stool Sample: {kind: sample-material, query: [feces, stool specimen], rationale: "duplicate of Stool"}
+Storage: {kind: method-or-procedure}
+Stratocumulus: {kind: environment, query: stratocumulus cloud}
+Stress Marker: {kind: meta, rationale: "biomarker role"}
+Stress-Response Gene: {kind: gene, rationale: "gene category; the process is GO:0006950 response to stress", assign: [{id: "GO:0006950", match: broader, note: "a category of genes, not a gene: model as genes annotated to this GO process (gpx and sod also carry GO:0006979 response to oxidative stress), curated 2026-11-12"}]}
+Study: {kind: meta}
+Study Design: {kind: study-design, query: study design, rationale: "generic; OBI:0500000"}
+Substrate: {kind: meta, rationale: "role of a chemical in a reaction"}
+Sugarcane: {kind: host, query: Saccharum}
+Sulfate Availabity: {kind: measurement, canonical: Sulfate availability, rationale: "typo in the sheet"}
+Sulfur Cycling: {kind: pathway-or-process, prefer: [ENVO, GO], rationale: "ecosystem process; ENVO"}
+Sunrise: {kind: time-or-period, query: [sunrise, dawn], exact_only: true}
+Sunset: {kind: time-or-period, query: [sunset, dusk], exact_only: true}
+Superoxide: {kind: chemical}
+Superoxide Dismutase: {kind: gene-product, query: superoxide dismutase activity}
+Supporting Studies: {kind: meta}
+Swine: {kind: host, query: Sus scrofa}
+Synechococcus: {kind: taxon}
+Taxon: {kind: taxon, generic: true, rationale: "schema class Taxon"}
+Taxonomic Assignment: {kind: method-or-procedure}
+Taxonomic Composition: {kind: measurement}
+Taxonomic Richness: {kind: measurement}
+Tca Cycle: {kind: pathway-or-process, canonical: TCA cycle, query: tricarboxylic acid cycle}
+Temperature: {kind: measurement}
+Tetm Gene: {kind: gene, canonical: tetM gene, query: "tet(M)"}
+Tetq Gene: {kind: gene, canonical: tetQ gene, query: "tet(Q)"}
+Th17/Treg Imbalance: {kind: disease-or-phenotype, prefer: [HP, PATO, GO, MONDO], query: Th17/Treg imbalance, rationale: "host immune phenotype; no pre-composed class expected", assign: [{id: "HP:0025830", match: component, note: "no imbalance class in HP, PATO or GO; decompose into the two proportion phenotypes, the Th17:Treg ratio itself is an observed property; cell types CL:0000899 T-helper 17 cell and CL:0000815 regulatory T cell, curated 2026-11-12"}, {id: "HP:0020113", match: component, note: "the usual direction in the CQ (Th17 up, Treg down); HP:0020112 if increased"}, {id: "HP:0031392", match: broader, note: "the single parent phenotype if one node is wanted"}]}
+Tmao: {kind: chemical, canonical: TMAO (trimethylamine N-oxide), query: trimethylamine N-oxide}
+Tnm Stage: {kind: measurement, canonical: TNM stage}
+Tomato: {kind: host, query: Solanum lycopersicum}
+Top Pathogenic Bacteria: {kind: meta, rationale: "ranked query output"}
+Top Pathogenic Fungi: {kind: meta, rationale: "ranked query output"}
+Top Pathogenic Virus: {kind: meta, rationale: "ranked query output"}
+Total Resistome Load: {kind: measurement}
+Transcriptomic Data: {kind: data-artifact}
+Treatment-Naïve: {kind: measurement, canonical: Treatment-naive, rationale: "clinical status of the host"}
+Trebouxia: {kind: taxon}
+Trehalose: {kind: chemical}
+Trimethylamine: {kind: chemical}
+Turbulence: {kind: measurement}
+Type 2 Diabetes: {kind: disease-or-phenotype, query: type 2 diabetes mellitus}
+Type Iv Secretion System: {kind: gene-product, canonical: Type IV secretion system, query: type IV secretion system complex, rationale: "GO cellular component", wrong: {"GO:0044097": "the secretion process, not the T4SS complex"}}
+Unifrac Distance: {kind: measurement, canonical: UniFrac distance}
+Urban Environment: {kind: environment, query: [urban biome, urban environment]}
+Urine: {kind: sample-material}
+Urolithins: {kind: chemical, query: urolithin}
+Uv Radiation: {kind: event-or-exposure, canonical: UV radiation, prefer: [ENVO, ECTO], query: [ultraviolet radiation, UV radiation]}
+Uv Resistance: {kind: pathway-or-process, canonical: UV resistance, query: [UV protection, response to UV], rationale: "abiotic stress trait; GO until OMP is adopted"}
+Uv-Induced Photoinhibition: {kind: pathway-or-process, canonical: UV-induced photoinhibition, query: photoinhibition}
+Vana Cluster: {kind: gene, canonical: vanA cluster}
+Vanb Cluster: {kind: gene, canonical: vanB cluster}
+Vancomycin: {kind: drug-or-therapy}
+Virulence Gene: {kind: gene, rationale: "gene category; VFDB is the usual source, no OBO class", assign: [{id: "MESH:D037521", match: broader, secondary: "VFDB accession for the gene itself", note: "no OBO class: GO:0009405 pathogenesis is obsolete and ARO has no virulence class; MeSH Virulence Factors kept as the mapped-tier term, GO:0044003 symbiont-mediated perturbation of host process is the OBO-only fallback, curated 2026-11-12"}]}
+Virulence Gene Presence: {kind: measurement}
+Volatile Organic Compounds: {kind: chemical}
+Water Availability: {kind: measurement}
+Water Hardness: {kind: measurement}
+Weather: {kind: measurement, rationale: "weather variables are observed properties of the sampling event"}
+Weather At Sampling: {kind: measurement}
+Wheat: {kind: host, query: Triticum aestivum}
+Wind Speed: {kind: measurement}
+Yoghurt: {kind: food-or-diet, query: yogurt}
+Zinc: {kind: chemical, query: zinc atom}
