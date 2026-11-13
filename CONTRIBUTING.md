@@ -15,8 +15,8 @@ In this doc you can find some guidelines for contributing to MiCoKnowGraph on Gi
 # ELIXIR Microbiome Community & MiCoKnowGraph insights
 
 We are an enthusiast [community](https://elixir-europe.org/communities/microbiome) of researchers working on microbiome also affiliated to [ELIXIR Research Infrastructure](https://elixir-europe.org/).
-The community proposed a project to the [ELIXIR BioHackathon 2026](https://biohackathon-europe.org/) aiming to build a(?) Microbiome Community Knowledge Graph in a collaborative way. 
-You can know more about the project by checking [here](https://github.com/elixir-europe/biohackathon-projects-2026/blob/main/16.md). 
+The community proposed a project to the [ELIXIR BioHackathon 2026](https://biohackathon-europe.org/) aiming to build a Microbiome Community Knowledge Graph. 
+You can learn more about the project by checking [here](https://github.com/elixir-europe/biohackathon-projects-2026/blob/main/16.md). 
 Feel free to join us and contribute.
 
 # How can I contribute?
