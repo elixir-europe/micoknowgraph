@@ -1,0 +1,238 @@
+entity,closest_id,closest_ontology,closest_name,closest_rating
+14C,NCIT:C62553,NCIT,14C BMS-275183,0.00
+Absolute Abundance,NCIT:C70589,NCIT,Abundance,0.60
+Abundance Explosion,NCIT:C70589,NCIT,Abundance,0.59
+Abundance Implosion,SNOMEDCT:55351009,SNOMEDCT,Implosion,0.59
+Adjacent Normal Mucosa,SNOMEDCT:454821000124103,SNOMEDCT,Oral mucosa normal,0.59
+Aerosol Composition,SNOMEDCT:733996005,SNOMEDCT,Composition,0.63
+Aerosol Loading,NCIT:C48174,NCIT,Loading,0.59
+Airborne Sampler,SNOMEDCT:60010004,SNOMEDCT,Sampler (mine),0.58
+Alpha-Beta Treg,MESH:C002630,MESH,"alpha,beta-methyleneadenosine 5'-triphosphate",0.65
+Amendment Type,NCIT:C215612,NCIT,Study Amendment Impact Type,0.67
+Ammonia Availability,NCIT:C25429,NCIT,Availability,0.64
+Amplicon Count,MIXS:amplicon,MIXS,amplicon,0.63
+Anaplerotic Pathway,NCIT:C19374,NCIT,Pathway Analysis,0.56
+Anti-Ctla-4 Therapy,NCIT:C15577,NCIT,Anti-Tumor Necrosis Factor Therapy,0.62
+Anti-Pd-L1 Therapy,NCIT:C191689,NCIT,PD-L1 Inhibitor,0.66
+Aro-Mapped Gene Rpkm,NCIT:C2239,NCIT,RevM10 gene/polAS gene,0.39
+Asian Dust Input,SNOMEDCT:226224001,SNOMEDCT,Asian diet,0.46
+Atmospheric Trace Gases,ENVO:02500003,ENVO,atmospheric process,0.53
+Baseline Diagnosis,SNOMEDCT:439401001,SNOMEDCT,Diagnosis,0.60
+Behavioural Data,MESH:D000068598,MESH,Data Accuracy,0.50
+Beta Dispersion,SNOMEDCT:86902002,SNOMEDCT,Dispersion,0.66
+Bicarbonate Ions Active Transport,GO:0015701,GO,bicarbonate transport,0.66
+Bioaerosols,,,,
+Biocide Resistance,MESH:D053209,MESH,Herbicide Resistance,0.63
+Bioinformatics Tool,NCIT:C17964,NCIT,Bioinformatics,0.68
+Bla Gene,SNOMEDCT:67271001,SNOMEDCT,Gene,0.60
+Blactx-M-15,ARO:3001878,ARO,CTX-M-15,0.68
+Blakpc,,,,
+Blandm,,,,
+Blaoxa-48,MESH:C000729537,MESH,AS-48,0.56
+Blashv,MESH:C494146,MESH,"beta-lactamase SHV-49, Klebsiella pneumoniae",0.00
+Blatem,,,,
+Body Site,NCIT:C192618,NCIT,Body Temperature Site,0.70
+Bray-Curtis Dissimilarity,SNOMEDCT:237041005,SNOMEDCT,Fitz-Hugh-Curtis syndrome,0.33
+Broad-Spectrum Antibiotic Exposure Window,PECO:0007041,PECO,antibiotic exposure,0.54
+C4 Pathway,SNOMEDCT:273130000,SNOMEDCT,Huatuochiachi C4,0.47
+Ca²⁺ Concentration,PATO:0000033,PATO,concentration of,0.68
+Cam Pathway,NCIT:C54214,NCIT,Pathway,0.65
+Carbon Concentration Mechanism,SNOMEDCT:250780004,SNOMEDCT,Carbon dioxide concentration,0.64
+Carbon Fixation Pathway,GO:0030634,GO,carbon fixation by acetyl-CoA pathway,0.78
+Cbbl Gene,SNOMEDCT:67271001,SNOMEDCT,Gene,0.58
+Cbbs Gene,SNOMEDCT:67271001,SNOMEDCT,Gene,0.60
+Cd19 Car-T Therapy,NCIT:C155800,NCIT,CS1-CAR T Therapy,0.75
+Cd8+ Effector Memory T-Cell Exhaustion,CL:0000913,CL,"effector memory CD8-positive, alpha-beta T cell",0.78
+Cfxa Gene,ARO:3003001,ARO,CfxA,0.58
+Chao1 Richness,HHEAR:HHEAR_00832,HHEAR,microbiome richness,0.52
+Chebi Identifier,SNOMEDCT:118522005,SNOMEDCT,Identifier,0.65
+Circadian Rhythm Gene,MESH:D002940,MESH,Circadian Rhythm,0.75
+Cl⁻ Concentration,PATO:0000033,PATO,concentration of,0.70
+Cloud Dissipation,SWEET:Dissipation,SWEET,dissipation,0.65
+Cloud Droplet Size,ENVO:01000835,ENVO,cloud droplet,0.74
+Cloud Maturity,SNOMEDCT:246102003,SNOMEDCT,Maturity,0.63
+Cloud Optical Depth,SWEET:OpticalDepth,SWEET,optical depth,0.73
+Cloud Water Collector,ENVO:03600081,ENVO,cloud water,0.67
+Cloud Water Content,SWEET:WaterContent,SWEET,water content,0.73
+Co-Factor,NCIT:C173511,NCIT,Co-infection,0.52
+Co-Integrate Formation,GO:0030435,GO,sporulation resulting in formation of a cellular spore,0.50
+Co₂ Active Transport,MESH:D001693,MESH,"Biological Transport, Active",0.76
+Co₂ Concentration,PATO:0000033,PATO,concentration of,0.69
+Co₂ Fixation Pathway,GO:0030634,GO,carbon fixation by acetyl-CoA pathway,0.54
+Co₂ Fixation Rate,SNOMEDCT:1431002,SNOMEDCT,Fixation,0.51
+Colrnai Replicon,MESH:D012093,MESH,Replicon,0.60
+Compensatory Mutation,SNOMEDCT:74584000,SNOMEDCT,Compensatory regeneration,0.58
+Contradicting Studies,MESH:D058025,MESH,Interdisciplinary Studies,0.52
+Cross-Environment Taxon,BIOLINK:OrganismTaxonToEnvironmentAssociation,BIOLINK,organism taxon to environment association,0.55
+Damaged Cell,PATO:0001167,PATO,damaged,0.63
+Diet Background,NCIT:C45782,NCIT,Background,0.66
+Direction Of Change,SNOMEDCT:260672003,SNOMEDCT,Direction,0.62
+Direction Of Link,SNOMEDCT:260672003,SNOMEDCT,Direction,0.65
+Diversity Index,PCO:0000062,PCO,Shannon diversity index,0.79
+Dormant Cell,NCIT:C12508,NCIT,Cell,0.58
+Dramatic Population Shift,MESH:D011157,MESH,Population Dynamics,0.51
+Ec Number,PATO:0001555,PATO,has number of,0.66
+Electron Transport Rate,MESH:D004579,MESH,Electron Transport,0.76
+Environmental Presence,NCIT:C149494,NCIT,Environmental,0.63
+Environmental Stressors,NCIT:C149494,NCIT,Environmental,0.63
+Ermb Gene,ARO:3000375,ARO,ErmB,0.58
+Esbl,SNOMEDCT:409800005,SNOMEDCT,ESBL Escherichia coli,0.00
+Escherichia Coli Pks+,MESH:D004926,MESH,Escherichia coli,0.75
+Exopolysaccharide Production,CHEBI:72813,CHEBI,exopolysaccharide,0.64
+Exposome Data,MESH:D000081413,MESH,Exposome,0.64
+Fermented Dairy,NCIT:C202068,NCIT,Fermented Dairy Product,0.79
+Fertilizer Microbial Community,PCO:1000004,PCO,microbial community,0.71
+Ffpe Tissue,NCIT:C12801,NCIT,Tissue,0.62
+Field Trial,SNOMEDCT:255489001,SNOMEDCT,Partial field,0.60
+Final Product,SNOMEDCT:445665009,SNOMEDCT,Final report,0.55
+Fluoroquinolone Resistance,SNOMEDCT:838284008,SNOMEDCT,Fluoroquinolone,0.63
+Fresh-Frozen Biopsy,FOODON:00004469,FOODON,fresh frozen,0.71
+Gene Abundance,NCIT:C70589,NCIT,Abundance,0.65
+Gpx Gene,SNOMEDCT:67271001,SNOMEDCT,Gene,0.60
+Greengenes Taxon,MESH:C000729647,MESH,Bisgaard taxon,0.47
+Grooming Giver,MESH:D006120,MESH,Grooming,0.63
+Grooming Interaction,OMP:0000098,OMP,altered virulence,0.55
+Grooming Receiver,MESH:D006120,MESH,Grooming,0.59
+Gross Primary Production,SWEET:PrimaryProduction,SWEET,primary production,0.75
+Gtdb Taxon,NCIT:C40098,NCIT,Taxon,0.60
+Gut Domination Threshold,SNOMEDCT:251585002,SNOMEDCT,Vibration threshold,0.51
+Gut Taxa,UBERON:0000328,UBERON,gut wall,0.51
+Halophile,,,,
+Heterotrophic Bacteria,NCIT:C14187,NCIT,Bacteria,0.64
+Historical Climate,MESH:D014329,MESH,Tropical Climate,0.60
+Hmdb Identifier,SNOMEDCT:118522005,SNOMEDCT,Identifier,0.66
+Host Species,NCIT:C45293,NCIT,Species,0.60
+Human Pathogen,SFWO:0000157,SFWO,pathogen,0.63
+Incf Replicon,MESH:D012093,MESH,Replicon,0.64
+Inci1 Replicon,MESH:D012093,MESH,Replicon,0.63
+Incp Replicon,MESH:D012093,MESH,Replicon,0.64
+Incx Replicon,MESH:D012093,MESH,Replicon,0.64
+Indole Derivatives,MESH:Q000031,MESH,analogs & derivatives,0.63
+Inorganic Aerosol,NCIT:C66829,NCIT,Inorganic,0.61
+Interaction Duration,NCIT:C71465,NCIT,Intervention Duration,0.62
+Intermediate Product,SNOMEDCT:11896004,SNOMEDCT,Intermediate,0.64
+Iron Availability,MESH:D001682,MESH,Biological Availability,0.69
+Keystone Species,SNOMEDCT:61399004,SNOMEDCT,Keystone virus,0.55
+Known Pathogen,SFWO:0000157,SFWO,pathogen,0.63
+Location Elevation,SNOMEDCT:103720008,SNOMEDCT,Elevation,0.60
+Location Geocoordinates,SCHEMA:GeoCoordinates,SCHEMA,GeoCoordinates,0.63
+Log Ct,NCIT:C45279,NCIT,Log,0.60
+Log2Fc,,,,
+Longitudinal Strain Persistence,NCIT:C209441,NCIT,Longitudinal Strain Measurement,0.70
+Mag Count,PATO:0000070,PATO,amount,0.62
+Membrane Compromise Cell,MESH:D002462,MESH,Cell Membrane,0.68
+Metabolic Behaviour,SIO:SIO_001195,SIO,behaviour,0.59
+Metabolically Active Cell,MESH:D021581,MESH,"Active Transport, Cell Nucleus",0.52
+Metabolite Consumer,SNOMEDCT:767279008,SNOMEDCT,Metabolite,0.61
+Metabolite Producer,SNOMEDCT:767279008,SNOMEDCT,Metabolite,0.61
+Meteorological Conditions,MESH:D008685,MESH,Meteorological Concepts,0.60
+Mg²⁺ Concentration,PATO:0000033,PATO,concentration of,0.68
+Microbial Taxon,NCIT:C19057,NCIT,Microbial Taxonomy,0.63
+Mid-Chemotherapy Cycle,SNOMEDCT:399042005,SNOMEDCT,Chemotherapy cycle,0.77
+Mobile Genetic Element Richness,BERO:topic_0798,BERO,Mobile genetic elements,0.76
+Mobilisable Plasmid,GO:0006276,GO,plasmid maintenance,0.51
+Model-Based Prediction,SNOMEDCT:273631000,SNOMEDCT,Mortality Prediction Model II,0.56
+N₂ Fixation Pathway,MESH:D009586,MESH,Nitrogen Fixation,0.69
+Ncbi Taxon,NCIT:C205300,NCIT,NCBI Taxonomy,0.62
+Ndh Gene,SNOMEDCT:67271001,SNOMEDCT,Gene,0.60
+Network Modularity,SNOMEDCT:277725008,SNOMEDCT,Chiari network,0.53
+Neutropenic Fever Episode,SNOMEDCT:303011007,SNOMEDCT,Neutropenic disorder,0.54
+Nh₃ Concentration,PATO:0000033,PATO,concentration of,0.69
+Nitrate Availability,NCIT:C25429,NCIT,Availability,0.64
+Nitrogen Availability,MESH:D001682,MESH,Biological Availability,0.65
+Non-Human Gut Environment,ENVO:01001003,ENVO,non-saline environment,0.60
+Non-Mobilisable Plasmid,NCIT:C74054,NCIT,Liposomal MnSOD Plasmid,0.46
+Non-Pathogen,SFWO:0000157,SFWO,pathogen,0.66
+Non-Photosynthetic Microorganisms,SNOMEDCT:115181006,SNOMEDCT,"Non-photosynthetic, non-fruiting gliding bacteria",0.53
+Noₓ Concentration,PATO:0000033,PATO,concentration of,0.69
+Npq,MESH:C468646,MESH,"5,12-naphthacenequinone",0.00
+Nutrient Availability,NCIT:C25429,NCIT,Availability,0.63
+Nutrient Limitation,OMP:0007934,OMP,absence of resistance to nutrient limitation,0.67
+Nutrition Data,SNOMEDCT:384759009,SNOMEDCT,Nutrition,0.65
+O₂ Evolution Rate,NCIT:C16565,NCIT,Evolution,0.54
+O₃ Concentration,PATO:0000033,PATO,concentration of,0.70
+Organic Acid Concentration,SNOMEDCT:252121001,SNOMEDCT,Acetic acid concentration,0.69
+Organic Aerosol,glosis_res:lithologyValueCode-UO,GLOSIS,organic,0.59
+Organic Carbon Availability. Season,glosis_prop:physioChemicalPropertyCode-Carorg,GLOSIS,Carbon (C) - organic,0.53
+Pathogen-Targeting Qpcr,NCIT:C41567,NCIT,Antigen Targeting,0.52
+Pathway Step,NCIT:C54214,NCIT,Pathway,0.63
+Peri-Operative Antibiotic Prophylaxis,MESH:D019072,MESH,Antibiotic Prophylaxis,0.64
+Ph Change,NCIT:C25446,NCIT,Change,0.66
+Phage-Plasmid Hybrid,NCIT:C754,NCIT,Plasmid,0.47
+Phosphate Availability,NCIT:C25429,NCIT,Availability,0.62
+Phosphorus Availability,NCIT:C25429,NCIT,Availability,0.61
+Photosynthetic Bacteria,MESH:D019688,MESH,Gram-Negative Oxygenic Photosynthetic Bacteria,0.62
+Photosynthetic Efficiency,MIXS:photosynthetic,MIXS,photosynthetic,0.62
+Photosynthetic Efficiency Metrics,MIXS:photosynthetic,MIXS,photosynthetic,0.50
+Photosynthetic Microorganisms,MIXS:photosynthetic,MIXS,photosynthetic,0.60
+Pigment Bleaching Cell,SNOMEDCT:256892003,SNOMEDCT,Pigment cell,0.70
+Pipeline Parameter,SNOMEDCT:246446004,SNOMEDCT,Parameter,0.60
+Plant Decomposition,ECOCORE:00000058,ECOCORE,decomposition,0.67
+Plasmid Rearrangement,NCIT:C36541,NCIT,Chromosomal Rearrangement,0.64
+Plasmid-To-Chromosome Ratio,GO:0007059,GO,chromosome segregation,0.51
+Pm10 Concentration,PATO:0000033,PATO,concentration of,0.68
+Pm2.5 Concentration,PATO:0000033,PATO,concentration of,0.59
+Post-Surgical Recovery,SNOMEDCT:129821003,SNOMEDCT,Delayed surgical recovery,0.66
+Pot Trial,NCIT:C71104,NCIT,Clinical Trial,0.62
+Processed Feature Table,SNOMEDCT:226438006,SNOMEDCT,Processed meat intake,0.50
+Psba Gene,SNOMEDCT:67271001,SNOMEDCT,Gene,0.58
+Psbb Gene,SNOMEDCT:67271001,SNOMEDCT,Gene,0.58
+Qpcr Data,JERM:qPCR,JERM,qPCR,0.58
+Quiescent Cell,MESH:C072025,MESH,quiescent cell antigen-1,0.70
+Raw Sequences,NCIT:C181855,NCIT,Total Number of Nucleotide Sequences Processed,0.57
+Rbcl Gene,SNOMEDCT:67271001,SNOMEDCT,Gene,0.58
+Rbcs Gene,SNOMEDCT:67271001,SNOMEDCT,Gene,0.60
+Rct,MESH:C000599360,MESH,RCT-18 fusion protein,0.00
+Reductive Acetyl-Coa Pathway,GO:0030634,GO,carbon fixation by acetyl-CoA pathway,0.74
+Relaxase,MESH:C110340,MESH,DNA relaxase,0.73
+Resource Partitioning,SNOMEDCT:265364006,SNOMEDCT,Partitioning of stomach,0.58
+Rhizosphere Soil,MESH:D058441,MESH,Rhizosphere,0.67
+Richness,HHEAR:HHEAR_00832,HHEAR,microbiome richness,0.00
+Root Biomass Promotion,TO:0001019,TO,root to total biomass ratio,0.59
+Ros Concentration,PATO:0000033,PATO,concentration of,0.69
+Ros Detoxification Pathway,NCIT:C16841,NCIT,Detoxification,0.54
+Ros Pathway,NCIT:C54214,NCIT,Pathway,0.65
+Ros Production,NCIT:C112927,NCIT,Production,0.68
+Rubisco Activity,SNOMEDCT:257733005,SNOMEDCT,Activity,0.60
+Saharan Dust Input,MESH:D019443,MESH,Cosmic Dust,0.46
+Sample Group,MIXS:missing%3A%20sample%20group,MIXS,missing: sample group,0.78
+Sampling Altitude,glosis_sp:altitude,GLOSIS,altitude,0.59
+Sampling Duration,SNOMEDCT:257915005,SNOMEDCT,Sampling - action,0.62
+Sampling Site Type,SNOMEDCT:246317007,SNOMEDCT,Site of sampling,0.74
+Sampling Timepoint,NCIT:C68568,NCIT,Timepoint,0.60
+Secondary Bile Acid,SNOMEDCT:1197667008,SNOMEDCT,Secondary bile acid malabsorption,0.79
+Shannon Index,PCO:0000062,PCO,Shannon diversity index,0.79
+Signature Microbiome Taxon,MESH:D000098903,MESH,Skin Microbiome,0.49
+Silva Taxon,NCIT:C40098,NCIT,Taxon,0.58
+So₂ Concentration,PATO:0000033,PATO,concentration of,0.69
+Social Contact,SNOMEDCT:423315002,SNOMEDCT,Limited social contact,0.79
+Social Network Data,MESH:D000083482,MESH,Social Network Analysis,0.67
+Sod Gene,SNOMEDCT:67271001,SNOMEDCT,Gene,0.60
+Soil Amendment Microbial Community,PCO:1000004,PCO,microbial community,0.62
+Soil Depth,glosis_prop:descriptivePropertyCode-soilDepthProperty,GLOSIS,Soil Depth Property,0.74
+Soil Microbial Community,PCO:1000004,PCO,microbial community,0.76
+Spores Cell,FAO:0000019,FAO,spore,0.60
+Starting Substrate,MESH:C029152,MESH,G-substrate,0.64
+Stress Marker,HHEAR:HHEAR_01373,HHEAR,Oxidative Stress Marker,0.76
+Stress-Response Gene,GO:0006950,GO,response to stress,0.75
+Sulfate Availabity,SNOMEDCT:421119009,SNOMEDCT,Cobalt sulfate,0.53
+Supporting Studies,SNOMEDCT:246355002,SNOMEDCT,Supporting structure,0.57
+Taxonomic Assignment,NCIT:C25426,NCIT,Assignment,0.60
+Taxonomic Composition,SNOMEDCT:733996005,SNOMEDCT,Composition,0.61
+Taxonomic Richness,NCIT:C45280,NCIT,Taxonomic Class,0.58
+Tetm Gene,SNOMEDCT:38860003,SNOMEDCT,TAT gene,0.60
+Tetq Gene,SNOMEDCT:38860003,SNOMEDCT,TAT gene,0.60
+Th17/Treg Imbalance,NCIT:C200084,NCIT,Imbalance,0.51
+Tnm Stage,NCIT:C157232,NCIT,FIGO/TNM Stage,0.79
+Top Pathogenic Bacteria,GO:0009619,GO,obsolete resistance to pathogenic bacteria,0.66
+Top Pathogenic Fungi,GO:0009622,GO,obsolete resistance to pathogenic fungi,0.64
+Top Pathogenic Virus,MESH:C000623747,MESH,Potato mop-top virus,0.57
+Total Resistome Load,MESH:D059208,MESH,Parasite Load,0.48
+Treatment-Naïve,SNOMEDCT:844585000,SNOMEDCT,Treatment naive,0.60
+Unifrac Distance,SNOMEDCT:103368000,SNOMEDCT,With distance,0.61
+Uv-Induced Photoinhibition,GO:0010205,GO,photoinhibition,0.55
+Virulence Gene,CHEBI:73170,CHEBI,bacterial virulence gene B,0.68
+Virulence Gene Presence,OMP:0007284,OMP,presence of virulence,0.76
+Water Availability,SNOMEDCT:224433004,SNOMEDCT,Availability of workplace drinking water,0.66
+Water Hardness,MESH:D006244,MESH,Hardness,0.65
+Weather At Sampling,GENEPIO:0100779,GENEPIO,sampling weather conditions,0.78

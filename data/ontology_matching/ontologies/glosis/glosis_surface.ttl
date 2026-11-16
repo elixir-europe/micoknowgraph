@@ -1,0 +1,130 @@
+@prefix gsp:   <http://www.opengis.net/ont/geosparql#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix glosis_su: <http://w3id.org/glosis/model/surface/> .
+@prefix glosis_res: <http://w3id.org/glosis/model/codelists/results/> .
+@prefix glosis_prop: <http://w3id.org/glosis/model/codelists/properties/> .
+@prefix glosis_cm: <http://w3id.org/glosis/model/common/> .
+@prefix ssn:   <http://www.w3.org/ns/ssn/> .
+@prefix sosa:  <http://www.w3.org/ns/sosa/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix schema: <http://schema.org/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+## APPENDED
+@prefix iso28258: <http://w3id.org/glosis/model/iso28258/2013/> .
+@prefix qudt: <http://qudt.org/schema/qudt/> .
+@prefix quantitykind: <http://qudt.org/vocab/quantitykind/> .
+
+<http://w3id.org/glosis/model/surface>
+        a                owl:Ontology ;
+        owl:imports      ssn: , sosa: , glosis_res: , glosis_prop: , glosis_cm: , iso28258: ;
+        owl:versionIRI   <http://w3id.org/glosis/model/surface/1.9.9> ;
+        owl:versionInfo  "1.9.9" ;
+        dct:creator [ schema:affiliation [ foaf:name "PSNC" ] ;
+                      rdfs:seeAlso <http://orcid.org/0000-0003-4289-4922> ;
+                      foaf:name "Raul Palma"
+                    ] ,
+                    [ schema:affiliation [ foaf:name "PSNC" ] ;
+                      foaf:name "Bogusz Janiak"
+                    ] ;
+        dct:title "GlOSIS Ontology: Surface module"@en ;
+        dct:description "GLOSIS ontology has been created from the data model for the Global Soil Information System (GloSIS) v1.0, edited by Tomas Reznik and Katharina Schleidt"@en ;
+        rdfs:comment "This module contains the classes and properties to describe soil surfaces (a subtype of a plot with surface shape. Surfaces may be located within other surfaces)."@en ;
+        dct:source "Data model for the Global Soil Information System (GloSIS) v1.0, edited by Tomas Reznik and Katharina Schleidt"@en ;
+        dct:rights "This ontology is distributed under Creative Commons Attribution-NonCommercial-ShareAlike 3.0 IGO License - https://creativecommons.org/licenses/by-nc-sa/3.0/igo/"@en .
+
+glosis_su:GL_Surface  a     owl:Class ;
+        rdfs:label "GL_Surface"@en ;
+        rdfs:comment "Specialization for GloSIS of ISO iso28258 Surface soil feature type, which typically refers to the uppermost layer of the soil profile, which is crucial for various analyses and applications." ;
+        skos:definition "Data model for the Global Soil Information System (GloSIS) v1.0, edited by Tomas Reznik and Katharina Schleidt"@en ;
+        rdfs:subClassOf  iso28258:Surface .
+
+glosis_su:SaltPresence  a	owl:Class ;
+        rdfs:label "SaltPresence"@en ;
+        rdfs:comment "Salt presence refers to the occurrence of soluble salts within the soil, typically measured by electrical conductivity (EC) or ion concentrations (e.g., sodium, calcium). High salt concentrations can lead to soil salinity, which affects plant growth and soil structure. Source: Brady, N.C., & Weil, R.R. (2008). The Nature and Properties of Soils (14th ed.). Pearson Education." ;
+        skos:definition "ISRIC Report 2019/01: Tier 1 and Tier 2 data in the context of the federated Global Soil Information System. Appendix 1"@en ;
+        rdfs:subClassOf  sosa:Observation ;
+        rdfs:subClassOf [ a owl:Restriction ; owl:onProperty sosa:hasFeatureOfInterest ; owl:allValuesFrom glosis_su:GL_Surface ] ;
+  			rdfs:subClassOf [ a owl:Restriction ; owl:onProperty sosa:hasResult ; owl:allValuesFrom glosis_su:SaltPresenceValue ] ;
+  			rdfs:subClassOf [ a owl:Restriction ; owl:onProperty sosa:observedProperty ; owl:hasValue glosis_prop:descriptivePropertyCode-SaltPresenceProperty ] .
+
+glosis_su:SaltPresenceValue a owl:Class ;
+        rdfs:label "SaltPresenceValue"@en ;
+        skos:definition "ISRIC Report 2019/01: Tier 1 and Tier 2 data in the context of the federated Global Soil Information System. Appendix 1"@en ;
+        rdfs:subClassOf  qudt:QuantityValue ;
+        rdfs:subClassOf [ a owl:Restriction ; owl:onProperty qudt:numericValue ; owl:allValuesFrom xsd:boolean ] ;
+        rdfs:subClassOf [ a owl:Restriction ; owl:onProperty qudt:unit ; owl:allValuesFrom qudt:Unit ] .
+
+glosis_su:SaltThickness  a	owl:Class ;
+        rdfs:label "SaltThickness"@en ;
+        rdfs:comment "Salt thickness describes the depth of the soil profile where significant salt concentrations are found, which may be determined using soil core samples or electrical conductivity measurements. Salt thickness is crucial in arid regions where salt accumulation occurs due to evaporation. Source: Rhoades, J.D., & Kandiah, A. (1992). Soil Salinity Management in Agriculture. Springer." ;
+        skos:definition "Guidelines for Soil Description issued by the FAO: table 22,2"@en ;
+        rdfs:subClassOf  sosa:Observation ;
+        rdfs:subClassOf [ a owl:Restriction ; owl:onProperty sosa:hasFeatureOfInterest ; owl:allValuesFrom glosis_su:GL_Surface ] ;
+  			rdfs:subClassOf [ a owl:Restriction ; owl:onProperty sosa:hasResult ; owl:someValuesFrom glosis_res:SaltThicknessValueCode ] ;
+  			rdfs:subClassOf [ a owl:Restriction ; owl:onProperty sosa:observedProperty ; owl:hasValue glosis_prop:descriptivePropertyCode-SaltThicknessProperty ] .
+
+glosis_cm:Texture rdfs:subClassOf [ a owl:Restriction ; owl:onProperty sosa:hasFeatureOfInterest ; owl:allValuesFrom glosis_su:GL_Surface ] .
+
+glosis_cm:FragmentsSize rdfs:subClassOf [ a owl:Restriction ; owl:onProperty sosa:hasFeatureOfInterest ; owl:allValuesFrom glosis_su:GL_Surface ] .
+
+glosis_cm:OrganicMatterClass rdfs:subClassOf [ a owl:Restriction ; owl:onProperty sosa:hasFeatureOfInterest ; owl:allValuesFrom glosis_su:GL_Surface ] .
+
+glosis_cm:CracksDepth rdfs:subClassOf [ a owl:Restriction ; owl:onProperty sosa:hasFeatureOfInterest ; owl:allValuesFrom glosis_su:GL_Surface ] .
+
+glosis_su:SealingConsistence  a	owl:Class ;
+        rdfs:label "SealingConsistence"@en ;
+        rdfs:comment "Sealing consistence refers to the soil's ability to resist compaction and the formation of a surface crust, often caused by wetting and drying cycles, or rainfall impact. Soils with low sealing consistence are more prone to surface sealing. Source: Soil Science Society of America (SSSA). (2008). Glossary of Soil Science Terms. Soil Science Society of America." ;
+        skos:definition "Guidelines for Soil Description issued by the FAO: table 20,2"@en ;
+        rdfs:subClassOf  sosa:Observation ;
+        rdfs:subClassOf [ a owl:Restriction ; owl:onProperty sosa:hasFeatureOfInterest ; owl:allValuesFrom glosis_su:GL_Surface ] ;
+  			rdfs:subClassOf [ a owl:Restriction ; owl:onProperty sosa:hasResult ; owl:someValuesFrom glosis_res:SealingConsistenceValueCode ] ;
+  			rdfs:subClassOf [ a owl:Restriction ; owl:onProperty sosa:observedProperty ; owl:hasValue glosis_prop:descriptivePropertyCode-SealingConsistenceProperty ] .
+
+glosis_su:SaltCover  a	owl:Class ;
+        rdfs:label "SaltCover"@en;
+        rdfs:comment "Salt cover is the visible accumulation of salts on the soil surface, typically forming a crust. This can occur in areas of high evaporation, leading to the upward movement of soluble salts from deeper soil layers. Source: US Salinity Laboratory Staff. (1954). Diagnosis and Improvement of Saline and Alkali Soils. U.S. Department of Agriculture Handbook No. 60." ;
+        skos:definition "Guidelines for Soil Description issued by the FAO: 22,1"@en ;
+        rdfs:subClassOf  sosa:Observation ;
+        rdfs:subClassOf [ a owl:Restriction ; owl:onProperty sosa:hasFeatureOfInterest ; owl:allValuesFrom glosis_su:GL_Surface ] ;
+  			rdfs:subClassOf [ a owl:Restriction ; owl:onProperty sosa:hasResult ; owl:someValuesFrom glosis_res:SaltCoverValueCode  ] ;
+  			rdfs:subClassOf [ a owl:Restriction ; owl:onProperty sosa:observedProperty ; owl:hasValue glosis_prop:descriptivePropertyCode-SaltCoverProperty ] .
+
+glosis_cm:RockAbundance rdfs:subClassOf [ a owl:Restriction ; owl:onProperty sosa:hasFeatureOfInterest ; owl:allValuesFrom glosis_su:GL_Surface ] .
+
+glosis_cm:CracksDistance rdfs:subClassOf [ a owl:Restriction ; owl:onProperty sosa:hasFeatureOfInterest ; owl:allValuesFrom glosis_su:GL_Surface ] .
+
+glosis_su:SealingThickness  a	owl:Class ;
+        rdfs:label "SealingThickness"@en ;
+        rdfs:comment "Sealing thickness refers to the depth of the compacted or sealed layer within the soil, which can hinder water infiltration, root growth, and soil aeration. This layer is often formed in fine-textured soils under intense rainfall or drying conditions. Source: Pagliai, M., & Vignozzi, N. (2002). Soil Structure and Soil Quality: A Review of the State of the Art. Agriculture, Ecosystems & Environment, 88(3), 77-86." ;
+        skos:definition "Guidelines for Soil Description issued by the FAO: 20,1"@en ;
+        rdfs:subClassOf  sosa:Observation ;
+        rdfs:subClassOf [ a owl:Restriction ; owl:onProperty sosa:hasFeatureOfInterest ; owl:allValuesFrom glosis_su:GL_Surface ] ;
+  			rdfs:subClassOf [ a owl:Restriction ; owl:onProperty sosa:hasResult ; owl:someValuesFrom glosis_res:SealingThicknessValueCode ] ;
+  			rdfs:subClassOf [ a owl:Restriction ; owl:onProperty sosa:observedProperty ; owl:hasValue glosis_prop:descriptivePropertyCode-SealingThicknessProperty ] .
+
+glosis_su:FragmentCover  a	owl:Class ;
+        rdfs:label "FragmentCover"@en;
+        rdfs:comment "Fragment cover is the percentage of the soil surface covered by coarse fragments, such as rocks, pebbles, or other larger pieces of material. High fragment cover can reduce soil erosion but may hinder water infiltration and root penetration. Source: FAO (2006). Guidelines for Soil Description (4th ed.). Food and Agriculture Organization of the United Nations." ;
+        skos:definition "Guidelines for Soil Description issued by the FAO: table 15,1"@en ;
+        rdfs:subClassOf  sosa:Observation ;
+        rdfs:subClassOf [ a owl:Restriction ; owl:onProperty sosa:hasFeatureOfInterest ; owl:allValuesFrom glosis_su:GL_Surface ] ;
+  			rdfs:subClassOf [ a owl:Restriction ; owl:onProperty sosa:hasResult ; owl:someValuesFrom glosis_res:FragmentCoverValueCode ] ;
+  			rdfs:subClassOf [ a owl:Restriction ; owl:onProperty sosa:observedProperty ; owl:hasValue glosis_prop:descriptivePropertyCode-fragmentCoverProperty ] .
+
+glosis_cm:BleachedSand rdfs:subClassOf [ a owl:Restriction ; owl:onProperty sosa:hasFeatureOfInterest ; owl:allValuesFrom glosis_su:GL_Surface ] .
+
+glosis_cm:WeatheringFragments rdfs:subClassOf [ a owl:Restriction ; owl:onProperty sosa:hasFeatureOfInterest ; owl:allValuesFrom glosis_su:GL_Surface ] .
+
+glosis_cm:RockSize rdfs:subClassOf [ a owl:Restriction ; owl:onProperty sosa:hasFeatureOfInterest ; owl:allValuesFrom glosis_su:GL_Surface ] .
+        
+glosis_cm:CracksWidth rdfs:subClassOf [ a owl:Restriction ; owl:onProperty sosa:hasFeatureOfInterest ; owl:allValuesFrom glosis_su:GL_Surface ] .
+
+glosis_cm:RockShape rdfs:subClassOf [ a owl:Restriction ; owl:onProperty sosa:hasFeatureOfInterest ; owl:allValuesFrom glosis_su:GL_Surface ] .
+
+glosis_cm:ColourDry rdfs:subClassOf [ a owl:Restriction ; owl:onProperty sosa:hasFeatureOfInterest ; owl:allValuesFrom glosis_su:GL_Surface ] .
+
+glosis_cm:ColourMoist rdfs:subClassOf [ a owl:Restriction ; owl:onProperty sosa:hasFeatureOfInterest ; owl:allValuesFrom glosis_su:GL_Surface ] .
