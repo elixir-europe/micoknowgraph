@@ -1,0 +1,554 @@
+entity	canonical_name	cqs	kind	map	rationale
+Soil Pollutants: Lead	Lead	CQ 10	chemical	yes	broken fragment of a multi-line cell ('Soil pollutants: lead, arsenic...'); repaired to the metal
+14C	Carbon-14	CQ 2	chemical	yes	radiocarbon isotope used as a tracer in CQ 2
+3-Hydroxypropionate Cycle	3-Hydroxypropionate Cycle	CQ 3	pathway-or-process	yes	
+Absolute Abundance	Absolute Abundance	CQ 19	measurement	no	
+Abundance Explosion	Abundance Explosion	CQ 25	statistic	no	qualitative direction of change in abundance; lives on Association.direction (PATO increased amount)
+Abundance Implosion	Abundance Implosion	CQ 25	statistic	no	qualitative direction of change in abundance; lives on Association.direction (PATO decreased amount)
+Acetaldehyde	Acetaldehyde	CQ 4	chemical	yes	
+Acetate	Acetate	CQ 15	chemical	yes	
+Acetic Acid	Acetic Acid	CQ 4	chemical	yes	
+Acidobacteria	Acidobacteria	CQ 10, CQ 11, CQ 12, CQ 24	taxon	yes	NCBI now calls the phylum Acidobacteriota
+Acidophile	Acidophile	CQ 10, CQ 11, CQ 12, CQ 24	ecological-role	yes	
+Acrab-Tolc Efflux Pump	AcrAB-TolC efflux pump	CQ 8	gene-product	yes	
+Actinobacteria	Actinobacteria	CQ 10, CQ 11, CQ 12, CQ 24	taxon	yes	NCBI now calls the phylum Actinomycetota
+Adjacent Normal Mucosa	Adjacent Normal Mucosa	CQ 7	sample-material	yes	tumour-adjacent normal tissue specimen; UBERON mucosa for the tissue, NCIT for the specimen role
+Aerosol Composition	Aerosol Composition	CQ 6	measurement	no	
+Aerosol Loading	Aerosol Loading	CQ 6	measurement	no	
+Age	Age	CQ 19	measurement	no	host attribute; Sample.host_age
+Agricultural Environment	Agricultural Environment	CQ 21	environment	yes	
+Airborne Sampler	Airborne Sampler	CQ 5	method-or-procedure	no	sampling device
+Akkermansia Muciniphila	Akkermansia Muciniphila	CQ 15, CQ 16, CQ 9	taxon	yes	
+Aldehydes	Aldehydes	CQ 4	chemical	yes	
+Alpha Diversity	Alpha Diversity	CQ 19, CQ 20, CQ 25	measurement	no	
+Alpha-Beta Treg	Alpha-beta regulatory T cell	CQ 9	cell-state	yes	a host cell type rather than a microbial cell state; CL is the right ontology
+Altitude	Altitude	CQ 5, CQ 21, CQ 25	measurement	no	
+Amendment Type	Amendment Type	CQ 13	measurement	no	categorical sample attribute; its values are the AGRO/ENVO materials in Sample.exposed_to
+Aminoglycoside-Modifying Enzyme	Aminoglycoside-Modifying Enzyme	CQ 8	gene-product	yes	
+Ammonia Availability	Ammonia Availability	CQ 4	measurement	no	
+Amplicon Count	Amplicon Count	CQ 21, CQ 25	measurement	no	
+Anaerostipes Hadrus	Anaerostipes Hadrus	CQ 15	taxon	yes	
+Analytical Method	Analytical Method	CQ 25	method-or-procedure	no	
+Anaplerotic Pathway	Anaplerotic Pathway	CQ 3	pathway-or-process	yes	
+Animal Model	Animal Model	CQ 15	study-design	yes	
+Anti-Ctla-4 Therapy	Anti-CTLA-4 therapy	CQ 9	drug-or-therapy	yes	
+Anti-Pd-1 Therapy	Anti-PD-1 therapy	CQ 9	drug-or-therapy	yes	
+Anti-Pd-L1 Therapy	Anti-PD-L1 therapy	CQ 9	drug-or-therapy	yes	
+Antibiotic	Antibiotic	CQ 14, CQ 8, CQ 9	drug-or-therapy	yes	
+Antioxidant Activity	Antioxidant Activity	CQ 6	pathway-or-process	yes	GO molecular function; measured as an observed property in CQ 6
+Application Method	Application Method	CQ 13	method-or-procedure	no	AGRO:00000036 exists but describes the procedure, which lives on Procedure
+Arg	Antibiotic resistance gene (ARG)	CQ 8	gene	yes	ARG = antibiotic resistance gene, not arginine
+Aro-Mapped Gene Rpkm	ARO-mapped gene RPKM	CQ 9	measurement	no	
+Arsenic	Arsenic	CQ 10	chemical	yes	
+Ascorbate	Ascorbate	CQ 4	chemical	yes	
+Asian Dust Input	Asian Dust Input	CQ 5	event-or-exposure	yes	
+Atmospheric Trace Gases	Atmospheric Trace Gases	CQ 4	chemical	yes	
+Azospirillum	Azospirillum	CQ 10, CQ 11, CQ 12, CQ 24	taxon	yes	
+Azotobacter	Azotobacter	CQ 10, CQ 11, CQ 12, CQ 24	taxon	yes	
+Bacillota	Bacillota	CQ 9	taxon	yes	
+Bacteroides Fragilis	Bacteroides Fragilis	CQ 7	taxon	yes	
+Bacteroides Thetaiotaomicron	Bacteroides Thetaiotaomicron	CQ 16	taxon	yes	
+Bacteroidota	Bacteroidota	CQ 9	taxon	yes	
+Baseline Diagnosis	Baseline Diagnosis	CQ 8	measurement	no	clinical variable whose value is a MONDO disease; lives on the host observation
+Behavioural Data	Behavioural Data	CQ 19	data-artifact	no	
+Beta Dispersion	Beta Dispersion	CQ 25	statistic	no	
+Beta Diversity	Beta Diversity	CQ 19, CQ 25	measurement	no	
+Beta-Glucan	Beta-Glucan	CQ 15, CQ 16, CQ 17	chemical	yes	
+Beta-Lactam/Beta-Lactamase Inhibitor	Beta-Lactam/Beta-Lactamase Inhibitor	CQ 9	drug-or-therapy	yes	
+Bevavioural Observation	Behavioural observation	CQ 20	method-or-procedure	no	typo in the sheet
+Bicarbonate Ions Active Transport	Bicarbonate Ions Active Transport	CQ 3	pathway-or-process	yes	
+Bifidobacterium	Bifidobacterium	CQ 15, CQ 7, CQ 9	taxon	yes	
+Bifidobacterium Adolescentis	Bifidobacterium Adolescentis	CQ 9	taxon	yes	
+Bioaerosols	Bioaerosols	CQ 4	environment	yes	
+Biocide Resistance	Biocide Resistance	CQ 8	disease-or-phenotype	yes	microbial resistance phenotype; ARO covers biocides as a drug class
+Bioinformatics Tool	Bioinformatics Tool	CQ 25	method-or-procedure	no	
+Biomarker	Biomarker	CQ 11, CQ 12, CQ 24	meta	no	role a chemical or taxon plays in an association, not a concept
+Biome	Biome	CQ 21	environment	yes	generic ENVO upper class (env_broad_scale)
+Bla Gene	bla gene (beta-lactamase)	CQ 9	gene	yes	
+Black Carbon	Black Carbon	CQ 5	chemical	yes	
+Blactx-M-15	blaCTX-M-15	CQ 8	gene	yes	
+Blakpc	blaKPC	CQ 8	gene	yes	
+Blandm	blaNDM	CQ 8	gene	yes	
+Blaoxa-48	blaOXA-48	CQ 8	gene	yes	
+Blashv	blaSHV	CQ 8	gene	yes	
+Blatem	blaTEM	CQ 8	gene	yes	
+Bloodstream Infection	Bloodstream Infection	CQ 8	disease-or-phenotype	yes	
+Body Site	Body Site	CQ 7	anatomy-or-body-site	yes	the slot Sample.host_body_site; values are UBERON terms
+Bray-Curtis Dissimilarity	Bray-Curtis Dissimilarity	CQ 7	measurement	no	
+Broad-Spectrum Antibiotic Exposure Window	Broad-Spectrum Antibiotic Exposure Window	CQ 9	event-or-exposure	yes	ECTO has exposures to specific antibiotic classes but no plain antibiotic exposure; a time window is really a Procedure attribute
+Buffalo	Buffalo	CQ 25	host	yes	
+Bulk Soil	Bulk Soil	CQ 14	environment	yes	
+Butyrate	Butyrate	CQ 15, CQ 16, CQ 9	chemical	yes	
+Butyricicoccus	Butyricicoccus	CQ 15	taxon	yes	
+C4 Pathway	C4 Pathway	CQ 3	pathway-or-process	yes	
+Ca²⁺ Concentration	Ca2+ concentration	CQ 4	measurement	no	
+Cadmium	Cadmium	CQ 10	chemical	yes	
+Calvin-Benson-Bassham Cycle	Calvin-Benson-Bassham Cycle	CQ 3	pathway-or-process	yes	
+Cam Pathway	CAM pathway	CQ 3	pathway-or-process	yes	
+Carbapenem	Carbapenem	CQ 8	drug-or-therapy	yes	
+Carbapenemase	Carbapenemase	CQ 8	gene-product	yes	ARO has carbapenemase families (KPC, NDM, OXA-48) but no umbrella class; GO beta-lactamase activity is the function
+Carbon Concentration Mechanism	Carbon concentrating mechanism	CQ 3	pathway-or-process	yes	
+Carbon Cycling	Carbon Cycling	CQ 10, CQ 11, CQ 12, CQ 24	pathway-or-process	yes	ecosystem process; ENVO has it as a process, GO does not
+Carbon Fixation Pathway	Carbon Fixation Pathway	CQ 6	pathway-or-process	yes	
+Carbonic Anhydrase	Carbonic Anhydrase	CQ 4	gene-product	yes	
+Carbonyl Compounds	Carbonyl Compounds	CQ 4	chemical	yes	
+Carboxysome	Carboxysome	CQ 3	pathway-or-process	yes	GO cellular component
+Cardiovascular Disease	Cardiovascular Disease	CQ 16	disease-or-phenotype	yes	
+Carotenoids	Carotenoids	CQ 2, CQ 6	chemical	yes	
+Cat Gene	cat gene (catalase)	CQ 6	gene	yes	cloud-microbe stress gene; GO:0004096 catalase activity is the function, the gene itself has no OBO class
+Cattle	Cattle	CQ 25	host	yes	
+Cbbl Gene	cbbL gene (RuBisCO large subunit)	CQ 6	gene	yes	no OBO class for the gene; function is GO:0016984 ribulose-bisphosphate carboxylase activity
+Cbbs Gene	cbbS gene (RuBisCO small subunit)	CQ 6	gene	yes	no OBO class for the gene; function is GO:0016984 ribulose-bisphosphate carboxylase activity
+Cd19 Car-T Therapy	CD19 CAR-T therapy	CQ 9	drug-or-therapy	yes	
+Cd8+ Effector Memory T-Cell Exhaustion	CD8+ effector memory T-cell exhaustion	#N/A	cell-state	yes	host immune cell state; CQ column is #N/A in the sheet
+Cell Count	Cell Count	CQ 21, CQ 25	measurement	no	
+Cell-Free Dna	Cell-free DNA	CQ 7	sample-material	yes	
+Cephalosporin	Cephalosporin	CQ 8	drug-or-therapy	yes	
+Cfu	CFU (colony-forming units)	CQ 21, CQ 25	measurement	no	
+Cfxa Gene	cfxA gene	CQ 9	gene	yes	
+Chao1 Richness	Chao1 Richness	CQ 7	measurement	no	
+Chebi Identifier	ChEBI identifier	CQ 17	identifier-scheme	no	
+Chemotherapy-Induced Mucositis	Chemotherapy-Induced Mucositis	CQ 8	disease-or-phenotype	yes	
+Chemotroph	Chemotroph	CQ 11, CQ 12, CQ 24	ecological-role	yes	
+Chlorella	Chlorella	CQ 5	taxon	yes	
+Chloroflexi	Chloroflexi	CQ 10, CQ 11, CQ 12, CQ 24	taxon	yes	NCBI now calls the phylum Chloroflexota
+Chlorophyll A	Chlorophyll A	CQ 2, CQ 6	chemical	yes	
+Chromium	Chromium	CQ 10	chemical	yes	
+Circadian Rhythm Gene	Circadian Rhythm Gene	CQ 6	gene	yes	gene category; the process is GO:0007623 circadian rhythm
+Cl⁻ Concentration	Cl- concentration	CQ 4	measurement	no	
+Clay	Clay	CQ 10	environment	yes	
+Clostridium	Clostridium	CQ 10, CQ 11, CQ 12, CQ 16, CQ 24	taxon	yes	
+Clostridium Scindens	Clostridium Scindens	CQ 16	taxon	yes	NCBI keeps the genus in square brackets
+Cloud Dissipation	Cloud Dissipation	CQ 4, CQ 6	event-or-exposure	yes	atmospheric process, ENVO
+Cloud Droplet Size	Cloud Droplet Size	CQ 6	measurement	no	
+Cloud Droplets	Cloud Droplets	CQ 4	environment	yes	
+Cloud Formation	Cloud Formation	CQ 4, CQ 6	event-or-exposure	yes	atmospheric process, ENVO
+Cloud Maturity	Cloud Maturity	CQ 4, CQ 6	measurement	no	categorical stage of the cloud at sampling
+Cloud Optical Depth	Cloud Optical Depth	CQ 6	measurement	no	
+Cloud Water	Cloud Water	CQ 4, CQ 5, CQ 6, CQ 21, CQ 25	environment	yes	
+Cloud Water Collector	Cloud Water Collector	CQ 5	method-or-procedure	no	sampling device
+Cloud Water Content	Cloud Water Content	CQ 6	measurement	no	
+Co-Factor	Co-Factor	CQ 25	meta	no	
+Co-Integrate Formation	Cointegrate formation	CQ 8	pathway-or-process	yes	
+Co₂ Active Transport	CO2 active transport	CQ 3	pathway-or-process	yes	
+Co₂ Concentration	CO2 concentration	CQ 4, CQ 5, CQ 6	measurement	no	
+Co₂ Fixation Pathway	CO2 fixation pathway	CQ 10, CQ 11, CQ 12, CQ 3, CQ 5, CQ 24	pathway-or-process	yes	
+Co₂ Fixation Rate	CO2 fixation rate	CQ 6	measurement	no	
+Coastal Water	Coastal Water	CQ 21, CQ 25	environment	yes	
+Cog	COG (Clusters of Orthologous Genes)	CQ 19	identifier-scheme	no	
+Cohort	Cohort	CQ 15	study-design	yes	
+Collection Method	Collection Method	CQ 21, CQ 25	method-or-procedure	no	
+Colon	Colon	CQ 15, CQ 7	anatomy-or-body-site	yes	
+Colorectal Cancer	Colorectal Cancer	CQ 16	disease-or-phenotype	yes	
+Colrnai Replicon	ColRNAI replicon	CQ 7	mobile-element	yes	plasmid incompatibility group; SO has 'plasmid' and 'replicon' but no Inc groups
+Compensatory Mutation	Compensatory Mutation	CQ 8	pathway-or-process	yes	evolutionary event in the AMR CQ; SO is the nearest home
+Competition	Competition	CQ 5	ecological-role	yes	interaction type; in the schema it is the predicate micokg:competes_with
+Conjugative Plasmid	Conjugative Plasmid	CQ 7	mobile-element	yes	
+Consortium	Microbial consortium	CQ 22	taxon-group	yes	
+Contradicting Studies	Contradicting Studies	CQ 16	meta	no	
+Copper	Copper	CQ 10	chemical	yes	
+Cross-Environment Taxon	Cross-Environment Taxon	CQ 18	meta	no	a query result category (taxon seen in more than one environment), not a concept
+Cumulus	Cumulus	CQ 5	environment	yes	
+Cyanobacteria	Cyanobacteria	CQ 1, CQ 2, CQ 3, CQ 4, CQ 5, CQ 6	taxon	yes	NCBI now calls the phylum Cyanobacteriota
+Damaged Cell	Damaged Cell	CQ 2	cell-state	yes	
+Database	Database	CQ 25	data-artifact	no	
+Day	Day	CQ 6	time-or-period	yes	
+Deoxycholate	Deoxycholate	CQ 16	chemical	yes	
+Desiccation Tolerance	Desiccation Tolerance	CQ 5	pathway-or-process	yes	abiotic stress trait; GO 'response to desiccation' is the agreed stand-in until OMP is adopted
+Diatoms	Diatoms	CQ 1, CQ 2, CQ 3, CQ 4, CQ 6	taxon	yes	
+Diet	Diet	CQ 15, CQ 16, CQ 17, CQ 18, CQ 22	food-or-diet	yes	generic; values are FOODON diets
+Diet Background	Diet Background	CQ 15	measurement	no	cohort attribute whose value is a FOODON diet
+Dimethyl Sulfide	Dimethyl Sulfide	CQ 4	chemical	yes	
+Direction Of Change	Direction Of Change	CQ 15, CQ 17	statistic	no	
+Direction Of Link	Direction Of Link	CQ 16	statistic	no	
+Disease Relapse	Disease Relapse	CQ 8	disease-or-phenotype	yes	clinical outcome; MONDO has no relapse class so NCIT stays
+Dissolved Oxygen	Dissolved Oxygen	CQ 21	measurement	no	
+Diversity Index	Diversity Index	CQ 10, CQ 11, CQ 12, CQ 5, CQ 20, CQ 24	measurement	no	
+Dividing Cell	Dividing Cell	CQ 2	cell-state	yes	
+Dominance	Dominance	CQ 25	measurement	no	ecological dominance (Berger-Parker) in CQ25
+Dormant Cell	Dormant Cell	CQ 2, CQ 6	cell-state	yes	
+Dosage	Dosage	CQ 13	measurement	no	
+Dramatic Population Shift	Dramatic Population Shift	CQ 25	statistic	no	
+Drought	Drought	CQ 13	event-or-exposure	yes	
+Ec Number	EC number	CQ 19	identifier-scheme	no	
+Effect Size	Effect Size	CQ 16, CQ 17	statistic	no	
+Eggerthella Lenta	Eggerthella Lenta	CQ 16	taxon	yes	
+Electric Conductivity	Electric Conductivity	CQ 21	measurement	no	
+Electron Transport Rate	Electron Transport Rate	CQ 6	measurement	no	
+Enterocloster	Enterocloster	CQ 9	taxon	yes	
+Environment	Environment	CQ 18, CQ 2, CQ 21, CQ 22	environment	yes	generic; the MIxS env_* triad
+Environmental Presence	Environmental Presence	CQ 18	measurement	no	
+Environmental Stressors	Environmental Stressors	CQ 2	event-or-exposure	yes	
+Enzyme	Enzyme	CQ 3, CQ 8, CQ 22	gene-product	yes	generic; GO molecular function 'catalytic activity' is the class the schema points at
+Enzymes	Enzymes	CQ 3	gene-product	yes	duplicate of Enzyme
+Equol	Equol	CQ 17	chemical	yes	
+Ergosterol	Ergosterol	CQ 21, CQ 25	chemical	yes	
+Ermb Gene	ermB gene	CQ 9	gene	yes	
+Esbl	ESBL (extended-spectrum beta-lactamase)	CQ 8	gene-product	yes	
+Escherichia Coli	Escherichia Coli	CQ 7, CQ 9	taxon	yes	
+Escherichia Coli Pks+	Escherichia coli (pks+)	CQ 7	taxon	yes	genotoxic pks-island-positive E. coli; taxon plus a genotype qualifier
+Ethnicity	Ethnicity	CQ 18	measurement	no	host attribute
+Eubacterium Rectale	Eubacterium Rectale	CQ 15	taxon	yes	NCBI now calls it Agathobacter rectalis
+Exopolysaccharide Production	Exopolysaccharide Production	CQ 6	pathway-or-process	yes	
+Exopolysaccharides	Exopolysaccharides	CQ 4	chemical	yes	
+Exposome Data	Exposome Data	CQ 18	data-artifact	no	
+Exposure Duration	Exposure Duration	CQ 14	measurement	no	
+Exposure Source	Exposure Source	CQ 14	measurement	no	categorical exposure attribute
+Extreme Weather	Extreme Weather	CQ 21	event-or-exposure	yes	
+Faecalibacterium Prausnitzii	Faecalibacterium Prausnitzii	CQ 15, CQ 16, CQ 7, CQ 9	taxon	yes	
+Fermented Dairy	Fermented Dairy	CQ 15, CQ 16, CQ 17	food-or-diet	yes	
+Fermented Vegetables	Fermented Vegetables	CQ 15, CQ 16, CQ 17	food-or-diet	yes	
+Fertilizer Microbial Community	Fertilizer Microbial Community	CQ 13	taxon-group	yes	the community in the amendment arm; PCO microbial community
+Ffpe Tissue	FFPE tissue	CQ 7	sample-material	yes	
+Field Trial	Field Trial	CQ 13	study-design	yes	
+Filtering	Filtering	CQ 25	method-or-procedure	no	
+Final Product	Final Product	CQ 22	meta	no	role of a chemical in a pathway step
+Fluoroquinolone	Fluoroquinolone	CQ 8, CQ 9	drug-or-therapy	yes	
+Fluoroquinolone Resistance	Fluoroquinolone Resistance	CQ 8	disease-or-phenotype	yes	microbial resistance phenotype; ARO
+Fold Change	Fold Change	CQ 15	statistic	no	
+Formaldehyde	Formaldehyde	CQ 4	chemical	yes	
+Formic Acid	Formic Acid	CQ 4	chemical	yes	
+Fresh-Frozen Biopsy	Fresh-Frozen Biopsy	CQ 7	sample-material	yes	
+Freshwater	Freshwater	CQ 21, CQ 25	environment	yes	
+Functional Potential	Functional Potential	CQ 19	measurement	no	
+Fungi	Fungi	CQ 3, CQ 21, CQ 25	taxon	yes	
+Fusobacterium Nucleatum	Fusobacterium Nucleatum	CQ 7	taxon	yes	
+Gamma Diversity	Gamma Diversity	CQ 25	measurement	no	
+Gene	Gene	CQ 2, CQ 6, CQ 8, CQ 9, CQ 19, CQ 21, CQ 22, CQ 25	gene	yes	generic; SO:0000704
+Gene Abundance	Gene Abundance	CQ 19	measurement	no	
+Gene Amplification	Gene Amplification	CQ 8	pathway-or-process	yes	SO copy_number_gain is the nearest class
+Gene Expression	Gene Expression	CQ 6	pathway-or-process	yes	
+Genes	Genes	CQ 2	gene	yes	duplicate of Gene
+Geographical Coordinates	Geographical Coordinates	CQ 21, CQ 25	measurement	no	MIxS lat_lon
+Glutathione	Glutathione	CQ 4	chemical	yes	
+Glycerol	Glycerol	CQ 6	chemical	yes	
+Glycogen	Glycogen	CQ 6	chemical	yes	
+Glycolysis	Glycolysis	CQ 3	pathway-or-process	yes	
+Goat	Goat	CQ 25	host	yes	
+Gpx Gene	gpx gene (glutathione peroxidase)	CQ 6	gene	yes	function is GO:0004602 glutathione peroxidase activity
+Greengenes Taxon	Greengenes Taxon	CQ 19	identifier-scheme	no	
+Greenhouse	Greenhouse	CQ 13	study-design	yes	
+Grooming Giver	Grooming Giver	CQ 20	ecological-role	yes	role in a grooming interaction; schema local term micokg:grooming_given, NBO for the behaviour
+Grooming Interaction	Grooming Interaction	CQ 20	ecological-role	yes	host behaviour interaction; NBO:0000450
+Grooming Receiver	Grooming Receiver	CQ 20	ecological-role	yes	role in a grooming interaction; schema local term micokg:grooming_received
+Gross Primary Production	Gross Primary Production	CQ 6	measurement	no	
+Growth Chamber	Growth Chamber	CQ 13	study-design	yes	
+Gtdb Taxon	GTDB taxon	CQ 19	identifier-scheme	no	
+Gut Domination Threshold	Gut Domination Threshold	CQ 8	statistic	no	a cut-off on relative abundance
+Gut Taxa	Gut Taxa	CQ 17	taxon-group	yes	taxa by habitat, not a clade; no ontology class
+Halophile	Halophile	CQ 10	ecological-role	yes	
+Health Status	Health Status	CQ 18	measurement	no	host attribute
+Heavy Metal Resistance	Heavy Metal Resistance	CQ 8	pathway-or-process	yes	abiotic stress trait, outside ARO; GO 'response to metal ion' until OMP is adopted
+Heavy Metals	Heavy Metals	CQ 14	chemical	yes	
+Hen	Hen (Gallus gallus)	CQ 25	host	yes	
+Heterotroph	Heterotroph	CQ 1, CQ 11, CQ 12, CQ 2, CQ 3, CQ 24	ecological-role	yes	
+Heterotrophic Bacteria	Heterotrophic Bacteria	CQ 1, CQ 2, CQ 3	taxon-group	yes	trophic grouping, not a clade
+High-Fat Diet	High-Fat Diet	CQ 15, CQ 16, CQ 17	food-or-diet	yes	
+Hippurate	Hippurate	CQ 17	chemical	yes	
+Histological Grade	Histological Grade	CQ 7	measurement	no	
+Historical Climate	Historical Climate	CQ 21	data-artifact	no	climate record for the site
+Hmdb Identifier	HMDB identifier	CQ 17	identifier-scheme	no	
+Host	Host	CQ 16, CQ 17, CQ 19, CQ 20, CQ 22	host	yes	schema class Host; the organism is an NCBITaxon
+Host Organism	Host Organism	CQ 20	host	yes	duplicate of Host
+Host Species	Host Species	CQ 16, CQ 17, CQ 19	host	yes	duplicate of Host
+Human	Human	CQ 15, CQ 18, CQ 21, CQ 25	host	yes	
+Human Pathogen	Human Pathogen	CQ 21, CQ 25	ecological-role	yes	
+Humidity	Humidity	CQ 10, CQ 4, CQ 5, CQ 6, CQ 21	measurement	no	
+Hungatella Hathewayi	Hungatella Hathewayi	CQ 9	taxon	yes	
+Hydrogen Peroxide	Hydrogen Peroxide	CQ 4	chemical	yes	
+Hydroxyl Radicals	Hydroxyl Radicals	CQ 4	chemical	yes	
+Imidazole Propionate	Imidazole Propionate	CQ 16	chemical	yes	
+Incf Replicon	IncF replicon	CQ 7	mobile-element	yes	plasmid incompatibility group; no SO class
+Inci1 Replicon	IncI1 replicon	CQ 7	mobile-element	yes	plasmid incompatibility group; no SO class
+Incp Replicon	IncP replicon	CQ 7	mobile-element	yes	plasmid incompatibility group; no SO class
+Incx Replicon	IncX replicon	CQ 7	mobile-element	yes	plasmid incompatibility group; no SO class
+Indole Derivatives	Indole Derivatives	CQ 16	chemical	yes	
+Indoxyl Sulfate	Indoxyl Sulfate	CQ 17	chemical	yes	
+Industrial Environment	Industrial Environment	CQ 21	environment	yes	ENVO has no generic industrial environment; industrial park is the nearest site class
+Inflammatory Bowel Disease	Inflammatory Bowel Disease	CQ 16	disease-or-phenotype	yes	
+Inorganic Aerosol	Inorganic Aerosol	CQ 5	environment	yes	ENVO material
+Interaction Duration	Interaction Duration	CQ 20	measurement	no	
+Intermediate Product	Intermediate Product	CQ 22	meta	no	role of a chemical in a pathway step
+Inulin	Inulin	CQ 15, CQ 16, CQ 17	chemical	yes	
+Iron	Iron	CQ 10, CQ 2, CQ 3, CQ 5, CQ 6	chemical	yes	
+Iron Availability	Iron Availability	CQ 10, CQ 5, CQ 6	measurement	no	
+Isoprene	Isoprene	CQ 4	chemical	yes	
+Kefir	Kefir	CQ 15, CQ 16, CQ 17	food-or-diet	yes	
+Keystone Species	Keystone Species	CQ 11, CQ 12, CQ 24, CQ 25	ecological-role	yes	
+Kimchi	Kimchi	CQ 15, CQ 16, CQ 17	food-or-diet	yes	
+Klebsiella	Klebsiella	CQ 7, CQ 9	taxon	yes	
+Klebsiella Pneumoniae	Klebsiella Pneumoniae	CQ 7	taxon	yes	
+Known Pathogen	Known Pathogen	CQ 21, CQ 25	ecological-role	yes	
+Ko	KO (KEGG Orthology)	CQ 19	identifier-scheme	no	
+Lactate	Lactate	CQ 15	chemical	yes	
+Library Preparation	Library Preparation	CQ 21, CQ 25	method-or-procedure	no	
+Light	Light	CQ 3, CQ 4, CQ 6	event-or-exposure	yes	physical stimulus the cloud microbes are exposed to
+Light Intensity	Light Intensity	CQ 4, CQ 6	measurement	no	
+Lipid Metabolism	Lipid Metabolism	CQ 6	pathway-or-process	yes	
+Lithocholate	Lithocholate	CQ 16	chemical	yes	
+Location Elevation	Location Elevation	CQ 1, CQ 2	measurement	no	
+Location Geocoordinates	Location Geocoordinates	CQ 1, CQ 2	measurement	no	
+Log Ct	Log Ct	CQ 21, CQ 25	measurement	no	
+Log2Fc	log2FC	CQ 15	statistic	no	
+Longitudinal Strain Persistence	Longitudinal Strain Persistence	CQ 8	measurement	no	
+Lung	Lung	CQ 7	anatomy-or-body-site	yes	
+Macrolide	Macrolide	CQ 9	drug-or-therapy	yes	
+Madcam-1	MAdCAM-1	CQ 9	gene-product	yes	host adhesion protein; PR would be the OBO home but is not in the tiers
+Mag	MAG (metagenome-assembled genome)	CQ 21, CQ 25	data-artifact	no	
+Mag Count	MAG count	CQ 21, CQ 25	measurement	no	
+Maize	Maize	CQ 25	host	yes	
+Malonic Acid	Malonic Acid	CQ 4	chemical	yes	
+Mediterranean Diet	Mediterranean Diet	CQ 15, CQ 16, CQ 17	food-or-diet	yes	
+Membrane Compromise Cell	Membrane-compromised cell	CQ 2	cell-state	yes	
+Membrane Integrity	Membrane Integrity	CQ 6	measurement	no	
+Mercury	Mercury	CQ 10	chemical	yes	
+Metabolic Behaviour	Metabolic Behaviour	CQ 18	pathway-or-process	yes	vague; generic GO metabolic process
+Metabolic Pathway	Metabolic Pathway	CQ 18	pathway-or-process	yes	generic
+Metabolically Active Cell	Metabolically Active Cell	CQ 2, CQ 6	cell-state	yes	
+Metabolite Consumer	Metabolite Consumer	CQ 17	meta	no	role of a taxon in a taxon-metabolite association (predicate consumes)
+Metabolite Producer	Metabolite Producer	CQ 17	meta	no	role of a taxon in a taxon-metabolite association (predicate produces)
+Metastasis	Metastasis	CQ 8	disease-or-phenotype	yes	
+Metastatic Site	Metastatic Site	CQ 7	anatomy-or-body-site	yes	slot whose value is an UBERON term
+Meteorological Conditions	Meteorological Conditions	CQ 1, CQ 2	measurement	no	
+Mexab-Oprm Efflux Pump	MexAB-OprM efflux pump	CQ 8	gene-product	yes	
+Mg²⁺ Concentration	Mg2+ concentration	CQ 4	measurement	no	
+Microalgae	Microalgae	CQ 1, CQ 2, CQ 3, CQ 4, CQ 5, CQ 6	taxon-group	yes	polyphyletic grouping
+Microbial Community	Microbial Community	CQ 13, CQ 20	taxon-group	yes	
+Microbial Taxon	Microbial Taxon	CQ 21, CQ 22, CQ 25	taxon	yes	schema class Taxon
+Microplastic	Microplastic	CQ 14	chemical	yes	pollutant with no ChEBI class; ENVO has it as a material
+Mid-Chemotherapy Cycle	Mid-Chemotherapy Cycle	CQ 8	time-or-period	yes	
+Mobile Genetic Element Richness	Mobile Genetic Element Richness	CQ 9	measurement	no	
+Mobilisable Plasmid	Mobilisable Plasmid	CQ 7	mobile-element	yes	
+Model-Based Prediction	Model-Based Prediction	CQ 25	meta	no	
+Mouse	Mouse	CQ 15	host	yes	
+Mutualism	Mutualism	CQ 5	ecological-role	yes	interaction type; RO:0002442 in the schema
+N₂ Fixation Pathway	N2 fixation pathway	CQ 10, CQ 11, CQ 12, CQ 24	pathway-or-process	yes	
+Natural Environment	Natural Environment	CQ 21	environment	yes	
+Ncbi Taxon	NCBI taxon	CQ 19	identifier-scheme	no	
+Ndh Gene	ndh gene (NAD(P)H dehydrogenase)	CQ 6	gene	yes	
+Net Primary Production	Net Primary Production	CQ 6	measurement	no	
+Network Modularity	Network Modularity	CQ 25	statistic	no	
+Neutropenia	Neutropenia	CQ 8	disease-or-phenotype	yes	
+Neutropenic Fever Episode	Neutropenic Fever Episode	CQ 8	disease-or-phenotype	yes	
+Nh₃ Concentration	NH3 concentration	CQ 5	measurement	no	
+Night	Night	CQ 6	time-or-period	yes	
+Nitrate Availability	Nitrate Availability	CQ 10, CQ 4, CQ 5	measurement	no	
+Nitrogen	Nitrogen	CQ 10, CQ 11, CQ 12, CQ 13, CQ 2, CQ 3, CQ 6, CQ 24	chemical	yes	
+Nitrogen Availability	Nitrogen Availability	CQ 6	measurement	no	
+Nitrogen Content	Nitrogen Content	CQ 13	measurement	no	
+Nitrogen Fixation	Nitrogen Fixation	CQ 10, CQ 11, CQ 12, CQ 24	pathway-or-process	yes	
+Non-Alcoholic Fatty Liver Disease	Non-Alcoholic Fatty Liver Disease	CQ 16	disease-or-phenotype	yes	
+Non-Human Gut Environment	Non-Human Gut Environment	CQ 18	environment	yes	host-associated environment of a non-human host
+Non-Mobilisable Plasmid	Non-Mobilisable Plasmid	CQ 7	mobile-element	yes	
+Non-Pathogen	Non-Pathogen	CQ 21, CQ 25	ecological-role	yes	negation of a role; no ontology class expected
+Non-Photosynthetic Microorganisms	Non-Photosynthetic Microorganisms	CQ 1, CQ 2, CQ 3	taxon-group	yes	trophic grouping by negation
+Nostoc	Nostoc	CQ 5	taxon	yes	
+Noₓ Concentration	NOx concentration	CQ 4, CQ 5	measurement	no	
+Npk	NPK fertilizer	CQ 13	chemical	yes	fertiliser product; AGRO:00002046 as used in the soil toy data
+Npq	NPQ (non-photochemical quenching)	CQ 6	measurement	no	
+Nutrient Availability	Nutrient Availability	CQ 6	measurement	no	
+Nutrient Limitation	Nutrient Limitation	CQ 4	measurement	no	
+Nutrients	Nutrients	CQ 2	chemical	yes	
+Nutrition Data	Nutrition Data	CQ 19	data-artifact	no	
+O₂ Evolution Rate	O2 evolution rate	CQ 6	measurement	no	
+O₃ Concentration	O3 concentration	CQ 4, CQ 5	measurement	no	
+Obesity	Obesity	CQ 16	disease-or-phenotype	yes	
+Oil)		#N/A	junk-fragment	no	tail of 'Organic hydrocarbons (e.g. petrol, oil)' split by a line break; see that row
+Organic Acid Concentration	Organic Acid Concentration	CQ 4	measurement	no	
+Organic Aerosol	Organic Aerosol	CQ 5	environment	yes	ENVO material
+Organic Carbon	Organic Carbon	CQ 10, CQ 13	measurement	no	soil property (GloSiS organic carbon); the amount, not the substance
+Organic Carbon Availability. Season	Organic carbon availability	CQ 10	junk-fragment	no	two entities merged by a line break; 'Season' exists as its own row, 'organic carbon availability' is a measurement
+Organic Hydrocarbons (E.G. Petrol	Organic hydrocarbons (e.g. petrol, oil)	#N/A	chemical	yes	broken fragment repaired; the 'Oil)' row is its tail
+Organic Matter	Organic Matter	CQ 14	environment	yes	ENVO organic material
+Orit	oriT	CQ 7	mobile-element	yes	
+Oxalic Acid	Oxalic Acid	CQ 4	chemical	yes	
+Oxidative Stress	Oxidative Stress	CQ 2, CQ 4, CQ 6	pathway-or-process	yes	the stressor is ROS (chemical); the condition is the GO response
+P-Cresol Sulfate	P-Cresol Sulfate	CQ 17	chemical	yes	
+P-Value	P-Value	CQ 15	statistic	no	
+Pancreas	Pancreas	CQ 7	anatomy-or-body-site	yes	
+Parasite	Parasite	CQ 11, CQ 12, CQ 24	ecological-role	yes	
+Parasitism	Parasitism	CQ 5	ecological-role	yes	interaction type; RO:0002444 in the schema
+Particulate Matter	Particulate Matter	CQ 21	environment	yes	ENVO material
+Pathogen	Pathogen	CQ 21, CQ 25	ecological-role	yes	
+Pathogen-Targeting Qpcr	Pathogen-targeting qPCR	CQ 21, CQ 25	method-or-procedure	no	
+Pathway	Pathway	CQ 10, CQ 11, CQ 12, CQ 18, CQ 3, CQ 5, CQ 6, CQ 22, CQ 24	pathway-or-process	yes	generic; GO biological process
+Pathway Step	Pathway Step	CQ 22	meta	no	
+Pentanoate	Pentanoate	CQ 9	chemical	yes	
+Pentose Phosphate Pathway	Pentose Phosphate Pathway	CQ 3	pathway-or-process	yes	
+Peri-Operative Antibiotic Prophylaxis	Peri-Operative Antibiotic Prophylaxis	CQ 8	drug-or-therapy	yes	
+Pesticide	Pesticide	CQ 14	chemical	yes	
+Ph	pH	CQ 1, CQ 10, CQ 11, CQ 12, CQ 13, CQ 14, CQ 2, CQ 3, CQ 4, CQ 5, CQ 6, CQ 9, CQ 21, CQ 24	measurement	no	
+Ph Change	pH change	CQ 10, CQ 11, CQ 12, CQ 24	measurement	no	
+Phage-Plasmid Hybrid	Phage-Plasmid Hybrid	CQ 9	mobile-element	yes	no SO class for phage-plasmids
+Phosphate Availability	Phosphate Availability	CQ 10, CQ 5	measurement	no	
+Phosphorus	Phosphorus	CQ 13, CQ 2, CQ 3, CQ 6	chemical	yes	
+Phosphorus Availability	Phosphorus Availability	CQ 6	measurement	no	
+Phosphorus Content	Phosphorus Content	CQ 13	measurement	no	
+Photosynthetic Bacteria	Photosynthetic Bacteria	CQ 1, CQ 2, CQ 4, CQ 5, CQ 6	taxon-group	yes	trophic grouping, not a clade
+Photosynthetic Efficiency	Photosynthetic Efficiency	CQ 2, CQ 6	measurement	no	
+Photosynthetic Efficiency Metrics	Photosynthetic Efficiency Metrics	CQ 2	measurement	no	
+Photosynthetic Microorganisms	Photosynthetic Microorganisms	CQ 1, CQ 2, CQ 3, CQ 4, CQ 5, CQ 6, CQ 24	taxon-group	yes	trophic grouping, not a clade
+Phycobiliproteins	Phycobiliproteins	CQ 2, CQ 6	chemical	yes	ChEBI only has the chromophore (phycocyanobilin); the protein class has no ChEBI term
+Pigment Bleaching Cell	Pigment-bleached cell	CQ 2, CQ 6	cell-state	yes	
+Pigments	Pigments	CQ 2	chemical	yes	
+Pipeline Parameter	Pipeline Parameter	CQ 25	method-or-procedure	no	
+Piperacillin-Tazobactam	Piperacillin-Tazobactam	CQ 8	drug-or-therapy	yes	
+Planctomycetes	Planctomycetes	CQ 10, CQ 11, CQ 12, CQ 24	taxon	yes	NCBI now calls the phylum Planctomycetota
+Plant Decomposition	Plant Decomposition	CQ 10, CQ 11, CQ 12, CQ 24	pathway-or-process	yes	ecosystem process
+Plasma	Plasma	CQ 17	sample-material	yes	
+Plasmid	Plasmid	CQ 7, CQ 8, CQ 9	mobile-element	yes	
+Plasmid Rearrangement	Plasmid Rearrangement	CQ 8	pathway-or-process	yes	
+Plasmid-To-Chromosome Ratio	Plasmid-To-Chromosome Ratio	CQ 7	measurement	no	
+Pm10 Concentration	PM10 concentration	CQ 5	measurement	no	
+Pm2.5 Concentration	PM2.5 concentration	CQ 5	measurement	no	
+Polycyclic Aromatic Hydrocarbons (Pahs)	Polycyclic aromatic hydrocarbons (PAHs)	#N/A	chemical	yes	intact first line of a multi-line pollutant cell; CQ column shows #N/A
+Polyfluoroalkyl Substances (Pfas) Humidity	Perfluoroalkyl substances (PFAS)	#N/A	chemical	yes	broken fragment 'Polyfluoroalkyl Substances (Pfas)\n\nHumidity' repaired; 'Humidity' exists as its own row
+Post-Surgical Recovery	Post-Surgical Recovery	CQ 8	time-or-period	yes	
+Pot Trial	Pot Trial	CQ 13	study-design	yes	
+Potatoes	Potato	CQ 25	host	yes	
+Precipitation	Precipitation	CQ 21	measurement	no	
+Predator	Predator	CQ 11, CQ 12, CQ 24	ecological-role	yes	
+Processed Feature Table	Processed Feature Table	CQ 21, CQ 25	data-artifact	no	
+Processing	Processing	CQ 21, CQ 25	method-or-procedure	no	
+Prochlorococcus	Prochlorococcus	CQ 5	taxon	yes	
+Propionate	Propionate	CQ 15, CQ 16	chemical	yes	
+Proteobacteria	Proteobacteria	CQ 10, CQ 11, CQ 12, CQ 24	taxon	yes	NCBI now calls the phylum Pseudomonadota
+Psba Gene	psbA gene (photosystem II D1)	CQ 6	gene	yes	no OBO class for the gene
+Psbb Gene	psbB gene (photosystem II CP47)	CQ 6	gene	yes	no OBO class for the gene
+Qpcr Data	qPCR data	CQ 6	data-artifact	no	the data product; the assay is OBI real-time PCR on the Procedure
+Quiescent Cell	Quiescent Cell	CQ 2	cell-state	yes	
+Raw Sequences	Raw Sequences	CQ 21, CQ 25	data-artifact	no	
+Rbcl Gene	rbcL gene (RuBisCO large subunit)	CQ 6	gene	yes	no OBO class for the gene; function GO:0016984
+Rbcs Gene	rbcS gene (RuBisCO small subunit)	CQ 6	gene	yes	no OBO class for the gene; function GO:0016984
+Rct	RCT (randomised controlled trial)	CQ 15	study-design	yes	
+Reaction	Reaction	CQ 22	meta	no	pathway step in CQ22; schema-level
+Reactive Oxygen Species	Reactive Oxygen Species	CQ 4	chemical	yes	
+Redox Potential	Redox Potential	CQ 4	measurement	no	
+Reductive Acetyl-Coa Pathway	Reductive acetyl-CoA pathway	CQ 3	pathway-or-process	yes	
+Relative Abundance	Relative Abundance	CQ 10, CQ 11, CQ 12, CQ 5, CQ 7, CQ 19, CQ 24	measurement	no	
+Relaxase	Relaxase	CQ 7	gene-product	yes	conjugation enzyme; no exact class expected
+Remission	Remission	CQ 8	disease-or-phenotype	yes	clinical state; NCIT
+Resistant Starch	Resistant Starch	CQ 15, CQ 16, CQ 17	chemical	yes	
+Resource Partitioning	Resource Partitioning	CQ 5	ecological-role	yes	
+Rhizobium	Rhizobium	CQ 10, CQ 11, CQ 12, CQ 24	taxon	yes	
+Rhizosphere Soil	Rhizosphere Soil	CQ 14	environment	yes	
+Rhodobacter	Rhodobacter	CQ 5	taxon	yes	
+Rice	Rice	CQ 25	host	yes	
+Richness	Richness	CQ 10, CQ 11, CQ 12, CQ 5, CQ 7, CQ 9, CQ 24, CQ 25	measurement	no	
+Root Biomass Promotion	Root Biomass Promotion	CQ 10, CQ 11, CQ 12, CQ 24	measurement	no	root biomass is the measured trait, promotion the direction
+Ros	ROS (reactive oxygen species)	CQ 10, CQ 11, CQ 12, CQ 15, CQ 2, CQ 3, CQ 4, CQ 5, CQ 6, CQ 7, CQ 24	chemical	yes	
+Ros Concentration	ROS concentration	CQ 4	measurement	no	
+Ros Detoxification Pathway	ROS detoxification pathway	CQ 5	pathway-or-process	yes	
+Ros Pathway	ROS pathway	CQ 10, CQ 11, CQ 12, CQ 24	pathway-or-process	yes	
+Ros Production	ROS production	CQ 6	pathway-or-process	yes	
+Roseburia	Roseburia	CQ 15, CQ 7	taxon	yes	
+Roseburia Intestinalis	Roseburia Intestinalis	CQ 15	taxon	yes	
+Rubisco Activity	RuBisCO activity	CQ 6	pathway-or-process	yes	GO molecular function; measured as an observed property
+Ruminococcus Bromii	Ruminococcus Bromii	CQ 9	taxon	yes	
+Saharan Dust Input	Saharan Dust Input	CQ 5	event-or-exposure	yes	
+Salinity	Salinity	CQ 13, CQ 14	measurement	no	
+Salmonella Enterica	Salmonella Enterica	CQ 7	taxon	yes	
+Sample Group	Sample Group	CQ 19	meta	no	
+Sample Id	Sample ID	CQ 19	meta	no	
+Sample Name	Sample Name	CQ 19	meta	no	
+Sample Size	Sample Size	CQ 15	statistic	no	
+Sample Type	Sample Type	CQ 1	meta	no	slot whose values are sample-material classes
+Sampling Altitude	Sampling Altitude	CQ 21, CQ 25	measurement	no	
+Sampling Date	Sampling Date	CQ 1	measurement	no	MIxS collection_date
+Sampling Depth	Sampling Depth	CQ 21, CQ 25	measurement	no	
+Sampling Duration	Sampling Duration	CQ 1	measurement	no	
+Sampling Method	Sampling Method	CQ 1, CQ 10, CQ 11, CQ 12, CQ 13, CQ 24	method-or-procedure	no	
+Sampling Site Type	Sampling Site Type	CQ 1	measurement	no	slot (env_local_scale) whose values are ENVO terms
+Sampling Timepoint	Sampling Timepoint	CQ 21, CQ 25	measurement	no	
+Sand	Sand	CQ 10	environment	yes	
+Sauerkraut	Sauerkraut	CQ 15, CQ 16, CQ 17	food-or-diet	yes	
+Season	Season	CQ 10, CQ 11, CQ 12, CQ 13, CQ 5, CQ 6, CQ 21, CQ 24	time-or-period	yes	
+Secondary Bile Acid	Secondary Bile Acid	CQ 9	chemical	yes	
+Sequencing Technology	Sequencing Technology	CQ 25	method-or-procedure	no	
+Sex	Sex	CQ 19	measurement	no	host attribute (PATO:0000047 biological sex as the observed property)
+Shannon Diversity	Shannon Diversity	CQ 10, CQ 11, CQ 12, CQ 5, CQ 7, CQ 24	measurement	no	
+Shannon Diversity Index	Shannon Diversity Index	CQ 10, CQ 11, CQ 12, CQ 5, CQ 24	measurement	no	
+Shannon Index	Shannon Index	CQ 19, CQ 25	measurement	no	
+Sheep	Sheep	CQ 25	host	yes	
+Signature Microbiome Taxon	Signature Microbiome Taxon	CQ 18	meta	no	a query result category, not a concept
+Silt	Silt	CQ 10	environment	yes	
+Silva Taxon	SILVA taxon	CQ 19	identifier-scheme	no	
+Simpson Diversity	Simpson Diversity	CQ 10, CQ 11, CQ 12, CQ 5, CQ 7, CQ 24	measurement	no	
+Simpson Diversity Index	Simpson Diversity Index	CQ 10, CQ 11, CQ 12, CQ 5, CQ 24	measurement	no	
+Simpson Index	Simpson Index	CQ 19, CQ 25	measurement	no	
+So₂ Concentration	SO2 concentration	CQ 4, CQ 5	measurement	no	
+Social Contact	Social Contact	CQ 20	ecological-role	yes	host behaviour interaction
+Social Network Data	Social Network Data	CQ 19	data-artifact	no	
+Sod Gene	sod gene (superoxide dismutase)	CQ 6	gene	yes	function is GO:0004784 superoxide dismutase activity
+Soil Amendment Microbial Community	Soil Amendment Microbial Community	CQ 13	taxon-group	yes	
+Soil Depth	Soil Depth	CQ 14	measurement	no	
+Soil Microbial Community	Soil Microbial Community	CQ 13	taxon-group	yes	
+Sos Response	SOS response	CQ 8	pathway-or-process	yes	
+Soybean	Soybean	CQ 25	host	yes	
+Spores Cell	Spore cell	CQ 2	cell-state	yes	
+Starch	Starch	CQ 15, CQ 16, CQ 17, CQ 6	chemical	yes	
+Starting Substrate	Starting Substrate	CQ 22	meta	no	role of a chemical in a pathway step
+Stool	Stool	CQ 15, CQ 17, CQ 7	sample-material	yes	
+Stool Sample	Stool Sample	CQ 15	sample-material	yes	duplicate of Stool
+Storage	Storage	CQ 21, CQ 25	method-or-procedure	no	
+Stratocumulus	Stratocumulus	CQ 5	environment	yes	
+Stress Marker	Stress Marker	CQ 6	meta	no	biomarker role
+Stress-Response Gene	Stress-Response Gene	CQ 6	gene	yes	gene category; the process is GO:0006950 response to stress
+Study	Study	CQ 16, CQ 17	meta	no	
+Study Design	Study Design	CQ 16	study-design	yes	generic; OBI:0500000
+Substrate	Substrate	CQ 22	meta	no	role of a chemical in a reaction
+Sugarcane	Sugarcane	CQ 25	host	yes	
+Sulfate Availabity	Sulfate availability	CQ 4	measurement	no	typo in the sheet
+Sulfur Cycling	Sulfur Cycling	CQ 10, CQ 11, CQ 12, CQ 24	pathway-or-process	yes	ecosystem process; ENVO
+Sunrise	Sunrise	CQ 6	time-or-period	yes	
+Sunset	Sunset	CQ 6	time-or-period	yes	
+Superoxide	Superoxide	CQ 4	chemical	yes	
+Superoxide Dismutase	Superoxide Dismutase	CQ 4	gene-product	yes	
+Supporting Studies	Supporting Studies	CQ 16	meta	no	
+Swine	Swine	CQ 25	host	yes	
+Synechococcus	Synechococcus	CQ 5	taxon	yes	
+Taxon	Taxon	CQ 1, CQ 10, CQ 11, CQ 12, CQ 18, CQ 5, CQ 19, CQ 21, CQ 22, CQ 24, CQ 25	taxon	yes	schema class Taxon
+Taxonomic Assignment	Taxonomic Assignment	CQ 21, CQ 25	method-or-procedure	no	
+Taxonomic Composition	Taxonomic Composition	CQ 10, CQ 11, CQ 12, CQ 5, CQ 24	measurement	no	
+Taxonomic Richness	Taxonomic Richness	CQ 10, CQ 11, CQ 12, CQ 5, CQ 24	measurement	no	
+Tca Cycle	TCA cycle	CQ 3	pathway-or-process	yes	
+Temperature	Temperature	CQ 10, CQ 3, CQ 4, CQ 5, CQ 6, CQ 21	measurement	no	
+Tetm Gene	tetM gene	CQ 9	gene	yes	
+Tetq Gene	tetQ gene	CQ 9	gene	yes	
+Th17/Treg Imbalance	Th17/Treg Imbalance	CQ 9	disease-or-phenotype	yes	host immune phenotype; no pre-composed class expected
+Tmao	TMAO (trimethylamine N-oxide)	CQ 16, CQ 17	chemical	yes	
+Tnm Stage	TNM stage	CQ 7	measurement	no	
+Tomato	Tomato	CQ 25	host	yes	
+Top Pathogenic Bacteria	Top Pathogenic Bacteria	CQ 21, CQ 25	meta	no	ranked query output
+Top Pathogenic Fungi	Top Pathogenic Fungi	CQ 21, CQ 25	meta	no	ranked query output
+Top Pathogenic Virus	Top Pathogenic Virus	CQ 21, CQ 25	meta	no	ranked query output
+Total Resistome Load	Total Resistome Load	CQ 9	measurement	no	
+Transcriptomic Data	Transcriptomic Data	CQ 6	data-artifact	no	
+Treatment-Naïve	Treatment-naive	CQ 8	measurement	no	clinical status of the host
+Trebouxia	Trebouxia	CQ 5	taxon	yes	
+Trehalose	Trehalose	CQ 6	chemical	yes	
+Trimethylamine	Trimethylamine	CQ 16	chemical	yes	
+Turbulence	Turbulence	CQ 6	measurement	no	
+Type 2 Diabetes	Type 2 Diabetes	CQ 16	disease-or-phenotype	yes	
+Type Iv Secretion System	Type IV secretion system	CQ 7	gene-product	yes	GO cellular component
+Unifrac Distance	UniFrac distance	CQ 7	measurement	no	
+Urban Environment	Urban Environment	CQ 21	environment	yes	
+Urine	Urine	CQ 17	sample-material	yes	
+Urolithins	Urolithins	CQ 17	chemical	yes	
+Uv Radiation	UV radiation	CQ 2, CQ 4, CQ 5, CQ 6	event-or-exposure	yes	
+Uv Resistance	UV resistance	CQ 5	pathway-or-process	yes	abiotic stress trait; GO until OMP is adopted
+Uv-Induced Photoinhibition	UV-induced photoinhibition	CQ 2	pathway-or-process	yes	
+Vana Cluster	vanA cluster	CQ 8	gene	yes	
+Vanb Cluster	vanB cluster	CQ 8	gene	yes	
+Vancomycin	Vancomycin	CQ 8	drug-or-therapy	yes	
+Virulence Gene	Virulence Gene	CQ 8, CQ 21, CQ 25	gene	yes	gene category; VFDB is the usual source, no OBO class
+Virulence Gene Presence	Virulence Gene Presence	CQ 21, CQ 25	measurement	no	
+Volatile Organic Compounds	Volatile Organic Compounds	CQ 4	chemical	yes	
+Water Availability	Water Availability	CQ 6	measurement	no	
+Water Hardness	Water Hardness	CQ 21	measurement	no	
+Weather	Weather	CQ 10, CQ 11, CQ 12, CQ 13, CQ 21, CQ 24	measurement	no	weather variables are observed properties of the sampling event
+Weather At Sampling	Weather At Sampling	CQ 10, CQ 11, CQ 12, CQ 24	measurement	no	
+Wheat	Wheat	CQ 25	host	yes	
+Wind Speed	Wind Speed	CQ 21	measurement	no	
+Yoghurt	Yoghurt	CQ 15, CQ 16, CQ 17	food-or-diet	yes	
+Zinc	Zinc	CQ 10	chemical	yes	
