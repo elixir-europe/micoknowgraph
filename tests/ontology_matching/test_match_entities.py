@@ -105,7 +105,9 @@ class TestCombine(unittest.TestCase):
     def run_entity(self, entity, fake, **kw):
         variants = me.query_variants(entity)
         hits = self.local.search(variants) + me.bioportal_hits(fake, variants, self.namespaces, None)
-        return me.combine(hits, kw.get("min_score", 0.8), kw.get("max_matches", 10), kw.get("max_per_ontology", 3))
+        matches, self.excluded = me.combine(hits, kw.get("min_score", 0.8), kw.get("max_matches", 10),
+                                            kw.get("max_per_ontology", 3))
+        return matches
 
     def test_same_class_from_both_sources_is_listed_once(self):
         # TO:0020093 "nitrogen content" is in the local PTO file; BioPortal returns it via TO and via an importer
@@ -127,13 +129,46 @@ class TestCombine(unittest.TestCase):
         self.assertIn(("MESH:D005243", "MESH"), [(m["curie"], m["ontology"]) for m in matches])
 
     def test_limits_and_cutoff(self):
-        many = [bp(f"http://example.org/X/{i}", "zinc", f"ONT{i}") for i in range(15)]
+        # 15 matches with different ratings: the overall limit of 10 applies; dissimilar and obsolete terms never appear
+        names = ["zinc"] + [f"zinc {w}" for w in ("ion", "oxide", "salt", "atom", "metal", "dust", "ore", "foil",
+                                                  "wire", "bar", "sheet", "plate", "block", "cube")]
+        many = [bp(f"http://example.org/X/{i}", n, f"ONT{i}") for i, n in enumerate(names)]
         many.append(bp("http://example.org/Y/1", "zinc finger protein", "Y"))       # too dissimilar
         many.append(bp("http://example.org/Z/1", "zinc", "Z", obsolete=True))       # obsolete
-        matches = self.run_entity("Zinc", FakeBioPortal({"Zinc": many}))
-        self.assertEqual(len(matches), 10)
+        matches = self.run_entity("Zinc", FakeBioPortal({"Zinc": many}), min_score=0.5)
+        scores = [round(m["score"], 2) for m in matches]
+        self.assertEqual(scores, sorted(scores, reverse=True))
+        self.assertGreaterEqual(len(matches), 10)                 # more than 10 only if the 10th and 11th tie
+        self.assertEqual(len(matches), 10 + sum(1 for x in scores[10:] if x == scores[9]))
         self.assertNotIn("Y", {m["ontology"] for m in matches})
         self.assertNotIn("Z", {m["ontology"] for m in matches})
+
+    def test_equal_scores_over_the_limit_are_all_kept(self):
+        # 15 equally rated matches in different ontologies: all kept although max_matches is 10
+        many = [bp(f"http://example.org/X/{i}", "zinc", f"ONT{i}") for i in range(15)]
+        matches = self.run_entity("Zinc", FakeBioPortal({"Zinc": many}))
+        self.assertEqual(len([m for m in matches if m["ontology"].startswith("ONT")]), 15)
+        self.assertEqual(self.excluded, 0)
+
+    def test_extra_equal_scores_are_capped_and_counted(self):
+        # 40 equally rated matches: 10 allowed + at most 20 extra; the other 10 are reported as excluded
+        many = [bp(f"http://example.org/X/{i}", "zinc", f"ONT{i:02d}") for i in range(40)]
+        matches = self.run_entity("Zinc", FakeBioPortal({"Zinc": many}), max_per_ontology=5)
+        self.assertEqual(len(matches), 10 + me.MAX_EXTRA_OVERALL)
+        self.assertEqual(self.excluded, 10)
+
+    def test_result_does_not_depend_on_hit_order(self):
+        import random
+        hits = [{"iri": f"http://example.org/X/{i}", "curie": f"ONT{i}:{i}", "ontology": f"ONT{i}", "label": "zinc",
+                 "definition": "", "matched": "zinc", "score": 1.0, "source": "local"} for i in range(40)]
+        first = None
+        for seed in range(5):
+            random.Random(seed).shuffle(hits)
+            out, n = me.combine(list(hits), 0.8, 10, 2)
+            ids = [m["curie"] for m in out]
+            first = first or ids
+            self.assertEqual(ids, first)
+            self.assertEqual(n, 10)
 
     def test_bioportal_search_is_limited_to_the_ontology_list(self):
         fake = FakeBioPortal({})
@@ -158,10 +193,27 @@ class TestCombine(unittest.TestCase):
         matches = self.run_entity("Zinc", fake)
         self.assertEqual([m["curie"] for m in matches].count("MESH:D015032"), 1)
 
-    def test_max_per_ontology(self):
+    def test_max_per_ontology_applies_to_different_ratings(self):
+        # one ontology, 5 matches with different ratings: only the best 2 are kept
+        terms = [bp(f"http://example.org/X/{i}", n, "ONT") for i, n in
+                 enumerate(["zinc", "zinc ion", "zinc oxide", "zinc salt", "zinc atom"])]
+        matches = self.run_entity("Zinc", FakeBioPortal({"Zinc": terms}), max_per_ontology=2, min_score=0.5)
+        self.assertEqual(sum(m["ontology"] == "ONT" for m in matches), 2)
+
+    def test_max_per_ontology_keeps_equal_scores(self):
         same = [bp(f"http://example.org/X/{i}", "zinc", "ONT") for i in range(5)]
         matches = self.run_entity("Zinc", FakeBioPortal({"Zinc": same}), max_per_ontology=2)
-        self.assertEqual(sum(m["ontology"] == "ONT" for m in matches), 2)
+        self.assertEqual(sum(m["ontology"] == "ONT" for m in matches), 5)
+        self.assertEqual(self.excluded, 0)
+
+    def test_equal_scores_in_one_ontology_are_capped_at_5_extra(self):
+        # 12 equal matches in one ontology and 1 in another: ONT keeps 2 + 5 = 7, the other ontology is not crowded out
+        terms = [bp(f"http://example.org/X/{i}", "zinc", "ONT") for i in range(12)]
+        terms.append(bp("http://example.org/Y/1", "zinc", "OTHER"))
+        matches = self.run_entity("Zinc", FakeBioPortal({"Zinc": terms}), max_per_ontology=2)
+        self.assertEqual(sum(m["ontology"] == "ONT" for m in matches), 7)
+        self.assertEqual(sum(m["ontology"] == "OTHER" for m in matches), 1)
+        self.assertEqual(self.excluded, 5)
 
 
 class TestDefinitionsAndUnmatched(unittest.TestCase):
@@ -178,7 +230,7 @@ class TestDefinitionsAndUnmatched(unittest.TestCase):
         local = {"iri": OBO + "TO_1", "curie": "TO:1", "ontology": "TO", "label": "zinc", "definition": "",
                  "matched": "zinc", "score": 1.0, "source": "local"}
         online = {**local, "definition": "A <b>metal</b>.\n", "source": "bioportal"}
-        out = me.combine([local, {**online, "definition": "A metal."}], 0.8, 10, 2)
+        out, _ = me.combine([local, {**online, "definition": "A metal."}], 0.8, 10, 2)
         self.assertEqual(out[0]["definition"], "A metal.")
 
     def test_bioportal_definition_is_cleaned(self):
@@ -215,6 +267,24 @@ class TestCommandLine(unittest.TestCase):
         self.assertIn("definition", top)
         self.assertEqual([u["entity"] for u in unmatched], ["zzqx unmatchable entity"])
         self.assertEqual(rows[1][1], "TO:0020093, nitrogen content, TO")
+
+    def test_warning_when_tied_matches_are_excluded(self):
+        with tempfile.TemporaryDirectory() as d:
+            d = Path(d)
+            (d / "onto").mkdir()
+            stanzas = "".join(f"[Term]\nid: ZZ:{i:04d}\nname: zinc\n\n" for i in range(35))
+            (d / "onto" / "zz.obo").write_text("format-version: 1.2\n\n" + stanzas, encoding="utf-8")
+            (d / "e.csv").write_text("Zinc\n", encoding="utf-8")
+            r = subprocess.run([sys.executable, "-I", str(REPO / "scripts" / "ontology_matching" / "match_entities.py"),
+                                "--no-bioportal", "--ontology-dir", str(d / "onto"), "--entities", str(d / "e.csv"),
+                                "--output", str(d / "o.csv"), "--details", str(d / "d.csv"),
+                                "--unmatched", str(d / "u.csv")], check=True, capture_output=True, text=True)
+            with (d / "o.csv").open(encoding="utf-8") as f:
+                rows = list(csv.reader(f))
+        # one ontology: 2 allowed + 5 extra = 7 kept, 28 of the 35 equal matches excluded
+        self.assertIn("warning: Zinc: 28 terms excluded as many extra matches of equal score were found", r.stderr)
+        self.assertEqual(len(rows[0]), 1 + 10)                   # header has at least max-matches columns
+        self.assertEqual(len(rows[1]), 1 + 7)
 
 
 if __name__ == "__main__":

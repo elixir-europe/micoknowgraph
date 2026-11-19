@@ -220,9 +220,28 @@ def bioportal_hits(client, variants, namespaces, ontologies):
 
 
 # --------------------------------------------------------------------------- Step 3: combine and rank
+# Most matches that may be added beyond a limit because they tie with the last kept one. The per-ontology
+# allowance is small so that one ontology with many equal matches does not use up the overall limit.
+MAX_EXTRA_PER_ONTOLOGY = 5
+MAX_EXTRA_OVERALL = 20
+
+
+def take_with_ties(ranked, limit, max_extra):
+    """First `limit` items of a ranked list, plus every further item whose rating equals the last kept one
+    (up to `max_extra` more). Without this, which of several equal-rated items gets the last slot would be arbitrary.
+    Returns (kept items, number of tied items dropped because of the `max_extra` cut-off)."""
+    if len(ranked) <= limit:
+        return ranked, 0
+    cutoff = round(ranked[limit - 1]["score"], 2)
+    ties = [m for m in ranked[limit:] if round(m["score"], 2) == cutoff]     # ranked, so ties are contiguous
+    return ranked[:limit] + ties[:max_extra], max(0, len(ties) - max_extra)
+
+
 def combine(hits, min_score, max_matches, max_per_ontology):
     """Merge hits for one entity: one entry per ID (same class from BioPortal and local files = one match),
-    keep scores >= min_score, best first, at most max_per_ontology per ontology and max_matches overall."""
+    keep scores >= min_score, best first, at most max_per_ontology per ontology and max_matches overall.
+    Matches that tie on rating with the last one allowed are kept too (up to MAX_EXTRA_PER_ONTOLOGY extra per ontology, MAX_EXTRA_OVERALL extra overall).
+    Returns (matches, number of tied matches left out because of that cut-off)."""
     merged = {}
     for h in hits:
         if h["score"] < min_score:
@@ -240,18 +259,25 @@ def combine(hits, min_score, max_matches, max_per_ontology):
             if h["source"] == "local":                        # local files give the most reliable ID/ontology
                 m.update(curie=h["curie"], ontology=h["ontology"], from_acronym=False)
 
-    # Rank: score, then found by both sources, then label over synonym, then shorter label
+    # Rank: score, then found by both sources, then label over synonym, then shorter label.
+    # The last two keys (label, ID) only make the order reproducible: it must not depend on hit order,
+    # which varies between runs (Python randomises set order via PYTHONHASHSEED).
     ranked = sorted(merged.values(), key=lambda m: (-round(m["score"], 2), -len(m["sources"]),
-                                                    m["matched"] != m["label"], len(m["label"])))
-    out, per_ontology = [], {}
+                                                    m["matched"] != m["label"], len(m["label"]),
+                                                    m["label"].lower(), m["curie"]))
+    excluded = 0
+    by_ontology = {}
     for m in ranked:
-        if per_ontology.get(m["ontology"], 0) >= max_per_ontology:
-            continue
-        per_ontology[m["ontology"]] = per_ontology.get(m["ontology"], 0) + 1
-        out.append(m)
-        if len(out) == max_matches:
-            break
-    return out
+        by_ontology.setdefault(m["ontology"], []).append(m)
+    kept = []
+    for group in by_ontology.values():
+        group_kept, dropped = take_with_ties(group, max_per_ontology, MAX_EXTRA_PER_ONTOLOGY)
+        kept += group_kept
+        excluded += dropped
+    order = {id(m): i for i, m in enumerate(ranked)}
+    kept.sort(key=lambda m: order[id(m)])                     # back to overall rank order
+    out, dropped = take_with_ties(kept, max_matches, MAX_EXTRA_OVERALL)
+    return out, excluded + dropped
 
 
 def shown(path):
@@ -285,8 +311,8 @@ def main():
     ap.add_argument("--entities", default=str(DEFAULT_ENTITIES), help="input CSV, entity in column 1 (default: %(default)s)")
     ap.add_argument("--output", default=str(DEFAULT_OUTPUT), help="output CSV (default: %(default)s)")
     ap.add_argument("--ontology-dir", default=str(DEFAULT_ONTOLOGY_DIR), help="local ontology files (default: %(default)s)")
-    ap.add_argument("--max-matches", type=int, default=10, help="most matches per entity (default: 10)")
-    ap.add_argument("--max-per-ontology", type=int, default=2, help="most matches per entity from one ontology (default: 2)")
+    ap.add_argument("--max-matches", type=int, default=10, help="most matches per entity; equal-rated ties may add up to %d more (default: 10)" % MAX_EXTRA_OVERALL)
+    ap.add_argument("--max-per-ontology", type=int, default=2, help="most matches per entity from one ontology; equal-rated ties may add up to %d more (default: 2)" % MAX_EXTRA_PER_ONTOLOGY)
     ap.add_argument("--min-score", type=float, default=0.8, help="similarity cut-off, 0-1 (default: 0.8)")
     ap.add_argument("--api-key", help="BioPortal API key (default: $BIOPORTAL_API_KEY, then the .env file)")
     ap.add_argument("--env-file", help="file holding BIOPORTAL_API_KEY=... (default: .env in the repository root)")
@@ -339,11 +365,12 @@ def main():
         hits = local.search(variants)
         if client:
             hits += bioportal_hits(client, variants, namespaces, bp_ontologies)
-        return combine(hits, args.min_score, args.max_matches, args.max_per_ontology), closest(hits)
+        matches, n_excluded = combine(hits, args.min_score, args.max_matches, args.max_per_ontology)
+        return matches, closest(hits), n_excluded
 
     # BioPortal requests are slow (~1 s each), so entities are searched in parallel; map() keeps input order
     with ThreadPoolExecutor(max_workers=args.workers if client else 1) as pool:
-        results = []                                         # (matches, closest hit) per entity
+        results = []                                         # (matches, closest hit, n excluded) per entity
         for n, result in enumerate(pool.map(match_one, entities), 1):
             results.append(result)
             if n % 50 == 0:
@@ -352,7 +379,10 @@ def main():
     # Step 3: one row per entity; "ID, name, ontology" per match
     # Also: one detailed row per match (id, ontology, name, definition, rating) and a list of unmatched entities
     rows, details, unmatched = [], [], []
-    for entity, (matches, nearest) in zip(entities, results):
+    for entity, (matches, nearest, n_excluded) in zip(entities, results):
+        if n_excluded:
+            print(f"warning: {entity}: {n_excluded} terms excluded as many extra matches of equal score were found",
+                  file=sys.stderr)
         rows.append([entity] + [f"{m['curie']}, {m['label']}, {m['ontology']}" for m in matches])
         for rank, m in enumerate(matches, 1):
             details.append([entity, rank, m["curie"], m["ontology"], m["label"], m.get("definition", ""),
@@ -366,7 +396,8 @@ def main():
     Path(args.output).parent.mkdir(parents=True, exist_ok=True)
     with open(args.output, "w", newline="", encoding="utf-8") as f:
         w = csv.writer(f)
-        w.writerow(["entity"] + [f"match_{i}" for i in range(1, args.max_matches + 1)])
+        n_cols = max([args.max_matches] + [len(r) - 1 for r in rows])     # ties can exceed max_matches
+        w.writerow(["entity"] + [f"match_{i}" for i in range(1, n_cols + 1)])
         w.writerows(rows)
     print(f"Step 3: wrote {shown(args.output)} ({len(rows) - n_none} entities with matches, {n_none} without)",
           file=sys.stderr)

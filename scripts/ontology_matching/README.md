@@ -24,8 +24,16 @@ python3 scripts/ontology_matching/match_entities.py --details data/ontology_matc
 - **No duplicates:** a class found by both BioPortal and the local files, or
   imported into several BioPortal ontologies, appears once, under its home
   ontology (e.g. `CHEBI:…` found inside ENVO is listed as ChEBI).
-- **Ranking:** best score first, then classes found by both sources. At most 2
-  matches per ontology (`--max-per-ontology`).
+- **Ranking:** best score first, then classes found by both sources, then
+  label over synonym, shorter label, and finally label and ID alphabetically,
+  so the output is the same on every run. At most 10 matches per entity
+  (`--max-matches`) and 2 per ontology (`--max-per-ontology`).
+- **Ties:** matches with the same score as the last one allowed are all kept,
+  even if that goes over a limit: up to 5 extra per ontology and up to 20 extra
+  overall, so one ontology cannot crowd out the others. If more tied
+  matches exist, the script prints `warning: <entity>: n terms excluded as many
+  extra matches of equal score were found`. The matches CSV gets extra
+  `match_N` columns when an entity has more than 10 matches.
 - **Which ontologies BioPortal searches:** only those in `BIOPORTAL_ONTOLOGIES`
   at the top of `match_entities.py`. It is the "short name" column of the
   "Task 2 - Ontologies" sheet, written out as a list; edit it to add or remove
