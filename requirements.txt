@@ -1,0 +1,6 @@
+# Python packages needed to run the scripts and tests in this repository.
+# Install with:  pip install -r requirements.txt
+#
+# Python 3.9 or newer is expected.
+
+pyyaml>=6.0
