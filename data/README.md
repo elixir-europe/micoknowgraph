@@ -18,7 +18,7 @@ the data for `scripts/ontology_matching/` is in `data/ontology_matching/`.
 | ---------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `entities/test_entities.csv`           | 553 entities from the "Entities from Competency Questions" sheet of the MiCoKnowGraph coordination workbook (column "Entity in the CQs"), one per row, no header |
 | `ontologies/`                          | Local ontology files searched by `match_entities.py`: OMP, PTO (TO), PECO, ECOCORE, RO, SFWO and GloSIS (Turtle modules)                                       |
-| `matches/ontology_matches.csv`         | Output: one row per entity, up to 10 matches as `ID, name, ontology`                                                                                           |
+| `matches/ontology_matches.csv`         | Output: one row per entity, up to 15 matches as `ID, name, ontology` (more if equal scores tie)                                                                                           |
 | `matches/ontology_matches_details.csv` | Same matches in long format, with score and source, for review                                                                                                   |
 | `cache/`                               | BioPortal API responses (git-ignored, regenerated automatically)                                                                                                 |
 

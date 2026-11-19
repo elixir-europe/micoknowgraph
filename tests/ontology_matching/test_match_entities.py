@@ -276,7 +276,8 @@ class TestCommandLine(unittest.TestCase):
             (d / "onto" / "zz.obo").write_text("format-version: 1.2\n\n" + stanzas, encoding="utf-8")
             (d / "e.csv").write_text("Zinc\n", encoding="utf-8")
             r = subprocess.run([sys.executable, "-I", str(REPO / "scripts" / "ontology_matching" / "match_entities.py"),
-                                "--no-bioportal", "--ontology-dir", str(d / "onto"), "--entities", str(d / "e.csv"),
+                                "--no-bioportal", "--max-matches", "10", "--max-per-ontology", "2",
+                                "--ontology-dir", str(d / "onto"), "--entities", str(d / "e.csv"),
                                 "--output", str(d / "o.csv"), "--details", str(d / "d.csv"),
                                 "--unmatched", str(d / "u.csv")], check=True, capture_output=True, text=True)
             with (d / "o.csv").open(encoding="utf-8") as f:

@@ -1,4 +1,4 @@
-entity,match_1,match_2,match_3,match_4,match_5,match_6,match_7,match_8,match_9,match_10,match_11,match_12,match_13,match_14
+entity,match_1,match_2,match_3,match_4,match_5,match_6,match_7,match_8,match_9,match_10,match_11,match_12,match_13,match_14,match_15
 Soil Pollutants: Lead,"MESH:D007854, Lead, MESH","NCIT:C25552, Lead, NCIT","SNOMEDCT:88488004, Lead, SNOMEDCT"
 14C
 3-Hydroxypropionate Cycle,"GO:0043427, carbon fixation by 3-hydroxypropionate cycle, GO"
@@ -8,7 +8,7 @@ Abundance Implosion
 Acetaldehyde,"CHEBI:15343, acetaldehyde, CHEBI","MESH:D000079, Acetaldehyde, MESH","NCIT:C44328, Acetaldehyde, NCIT","SNOMEDCT:38705000, Acetaldehyde, SNOMEDCT","NCIT:C204642, Acetaldehyde Measurement, NCIT"
 Acetate,"CHEBI:30089, acetate, CHEBI","NCIT:C94719, Acetate, NCIT","SNOMEDCT:54526002, Acetate, SNOMEDCT","MESH:D000085, Acetates, MESH","NCIT:C210261, Acetate Measurement, NCIT"
 Acetic Acid,"MESH:D019342, Acetic Acid, MESH","NCIT:C61623, Acetic Acid, NCIT","SNOMEDCT:2869004, Acetic acid, SNOMEDCT","SNOMEDCT:252689003, Acetic acid test, SNOMEDCT","MESH:C424913, (2-(aminoiminomethyl)hydrazino)acetic acid, MESH","MESH:C424914, (2-(hydrazinoiminomethyl)hydrazino)acetic acid, MESH"
-Acidobacteria,"MESH:D061271, Acidobacteria, MESH","NCBITaxon:57723, Acidobacteria, NCBITAXON","NCBITaxon:204432, Acidobacteriia, NCBITAXON"
+Acidobacteria,"MESH:D061271, Acidobacteria, MESH","NCBITaxon:57723, Acidobacteria, NCBITAXON","NCBITaxon:204432, Acidobacteriia, NCBITAXON","NCBITAXON:204433, Terriglobales, NCBITAXON"
 Acidophile,"OMP:0005009, acidophile, OMP"
 Acrab-Tolc Efflux Pump,"ARO:3007322, inhibitors of AcrAB-TolC efflux pump, ARO"
 Actinobacteria,"MESH:D039903, Actinobacteria, MESH","NCBITaxon:201174, Actinobacteria, NCBITAXON","NCIT:C76195, Actinobacteria, NCIT"
@@ -46,7 +46,7 @@ Atmospheric Trace Gases
 Azospirillum,"MESH:D016949, Azospirillum, MESH","NCBITAXON:191, Azospirillum, NCBITAXON","SNOMEDCT:413607005, Azospirillum, SNOMEDCT"
 Azotobacter,"MESH:D001395, Azotobacter, MESH","NCBITAXON:352, Azotobacter, NCBITAXON","SNOMEDCT:396938009, Azotobacter, SNOMEDCT"
 Bacillota,"MESH:D000068536, Bacillota, MESH","NCBITAXON:1239, Bacillota, NCBITAXON","NCIT:C209444, Bacillota, NCIT","SNOMEDCT:115195009, Bacillota, SNOMEDCT","NCIT:C209634, Bacillota Measurement, NCIT"
-Bacteroides Fragilis,"MESH:D001441, Bacteroides fragilis, MESH","NCBITAXON:817, Bacteroides fragilis, NCBITAXON","NCIT:C86172, Bacteroides fragilis, NCIT","SNOMEDCT:55247009, Bacteroides fragilis, SNOMEDCT","SNOMEDCT:121001000, Bacteroides fragilis antigen, SNOMEDCT","NCIT:C86173, Bacteroides fragilis Group, NCIT","MESH:C405031, Bacteroides fragilis toxin, MESH","NCBITaxon:295405, Bacteroides fragilis YCH46, NCBITAXON","ECTO:3000068, exposure to Bacteroides fragilis, ECTO"
+Bacteroides Fragilis,"MESH:D001441, Bacteroides fragilis, MESH","NCBITAXON:817, Bacteroides fragilis, NCBITAXON","NCIT:C86172, Bacteroides fragilis, NCIT","SNOMEDCT:55247009, Bacteroides fragilis, SNOMEDCT","SNOMEDCT:121001000, Bacteroides fragilis antigen, SNOMEDCT","SNOMEDCT:708153000, Bacteroides fragilis DNA, SNOMEDCT","SNOMEDCT:720018002, Bacteroides fragilis IgG, SNOMEDCT","SNOMEDCT:720139007, Bacteroides fragilis IgM, SNOMEDCT","NCIT:C86173, Bacteroides fragilis Group, NCIT","MESH:C405031, Bacteroides fragilis toxin, MESH","NCBITaxon:295405, Bacteroides fragilis YCH46, NCBITAXON","ECTO:3000068, exposure to Bacteroides fragilis, ECTO","NCBITaxon:272559, Bacteroides fragilis NCTC 9343, NCBITAXON"
 Bacteroides Thetaiotaomicron,"MESH:D000070077, Bacteroides thetaiotaomicron, MESH","NCBITAXON:818, Bacteroides thetaiotaomicron, NCBITAXON","NCIT:C86179, Bacteroides thetaiotaomicron, NCIT","SNOMEDCT:34236001, Bacteroides thetaiotaomicron, SNOMEDCT","ECTO:3000033, exposure to Bacteroides thetaiotaomicron, ECTO"
 Bacteroidota,"NCBITAXON:976, Bacteroidota, NCBITAXON"
 Baseline Diagnosis
@@ -93,7 +93,7 @@ Carbon Fixation Pathway
 Carbonic Anhydrase,"NCIT:C183171, Carbonic Anhydrase 1, NCIT","EFO:EFO_0010161, carbonic anhydrase 2, EFO","NCIT:C183174, Carbonic Anhydrase 2, NCIT","NCIT:C199610, Carbonic Anhydrase 3, NCIT","NCIT:C113534, Carbonic Anhydrase 6, NCIT","NCIT:C104052, Carbonic Anhydrase 9, NCIT","MESH:D024401, Carbonic Anhydrase I, MESH","MESH:D024404, Carbonic Anhydrase V, MESH","MESH:D024402, Carbonic Anhydrase II, MESH","MESH:D030741, Carbonic Anhydrase IV, MESH","MESH:D000071231, Carbonic Anhydrase IX, MESH","MESH:C477051, carbonic anhydrase VI, MESH","NCIT:C172510, Carbonic Anhydrase 9 Measurement, NCIT","NCIT:C207232, Carbonic Anhydrase-Related Protein, NCIT"
 Carbonyl Compounds,"MESH:D054354, Iron Carbonyl Compounds, MESH"
 Carboxysome,"GO:0031470, carboxysome, GO"
-Cardiovascular Disease,"SWEET:CardiovascularDisease, cardiovascular disease, SWEET","MESH:D002318, Cardiovascular Diseases, MESH","SNOMEDCT:49601007, Disorder of cardiovascular system, SNOMEDCT","SNOMEDCT:266894000, FH: Cardiovascular disease, SNOMEDCT","DOID:1287, cardiovascular system disease, DOID"
+Cardiovascular Disease,"SWEET:CardiovascularDisease, cardiovascular disease, SWEET","MESH:D002318, Cardiovascular Diseases, MESH","SNOMEDCT:49601007, Disorder of cardiovascular system, SNOMEDCT","SNOMEDCT:266894000, FH: Cardiovascular disease, SNOMEDCT","SNOMEDCT:723087000, Fear of cardiovascular disease, SNOMEDCT","SNOMEDCT:827181004, Risk of cardiovascular disease, SNOMEDCT","SNOMEDCT:16434071000119108, At increased risk of cardiovascular disease, SNOMEDCT","DOID:1287, cardiovascular system disease, DOID"
 Carotenoids,"CHEBI:23044, carotenoid, CHEBI","NCIT:C351, Carotenoid, NCIT","MESH:D002338, Carotenoids, MESH"
 Cat Gene,"NCIT:C19450, cat Gene, NCIT","NCIT:C61060, CAT Gene, NCIT"
 Cattle,"MESH:D002417, Cattle, MESH","NCBITaxon:9903, Bos, NCBITAXON","NCIT:C14192, Cow, NCIT","NCBITaxon:9913, Bos taurus, NCBITAXON"
@@ -102,7 +102,7 @@ Cbbs Gene
 Cd19 Car-T Therapy
 Cd8+ Effector Memory T-Cell Exhaustion
 Cell Count,"MESH:D002452, Cell Count, MESH","NCIT:C48938, Cell Count, NCIT","SNOMEDCT:118218001, Cell count, SNOMEDCT","NCIT:C74700, Bite Cell Count, NCIT","NCIT:C74701, Burr Cell Count, NCIT","NCIT:C102261, Clue Cell Count, NCIT","NCIT:C111246, Mast Cell Count, NCIT"
-Cell-Free Dna,"SNOMEDCT:726740008, Cell free DNA, SNOMEDCT","MESH:D000073888, Cell-Free Nucleic Acids, MESH","NCIT:C128274, Circulating Cell-Free DNA, NCIT","NCIT:C156117, Cell-Free DNA Blood Collection Tube, NCIT","SNOMEDCT:726741007, Maternal cell free DNA, SNOMEDCT"
+Cell-Free Dna,"SNOMEDCT:726740008, Cell free DNA, SNOMEDCT","MESH:D000073888, Cell-Free Nucleic Acids, MESH","NCIT:C128274, Circulating Cell-Free DNA, NCIT","NCIT:C156117, Cell-Free DNA Blood Collection Tube, NCIT","NCIT:C190394, Percent of Cell Free DNA, NCIT","SNOMEDCT:726741007, Maternal cell free DNA, SNOMEDCT"
 Cephalosporin,"ARO:0000032, cephalosporin, ARO","CHEBI:23066, cephalosporin, CHEBI","SNOMEDCT:764147003, Cephalosporin, SNOMEDCT","MESH:D002511, Cephalosporins, MESH","NCIT:C357, Cephalosporin Antibiotic, NCIT"
 Cfu,"SNOMEDCT:258883008, cfu/g, SNOMEDCT","NCIT:C68742, Colony Forming Unit, NCIT","NCIT:C68898, Colony Forming Unit per Gram, NCIT","SNOMEDCT:445399000, Colony-forming unit of erythroid lineage, SNOMEDCT","SNOMEDCT:445400007, Colony-forming unit of granulocytic lineage, SNOMEDCT"
 Cfxa Gene
@@ -134,12 +134,12 @@ Co₂ Active Transport
 Co₂ Concentration
 Co₂ Fixation Pathway
 Co₂ Fixation Rate
-Coastal Water,"SNOMEDCT:257589004, Coastal water, SNOMEDCT","ENVO:00002150, coastal sea water, ENVO","ENVO:02000049, coastal water body, ENVO"
+Coastal Water,"SNOMEDCT:257589004, Coastal water, SNOMEDCT","ENVO:00002150, coastal sea water, ENVO","ENVO:02000049, coastal water body, ENVO","ENVO:01001966, coastal ocean water, ENVO"
 Cog,"NCIT:C16467, Congo, NCIT","NCIT:C39353, Children's Oncology Group, NCIT","NCIT:C19640, Clusters of Orthologous Groups of Genes, NCIT"
 Cohort,"BIOLINK:cohort, cohort, BIOLINK","CHEAR:Cohort, cohort, CHEAR","EFO:EFO_0004445, cohort, EFO","ExO:0000120, cohort, EXO","HHEAR:Cohort, cohort, HHEAR","NCIT:C61512, Cohort, NCIT","NCIT:C218489, By Cohort, NCIT","CHEBI:34935, propyzamide, CHEBI","NCIT:C15208, Cohort Study, NCIT"
 Collection Method,"GENEPIO:0001241, collection method, GENEPIO","SNOMEDCT:246380002, Method of collection, SNOMEDCT","MESH:D003625, Data Collection, MESH"
 Colon,"MESH:D003106, Colon, MESH","NCBITAXON:1542223, Colon, NCBITAXON","NCIT:C12382, Colon, NCIT","UBERON:0001155, colon, UBERON","SNOMEDCT:71854001, Colon structure, SNOMEDCT"
-Colorectal Cancer,"DOID:9256, colorectal cancer, DOID","MONDO:0005575, colorectal cancer, MONDO","NCIT:C91466, Colorectal Cancer Pathway, NCIT","NCIT:C60855, Colorectal Cancer pM0 TNM Finding, NCIT","SNOMEDCT:737058005, Microsatellite instability-high colorectal cancer, SNOMEDCT"
+Colorectal Cancer,"DOID:9256, colorectal cancer, DOID","MONDO:0005575, colorectal cancer, MONDO","NCIT:C91466, Colorectal Cancer Pathway, NCIT","NCIT:C60855, Colorectal Cancer pM0 TNM Finding, NCIT","SNOMEDCT:737058005, Microsatellite instability-high colorectal cancer, SNOMEDCT","NCIT:C157824, Colorectal Cancer Surgery, NCIT","NCIT:C198972, Personal History of Colorectal Cancer, NCIT"
 Colrnai Replicon
 Compensatory Mutation
 Competition,"CHEAR:CAO_00204, Competition, CHEAR","SWEET:Competition, competition, SWEET"
@@ -185,7 +185,7 @@ Equol,"CHEBI:34741, equol, CHEBI","MESH:D060754, Equol, MESH","NCIT:C120313, S-e
 Ergosterol,"CHEBI:16933, ergosterol, CHEBI","MESH:D004875, Ergosterol, MESH","NCIT:C83810, Ergosterol, NCIT","SNOMEDCT:116934003, Ergosterol, SNOMEDCT"
 Ermb Gene
 Esbl
-Escherichia Coli,"MESH:D004926, Escherichia coli, MESH","NCBITAXON:562, Escherichia coli, NCBITAXON","NCIT:C14206, Escherichia coli, NCIT","SNOMEDCT:112283007, Escherichia coli, SNOMEDCT","NCIT:C34594, Escherichia coli Infection, NCIT","NCIT:C172538, Escherichia coli Measurement, NCIT","SNOMEDCT:25671000087101, Escherichia coli antigen, SNOMEDCT","SNOMEDCT:399839003, Escherichia coli antibody, SNOMEDCT","MESH:D048168, Escherichia coli K12, MESH"
+Escherichia Coli,"MESH:D004926, Escherichia coli, MESH","NCBITAXON:562, Escherichia coli, NCBITAXON","NCIT:C14206, Escherichia coli, NCIT","SNOMEDCT:112283007, Escherichia coli, SNOMEDCT","NCIT:C34594, Escherichia coli Infection, NCIT","NCIT:C172538, Escherichia coli Measurement, NCIT","SNOMEDCT:25671000087101, Escherichia coli antigen, SNOMEDCT","SNOMEDCT:399839003, Escherichia coli antibody, SNOMEDCT","MESH:D048168, Escherichia coli K12, MESH","MESH:D000069981, Escherichia coli O104, MESH","MESH:D019453, Escherichia coli O157, MESH"
 Escherichia Coli Pks+
 Ethnicity,"CHEAR:Ethnicity, Ethnicity, CHEAR","CHEAR:SIO_001014, ethnicity, CHEAR","HHEAR:SIO_001014, ethnicity, HHEAR","MESH:D005006, Ethnicity, MESH","SIO:SIO_001014, ethnicity, SIO","MESH:Q000208, ethnology, MESH","EFO:EFO_0001799, ethnic group, EFO","NCIT:C16564, Ethnic Group, NCIT","SNOMEDCT:397731000, Ethnic group finding, SNOMEDCT"
 Eubacterium Rectale,"NCIT:C86388, Eubacterium rectale, NCIT","NCBITaxon:39491, [Eubacterium] rectale, NCBITAXON"
@@ -194,7 +194,7 @@ Exopolysaccharides,"CHEBI:72813, exopolysaccharide, CHEBI"
 Exposome Data
 Exposure Duration,"NCIT:C83280, Exposure Duration, NCIT","NCIT:C185254, Exposure Duration Years, NCIT"
 Exposure Source,"NCIT:C188372, Exposure Source Indicator, NCIT","GENEPIO:0001276, water exposure by source, GENEPIO"
-Extreme Weather,"MESH:D000080165, Extreme Weather, MESH","MESH:D055874, Extreme Heat, MESH"
+Extreme Weather,"MESH:D000080165, Extreme Weather, MESH","MESH:D055874, Extreme Heat, MESH","MESH:D055873, Extreme Cold, MESH"
 Faecalibacterium Prausnitzii,"MESH:D000070037, Faecalibacterium prausnitzii, MESH","NCBITAXON:853, Faecalibacterium prausnitzii, NCBITAXON","NCIT:C86394, Faecalibacterium prausnitzii, NCIT","SNOMEDCT:433993006, Faecalibacterium prausnitzii, SNOMEDCT"
 Fermented Dairy
 Fermented Vegetables,"NCIT:C192847, Salt Fermented Vegetable, NCIT"
@@ -210,13 +210,13 @@ Formaldehyde,"CHEBI:16842, formaldehyde, CHEBI","MESH:D005557, Formaldehyde, MES
 Formic Acid,"CHEBI:30751, formic acid, CHEBI","MESH:C030544, formic acid, MESH","NCIT:C83719, Formic Acid, NCIT","SNOMEDCT:64086005, Formic acid, SNOMEDCT","CHEBI:193132, formic acid-d2, CHEBI"
 Fresh-Frozen Biopsy
 Freshwater,"MIXS:freshwater, freshwater, MIXS","MESH:D005618, Fresh Water, MESH"
-Functional Potential,"SNOMEDCT:251635003, Motor-potential, SNOMEDCT","SNOMEDCT:102978000, Nerve potential, SNOMEDCT"
+Functional Potential,"SNOMEDCT:251635003, Motor-potential, SNOMEDCT","SNOMEDCT:102978000, Nerve potential, SNOMEDCT","SNOMEDCT:386205007, Evoked potential, SNOMEDCT"
 Fungi,"MESH:D005658, Fungi, MESH","NCBITAXON:4751, Fungi, NCBITAXON","SNOMEDCT:414561005, Fungi, SNOMEDCT","SWEET:Fungi, fungi, SWEET","NCIT:C14209, Fungus, NCIT","MESH:Q000382, microbiology, MESH","NCIT:C120883, Fungus Present, NCIT","NCIT:C154813, Fungi Measurement, NCIT"
-Fusobacterium Nucleatum,"MESH:D016967, Fusobacterium nucleatum, MESH","NCBITAXON:851, Fusobacterium nucleatum, NCBITAXON","NCIT:C86404, Fusobacterium nucleatum, NCIT","SNOMEDCT:32763000, Fusobacterium nucleatum, SNOMEDCT","NCIT:C189539, Fusobacterium nucleatum Measurement, NCIT","SNOMEDCT:113761002, Fusobacterium nucleatum ss nucleatum, SNOMEDCT","ECTO:3000050, exposure to Fusobacterium nucleatum, ECTO"
+Fusobacterium Nucleatum,"MESH:D016967, Fusobacterium nucleatum, MESH","NCBITAXON:851, Fusobacterium nucleatum, NCBITAXON","NCIT:C86404, Fusobacterium nucleatum, NCIT","SNOMEDCT:32763000, Fusobacterium nucleatum, SNOMEDCT","NCIT:C189539, Fusobacterium nucleatum Measurement, NCIT","SNOMEDCT:113761002, Fusobacterium nucleatum ss nucleatum, SNOMEDCT","ECTO:3000050, exposure to Fusobacterium nucleatum, ECTO","SNOMEDCT:113759006, Fusobacterium nucleatum ss animalis, SNOMEDCT"
 Gamma Diversity,"PCO:0000076, gamma diversity, PCO"
 Gene,"BIOLINK:Gene, gene, BIOLINK","CHEAR:SIO_010035, gene, CHEAR","JERM:Gene, Gene, JERM","NCIT:C16612, Gene, NCIT","SCHEMA:Gene, Gene, SCHEMA","SIO:SIO_010035, gene, SIO","SNOMEDCT:67271001, Gene, SNOMEDCT","SO:0000704, gene, SO","VariO:0272, gene, VARIO","MESH:D005796, Genes, MESH","NCIT:C43568, Gene Symbol, NCIT","NCIT:C198969, Gross Extranodal Extension, NCIT"
 Gene Abundance
-Gene Amplification,"MESH:D005784, Gene Amplification, MESH","NCIT:C16605, Gene Amplification, NCIT","SNOMEDCT:12645001, Gene amplification, SNOMEDCT","NCIT:C221409, TYMS Gene Amplification, NCIT"
+Gene Amplification,"MESH:D005784, Gene Amplification, MESH","NCIT:C16605, Gene Amplification, NCIT","SNOMEDCT:12645001, Gene amplification, SNOMEDCT","NCIT:C221409, TYMS Gene Amplification, NCIT","NCIT:C36678, FOS Gene Amplification, NCIT","NCIT:C40571, REL Gene Amplification, NCIT","NCIT:C133677, RET Gene Amplification, NCIT","NCIT:C213464, TEK Gene Amplification, NCIT","NCIT:C36679, HRAS Gene Amplification, NCIT","NCIT:C36665, KRAS Gene Amplification, NCIT"
 Gene Expression,"GO:0010467, gene expression, GO","MESH:D015870, Gene Expression, MESH","NCIT:C16608, Gene Expression, NCIT","SNOMEDCT:89551006, Gene expression, SNOMEDCT","NCIT:C21049, Gene Expression Process, NCIT","GO:0019080, viral gene expression, GO"
 Genes,"NCIT:C16612, Gene, NCIT","MESH:D005796, Genes, MESH"
 Geographical Coordinates,"AGRO:00000572, GPS coordinates, AGRO"
@@ -265,7 +265,7 @@ Incx Replicon
 Indole Derivatives
 Indoxyl Sulfate,"CHEBI:43355, indoxyl sulfate, CHEBI","MESH:D007200, Indican, MESH","NCIT:C152073, Indican, NCIT","CHEBI:144643, indoxyl sulfate(1-), CHEBI"
 Industrial Environment,"SNOMEDCT:224815004, Industrial environment, SNOMEDCT","SNOMEDCT:272505000, Industrial site, SNOMEDCT","SNOMEDCT:257633002, Industrial yard, SNOMEDCT"
-Inflammatory Bowel Disease,"DOID:0050589, inflammatory bowel disease, DOID","NCIT:C3138, Inflammatory Bowel Disease, NCIT","SNOMEDCT:24526004, Inflammatory bowel disease, SNOMEDCT","MESH:D015212, Inflammatory Bowel Diseases, MESH","MESH:C563310, Inflammatory Bowel Disease 2, MESH","MESH:C565764, Inflammatory Bowel Disease 3, MESH","MESH:C564680, Inflammatory Bowel Disease 4, MESH","MESH:C565234, Inflammatory Bowel Disease 5, MESH","MESH:C564681, Inflammatory Bowel Disease 6, MESH","MESH:C565353, Inflammatory Bowel Disease 7, MESH"
+Inflammatory Bowel Disease,"DOID:0050589, inflammatory bowel disease, DOID","NCIT:C3138, Inflammatory Bowel Disease, NCIT","SNOMEDCT:24526004, Inflammatory bowel disease, SNOMEDCT","MESH:D015212, Inflammatory Bowel Diseases, MESH","MESH:C563310, Inflammatory Bowel Disease 2, MESH","MESH:C565764, Inflammatory Bowel Disease 3, MESH","MESH:C564680, Inflammatory Bowel Disease 4, MESH","MESH:C565234, Inflammatory Bowel Disease 5, MESH","MESH:C564681, Inflammatory Bowel Disease 6, MESH","MESH:C565353, Inflammatory Bowel Disease 7, MESH","MESH:C564682, Inflammatory Bowel Disease 8, MESH","NCIT:C164676, Inflammatory Bowel Disease 28, NCIT","SNOMEDCT:608844008, History of inflammatory bowel disease, SNOMEDCT","SNOMEDCT:9281000146109, Inflammatory bowel disease suspected, SNOMEDCT"
 Inorganic Aerosol
 Interaction Duration
 Intermediate Product
@@ -277,14 +277,14 @@ Kefir,"FOODON:03310290, kefir, FOODON","MESH:D000070716, Kefir, MESH","NCIT:C173
 Keystone Species
 Kimchi,"FOODON:00002946, kimchi, FOODON","NCIT:C192849, Kimchi, NCIT"
 Klebsiella,"MESH:D007709, Klebsiella, MESH","NCBITAXON:570, Klebsiella, NCBITAXON","NCIT:C28165, Klebsiella, NCIT","SNOMEDCT:75032006, Klebsiella, SNOMEDCT","NCIT:C172539, Klebsiella Measurement, NCIT"
-Klebsiella Pneumoniae,"MESH:D007711, Klebsiella pneumoniae, MESH","NCBITAXON:573, Klebsiella pneumoniae, NCBITAXON","NCIT:C86457, Klebsiella pneumoniae, NCIT","SNOMEDCT:56415008, Klebsiella pneumoniae, SNOMEDCT","NCIT:C187860, Klebsiella pneumoniae Measurement, NCIT","SNOMEDCT:708337009, Klebsiella pneumoniae DNA, SNOMEDCT","MESH:C508888, rHSP60, Klebsiella pneumoniae, MESH","NCBITAXON:3390273, Klebsiella pneumoniae complex, NCBITAXON"
+Klebsiella Pneumoniae,"MESH:D007711, Klebsiella pneumoniae, MESH","NCBITAXON:573, Klebsiella pneumoniae, NCBITAXON","NCIT:C86457, Klebsiella pneumoniae, NCIT","SNOMEDCT:56415008, Klebsiella pneumoniae, SNOMEDCT","NCIT:C187860, Klebsiella pneumoniae Measurement, NCIT","SNOMEDCT:708337009, Klebsiella pneumoniae DNA, SNOMEDCT","MESH:C508888, rHSP60, Klebsiella pneumoniae, MESH","NCBITAXON:3390273, Klebsiella pneumoniae complex, NCBITAXON","SNOMEDCT:1113401000112105, Klebsiella pneumoniae complex, SNOMEDCT","MESH:C000646272, Klebsiella pneumoniae subsp. ozaenae, MESH"
 Known Pathogen
 Ko,"CHEBI:59348, alpha-D-Ko, CHEBI","NCIT:C126963, KRT8 wt Allele, NCIT","NCIT:C190552, Key Object Selection, NCIT"
 Lactate,"CHEBI:24996, lactate, CHEBI","SNOMEDCT:83036002, Lactate, SNOMEDCT","MESH:D019344, Lactic Acid, MESH","NCIT:C76926, Lactic Acid, NCIT","NCIT:C79450, Lactic Acid Measurement, NCIT"
 Library Preparation,"OBI:0000711, library preparation, OBI","GENEPIO:0000085, library preparation kit, GENEPIO","GENEPIO:0001450, library preparation kit, GENEPIO"
-Light,"EFO:EFO_0000568, light, EFO","MESH:D008027, Light, MESH","NCIT:C64650, Light, NCIT","SNOMEDCT:56242006, Light, SNOMEDCT","SNOMEDCT:371268001, Light color, SNOMEDCT","NCIT:C90419, Light Cycle, NCIT","NCIT:C133789, TNFSF14 wt Allele, NCIT","NCIT:C122963, Borg Scale Rating of Perceived Exertion Score 11, NCIT","NCIT:C133790, Tumor Necrosis Factor Ligand Superfamily Member 14, NCIT","NCIT:C225619, Tumor Necrosis Factor Receptor Superfamily Member 14 Measurement, NCIT"
+Light,"EFO:EFO_0000568, light, EFO","MESH:D008027, Light, MESH","NCIT:C64650, Light, NCIT","SNOMEDCT:56242006, Light, SNOMEDCT","SNOMEDCT:371268001, Light color, SNOMEDCT","NCIT:C90419, Light Cycle, NCIT","NCIT:C133789, TNFSF14 wt Allele, NCIT","NCIT:C122963, Borg Scale Rating of Perceived Exertion Score 11, NCIT","NCIT:C133790, Tumor Necrosis Factor Ligand Superfamily Member 14, NCIT","NCIT:C225619, Tumor Necrosis Factor Receptor Superfamily Member 14 Measurement, NCIT","CHEBI:30212, photon, CHEBI"
 Light Intensity,"SNOMEDCT:450501000124104, Light intensity, SNOMEDCT"
-Lipid Metabolism,"MESH:D050356, Lipid Metabolism, MESH","GO:0006629, lipid metabolic process, GO","NCIT:C19405, Lipid Metabolic Process, NCIT","NCIT:C39728, Lipid Metabolism Pathway, NCIT"
+Lipid Metabolism,"MESH:D050356, Lipid Metabolism, MESH","GO:0006629, lipid metabolic process, GO","NCIT:C19405, Lipid Metabolic Process, NCIT","NCIT:C39728, Lipid Metabolism Pathway, NCIT","NCIT:C91416, Ether Lipid Metabolism Pathway, NCIT"
 Lithocholate,"CHEBI:29744, lithocholate, CHEBI","MESH:D008095, Lithocholic Acid, MESH","SNOMEDCT:54245005, Lithocholic acid, SNOMEDCT","NCIT:C176307, Lithocholate Measurement, NCIT","CHEBI:87728, isolithocholate, CHEBI"
 Location Elevation
 Location Geocoordinates
@@ -326,7 +326,7 @@ N₂ Fixation Pathway
 Natural Environment,"ENVO:01000951, natural environment, ENVO","SNOMEDCT:224803003, Natural environment, SNOMEDCT","ENVO:01001227, aquatic natural environment, ENVO","GENEPIO:0001250, natural environment specimen, GENEPIO"
 Ncbi Taxon
 Ndh Gene
-Net Primary Production,"ECOCORE:00000184, marine primary production, ECOCORE","ECOCORE:00000185, marine benthic primary production, ECOCORE"
+Net Primary Production,"ECOCORE:00000184, marine primary production, ECOCORE","ECOCORE:00000185, marine benthic primary production, ECOCORE","ECOCORE:00000183, terrestrial primary production, ECOCORE"
 Network Modularity
 Neutropenia,"DOID:1227, neutropenia, DOID","MESH:D009503, Neutropenia, MESH","MONDO:0001475, neutropenia, MONDO","NCIT:C80520, Neutropenia, NCIT","SNOMEDCT:165517008, Neutropenia, SNOMEDCT"
 Neutropenic Fever Episode
@@ -374,7 +374,7 @@ Pathogen-Targeting Qpcr
 Pathway,"BIOLINK:Pathway, pathway, BIOLINK","CHEAR:SIO_001107, pathway, CHEAR","JERM:Pathway, Pathway, JERM","NCIT:C54214, Pathway, NCIT","SIO:SIO_001107, pathway, SIO","CHEBI:34922, picloram, CHEBI","NCIT:C20633, Biochemical Pathway, NCIT"
 Pathway Step
 Pentanoate,"CHEBI:31011, valerate, CHEBI","MESH:D014631, Valerates, MESH","CHEBI:17418, valeric acid, CHEBI"
-Pentose Phosphate Pathway,"MESH:D010427, Pentose Phosphate Pathway, MESH","GO:0006098, pentose-phosphate shunt, GO","NCIT:C38847, Pentose Phosphate Cycle Pathway, NCIT","GO:0009051, pentose-phosphate shunt, oxidative branch, GO"
+Pentose Phosphate Pathway,"MESH:D010427, Pentose Phosphate Pathway, MESH","GO:0006098, pentose-phosphate shunt, GO","NCIT:C38847, Pentose Phosphate Cycle Pathway, NCIT","GO:0009051, pentose-phosphate shunt, oxidative branch, GO","GO:0043456, regulation of pentose-phosphate shunt, GO"
 Peri-Operative Antibiotic Prophylaxis
 Pesticide,"CHEBI:25944, pesticide, CHEBI","NCIT:C737, Pesticide, NCIT","SNOMEDCT:59545008, Pesticide, SNOMEDCT","MESH:D010575, Pesticides, MESH","NCIT:C198941, Pesticide Exposure, NCIT"
 Ph,"CHEAR:SIO_001089, pH, CHEAR","JERM:pH, pH, JERM","NCIT:C45997, pH, NCIT","SIO:SIO_001089, pH, SIO","SWEET:pH, ph, SWEET","glosis_lh:PH, PH, GLOSIS","SNOMEDCT:365723003, pH - finding, SNOMEDCT","NCIT:C205029, pH Measurement, NCIT","NCIT:C205476, Poroid Hidradenoma, NCIT","NCIT:C28452, Philadelphia Chromosome, NCIT","SNOMEDCT:27327002, Hydrogen ion concentration, SNOMEDCT","MESH:D006863, Hydrogen-Ion Concentration, MESH","NCIT:C129912, Pancreatic Peptide Prohormone, NCIT","NCIT:C129913, Pancreatic Polypeptide Hormone, NCIT"
@@ -452,7 +452,7 @@ Sample Group
 Sample Id,"EFO:EFO_0920100, sample ID, EFO","NCIT:C166393, Specimen Identifier, NCIT"
 Sample Name,"NCIT:C180316, Nucleotide Sequence Sample Name, NCIT","GENEPIO:0100285, sample plan name, GENEPIO"
 Sample Size,"MESH:D018401, Sample Size, MESH","NCIT:C53190, Sample Size, NCIT"
-Sample Type,"NCIT:C210102, Sample Type, NCIT","NCIT:C70713, Biospecimen Type, NCIT"
+Sample Type,"NCIT:C210102, Sample Type, NCIT","NCIT:C70713, Biospecimen Type, NCIT","NCIT:C177581, TCGA Sample Type Identifier, NCIT"
 Sampling Altitude
 Sampling Date,"AGRO:00000700, soil sampling date, AGRO"
 Sampling Depth,"AGRO:00000701, soil sampling depth, AGRO"
@@ -464,7 +464,7 @@ Sand,"ENVO:01000017, sand, ENVO","MESH:D000080463, Sand, MESH","MIXS:sand, sand,
 Sauerkraut,"FOODON:03301397, sauerkraut, FOODON","NCIT:C192848, Sauerkraut, NCIT","SNOMEDCT:442751000124107, Sauerkraut, SNOMEDCT"
 Season,"ENVO:03000096, season, ENVO","NCIT:C94729, Season, NCIT","SCHEMA:Season, Season, SCHEMA","SWEET:Season, season, SWEET","MESH:D012621, Seasons, MESH"
 Secondary Bile Acid
-Sequencing Technology,"NCIT:C146809, 454 Sequencing, NCIT","NCIT:C146819, SMRT Sequencing, NCIT"
+Sequencing Technology,"NCIT:C146809, 454 Sequencing, NCIT","NCIT:C146819, SMRT Sequencing, NCIT","NCIT:C146816, Helicos Sequencing, NCIT"
 Sex,"ExO:0000110, sex, EXO","MESH:D012723, Sex, MESH","NCIT:C28421, Sex, NCIT","NCIT:C17127, Sex Behavior, NCIT","SNOMEDCT:734000001, Biological sex, SNOMEDCT","SNOMEDCT:70256003, Sexual intercourse - finding, SNOMEDCT","NCIT:C66731, CDISC SDTM Sex of Individual Terminology, NCIT"
 Shannon Diversity,"PCO:0000062, Shannon diversity index, PCO"
 Shannon Diversity Index,"PCO:0000062, Shannon diversity index, PCO"
@@ -527,12 +527,12 @@ Transcriptomic Data,"EFO:EFO_0004601, transcriptomic data, EFO"
 Treatment-Naïve
 Trebouxia,"NCBITAXON:13786, Trebouxia, NCBITAXON"
 Trehalose,"CHEBI:27082, trehalose, CHEBI","MESH:D014199, Trehalose, MESH","NCIT:C87705, Trehalose, NCIT"
-Trimethylamine,"CHEBI:18139, trimethylamine, CHEBI","MESH:C023336, trimethylamine, MESH","SNOMEDCT:48181003, Trimethylamine, SNOMEDCT","CHEBI:58389, trimethylammonium, CHEBI"
+Trimethylamine,"CHEBI:18139, trimethylamine, CHEBI","MESH:C023336, trimethylamine, MESH","SNOMEDCT:48181003, Trimethylamine, SNOMEDCT","CHEBI:58389, trimethylammonium, CHEBI","CHEBI:15724, trimethylamine N-oxide, CHEBI"
 Turbulence,"SWEET:Turbulence, turbulence, SWEET"
 Type 2 Diabetes,"NCIT:C26747, Type 2 Diabetes Mellitus, NCIT","MESH:D003924, Diabetes Mellitus, Type 2, MESH","SNOMEDCT:237599002, Insulin treated type 2 diabetes mellitus, SNOMEDCT","SNOMEDCT:44054006, Type 2 diabetes mellitus, SNOMEDCT","SNOMEDCT:420756003, Cataract due to diabetes mellitus type 2, SNOMEDCT"
 Type Iv Secretion System,"MESH:D000069319, Type IV Secretion Systems, MESH","NCIT:C38877, Bacterial Secretion System Pathway, NCIT","GO:0044097, secretion by the type IV secretion system, GO","GO:0043684, type IV secretion system complex, GO","GO:0030255, protein secretion by the type IV secretion system, GO"
 Unifrac Distance
-Urban Environment,"SNOMEDCT:224807002, Urban environment, SNOMEDCT","SNOMEDCT:257723002, Urban, SNOMEDCT"
+Urban Environment,"SNOMEDCT:224807002, Urban environment, SNOMEDCT","SNOMEDCT:257723002, Urban, SNOMEDCT","SNOMEDCT:262514009, Urban road, SNOMEDCT"
 Urine,"MESH:D014556, Urine, MESH","MESH:Q000652, urine, MESH","NCIT:C13283, Urine, NCIT","SNOMEDCT:78014005, Urine, SNOMEDCT","UBERON:0001088, urine, UBERON","NCIT:C189126, Urine Sample, NCIT"
 Urolithins,"CHEBI:234554, urolithin, CHEBI","NCIT:C112042, Urolithin, NCIT"
 Uv Radiation,"MESH:D014466, Ultraviolet Rays, MESH","NCIT:C17231, Ultraviolet Radiation, NCIT"
