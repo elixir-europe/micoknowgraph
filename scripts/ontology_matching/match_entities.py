@@ -61,8 +61,6 @@ BIOPORTAL_ONTOLOGIES = [
     "OBOREL",      # sheet: OBOREL (Relations Ontology)
     "HP",          # sheet: HPO. BioPortal's "HPO" is the Hypertension Ontology; the Human Phenotype Ontology is "HP"
 ]
-# On the sheet but not in BioPortal, so not searched online: OIO, OpenBiodiv-O, OWL, RDF-DataCube, SKOS,
-# SOSA, KEGG, WHOW. SFWO, GloSiS and TO are not in BioPortal either, but are found through the local
 # ontology files in data/ontology_matching/ontologies/.
 
 # BioPortal acronyms whose terms use a different ID prefix (BioPortal's OBOREL holds RO_ terms)
@@ -311,8 +309,8 @@ def main():
     ap.add_argument("--entities", default=str(DEFAULT_ENTITIES), help="input CSV, entity in column 1 (default: %(default)s)")
     ap.add_argument("--output", default=str(DEFAULT_OUTPUT), help="output CSV (default: %(default)s)")
     ap.add_argument("--ontology-dir", default=str(DEFAULT_ONTOLOGY_DIR), help="local ontology files (default: %(default)s)")
-    ap.add_argument("--max-matches", type=int, default=10, help="most matches per entity; equal-rated ties may add up to %d more (default: 10)" % MAX_EXTRA_OVERALL)
-    ap.add_argument("--max-per-ontology", type=int, default=2, help="most matches per entity from one ontology; equal-rated ties may add up to %d more (default: 2)" % MAX_EXTRA_PER_ONTOLOGY)
+    ap.add_argument("--max-matches", type=int, default=15, help="most matches per entity; equal-rated ties may add up to %d more (default: 10)" % MAX_EXTRA_OVERALL)
+    ap.add_argument("--max-per-ontology", type=int, default=3, help="most matches per entity from one ontology; equal-rated ties may add up to %d more (default: 2)" % MAX_EXTRA_PER_ONTOLOGY)
     ap.add_argument("--min-score", type=float, default=0.8, help="similarity cut-off, 0-1 (default: 0.8)")
     ap.add_argument("--api-key", help="BioPortal API key (default: $BIOPORTAL_API_KEY, then the .env file)")
     ap.add_argument("--env-file", help="file holding BIOPORTAL_API_KEY=... (default: .env in the repository root)")
